@@ -36,6 +36,9 @@
     { id: 'c16', spec: 'specs/c16_dorling.vg.json', mode: 'vega', bind: 'c16-controls' },
     { id: 'c2', spec: 'specs/c02_trend.vl.json', mode: 'vega-lite' },
     { id: 'c3', spec: 'specs/c03_heatmap.vl.json', mode: 'vega-lite' },
+    // C4 and C5 share one year control (rendered from C4's binding) and highlight each other's hovered region.
+    { id: 'c4', spec: 'specs/c04_choropleth.vl.json', mode: 'vega-lite', bind: 'where-controls' },
+    { id: 'c5', spec: 'specs/c05_symbols.vl.json', mode: 'vega-lite', bind: 'c5-bindings' },
   ];
 
   async function embed(chart) {
@@ -145,7 +148,40 @@
     return v.toLocaleString('en-AU');
   }
 
+  // Linked views: a parameter changed in one chart is copied into the others.
+  // "sync" copies the same signal (a shared control); "hover" copies a hovered key into "linked".
+  const LINKS = [
+    { type: 'sync', signal: 'year', views: ['c4', 'c5'] },
+    { type: 'hover', views: ['c4', 'c5'] },
+  ];
+
+  function wireLinks(views) {
+    LINKS.forEach(link => {
+      const linked = link.views.map(id => [id, views[id]]).filter(([, v]) => v);
+      if (linked.length < 2) return;
+      linked.forEach(([id, view]) => {
+        if (link.type === 'sync') {
+          view.addSignalListener(link.signal, (name, value) => {
+            linked.forEach(([other, v]) => {
+              if (other !== id && v.signal(link.signal) !== value) v.signal(link.signal, value).runAsync();
+            });
+          });
+        } else {
+          view.addSignalListener('hover', (name, value) => {
+            const key = value && value.key ? [].concat(value.key)[0] : '';
+            linked.forEach(([other, v]) => { if (other !== id) v.signal('linked', key || '').runAsync(); });
+          });
+        }
+      });
+    });
+  }
+
   initDataTables();
   // Wait for the web fonts so Vega measures labels in the right typeface.
-  document.fonts.ready.then(() => CHARTS.forEach(embed));
+  document.fonts.ready.then(async () => {
+    const results = await Promise.all(CHARTS.map(embed));
+    const views = {};
+    CHARTS.forEach((c, i) => { views[c.id] = results[i]; });
+    wireLinks(views);
+  });
 })();

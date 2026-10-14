@@ -111,6 +111,55 @@
     </div>
   </section>
 
+  <!-- Section 3 · Where? -->
+  <section class="section" id="where" aria-labelledby="h-where">
+    <div class="wrap grid section-intro">
+      <div class="col-8 prose">
+        <div class="section-head"><span class="section-no" aria-hidden="true">3</span><h2 id="h-where">Where?</h2></div>
+        <p>The further students live from a major city, the more school they miss. In 2025, just over a third of students in major cities missed more than a day a fortnight (35.2%), compared with three in four in very remote areas (74.7%).</p>
+        <p>But a map coloured by area exaggerates the outback, where few people live. Sizing each area by its students tells the other half of the story: most students who miss out live in cities.</p>
+      </div>
+      <div class="col-12 shared-controls">
+        <span class="controls-label">Both maps:</span>
+        <div class="chart-controls" id="where-controls"></div>
+        <div id="c5-bindings" hidden></div>
+      </div>
+    </div>
+    <div class="wrap grid pair">
+      <figure class="col-6 chart" id="c4" aria-labelledby="c4-title">
+        <div class="chart-head">
+          <h3 class="chart-title" id="c4-title">The further from a city, the more students miss school: in the NT’s very remote areas, 87% missed more than 1 day in 10</h3>
+          <p class="chart-sub">Share of students missing out in each state’s remoteness areas. Hover over an area to find it in the other map.</p>
+        </div>
+        <div class="vis" id="c4-vis" role="img" aria-label="Choropleth map of the share of students missing out by state and remoteness area"></div>
+        <div class="chart-foot">
+          <p class="chart-note">All 32 areas with figures rose between 2019 and 2025. By remoteness in 2025: major cities 35.2%, inner regional 43.8%, outer regional 45.0%, remote 52.5%, very remote 74.7%.</p>
+          <p class="source">Sources: ACARA, National Report on Schooling in Australia data portal (student attendance by state and remoteness, 2019 and 2025); ABS, ASGS Edition 3 Remoteness Areas 2021. ACARA classified 2019 by the 2016 remoteness boundaries. The ACT’s small inner regional area has no published figure (grey). Chart specification: <a href="specs/c04_choropleth.vl.json">c04_choropleth.vl.json</a></p>
+          <details class="data-table" data-src="data/attendance_regions.csv"
+                   data-cols="state:State|remoteness:Remoteness|missing_out_2019:Missing out, 2019 (%):1|missing_out_2025:Missing out, 2025 (%):1">
+            <summary>Data table</summary>
+          </details>
+        </div>
+      </figure>
+
+      <figure class="col-6 chart" id="c5" aria-labelledby="c5-title">
+        <div class="chart-head">
+          <h3 class="chart-title" id="c5-title">But most students who miss out live in cities: remote and very remote Australia is 86% of the land and just 1.7% of students</h3>
+          <p class="chart-sub"><strong>Circle area</strong> = number of students in 2025; <strong>colour</strong> = share missing out, in the same classes as the first map.</p>
+        </div>
+        <div class="vis" id="c5-vis" role="img" aria-label="Proportional symbol map of students by state and remoteness area"></div>
+        <div class="chart-foot">
+          <p class="chart-note">Major cities hold 73.6% of Australia’s school students. Remote and very remote areas together hold about 73,000 of 4.16 million.</p>
+          <p class="source">Sources: ABS, Schools, 2025 (Table 46a, full-time-equivalent students, all year levels); ACARA (share missing out); land area from ABS ASGS 2021 boundaries. Chart specification: <a href="specs/c05_symbols.vl.json">c05_symbols.vl.json</a></p>
+          <details class="data-table" data-src="data/attendance_regions.csv"
+                   data-cols="state:State|remoteness:Remoteness|students_fte_2025:Students, 2025:0|students_fte_gov_2025:In public schools, 2025:0|area_km2:Land area (km²)">
+            <summary>Data table</summary>
+          </details>
+        </div>
+      </figure>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-footer">

@@ -166,6 +166,20 @@ a:hover { color: #104281; }
 /* Section intro above a row of charts */
 .section-intro { margin-bottom: 32px; }
 
+/* One control that drives a pair of charts */
+.shared-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 14px;
+  background: var(--panel);
+  border-radius: 6px;
+  width: max-content;
+  max-width: 100%;
+}
+.shared-controls .chart-controls { min-height: 0; margin: 0; }
+.controls-label { font-size: 15px; color: var(--ink-2); }
+
 /* Charts */
 .chart { margin: 0; min-width: 0; }
 
