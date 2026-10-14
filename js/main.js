@@ -46,6 +46,7 @@
     { id: 'c12', spec: 'specs/c12_boxplot.vl.json', mode: 'vega-lite' },
     { id: 'c10', spec: 'specs/c10_dotmap.vg.json', mode: 'vega' },
     { id: 'c15', spec: 'specs/c15_binmap.vl.json', mode: 'vega-lite' },
+    { id: 'c14', spec: 'specs/c14_factors.vl.json', mode: 'vega-lite' },
   ];
 
   async function embed(chart) {

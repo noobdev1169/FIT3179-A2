@@ -180,6 +180,22 @@ a:hover { color: #104281; }
 .explainer p { margin: 0 0 10px; }
 .explainer p:last-child { margin-bottom: 0; }
 
+/* Conclusion beside the last chart */
+.conclusion {
+  margin-top: 4px;
+  padding: 20px 22px;
+  border-left: 4px solid var(--ink);
+  background: var(--panel);
+  border-radius: 0 6px 6px 0;
+  font-size: 15.5px;
+  line-height: 1.5;
+}
+.conclusion h3 { margin: 0 0 8px; font-size: 17px; }
+.conclusion h3 + ul { margin-top: 0; }
+.conclusion ul { padding-left: 18px; margin: 0 0 16px; }
+.conclusion li { margin-bottom: 8px; }
+.conclusion p { margin: 0; }
+
 /* One control that drives a pair of charts */
 .shared-controls {
   display: flex;

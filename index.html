@@ -275,7 +275,7 @@
         <div class="vis" id="c10-vis" role="img" aria-label="Dot map of NSW public schools by days missed, with a Sydney inset"></div>
         <div class="chart-foot">
           <p class="chart-note">Of the 254 schools below 80%, 103 are in major cities, 86 inner regional, 45 outer regional, 11 remote and 9 very remote. Their median ICSEA is 902, against 976 for all schools.</p>
-          <p class="source">Source: NSW Department of Education (2024 attendance; school locations and remoteness, ASGS 2016 as supplied); ABS ASGS 2021 (map). Lord Howe Island Central School is left off the map. Chart specification: <a href="specs/c10_dotmap.vg.json">c10_dotmap.vg.json</a></p>
+          <p class="source">Source: NSW Department of Education (2024 attendance; school locations and remoteness, ASGS 2016 as supplied); ABS ASGS 2021 (map). Lord Howe Island Central School is left off the map. Every school is listed in the data table under the box plot. Chart specification: <a href="specs/c10_dotmap.vg.json">c10_dotmap.vg.json</a></p>
         </div>
       </figure>
 
@@ -287,9 +287,43 @@
         <div class="vis" id="c15-vis" role="img" aria-label="Bin map of NSW in half-degree squares coloured by median days missed"></div>
         <div class="chart-foot">
           <p class="chart-note">102 squares have 3 or more schools. The 5 darkest (20% or more) are on the far north coast, in the northern inland, in the south and in the far west. Averages hide single schools: a square with only 3 or 4 schools can swing a lot, which is why the dot map sits beside it.</p>
-          <p class="source">Source: NSW Department of Education (2024 attendance and school locations); ABS ASGS 2021 (outline). Squares are 0.5° of longitude by 0.5° of latitude. Chart specification: <a href="specs/c15_binmap.vl.json">c15_binmap.vl.json</a></p>
+          <p class="source">Source: NSW Department of Education (2024 attendance and school locations); ABS ASGS 2021 (outline). Squares are 0.5° of longitude by 0.5° of latitude, built from the schools in the data table under the box plot. Chart specification: <a href="specs/c15_binmap.vl.json">c15_binmap.vl.json</a></p>
         </div>
       </figure>
+    </div>
+  </section>
+
+  <!-- Section 6 · What makes the difference? -->
+  <section class="section" id="difference" aria-labelledby="h-difference">
+    <div class="wrap grid section-intro">
+      <div class="col-8 prose">
+        <div class="section-head"><span class="section-no" aria-hidden="true">6</span><h2 id="h-difference">What makes the difference?</h2></div>
+        <p>Put the comparisons from this page side by side, and a clear order appears. Where students live and how advantaged their school’s community is make the biggest differences. Whether a student is a boy or a girl makes almost none.</p>
+      </div>
+    </div>
+    <div class="wrap grid">
+      <figure class="col-8 chart" id="c14" aria-labelledby="c14-title">
+        <h3 class="chart-title" id="c14-title">Where students live and their school community’s advantage make the biggest difference; being a boy or a girl makes almost none</h3>
+        <p class="chart-sub">Share of students missing out in 2025 for two groups in each comparison, sorted by the gap between them (percentage points). Australia, Years 1–10.</p>
+        <div class="vis" id="c14-vis" role="img" aria-label="Dumbbell chart comparing the share of students missing out across seven factors"></div>
+        <p class="chart-note"><strong>These factors overlap.</strong> Very remote schools also tend to serve less advantaged communities and more Aboriginal and Torres Strait Islander students, and the sector gap mostly reflects advantage (section 4). So the gaps can’t be added up, and none of them on its own shows a cause.</p>
+        <p class="source">Source: ACARA, National Report on Schooling in Australia data portal (student attendance, 2019 and 2025). Chart specification: <a href="specs/c14_factors.vl.json">c14_factors.vl.json</a></p>
+        <details class="data-table" data-src="data/factors_2025.csv"
+                 data-cols="factor:Comparison|higher_group:More absence|higher_missing_out:Missing out (%):1|lower_group:Less absence|lower_missing_out:Missing out (%):1|difference:Gap (points):1">
+          <summary>Data table</summary>
+        </details>
+      </figure>
+      <aside class="col-4 conclusion" aria-labelledby="h-conclusion">
+        <h3 id="h-conclusion">In short</h3>
+        <ul>
+          <li>Almost <strong>4 in 10</strong> students missed more than a day of school a fortnight in 2025, about <strong>1.24 million</strong>, up from about 1 in 4 before COVID-19.</li>
+          <li>Absence peaked in 2022 and has only partly recovered. Every year it jumps in <strong>Year 8</strong>.</li>
+          <li>It rises with <strong>remoteness</strong>, and the gaps for <strong>Aboriginal and Torres Strait Islander students</strong> are widest in very remote areas. But most students who miss out live in cities.</li>
+          <li>Compared like with like, <strong>community advantage</strong> matters much more than school sector.</li>
+        </ul>
+        <h3>What this data can’t tell us</h3>
+        <p>The figures count days missed, not why they were missed. They don’t separate illness from other reasons, and they can’t show what would raise attendance.</p>
+      </aside>
     </div>
   </section>
 
@@ -316,6 +350,9 @@
         <li>Attendance covers full-time students in Years 1–10 in Semester 1. ACARA did not publish 2020 data because of COVID-19.</li>
         <li>NSW changed how it calculates government school attendance in 2018 and 2021, so comparisons with earlier years need care.</li>
         <li>Student numbers that combine ABS counts with ACARA attendance shares are estimates.</li>
+        <li>ACARA classified 2019 remoteness with the 2016 boundaries; the maps use the 2021 boundaries. Small groups swing more from year to year.</li>
+        <li>ICSEA includes remoteness and the share of Aboriginal and Torres Strait Islander students, so these factors overlap and are not separate causes.</li>
+        <li>NSW school-level data covers public (government) schools only, up to 2024. Schools that have closed or merged have no location and are left out. No school names are shown.</li>
       </ul>
       <h2>Design</h2>
       <p>Typefaces: Edu NSW ACT Foundation and Lexend (Google Fonts, SIL Open Font License). Charts built with Vega 5.33.1, Vega-Lite 5.23.0 and Vega-Embed 6.29.0. Colour scheme: ColorBrewer OrRd.</p>
