@@ -34,6 +34,8 @@
   // One entry per chart, in page order.
   const CHARTS = [
     { id: 'c16', spec: 'specs/c16_dorling.vg.json', mode: 'vega', bind: 'c16-controls' },
+    { id: 'c2', spec: 'specs/c02_trend.vl.json', mode: 'vega-lite' },
+    { id: 'c3', spec: 'specs/c03_heatmap.vl.json', mode: 'vega-lite' },
   ];
 
   async function embed(chart) {
@@ -77,16 +79,21 @@
   async function loadTable(details) {
     if (details.dataset.loaded) return;
     details.dataset.loaded = 'true';
-    // data-cols: "field:Label" or "field:Label:decimals", separated by "|"
-    const columns = details.dataset.cols.split('|').map(c => {
-      const [field, label, dp] = c.split(':');
-      return { field, label, dp: dp === undefined ? null : Number(dp) };
-    });
     const [filterField, filterValue] = (details.dataset.filter || '').split('=');
     try {
       const text = await vega.loader().load(details.dataset.src);
-      const rows = vega.read(text, { type: 'csv', parse: 'auto' })
+      let rows = vega.read(text, { type: 'csv', parse: 'auto' })
         .filter(r => !filterField || String(r[filterField]) === filterValue);
+      let columns;
+      if (details.dataset.pivot) {
+        [columns, rows] = pivot(details.dataset, rows);
+      } else {
+        // data-cols: "field:Label" or "field:Label:decimals", separated by "|"
+        columns = details.dataset.cols.split('|').map(c => {
+          const [field, label, dp] = c.split(':');
+          return { field, label, dp: dp === undefined ? null : Number(dp) };
+        });
+      }
       // The wrapper scrolls sideways on narrow screens so the page itself never does.
       const scroller = document.createElement('div');
       scroller.className = 'table-scroll';
@@ -96,6 +103,22 @@
       details.insertAdjacentHTML('beforeend', '<p>The data could not be loaded.</p>');
       console.error('Data table failed', err);
     }
+  }
+
+  // data-pivot="rowField|columnField|valueField": a wide table, one row per rowField value
+  // and one column per columnField value (for example year levels down, years across).
+  function pivot(opts, rows) {
+    const [rowField, colField, valueField] = opts.pivot.split('|');
+    const uniq = f => [...new Set(rows.map(r => r[f]))].sort((a, b) => a - b);
+    const dp = opts.dp === undefined ? null : Number(opts.dp);
+    const columns = [{ field: '_row', label: opts.rowTitle || rowField, dp: null }]
+      .concat(uniq(colField).map(c => ({ field: 'v' + c, label: String(c), dp })));
+    const wide = uniq(rowField).map(rv => {
+      const out = { _row: (opts.rowPrefix || '') + rv };
+      rows.filter(r => r[rowField] === rv).forEach(r => { out['v' + r[colField]] = r[valueField]; });
+      return out;
+    });
+    return [columns, wide];
   }
 
   function buildTable(columns, rows) {

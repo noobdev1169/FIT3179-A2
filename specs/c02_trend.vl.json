@@ -1,0 +1,531 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "C2 line chart. Share of students in Years 1-10 who attended fewer than 90% of school days in Semester 1 ('missing out'), Australia, all school sectors, 2015-2025. ACARA did not publish 2020 figures, so a dashed line bridges 2019 and 2021. Hovering over a year shows the official attendance rate and level. Source: ACARA National Report on Schooling in Australia data portal, student attendance.",
+  "width": "container",
+  "height": 230,
+  "data": {
+    "url": "data/attendance_trend.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "attendance_rate": "number",
+        "attendance_level": "number",
+        "missing_out": "number",
+        "days_missed": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.year >= 2015 && isValid(datum.missing_out)"
+    },
+    {
+      "calculate": "datum.year < 2020 ? 'before' : 'after'",
+      "as": "period"
+    },
+    {
+      "calculate": "datum.year - 0.5",
+      "as": "x_start"
+    },
+    {
+      "calculate": "datum.year + 0.5",
+      "as": "x_end"
+    },
+    {
+      "calculate": "format(datum.missing_out, '.1f') + '%'",
+      "as": "missing_out_text"
+    },
+    {
+      "calculate": "format(datum.attendance_rate, '.1f') + '%'",
+      "as": "rate_text"
+    },
+    {
+      "calculate": "format(datum.attendance_level, '.1f') + '%'",
+      "as": "level_text"
+    }
+  ],
+  "layer": [
+    {
+      "description": "Shaded band for the years before COVID-19",
+      "data": {
+        "values": [
+          {
+            "x_start": 2014.5,
+            "x_end": 2019.5
+          }
+        ]
+      },
+      "mark": {
+        "type": "rect",
+        "fill": "#f2f0ea",
+        "fillOpacity": 0.7
+      },
+      "encoding": {
+        "x": {
+          "field": "x_start",
+          "type": "quantitative",
+          "title": null,
+          "scale": {
+            "domain": [
+              2014.5,
+              2025.5
+            ],
+            "nice": false,
+            "zero": false
+          }
+        },
+        "x2": {
+          "field": "x_end"
+        }
+      }
+    },
+    {
+      "description": "Vertical guide at the hovered year",
+      "mark": {
+        "type": "rule",
+        "stroke": "#c3c2b7",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "title": null,
+          "scale": {
+            "domain": [
+              2014.5,
+              2025.5
+            ],
+            "nice": false,
+            "zero": false
+          }
+        },
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "description": "Dashed bridge over 2020, when no figures were published",
+      "transform": [
+        {
+          "filter": "datum.year === 2019 || datum.year === 2021"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "stroke": "#b30000",
+        "strokeWidth": 1.5,
+        "strokeDash": [
+          3,
+          4
+        ],
+        "opacity": 0.7
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "title": null,
+          "scale": {
+            "domain": [
+              2014.5,
+              2025.5
+            ],
+            "nice": false,
+            "zero": false
+          }
+        },
+        "y": {
+          "field": "missing_out",
+          "type": "quantitative",
+          "title": null,
+          "scale": {
+            "domain": [
+              0,
+              60
+            ]
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "stroke": "#b30000",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "title": null,
+          "scale": {
+            "domain": [
+              2014.5,
+              2025.5
+            ],
+            "nice": false,
+            "zero": false
+          },
+          "axis": {
+            "values": [
+              2015,
+              2016,
+              2017,
+              2018,
+              2019,
+              2020,
+              2021,
+              2022,
+              2023,
+              2024,
+              2025
+            ],
+            "format": "d",
+            "grid": false,
+            "ticks": false,
+            "labelPadding": 8,
+            "labelOverlap": "parity"
+          }
+        },
+        "y": {
+          "field": "missing_out",
+          "type": "quantitative",
+          "title": null,
+          "scale": {
+            "domain": [
+              0,
+              60
+            ]
+          },
+          "axis": {
+            "values": [
+              0,
+              20,
+              40,
+              60
+            ],
+            "labelExpr": "datum.value + '%'",
+            "domain": false,
+            "ticks": false,
+            "labelPadding": 6
+          }
+        },
+        "detail": {
+          "field": "period"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "fill": "#b30000",
+        "stroke": "#fbfaf7",
+        "strokeWidth": 1.5,
+        "opacity": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "title": null,
+          "scale": {
+            "domain": [
+              2014.5,
+              2025.5
+            ],
+            "nice": false,
+            "zero": false
+          }
+        },
+        "y": {
+          "field": "missing_out",
+          "type": "quantitative",
+          "title": null,
+          "scale": {
+            "domain": [
+              0,
+              60
+            ]
+          }
+        },
+        "size": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 120
+          },
+          "value": 50
+        }
+      }
+    },
+    {
+      "description": "Annotations, left-aligned",
+      "data": {
+        "values": [
+          {
+            "year": 2014.65,
+            "missing_out": 60,
+            "text": "Before COVID-19:\nup from 22% to 27%"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "top",
+        "dy": 6,
+        "lineBreak": "\n",
+        "lineHeight": 15,
+        "fontSize": 12.5,
+        "fill": "#5a5a5a"
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "title": null,
+          "scale": {
+            "domain": [
+              2014.5,
+              2025.5
+            ],
+            "nice": false,
+            "zero": false
+          }
+        },
+        "y": {
+          "field": "missing_out",
+          "type": "quantitative",
+          "title": null,
+          "scale": {
+            "domain": [
+              0,
+              60
+            ]
+          }
+        },
+        "text": {
+          "field": "text"
+        }
+      }
+    },
+    {
+      "description": "Annotation above the 2022 peak",
+      "data": {
+        "values": [
+          {
+            "year": 2022,
+            "missing_out": 50.1,
+            "text": "Half of all students (50.1%)"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "bottom",
+        "dy": -9,
+        "fontSize": 12.5,
+        "fill": "#1f1f1f"
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "title": null,
+          "scale": {
+            "domain": [
+              2014.5,
+              2025.5
+            ],
+            "nice": false,
+            "zero": false
+          }
+        },
+        "y": {
+          "field": "missing_out",
+          "type": "quantitative",
+          "title": null,
+          "scale": {
+            "domain": [
+              0,
+              60
+            ]
+          }
+        },
+        "text": {
+          "field": "text"
+        }
+      }
+    },
+    {
+      "description": "Label under the 2020 gap",
+      "data": {
+        "values": [
+          {
+            "year": 2020,
+            "missing_out": 27.85,
+            "text": "2020\nnot published"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "top",
+        "dy": 16,
+        "lineBreak": "\n",
+        "lineHeight": 15,
+        "fontSize": 12.5,
+        "fill": "#5a5a5a"
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "title": null,
+          "scale": {
+            "domain": [
+              2014.5,
+              2025.5
+            ],
+            "nice": false,
+            "zero": false
+          }
+        },
+        "y": {
+          "field": "missing_out",
+          "type": "quantitative",
+          "title": null,
+          "scale": {
+            "domain": [
+              0,
+              60
+            ]
+          }
+        },
+        "text": {
+          "field": "text"
+        }
+      }
+    },
+    {
+      "description": "Annotations, right-aligned",
+      "data": {
+        "values": [
+          {
+            "year": 2025.45,
+            "missing_out": 37.9,
+            "text": "2025: 37.9%\nup from 26.9% in 2019"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "top",
+        "dy": 14,
+        "lineBreak": "\n",
+        "lineHeight": 15,
+        "fontSize": 12.5,
+        "fill": "#5a5a5a"
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "title": null,
+          "scale": {
+            "domain": [
+              2014.5,
+              2025.5
+            ],
+            "nice": false,
+            "zero": false
+          }
+        },
+        "y": {
+          "field": "missing_out",
+          "type": "quantitative",
+          "title": null,
+          "scale": {
+            "domain": [
+              0,
+              60
+            ]
+          }
+        },
+        "text": {
+          "field": "text"
+        }
+      }
+    },
+    {
+      "description": "Invisible hover targets, one column per year, carrying the tooltip",
+      "mark": {
+        "type": "rect",
+        "fill": "transparent"
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": [
+              "year"
+            ],
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "x_start",
+          "type": "quantitative",
+          "title": null,
+          "scale": {
+            "domain": [
+              2014.5,
+              2025.5
+            ],
+            "nice": false,
+            "zero": false
+          }
+        },
+        "x2": {
+          "field": "x_end"
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "type": "quantitative",
+            "format": "d",
+            "title": "title"
+          },
+          {
+            "field": "missing_out_text",
+            "title": "Students missing out"
+          },
+          {
+            "field": "rate_text",
+            "title": "Attendance rate (ACARA)"
+          },
+          {
+            "field": "level_text",
+            "title": "Attendance level (ACARA)"
+          }
+        ]
+      }
+    }
+  ]
+}

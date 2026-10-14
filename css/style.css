@@ -163,8 +163,27 @@ a:hover { color: #104281; }
 .measure-box dt:first-child { margin-top: 0; }
 .measure-box dd { margin: 2px 0 0; }
 
+/* Section intro above a row of charts */
+.section-intro { margin-bottom: 32px; }
+
 /* Charts */
 .chart { margin: 0; min-width: 0; }
+
+/* Two charts side by side: head, plot and notes line up across the pair (CSS subgrid),
+   so both plots start on the same sight line even when one headline wraps further. */
+@media (min-width: 901px) {
+  .pair { row-gap: 0; }
+  .pair > .chart {
+    display: grid;
+    grid-row: span 3;
+    grid-template-rows: subgrid;
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0;
+  }
+}
+@media (max-width: 900px) {
+  .pair > .chart + .chart { margin-top: 48px; }
+}
 .chart-title {
   margin: 0 0 6px;
   font-size: 20px;
@@ -223,6 +242,9 @@ a:hover { color: #104281; }
 .data-table th:first-child,
 .data-table td:first-child { text-align: left; white-space: nowrap; }
 .data-table th { font-weight: 700; vertical-align: bottom; }
+.data-table.pivot { font-size: 13px; }
+.data-table.pivot th,
+.data-table.pivot td { padding-right: 9px; }
 
 /* Tooltip (vega-tooltip) */
 #vg-tooltip-element {

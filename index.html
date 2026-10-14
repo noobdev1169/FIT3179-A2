@@ -67,6 +67,50 @@
     </div>
   </section>
 
+  <!-- Section 2 · When? -->
+  <section class="section" id="when" aria-labelledby="h-when">
+    <div class="wrap grid section-intro">
+      <div class="col-8 prose">
+        <div class="section-head"><span class="section-no" aria-hidden="true">2</span><h2 id="h-when">When?</h2></div>
+        <p>Absence was already creeping up before COVID-19. In 2022, the worst year in a decade of national records, half of all students missed more than a day a fortnight. Attendance has improved since, but in 2025 every year level was still missing more school than in 2019.</p>
+        <p>The pattern by age barely changes: every year, absence jumps in Year 8 and keeps rising to Year 10.</p>
+      </div>
+    </div>
+    <div class="wrap grid pair">
+      <figure class="col-6 chart" id="c2" aria-labelledby="c2-title">
+        <div class="chart-head">
+          <h3 class="chart-title" id="c2-title">Absence was rising before COVID-19, peaked in 2022 and is still well above 2019</h3>
+          <p class="chart-sub">Share of students in Years 1–10 who attended fewer than 90% of school days in Semester 1, Australia. Hover over a year for the official figures.</p>
+        </div>
+        <div class="vis" id="c2-vis" role="img" aria-label="Line chart of the share of students missing out, 2015 to 2025"></div>
+        <div class="chart-foot">
+          <p class="chart-note">ACARA links the 2022 peak to “the COVID-19 Omicron variant, high Influenza season outbreaks and floods”. In 2025, students missed 11.2% of school days (about 1 in 9), up from 8.6% in 2019.</p>
+          <p class="source">Source: ACARA, National Report on Schooling in Australia data portal (student attendance, 2015–2025). NSW changed how it calculates government school attendance in 2018 and 2021, so years either side are not fully comparable. Chart specification: <a href="specs/c02_trend.vl.json">c02_trend.vl.json</a></p>
+          <details class="data-table" data-src="data/attendance_trend.csv"
+                   data-cols="year:Year|missing_out:Students missing out (%):1|attendance_rate:Attendance rate (%):1|attendance_level:Attendance level (%):1|days_missed:Days missed (%):1">
+            <summary>Data table</summary>
+          </details>
+        </div>
+      </figure>
+
+      <figure class="col-6 chart" id="c3" aria-labelledby="c3-title">
+        <div class="chart-head">
+          <h3 class="chart-title" id="c3-title">Every year, absence jumps in Year 8 and keeps rising to Year 10</h3>
+          <p class="chart-sub">Share of students missing out by year level and year. The black line marks the biggest step between year levels, which comes between Year 7 and Year 8 every year.</p>
+        </div>
+        <div class="vis" id="c3-vis" role="img" aria-label="Heatmap of the share of students missing out by year level and year, 2015 to 2025"></div>
+        <div class="chart-foot">
+          <p class="chart-note">Every year level had its worst year in 2022 (outlined). In 2025, 35.5% of Year 7 students missed out, against 45.2% in Year 8.</p>
+          <p class="source">Source: ACARA, National Report on Schooling in Australia data portal (student attendance by year level, 2015–2025). The same NSW caveat applies. Chart specification: <a href="specs/c03_heatmap.vl.json">c03_heatmap.vl.json</a></p>
+          <details class="data-table pivot" data-src="data/attendance_yearlevel.csv"
+                   data-pivot="year_level|year|missing_out" data-row-title="% missing out" data-row-prefix="Year " data-dp="1">
+            <summary>Data table</summary>
+          </details>
+        </div>
+      </figure>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-footer">
