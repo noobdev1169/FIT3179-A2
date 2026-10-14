@@ -165,6 +165,20 @@ a:hover { color: #104281; }
 
 /* Section intro above a row of charts */
 .section-intro { margin-bottom: 32px; }
+.pair + .chart-row { margin-top: 64px; }
+
+/* Side panel that explains a term next to a chart */
+.explainer {
+  margin-top: 4px;
+  padding: 18px 20px;
+  background: var(--panel);
+  border-radius: 6px;
+  font-size: 15.5px;
+  line-height: 1.5;
+}
+.explainer h3 { margin: 0 0 8px; font-size: 16px; }
+.explainer p { margin: 0 0 10px; }
+.explainer p:last-child { margin-bottom: 0; }
 
 /* One control that drives a pair of charts */
 .shared-controls {

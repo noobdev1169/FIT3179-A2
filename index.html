@@ -160,6 +160,69 @@
     </div>
   </section>
 
+  <!-- Section 4 · Who? -->
+  <section class="section" id="who" aria-labelledby="h-who">
+    <div class="wrap grid section-intro">
+      <div class="col-8 prose">
+        <div class="section-head"><span class="section-no" aria-hidden="true">4</span><h2 id="h-who">Who?</h2></div>
+        <p>The widest gaps are between Aboriginal and Torres Strait Islander students and other students, and they are widest in remote and very remote areas. Most students who miss out go to government (public) schools. But that is largely about <em>who</em> those schools teach: compare schools serving similar communities, and the gaps between sectors shrink.</p>
+      </div>
+    </div>
+    <div class="wrap grid pair">
+      <figure class="col-6 chart" id="c7" aria-labelledby="c7-title">
+        <div class="chart-head">
+          <h3 class="chart-title" id="c7-title">Gaps are widest in remote Australia: in very remote areas, 88% of Aboriginal and Torres Strait Islander students missed out, against 48% of non-Indigenous students</h3>
+          <p class="chart-sub">Share of students missing out by remoteness, 2025. The number is ACARA’s published gap in percentage points.</p>
+        </div>
+        <div class="vis" id="c7-vis" role="img" aria-label="Dumbbell chart comparing Aboriginal and Torres Strait Islander students with non-Indigenous students by remoteness"></div>
+        <div class="chart-foot">
+          <p class="chart-note">Both groups miss more school than in 2015: Aboriginal and Torres Strait Islander students 50.8% → 63.2%, non-Indigenous students 20.7% → 36.0%. By days attended, ACARA reports the gap widened by 3.0 points, to 12.4.</p>
+          <p class="source">Source: ACARA, National Report on Schooling in Australia data portal (student attendance by Indigenous status and remoteness, 2015–2025). ACARA notes that changes over time may partly reflect more students identifying as Aboriginal and Torres Strait Islander. Chart specification: <a href="specs/c07_dumbbell.vl.json">c07_dumbbell.vl.json</a></p>
+          <details class="data-table" data-src="data/attendance_indigenous_remoteness.csv"
+                   data-cols="remoteness:Remoteness|status:Students|missing_out:Missing out (%):1|attendance_rate:Attendance rate (%):1|gap_attendance_level:Gap (points):1">
+            <summary>Data table</summary>
+          </details>
+        </div>
+      </figure>
+
+      <figure class="col-6 chart" id="c13" aria-labelledby="c13-title">
+        <div class="chart-head">
+          <h3 class="chart-title" id="c13-title">7 in 10 of the students missing out are in government schools, which teach 63% of students</h3>
+          <p class="chart-sub">Estimated students in Years 1–10 who missed more than a day a fortnight in 2025, by school sector and state. <strong>Tile area</strong> = number of students.</p>
+        </div>
+        <div class="vis" id="c13-vis" role="img" aria-label="Treemap of students missing out by school sector and state"></div>
+        <div class="chart-foot">
+          <p class="chart-note">Government schools ≈ 866,000, Catholic ≈ 217,000, independent ≈ 160,000. Government schools also have the highest share missing out (41.7%, against 33.4% Catholic and 28.9% independent), and they teach most students in remote areas (88% of very remote students).</p>
+          <p class="source">Sources: ABS, Schools, 2025 (Table 42b, full-time students in Years 1–10); ACARA (attendance level by state and sector). Estimate = students × share missing out, for each state and sector. Chart specification: <a href="specs/c13_treemap.vg.json">c13_treemap.vg.json</a></p>
+          <details class="data-table" data-src="data/missing_out_state_sector.csv" data-filter="year=2025"
+                   data-cols="state:State|sector:Sector|ft_students_y1_10:Students (Years 1–10)|est_missing_out:Missing out (estimate)|attendance_level:Attendance level (%):1">
+            <summary>Data table</summary>
+          </details>
+        </div>
+      </figure>
+    </div>
+
+    <div class="wrap grid chart-row">
+      <figure class="col-8 chart" id="c9" aria-labelledby="c9-title">
+        <h3 class="chart-title" id="c9-title">School sector matters less than it seems: compare schools serving similar communities and the gaps shrink, or reverse</h3>
+        <p class="chart-sub">Share of students missing out by school sector, 2025. Top row: all schools. Below: schools grouped by how advantaged their communities are. Black line: all sectors combined.</p>
+        <div class="vis" id="c9-vis" role="img" aria-label="Dot plot of the share of students missing out by sector and ICSEA quarter"></div>
+        <p class="chart-note">In the least advantaged quarter, government schools have the highest attendance rate: 82.2%, against 76.7% for Catholic and 75.4% for independent schools. Advantage makes a far bigger difference than sector: 54.6% of students miss out in the least advantaged quarter, against 27.2% in the most advantaged.</p>
+        <p class="source">Source: ACARA, National Report on Schooling in Australia data portal (student attendance by ICSEA quarter and sector, 2025). Chart specification: <a href="specs/c09_dotplot.vl.json">c09_dotplot.vl.json</a></p>
+        <details class="data-table" data-src="data/attendance_icsea_sector.csv"
+                 data-cols="group:Schools|sector:Sector|missing_out:Missing out (%):1|attendance_rate:Attendance rate (%):1">
+          <summary>Data table</summary>
+        </details>
+      </figure>
+      <aside class="col-4 explainer" aria-labelledby="h-icsea">
+        <h3 id="h-icsea">What is ICSEA?</h3>
+        <p>The <strong>Index of Community Socio-Educational Advantage</strong> is ACARA’s measure of the community a school serves. It is built mainly from parents’ jobs and education, and also takes into account how remote the school is and its share of Aboriginal and Torres Strait Islander students. The national median is 1000.</p>
+        <p>ACARA groups schools into four <strong>quarters</strong> by ICSEA, from the least to the most advantaged.</p>
+        <p>Because ICSEA includes remoteness and Indigenous status, these factors overlap. This page doesn’t treat them as separate causes.</p>
+      </aside>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-footer">

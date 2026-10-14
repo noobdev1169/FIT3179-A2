@@ -39,6 +39,9 @@
     // C4 and C5 share one year control (rendered from C4's binding) and highlight each other's hovered region.
     { id: 'c4', spec: 'specs/c04_choropleth.vl.json', mode: 'vega-lite', bind: 'where-controls' },
     { id: 'c5', spec: 'specs/c05_symbols.vl.json', mode: 'vega-lite', bind: 'c5-bindings' },
+    { id: 'c7', spec: 'specs/c07_dumbbell.vl.json', mode: 'vega-lite' },
+    { id: 'c13', spec: 'specs/c13_treemap.vg.json', mode: 'vega' },
+    { id: 'c9', spec: 'specs/c09_dotplot.vl.json', mode: 'vega-lite' },
   ];
 
   async function embed(chart) {
