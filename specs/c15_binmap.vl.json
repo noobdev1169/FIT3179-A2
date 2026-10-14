@@ -1,0 +1,237 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "C15 bin map. NSW is divided into squares of 0.5 degrees (about 50 km). Each square with 3 or more NSW public schools is coloured by the median share of school days missed in 2024 among its schools, in the same five classes as the dot map; squares with 1 or 2 schools are outlined only. When an ICSEA band is chosen in the box plot (param 'band'), the squares are recalculated from that band's schools. NSW conic equal-area projection. Sources: NSW Department of Education; ABS ASGS 2021.",
+  "width": "container",
+  "height": 440,
+  "params": [
+    {
+      "name": "band",
+      "value": ""
+    },
+    {
+      "name": "minSchools",
+      "value": 3
+    }
+  ],
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -30.75,
+      -35.75
+    ],
+    "rotate": [
+      -147,
+      0,
+      0
+    ]
+  },
+  "layer": [
+    {
+      "description": "NSW outline",
+      "data": {
+        "url": "data/nsw_2021.topojson",
+        "format": {
+          "type": "topojson",
+          "feature": "outline"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#eceae4",
+        "stroke": "#a8a49b",
+        "strokeWidth": 1
+      }
+    },
+    {
+      "description": "Squares, aggregated from the schools inside them",
+      "data": {
+        "url": "data/nsw_schools.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "lat": "number",
+            "lon": "number",
+            "days_missed_2024": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.in_map_extent === 'true' && isValid(datum.days_missed_2024)"
+        },
+        {
+          "filter": "band === '' || datum.icsea_band === band"
+        },
+        {
+          "calculate": "floor(datum.lon / 0.5) * 0.5",
+          "as": "lon0"
+        },
+        {
+          "calculate": "floor(datum.lat / 0.5) * 0.5",
+          "as": "lat0"
+        },
+        {
+          "aggregate": [
+            {
+              "op": "median",
+              "field": "days_missed_2024",
+              "as": "median_days_missed"
+            },
+            {
+              "op": "count",
+              "as": "schools"
+            }
+          ],
+          "groupby": [
+            "lon0",
+            "lat0"
+          ]
+        },
+        {
+          "calculate": "datum.lon0 + 0.5",
+          "as": "lon1"
+        },
+        {
+          "calculate": "datum.lat0 + 0.5",
+          "as": "lat1"
+        },
+        {
+          "calculate": "datum.schools < minSchools ? 'Fewer than 3 schools' : datum.median_days_missed < 10 ? 'Under 10%' : datum.median_days_missed < 12 ? '10–12%' : datum.median_days_missed < 15 ? '12–15%' : datum.median_days_missed < 20 ? '15–20%' : '20% or more'",
+          "as": "class"
+        },
+        {
+          "calculate": "'Square around ' + format(datum.lat0 + 0.25, '.2f') + '°, ' + format(datum.lon0 + 0.25, '.2f') + '°'",
+          "as": "square"
+        },
+        {
+          "calculate": "datum.schools < minSchools ? 'Too few schools to average' : format(datum.median_days_missed, '.1f') + '%'",
+          "as": "median_text"
+        }
+      ],
+      "mark": {
+        "type": "rect",
+        "strokeWidth": 0.6
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon0",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat0",
+          "type": "quantitative"
+        },
+        "longitude2": {
+          "field": "lon1"
+        },
+        "latitude2": {
+          "field": "lat1"
+        },
+        "fill": {
+          "field": "class",
+          "type": "ordinal",
+          "scale": {
+            "domain": [
+              "Under 10%",
+              "10–12%",
+              "12–15%",
+              "15–20%",
+              "20% or more",
+              "Fewer than 3 schools"
+            ],
+            "range": [
+              "#fef0d9",
+              "#fdcc8a",
+              "#fc8d59",
+              "#e34a33",
+              "#b30000",
+              "#eceae4"
+            ]
+          },
+          "legend": {
+            "title": "Typical school: days missed, 2024",
+            "orient": "bottom",
+            "direction": "horizontal",
+            "columns": 3,
+            "columnPadding": 14,
+            "rowPadding": 5,
+            "symbolType": "square",
+            "symbolSize": 140,
+            "symbolStrokeColor": "#827d73",
+            "symbolStrokeWidth": 0.6,
+            "titleLimit": 400
+          }
+        },
+        "stroke": {
+          "condition": {
+            "test": "datum.schools < minSchools",
+            "value": "#b5b0a5"
+          },
+          "value": "#827d73"
+        },
+        "tooltip": [
+          {
+            "field": "square",
+            "title": "title"
+          },
+          {
+            "field": "schools",
+            "type": "quantitative",
+            "title": "Schools"
+          },
+          {
+            "field": "median_text",
+            "title": "Typical school (median): days missed"
+          }
+        ],
+        "strokeDash": {
+          "condition": {
+            "test": "datum.schools < minSchools",
+            "value": [
+              2,
+              2
+            ]
+          },
+          "value": [
+            1,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "description": "Sydney label for orientation",
+      "data": {
+        "values": [
+          {
+            "lon": 151.21,
+            "lat": -33.87,
+            "label": "Sydney"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 14,
+        "dy": 2,
+        "fontSize": 11.5,
+        "fontWeight": "bold",
+        "fill": "#1f1f1f"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    }
+  ]
+}

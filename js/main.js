@@ -42,6 +42,10 @@
     { id: 'c7', spec: 'specs/c07_dumbbell.vl.json', mode: 'vega-lite' },
     { id: 'c13', spec: 'specs/c13_treemap.vg.json', mode: 'vega' },
     { id: 'c9', spec: 'specs/c09_dotplot.vl.json', mode: 'vega-lite' },
+    // C12 drives C10 and C15: clicking an ICSEA group filters both maps.
+    { id: 'c12', spec: 'specs/c12_boxplot.vl.json', mode: 'vega-lite' },
+    { id: 'c10', spec: 'specs/c10_dotmap.vg.json', mode: 'vega' },
+    { id: 'c15', spec: 'specs/c15_binmap.vl.json', mode: 'vega-lite' },
   ];
 
   async function embed(chart) {
@@ -156,10 +160,12 @@
   const LINKS = [
     { type: 'sync', signal: 'year', views: ['c4', 'c5'] },
     { type: 'hover', views: ['c4', 'c5'] },
+    { type: 'select', from: 'c12', selection: 'pick', field: 'icsea_band', target: 'band', to: ['c10', 'c15'] },
   ];
 
   function wireLinks(views) {
-    LINKS.forEach(link => {
+    LINKS.filter(l => l.type === 'select').forEach(link => wireSelection(link, views));
+    LINKS.filter(l => l.type !== 'select').forEach(link => {
       const linked = link.views.map(id => [id, views[id]]).filter(([, v]) => v);
       if (linked.length < 2) return;
       linked.forEach(([id, view]) => {
@@ -176,6 +182,29 @@
           });
         }
       });
+    });
+  }
+
+  // A click selection in one chart becomes a plain value ("" = everything) in others,
+  // with a status line and a reset button for the reader.
+  function wireSelection(link, views) {
+    const source = views[link.from];
+    const targets = link.to.map(id => views[id]).filter(Boolean);
+    if (!source) return;
+    const status = document.getElementById('nsw-status');
+    const clear = document.getElementById('nsw-clear');
+    const apply = value => {
+      targets.forEach(v => v.signal(link.target, value).runAsync());
+      if (status) status.innerHTML = value ? 'Both maps: only schools with ICSEA <strong>' + value.toLowerCase() + '</strong>' : 'Both maps: all schools';
+      if (clear) clear.hidden = !value;
+    };
+    source.addSignalListener(link.selection, (name, value) => {
+      const picked = value && value[link.field] ? [].concat(value[link.field])[0] : '';
+      apply(picked || '');
+    });
+    if (clear) clear.addEventListener('click', () => {
+      source.data(link.selection + '_store', []).runAsync();
+      apply('');
     });
   }
 

@@ -223,6 +223,76 @@
     </div>
   </section>
 
+  <!-- Section 5 · Up close: NSW public schools -->
+  <section class="section" id="nsw" aria-labelledby="h-nsw">
+    <div class="wrap grid section-intro">
+      <div class="col-8 prose">
+        <div class="section-head"><span class="section-no" aria-hidden="true">5</span><h2 id="h-nsw">Up close: NSW public schools</h2></div>
+        <p>New South Wales publishes attendance for each of its public schools, so here the story can be followed school by school. Attendance is recovering: <strong>1,810 of 2,099 schools</strong> improved between 2022 and 2024, and the typical (median) school rose from 86.0% to 88.8%.</p>
+        <p>But schools serving less advantaged communities still have lower attendance, and they differ far more from one another. Click a group in the chart below to see where its schools are on the maps.</p>
+      </div>
+    </div>
+
+    <div class="wrap grid">
+      <figure class="col-8 chart" id="c12" aria-labelledby="c12-title">
+        <h3 class="chart-title" id="c12-title">The more advantaged a school’s community, the higher and more predictable its attendance: the typical school goes from 83.7% below ICSEA 900 to 92.7% at 1100 and over</h3>
+        <p class="chart-sub">Attendance rate of NSW public schools in 2024, grouped by ICSEA. <strong>Click a group</strong> to show its schools on the maps below; click the background to show all schools.</p>
+        <div class="vis" id="c12-vis" role="img" aria-label="Box plot of NSW public school attendance by ICSEA group"></div>
+        <p class="chart-note">Below ICSEA 900, 35% of schools had attendance under 80%. The middle half of those schools spans 10 points (76.8% to 86.8%); at 1100 and over it spans just 1.5 points (91.8% to 93.3%).</p>
+        <p class="source">Source: NSW Department of Education, student attendance rate by individual government school, 2024, and NSW government school locations (ICSEA values from ACARA). 2,121 schools with both values. NSW changed its calculation in 2018 and 2021. Chart specification: <a href="specs/c12_boxplot.vl.json">c12_boxplot.vl.json</a></p>
+        <details class="data-table" data-src="data/nsw_schools.csv"
+                 data-cols="icsea_band:ICSEA group|level_of_schooling:School type|remoteness:Remoteness|icsea:ICSEA|attendance_2022:Attendance 2022 (%):1|attendance_2024:Attendance 2024 (%):1">
+          <summary>Data table (all 2,130 schools, no names)</summary>
+        </details>
+      </figure>
+      <aside class="col-4 explainer how-to-read" aria-labelledby="h-read">
+        <h3 id="h-read">How to read the boxes</h3>
+        <svg viewBox="0 0 300 92" role="img" aria-label="Key: the line covers most schools, the box covers the middle half, the black tick is the typical school">
+          <line x1="20" y1="46" x2="280" y2="46" stroke="#5a5a5a" stroke-width="1.5"/>
+          <rect x="90" y="34" width="120" height="24" rx="2" fill="#fdcc8a" stroke="#5a5a5a" stroke-width="0.8"/>
+          <line x1="160" y1="31" x2="160" y2="61" stroke="#1f1f1f" stroke-width="3"/>
+          <text x="20" y="80" font-size="12" fill="#5a5a5a">Most schools (8 in 10)</text>
+          <text x="90" y="24" font-size="12" fill="#5a5a5a">Middle half</text>
+          <text x="166" y="80" font-size="12" fill="#1f1f1f">Typical school</text>
+        </svg>
+        <p>Each row is a group of schools. The <strong>line</strong> covers most schools: all but the top and bottom 10%. The <strong>box</strong> covers the middle half. The <strong>black tick</strong> is the typical (median) school: half the schools are above it and half below.</p>
+        <p>The box’s colour shows the days missed by the typical school, in the same colours as the maps.</p>
+      </aside>
+    </div>
+
+    <div class="wrap grid">
+      <div class="col-12 shared-controls" id="nsw-status-bar">
+        <span class="controls-label" id="nsw-status" aria-live="polite">Both maps: all schools</span>
+        <button type="button" class="link-button" id="nsw-clear" hidden>Show all schools</button>
+      </div>
+    </div>
+    <div class="wrap grid pair pair-after-controls">
+      <figure class="col-6 chart" id="c10" aria-labelledby="c10-title">
+        <div class="chart-head">
+          <h3 class="chart-title" id="c10-title">Low-attendance schools aren’t only in the bush: 103 of the 254 NSW public schools below 80% attendance are in major cities</h3>
+          <p class="chart-sub">Every NSW public school, coloured by the share of school days its students missed in 2024. The darkest dots are schools below 80% attendance.</p>
+        </div>
+        <div class="vis" id="c10-vis" role="img" aria-label="Dot map of NSW public schools by days missed, with a Sydney inset"></div>
+        <div class="chart-foot">
+          <p class="chart-note">Of the 254 schools below 80%, 103 are in major cities, 86 inner regional, 45 outer regional, 11 remote and 9 very remote. Their median ICSEA is 902, against 976 for all schools.</p>
+          <p class="source">Source: NSW Department of Education (2024 attendance; school locations and remoteness, ASGS 2016 as supplied); ABS ASGS 2021 (map). Lord Howe Island Central School is left off the map. Chart specification: <a href="specs/c10_dotmap.vg.json">c10_dotmap.vg.json</a></p>
+        </div>
+      </figure>
+
+      <figure class="col-6 chart" id="c15" aria-labelledby="c15-title">
+        <div class="chart-head">
+          <h3 class="chart-title" id="c15-title">Averaged over squares about 50 km wide, the worst areas are scattered across regional NSW, and Sydney’s squares are among the lowest</h3>
+          <p class="chart-sub">Days missed by the typical (median) school in each square, 2024. Squares with only 1 or 2 schools are dashed and left grey.</p>
+        </div>
+        <div class="vis" id="c15-vis" role="img" aria-label="Bin map of NSW in half-degree squares coloured by median days missed"></div>
+        <div class="chart-foot">
+          <p class="chart-note">102 squares have 3 or more schools. The 5 darkest (20% or more) are on the far north coast, in the northern inland, in the south and in the far west. Averages hide single schools: a square with only 3 or 4 schools can swing a lot, which is why the dot map sits beside it.</p>
+          <p class="source">Source: NSW Department of Education (2024 attendance and school locations); ABS ASGS 2021 (outline). Squares are 0.5° of longitude by 0.5° of latitude. Chart specification: <a href="specs/c15_binmap.vl.json">c15_binmap.vl.json</a></p>
+        </div>
+      </figure>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-footer">
