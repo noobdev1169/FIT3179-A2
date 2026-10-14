@@ -1,0 +1,128 @@
+/* The Missing Days
+   Embeds each chart, sizes it to its grid cell and builds the data table under it.
+   Every chart's JSON in /specs also renders on its own (for example in the Vega editor). */
+(function () {
+  'use strict';
+
+  const FONT = 'Lexend, system-ui, -apple-system, "Segoe UI", sans-serif';
+  const INK = '#1f1f1f';
+  const INK_2 = '#5a5a5a';
+  const HAIRLINE = '#e1e0d9';
+  const AXIS = '#c3c2b7';
+
+  // Shared look. Vega-Lite and Vega use different config shapes, so there are two.
+  const VL_CONFIG = {
+    background: null,
+    font: FONT,
+    view: { stroke: null },
+    axis: {
+      labelFontSize: 12, titleFontSize: 12, labelColor: INK_2, titleColor: INK_2,
+      titleFontWeight: 'normal', domainColor: AXIS, tickColor: AXIS, gridColor: HAIRLINE,
+    },
+    legend: { labelFontSize: 12, titleFontSize: 12, labelColor: INK_2, titleColor: INK, titleFontWeight: 'bold' },
+    text: { fontSize: 13, color: INK },
+  };
+  const VG_CONFIG = {
+    background: null,
+    text: { font: FONT },
+    legend: {
+      labelFont: FONT, titleFont: FONT, labelFontSize: 12, titleFontSize: 12,
+      labelColor: INK_2, titleColor: INK, titleFontWeight: 'bold',
+    },
+  };
+
+  // One entry per chart, in page order.
+  const CHARTS = [
+    { id: 'c16', spec: 'specs/c16_dorling.vg.json', mode: 'vega', bind: 'c16-controls' },
+  ];
+
+  async function embed(chart) {
+    const el = document.getElementById(`${chart.id}-vis`);
+    try {
+      const result = await vegaEmbed(el, chart.spec, {
+        mode: chart.mode,
+        renderer: 'svg',
+        actions: false,
+        config: chart.mode === 'vega' ? VG_CONFIG : VL_CONFIG,
+        bind: chart.bind ? document.getElementById(chart.bind) : undefined,
+        tooltip: { theme: 'custom' },
+      });
+      if (chart.mode === 'vega') fitWidth(result.view, el);
+      return result.view;
+    } catch (err) {
+      el.innerHTML = '<p class="chart-error">Sorry, this chart could not be loaded. The data table below shows the same numbers.</p>';
+      console.error(`Chart ${chart.id} failed`, err);
+      return null;
+    }
+  }
+
+  // Vega-Lite specs use width "container"; Vega specs get their width from the grid cell here.
+  function fitWidth(view, el) {
+    const apply = () => {
+      const w = Math.floor(el.clientWidth);
+      if (w > 0 && w !== view.width()) view.width(w).runAsync();
+    };
+    apply();
+    new ResizeObserver(apply).observe(el);
+  }
+
+  // "Data table" disclosures: built from the chart's CSV the first time they are opened.
+  function initDataTables() {
+    document.querySelectorAll('details.data-table[data-src]').forEach(details => {
+      details.addEventListener('toggle', () => { if (details.open) loadTable(details); });
+      if (details.open) loadTable(details);
+    });
+  }
+
+  async function loadTable(details) {
+    if (details.dataset.loaded) return;
+    details.dataset.loaded = 'true';
+    // data-cols: "field:Label" or "field:Label:decimals", separated by "|"
+    const columns = details.dataset.cols.split('|').map(c => {
+      const [field, label, dp] = c.split(':');
+      return { field, label, dp: dp === undefined ? null : Number(dp) };
+    });
+    const [filterField, filterValue] = (details.dataset.filter || '').split('=');
+    try {
+      const text = await vega.loader().load(details.dataset.src);
+      const rows = vega.read(text, { type: 'csv', parse: 'auto' })
+        .filter(r => !filterField || String(r[filterField]) === filterValue);
+      // The wrapper scrolls sideways on narrow screens so the page itself never does.
+      const scroller = document.createElement('div');
+      scroller.className = 'table-scroll';
+      scroller.appendChild(buildTable(columns, rows));
+      details.appendChild(scroller);
+    } catch (err) {
+      details.insertAdjacentHTML('beforeend', '<p>The data could not be loaded.</p>');
+      console.error('Data table failed', err);
+    }
+  }
+
+  function buildTable(columns, rows) {
+    const table = document.createElement('table');
+    const head = table.createTHead().insertRow();
+    columns.forEach(c => {
+      const th = document.createElement('th');
+      th.scope = 'col';
+      th.textContent = c.label;
+      head.appendChild(th);
+    });
+    const body = table.createTBody();
+    rows.forEach(r => {
+      const tr = body.insertRow();
+      columns.forEach(c => { tr.insertCell().textContent = formatCell(r[c.field], c); });
+    });
+    return table;
+  }
+
+  function formatCell(v, column) {
+    if (v === null || v === undefined || v === '') return '–';
+    if (typeof v !== 'number' || /year/i.test(column.field)) return String(v);
+    if (column.dp !== null) return v.toLocaleString('en-AU', { minimumFractionDigits: column.dp, maximumFractionDigits: column.dp });
+    return v.toLocaleString('en-AU');
+  }
+
+  initDataTables();
+  // Wait for the web fonts so Vega measures labels in the right typeface.
+  document.fonts.ready.then(() => CHARTS.forEach(embed));
+})();

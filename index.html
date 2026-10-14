@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Missing Days · School attendance in Australia, 2015–2025</title>
+  <meta name="description" content="A data story about how often Australian students go to school, who misses out, and what makes the difference, 2015–2025.">
+  <meta name="author" content="[Your name]">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Edu+NSW+ACT+Foundation:wght@500;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.33.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.23.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.29.0"></script>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker">A data story · School attendance in Australia</p>
+    <h1 class="title">The Missing Days</h1>
+    <p class="subtitle">How often Australian students go to school, who misses out, and what makes the difference (2015–2025)</p>
+    <p class="byline">By <strong class="placeholder">[Your name]</strong> · October 2026 · Data: ACARA, Australian Bureau of Statistics, NSW Department of Education</p>
+  </div>
+</header>
+
+<main>
+
+  <!-- Section 1 · How many? -->
+  <section class="section" id="how-many" aria-labelledby="h-how-many">
+    <div class="wrap grid">
+      <div class="col-5 prose">
+        <div class="section-head"><span class="section-no" aria-hidden="true">1</span><h2 id="h-how-many">How many?</h2></div>
+        <p class="big-number">Almost 4 in 10</p>
+        <p class="big-number-note">students in Years 1–10 missed more than a day of school a fortnight in the first half of 2025.</p>
+        <p>That is about <strong>1.24 million students</strong>, around 400,000 more than in 2019, before COVID-19. In 2022 it was half of all students.</p>
+        <p>The national attendance rate still looks high, at 88.8%. But that average hides how many students regularly miss school, and who they are.</p>
+
+        <aside class="measure-box" aria-labelledby="h-measure">
+          <h3 id="h-measure">How attendance is measured</h3>
+          <dl>
+            <dt>Attendance rate</dt>
+            <dd>The share of school days that students attended in Semester 1. In 2025 it was 88.8%, so students missed about 1 day in 9.</dd>
+            <dt>Attendance level</dt>
+            <dd>The share of students who attended at least 90% of days. In 2025 it was 62.1%.</dd>
+            <dt>Missing out (this page)</dt>
+            <dd>Everyone else: students who missed more than 1 day in 10, about a day a fortnight. In 2025, 37.9% (100&nbsp;−&nbsp;62.1).</dd>
+          </dl>
+        </aside>
+      </div>
+
+      <figure class="col-7 chart" id="c16" aria-labelledby="c16-title">
+        <h3 class="chart-title" id="c16-title">About 1.24 million students missed more than a day a fortnight in 2025, more than three-quarters of them in NSW, Victoria or Queensland</h3>
+        <p class="chart-sub">Estimated full-time students in Years 1–10 who attended fewer than 90% of school days in Semester 1. <strong>Circle area</strong> = number of students; <strong>colour</strong> = share of each state's students.</p>
+        <div class="chart-controls" id="c16-controls"></div>
+        <div class="vis" id="c16-vis" role="img" aria-label="Dorling cartogram of students missing out by state"></div>
+        <p class="chart-note">Since 2019 the share rose in every state and territory, most in Victoria (+14.4 points) and Tasmania (+13.0).</p>
+        <p class="source">Sources: ACARA, National Report on Schooling in Australia data portal (student attendance, 2019 and 2025); ABS, Schools, 2025 (Table 42b). Estimate = full-time students × share missing out, calculated for each state and school sector. Chart specification: <a href="specs/c16_dorling.vg.json">c16_dorling.vg.json</a></p>
+        <details class="data-table" data-src="data/states_summary.csv"
+                 data-cols="state:State|est_missing_out_2019:Students missing out, 2019|est_missing_out_2025:Students missing out, 2025|missing_out_2019:Share, 2019 (%):1|missing_out_2025:Share, 2025 (%):1">
+          <summary>Data table</summary>
+        </details>
+      </figure>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap grid">
+    <div class="col-6">
+      <h2>About this page</h2>
+      <p>A data story for FIT3179 Data Visualisation 2, Monash University, Semester 2 2026, written for general Australian readers.</p>
+      <p>Author: <span class="placeholder">[Your name]</span> · Published October 2026.</p>
+      <h2>Data sources</h2>
+      <ul>
+        <li><a href="https://www.acara.edu.au/reporting/national-report-on-schooling-in-australia/student-attendance">ACARA, National Report on Schooling in Australia data portal: student attendance</a> (December 2025 release). CC BY 4.0.</li>
+        <li><a href="https://www.abs.gov.au/statistics/people/education/schools/2025">Australian Bureau of Statistics, Schools, 2025</a> (Tables 42b and 46a, released 5 March 2026). CC BY 4.0.</li>
+        <li><a href="https://data.nsw.gov.au/data/dataset/b558a070-09f5-4941-a140-e60a744327bf">NSW Department of Education, student attendance rate by individual government school</a> and <a href="https://data.nsw.gov.au/data/dataset/78c10ea3-8d04-4c9c-b255-bbf8547e37e7">NSW government school locations</a> (ICSEA values sourced from ACARA). CC BY.</li>
+        <li><a href="https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files">ABS, ASGS Edition 3 Remoteness Areas 2021</a> (boundaries). CC BY 4.0.</li>
+      </ul>
+      <p>All data retrieved 15 October 2026. Processing steps, definitions and caveats: <a href="data/README.md">data/README.md</a>.</p>
+    </div>
+    <div class="col-6">
+      <h2>Notes and caveats</h2>
+      <ul>
+        <li>Attendance covers full-time students in Years 1–10 in Semester 1. ACARA did not publish 2020 data because of COVID-19.</li>
+        <li>NSW changed how it calculates government school attendance in 2018 and 2021, so comparisons with earlier years need care.</li>
+        <li>Student numbers that combine ABS counts with ACARA attendance shares are estimates.</li>
+      </ul>
+      <h2>Design</h2>
+      <p>Typefaces: Edu NSW ACT Foundation and Lexend (Google Fonts, SIL Open Font License). Charts built with Vega 5.33.1, Vega-Lite 5.23.0 and Vega-Embed 6.29.0. Colour scheme: ColorBrewer OrRd.</p>
+      <h2>Use of AI</h2>
+      <p class="placeholder">[Draft, edit before submitting] Research planning, data-preparation scripts and chart specifications were drafted with the help of Claude (Anthropic) and reviewed, tested and edited by the author.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
