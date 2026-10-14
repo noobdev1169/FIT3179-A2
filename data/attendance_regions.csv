@@ -1,0 +1,34 @@
+key,state,state_abbr,remoteness,ra_order,attendance_rate_2019,attendance_level_2019,missing_out_2019,attendance_rate_2025,attendance_level_2025,missing_out_2025,students_fte_2025,students_fte_gov_2025,area_km2,lon,lat
+NSW|Major Cities,New South Wales,NSW,Major Cities,1,92.3,76.9,23.1,90.4,67.1,32.9,969596,591419.3,5522,150.9101,-33.8194
+NSW|Inner Regional,New South Wales,NSW,Inner Regional,2,90.4,70,30,87,55.8,44.2,235485.4,143546,93342,150.3626,-34.6644
+NSW|Outer Regional,New South Wales,NSW,Outer Regional,3,89.2,66.2,33.8,85.5,52.1,47.9,47744,35065.8,291315,149.9052,-31.6771
+NSW|Remote,New South Wales,NSW,Remote,4,85.7,54.3,45.7,81.1,42.6,57.4,3315.8,2615.2,219866,146.4294,-32.7621
+NSW|Very Remote,New South Wales,NSW,Very Remote,5,83.9,56.5,43.5,72.7,31.8,68.2,916,731,190753,144.473,-30.7483
+Vic|Major Cities,Victoria,Vic,Major Cities,1,92.3,75.5,24.5,89.3,61.6,38.4,830802.5,518898.4,5055,145.2835,-37.9379
+Vic|Inner Regional,Victoria,Vic,Inner Regional,2,91,70.7,29.3,87.1,54.5,45.5,196723.6,120741.6,74228,144.7049,-36.8133
+Vic|Outer Regional,Victoria,Vic,Outer Regional,3,90.9,70.7,29.3,86.9,53.5,46.5,34708.3,25693,128080,141.8069,-36.8122
+Vic|Remote,Victoria,Vic,Remote,4,92.4,74.4,25.6,88.3,59.8,40.2,386.9,349.9,20132,141.4595,-35.5298
+Qld|Major Cities,Queensland,Qld,Major Cities,1,91.8,73.3,26.7,89.6,64.3,35.7,585828.2,368659.5,4854,153.102,-27.6495
+Qld|Inner Regional,Queensland,Qld,Inner Regional,2,90.8,69.7,30.3,87.7,57.5,42.5,164689.5,103881.3,46086,152.1059,-27.684
+Qld|Outer Regional,Queensland,Qld,Outer Regional,3,90,67.8,32.2,86.7,56.6,43.4,119742,76132.6,157391,151.6021,-25.7251
+Qld|Remote,Queensland,Qld,Remote,4,86.9,58.7,41.3,80.8,43.3,56.7,9385.3,7280.3,265322,149.1987,-25.7619
+Qld|Very Remote,Queensland,Qld,Very Remote,5,79.7,46.3,53.7,73,31.4,68.6,8071.3,7069.3,1256518,141.8341,-22.3021
+SA|Major Cities,South Australia,SA,Major Cities,1,91.7,74.2,25.8,89.7,65.7,34.3,222163.4,127664.5,1534,138.6136,-34.9285
+SA|Inner Regional,South Australia,SA,Inner Regional,2,91.2,71.6,28.4,88.4,58.9,41.1,22234.2,15717.1,15568,139.107,-34.7662
+SA|Outer Regional,South Australia,SA,Outer Regional,3,89.2,65.9,34.1,86.4,55.7,44.3,30362.6,22423.3,81381,138.7231,-33.2554
+SA|Remote,South Australia,SA,Remote,4,89.9,65.2,34.8,89.7,63.4,36.6,6960.7,4998.3,122335,139.7243,-32.0356
+SA|Very Remote,South Australia,SA,Very Remote,5,75.8,40.5,59.5,69.9,30.3,69.7,2214.4,2080.8,763414,133.9928,-28.9653
+WA|Major Cities,Western Australia,WA,Major Cities,1,91.9,75,25,89.6,66.7,33.3,372566.7,238688.3,2861,115.9564,-32.1495
+WA|Inner Regional,Western Australia,WA,Inner Regional,2,90.3,68.3,31.7,86.9,55.4,44.6,37487,25041.4,22502,116.0514,-33.0517
+WA|Outer Regional,Western Australia,WA,Outer Regional,3,89.1,64.6,35.4,84.7,52,48,30957.1,21397.6,89656,117.012,-33.9856
+WA|Remote,Western Australia,WA,Remote,4,86.4,58.7,41.3,82.4,48.6,51.4,15438.4,13019.4,167349,118.9915,-30.8625
+WA|Very Remote,Western Australia,WA,Very Remote,5,73.7,37.8,62.2,67.6,27.8,72.2,9615,8030,2244264,122.9518,-25.2099
+Tas|Inner Regional,Tasmania,Tas,Inner Regional,2,90.9,71.9,28.1,87.6,59.9,40.1,54340.6,32694.5,2283,147.2474,-42.9116
+Tas|Outer Regional,Tasmania,Tas,Outer Regional,3,90.5,70.2,29.8,86.7,55.3,44.7,24817.8,18806.9,37283,147.3597,-42.1352
+Tas|Remote,Tasmania,Tas,Remote,4,89.7,65.6,34.4,82.9,40.9,59.1,595.6,489.6,25359,146.0405,-42.3653
+Tas|Very Remote,Tasmania,Tas,Very Remote,5,89,61.7,38.3,86.8,54.2,45.8,255,255,3092,148.0613,-40.0036
+NT|Outer Regional,Northern Territory,NT,Outer Regional,3,89.6,64.9,35.1,87,57.9,42.1,24422.4,17029.4,3168,131.1368,-12.5247
+NT|Remote,Northern Territory,NT,Remote,4,78.9,48.3,51.7,72.3,38,62,7886.5,4580.4,95380,131.8032,-13.2024
+NT|Very Remote,Northern Territory,NT,Very Remote,5,56,14.7,85.3,50.9,12.8,87.2,7556.5,7002.5,1249587,133.4354,-19.0354
+ACT|Major Cities,Australian Capital Territory,ACT,Major Cities,1,91.1,70.5,29.5,89.4,63,37,77696.6,46044.7,586,149.1247,-35.2872
+ACT|Inner Regional,Australian Capital Territory,ACT,Inner Regional,2,,,,,,,60,60,1772,148.9336,-35.5362

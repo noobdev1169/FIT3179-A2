@@ -1,0 +1,129 @@
+{
+  "generated": "2026-10-14T16:10:10.349Z",
+  "script": "scripts/prepare_data.js",
+  "acara_rows_read": 225014,
+  "nsw_schools_excluded": {
+    "notInMaster": 81,
+    "noCoordinates": 0,
+    "noAttendance": 17
+  },
+  "total_bytes": 425389,
+  "outputs": [
+    {
+      "file": "australia_2021.topojson",
+      "rows": null,
+      "description": "Boundaries: objects \"states\" (8) and \"remoteness\" (33 state x remoteness regions)",
+      "bytes": 118616
+    },
+    {
+      "file": "nsw_2021.topojson",
+      "rows": null,
+      "description": "NSW boundaries: objects \"outline\" and \"remoteness\"",
+      "bytes": 101570
+    },
+    {
+      "file": "attendance_trend.csv",
+      "rows": 12,
+      "description": "Australia, all sectors, Years 1-10, 2014-2025 (2020 not published)",
+      "bytes": 402
+    },
+    {
+      "file": "attendance_yearlevel.csv",
+      "rows": 110,
+      "description": "Australia, all sectors, Years 1 to 10 separately, 2015-2025",
+      "bytes": 2890
+    },
+    {
+      "file": "attendance_states.csv",
+      "rows": 90,
+      "description": "States, territories and Australia, all sectors, Years 1-10, 2015-2025",
+      "bytes": 3527
+    },
+    {
+      "file": "attendance_regions.csv",
+      "rows": 33,
+      "description": "33 state x remoteness regions: ACARA attendance (2019, 2025), ABS FTE students (2025), area and symbol position",
+      "bytes": 4034
+    },
+    {
+      "file": "attendance_indigenous_remoteness.csv",
+      "rows": 10,
+      "description": "Australia 2025, all sectors, Years 1-10, by remoteness and Indigenous status (ACARA gap values attached)",
+      "bytes": 848
+    },
+    {
+      "file": "attendance_indigenous_trend.csv",
+      "rows": 33,
+      "description": "Australia, all sectors, Years 1-10, by Indigenous status, 2014-2025 (level from 2015; gap rows are ACARA gap values)",
+      "bytes": 1559
+    },
+    {
+      "file": "attendance_icsea_sector.csv",
+      "rows": 20,
+      "description": "Australia 2025, Years 1-10: all schools and ICSEA quarters, by sector",
+      "bytes": 904
+    },
+    {
+      "file": "factors_2025.csv",
+      "rows": 7,
+      "description": "Differences in the share of students missing out, 2025 (2019 for the time comparison)",
+      "bytes": 702
+    },
+    {
+      "file": "missing_out_state_sector.csv",
+      "rows": 48,
+      "description": "Estimate = ABS full-time Years 1-10 students x (100 - ACARA attendance level) / 100, by state and sector",
+      "bytes": 2585
+    },
+    {
+      "file": "states_summary.csv",
+      "rows": 8,
+      "description": "One row per state: symbol position, estimated students missing out (sum of sector estimates), ACARA share",
+      "bytes": 731
+    },
+    {
+      "file": "nsw_schools.csv",
+      "rows": 2130,
+      "description": "NSW public schools with 2022 and/or 2024 attendance, joined to location and ICSEA (no school names)",
+      "bytes": 187021
+    }
+  ],
+  "raw_sources": [
+    {
+      "id": "acara",
+      "file": "acara/Student_attendance_dataset.xlsx",
+      "bytes": 10525115,
+      "sha256": "712f75d0edd7e9686af30d39ae3248f4587130eb19e00e3585c018211219d01b"
+    },
+    {
+      "id": "abs42b",
+      "file": "abs_schools/t42b.xlsx",
+      "bytes": 8655294,
+      "sha256": "34b183b0cf7f63e19f39559650fb5077fe9287a9e27defb625042cc01e288c41"
+    },
+    {
+      "id": "abs46a",
+      "file": "abs_schools/t46a.xlsx",
+      "bytes": 71689,
+      "sha256": "402f205b34ea37dc46f1602d585495f30fc42a34ecb0d95dc0f36ebad71f8681"
+    },
+    {
+      "id": "nswAttendance",
+      "file": "nsw/attendance_2011_2024.csv",
+      "bytes": 200676,
+      "sha256": "25c652b66417690d448876aee8a6b532d8d82873af4f8b124bdf218e45c94dd6"
+    },
+    {
+      "id": "nswMaster",
+      "file": "nsw/master_dataset.csv",
+      "bytes": 1277223,
+      "sha256": "2bc63daaf71d056e52f09af7e9a75e153e3747147e97de3ab0959d1cebd96972"
+    },
+    {
+      "id": "remoteness",
+      "file": "asgs/RA_2021_AUST_GDA2020.shp",
+      "bytes": 40681836,
+      "sha256": "21eb564fdb05c92dfd0b9069e9713d2dd2b64200b259a8717e75f53a6dc1048a"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+# Private planning notes
+planning/
+
+# Course materials (Monash and publisher copyright; must not be published)
+FIT3179 Data Visualisation 2_v1.2.pdf
+FIT3179 week 1 to week 11/
+
+# Raw source downloads (large; re-create with scripts/download_raw.sh)
+data/raw/
+
+# Node dependencies for the data scripts
+node_modules/

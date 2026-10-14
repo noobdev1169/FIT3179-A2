@@ -1,0 +1,14 @@
+{
+  "name": "fit3179-school-attendance",
+  "private": true,
+  "description": "Data preparation scripts for 'The Missing Days' (FIT3179 Data Visualisation 2). The web page itself has no build step.",
+  "scripts": {
+    "data:download": "bash scripts/download_raw.sh data/raw",
+    "data:prepare": "node scripts/prepare_data.js --raw data/raw --out data",
+    "data:check": "node scripts/check_data.js --data data"
+  },
+  "devDependencies": {
+    "mapshaper": "0.6.102",
+    "xlsx": "0.18.5"
+  }
+}
