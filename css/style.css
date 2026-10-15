@@ -335,4 +335,7 @@ a:hover { color: #104281; }
 .site-footer p,
 .site-footer ul { margin: 0 0 12px; }
 .site-footer ul { padding-left: 18px; }
+/* APA 7 reference list: hanging indent; long URLs may wrap */
+.references { list-style: none; padding-left: 0 !important; }
+.references li { padding-left: 2em; text-indent: -2em; margin-bottom: 8px; overflow-wrap: anywhere; }
 .placeholder { background: #fff2b3; padding: 0 4px; border-radius: 3px; }
