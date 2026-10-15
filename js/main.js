@@ -52,10 +52,12 @@
   async function embed(chart) {
     const el = document.getElementById(`${chart.id}-vis`);
     try {
-      const result = await vegaEmbed(el, chart.spec, {
+      const spec = await loadSpec(chart.spec);
+      const result = await vegaEmbed(el, spec, {
         mode: chart.mode,
         renderer: 'svg',
-        actions: false,
+        // The "..." menu: save as SVG/PNG, view the JSON, open it in the Vega Editor.
+        actions: { export: true, source: true, compiled: chart.mode === 'vega-lite', editor: true },
         config: chart.mode === 'vega' ? VG_CONFIG : VL_CONFIG,
         bind: chart.bind ? document.getElementById(chart.bind) : undefined,
         tooltip: { theme: 'custom' },
@@ -69,10 +71,27 @@
     }
   }
 
+  // Load a spec and make its data URLs absolute, so "Open in Vega Editor" and
+  // "View Source" work away from this page (the specs use paths like data/x.csv).
+  async function loadSpec(path) {
+    const spec = await (await fetch(path)).json();
+    (function absolutise(node) {
+      if (Array.isArray(node)) return node.forEach(absolutise);
+      if (!node || typeof node !== 'object') return;
+      if (typeof node.url === 'string' && !/^[a-z]+:/i.test(node.url)) {
+        node.url = new URL(node.url, location.href).href;
+      }
+      Object.values(node).forEach(absolutise);
+    })(spec);
+    return spec;
+  }
+
   // Vega-Lite specs use width "container"; Vega specs get their width from the grid cell here.
   function fitWidth(view, el) {
     const apply = () => {
-      const w = Math.floor(el.clientWidth);
+      // clientWidth includes the padding vega-embed adds for the "..." menu, so subtract it.
+      const cs = getComputedStyle(el);
+      const w = Math.floor(el.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight));
       if (w > 0 && w !== view.width()) view.width(w).runAsync();
     };
     apply();
