@@ -1,0 +1,2131 @@
+school_code,lat,lon,in_map_extent,level_of_schooling,remoteness,ra_order,icsea,icsea_band,icsea_band_order,fte,attendance_2022,attendance_2024,days_missed_2024
+1001,-33.8527,151.1312,true,Primary,Major Cities,1,1113,1100 and over,6,368,89,91.8,8.2
+1002,-32.1661,150.8881,true,Primary,Inner Regional,2,890,Under 900,1,151,83.9,88.3,11.7
+1003,-32.8089,151.4265,true,Primary,Major Cities,1,917,900–949,2,257,85.2,88.7,11.3
+1007,-35.9933,148.7767,true,Primary,Outer Regional,3,907,900–949,2,15,75.7,90.9,9.1
+1008,-32.9322,151.731,true,Primary,Major Cities,1,1078,1050–1099,5,439,87.5,92.8,7.2
+1009,-35.3123,148.0628,true,Primary,Inner Regional,2,929,900–949,2,24,88.3,89.4,10.6
+1015,-34.5703,150.7726,true,Primary,Major Cities,1,972,950–999,3,516,86.5,88.4,11.6
+1016,-31.2038,150.9156,true,Primary,Outer Regional,3,1003,1000–1049,4,159,89.8,91.6,8.4
+1017,-36.0825,146.9193,true,Primary,Inner Regional,2,1049,1000–1049,4,637,89.3,91.6,8.4
+1019,-36.0778,146.8955,true,Primary,Inner Regional,2,918,900–949,2,165,81.9,87.5,12.5
+1028,-31.9822,141.4624,true,Primary,Outer Regional,3,875,Under 900,1,255,85.9,85.3,14.7
+1030,-28.8385,153.4382,true,Primary,Inner Regional,2,1001,1000–1049,4,280,84,88.5,11.5
+1040,-32.7764,152.0899,true,Primary,Inner Regional,2,962,950–999,3,309,85.9,86.8,13.2
+1041,-33.8858,151.1696,true,Primary,Major Cities,1,1145,1100 and over,6,363,91.1,92.9,7.1
+1042,-33.8779,151.1718,true,Primary,Major Cities,1,1148,1100 and over,6,359,91.2,92.7,7.3
+1045,-34.1984,150.7877,true,Primary,Inner Regional,2,989,950–999,3,337,87.2,89.2,10.8
+1048,-33.6235,151.051,true,Primary,Inner Regional,2,1065,1050–1099,5,60,89.7,92.6,7.4
+1051,-34.3541,146.9006,true,Central/Community,Outer Regional,3,867,Under 900,1,66,84.8,85.5,14.5
+1055,-34.3469,147.218,true,Central/Community,Outer Regional,3,947,900–949,2,123,87.1,89.6,10.4
+1057,-30.5195,151.6641,true,Primary,Inner Regional,2,963,950–999,3,349,88,88.2,11.8
+1058,-30.5115,151.6507,true,Primary,Inner Regional,2,827,Under 900,1,233,83.1,84,16
+1061,-33.8112,151.186,true,Primary,Major Cities,1,1167,1100 and over,6,1063,93.5,94.2,5.8
+1064,-33.8988,151.1194,true,Primary,Major Cities,1,1111,1100 and over,6,356,88.7,91.9,8.1
+1065,-33.8897,151.1282,true,Primary,Major Cities,1,1096,1050–1099,5,474,89.2,91,9
+1066,-29.3213,151.0946,true,Central/Community,Outer Regional,3,808,Under 900,1,119,78.5,80.7,19.3
+1070,-33.6857,151.1122,true,Primary,Major Cities,1,1102,1100 and over,6,384,89.4,92.6,7.4
+1071,-30.9304,150.8466,true,Primary,Outer Regional,3,908,900–949,2,39,90.2,91.4,8.6
+1073,-33.8417,151.0386,true,Primary,Major Cities,1,1015,1000–1049,4,645,85.1,87.4,12.6
+1075,-33.8609,151.0198,true,Primary,Major Cities,1,928,900–949,2,572,82.6,84.4,15.6
+1076,-34.3054,150.935,true,Primary,Major Cities,1,1132,1100 and over,6,227,89.1,90.3,9.7
+1077,-33.9345,150.8126,true,Primary,Major Cities,1,1032,1000–1049,4,846,86.2,88.6,11.4
+1082,-33.4712,151.4307,true,Primary,Major Cities,1,1081,1050–1099,5,455,86.8,90.5,9.5
+1084,-33.0106,151.5381,true,Primary,Major Cities,1,940,900–949,2,29,82.5,86.7,13.3
+1085,-34.4013,150.4762,true,Primary,Inner Regional,2,952,950–999,3,144,82.7,89.2,10.8
+1098,-30.2299,151.7851,true,Primary,Outer Regional,3,969,950–999,3,32,84.8,91.1,8.9
+1104,-33.7933,151.2512,true,Primary,Major Cities,1,1165,1100 and over,6,394,91.1,93.3,6.7
+1106,-34.387,150.8721,true,Primary,Major Cities,1,1076,1050–1099,5,329,88.5,91.3,8.7
+1111,-32.1936,148.8996,true,Primary,Outer Regional,3,923,900–949,2,13,86.6,93.1,6.9
+1112,-28.8697,153.5637,true,Primary,Inner Regional,2,869,Under 900,1,254,77.9,84.8,15.2
+1115,-34.6356,143.5648,true,Central/Community,Outer Regional,3,876,Under 900,1,179,84.1,83.6,16.4
+1118,-28.6855,153.5257,true,Primary,Inner Regional,2,1088,1050–1099,5,295,86.4,90,10
+1121,-33.9537,151.2066,true,Primary,Major Cities,1,1032,1000–1049,4,268,85.6,89.9,10.1
+1123,-33.9112,151.0576,true,Primary,Major Cities,1,938,900–949,2,611,83.2,86.7,13.3
+1124,-33.9049,151.038,true,Primary,Major Cities,1,986,950–999,3,382,86.5,87.9,12.1
+1129,-28.2224,153.5437,true,Primary,Major Cities,1,992,950–999,3,390,88.8,90.9,9.1
+1130,-30.9507,149.0702,true,Central/Community,Remote,4,785,Under 900,1,101,76.8,75.9,24.1
+1131,-34.2878,146.5719,true,Central/Community,Outer Regional,3,894,Under 900,1,54,83.9,82.4,17.6
+1134,-34.2929,150.5827,true,Primary,Inner Regional,2,945,900–949,2,268,84.2,86.9,13.1
+1135,-35.6269,144.128,true,Primary,Outer Regional,3,982,950–999,3,162,90.1,90.7,9.3
+1136,-28.549,153.1493,true,Primary,Inner Regional,2,971,950–999,3,42,83,83.2,16.8
+1137,-34.1483,147.3851,true,Primary,Outer Regional,3,756,Under 900,1,5,89.4,83.7,16.3
+1138,-32.9331,151.5946,true,Primary,Major Cities,1,950,950–999,3,276,86.9,88.2,11.8
+1139,-35.913,145.696,true,Primary,Inner Regional,2,962,950–999,3,109,88.1,91.2,8.8
+1140,-30.3824,150.5995,true,Central/Community,Outer Regional,3,839,Under 900,1,160,83.6,82.6,17.4
+1143,-31.9712,151.9111,true,Primary,Outer Regional,3,966,950–999,3,52,87.4,93.2,6.8
+1146,-29.2235,152.6056,true,Primary,Outer Regional,3,775,Under 900,1,14,65.2,80.5,19.5
+1148,-33.9059,151.0058,true,Primary,Major Cities,1,929,900–949,2,346,84.3,84.7,15.3
+1149,-35.7001,150.1884,true,Primary,Inner Regional,2,896,Under 900,1,494,83.9,86,14
+1150,-33.4209,149.5706,true,Primary,Inner Regional,2,983,950–999,3,424,87.5,89.9,10.1
+1152,-35.523,148.1465,true,Central/Community,Outer Regional,3,904,900–949,2,103,82.2,77,23
+1164,-33.3614,147.6793,true,Primary,Outer Regional,3,950,950–999,3,31,91.5,87.4,12.6
+1165,-31.4355,152.6809,true,Primary,Inner Regional,2,959,950–999,3,184,87.6,91.6,8.4
+1166,-33.7521,151.0646,true,Primary,Major Cities,1,1187,1100 and over,6,837,92.1,94.1,5.9
+1167,-34.2528,146.1011,true,Primary,Outer Regional,3,983,950–999,3,142,87.5,89.1,10.9
+1168,-36.6705,149.8391,true,Primary,Outer Regional,3,917,900–949,2,291,80.9,84.8,15.2
+1175,-29.9187,149.7962,true,Primary,Outer Regional,3,913,900–949,2,17,86.4,89.3,10.7
+1177,-32.8594,151.3167,true,Primary,Major Cities,1,907,900–949,2,355,86.3,88.4,11.6
+1178,-30.8191,152.5087,true,Primary,Outer Regional,3,732,Under 900,1,24,84.3,85.9,14.1
+1179,-33.887,151.2598,true,Primary,Major Cities,1,1156,1100 and over,6,573,91.1,93.3,6.7
+1181,-30.4535,152.8919,true,Primary,Inner Regional,2,998,950–999,3,219,82.2,87.8,12.2
+1183,-33.0301,151.6622,true,Primary,Major Cities,1,956,950–999,3,257,84.5,88.4,11.6
+1185,-33.9099,151.0849,true,Primary,Major Cities,1,977,950–999,3,252,83.5,84.8,15.2
+1186,-33.9257,151.092,true,Primary,Major Cities,1,1012,1000–1049,4,230,83.5,87.1,12.9
+1189,-36.6313,149.5711,true,Primary,Outer Regional,3,927,900–949,2,29,80.9,84.1,15.9
+1191,-30.887,151.151,true,Primary,Outer Regional,3,920,900–949,2,29,85.6,89.2,10.8
+1198,-30.5029,151.6746,true,Primary,Inner Regional,2,1008,1000–1049,4,509,88.9,89.1,10.9
+1199,-33.8697,151.0282,true,Primary,Major Cities,1,980,950–999,3,656,88.4,89.8,10.2
+1201,-32.804,151.6549,true,Primary,Major Cities,1,918,900–949,2,262,86.7,87.9,12.1
+1202,-34.4802,150.8565,true,Primary,Major Cities,1,926,900–949,2,259,83.4,86.1,13.9
+1203,-33.3505,151.4359,true,Primary,Major Cities,1,988,950–999,3,524,86.6,89.5,10.5
+1204,-36.4208,150.0636,true,Primary,Outer Regional,3,944,900–949,2,165,82.6,84.7,15.3
+1205,-33.6185,151.149,true,Primary,Major Cities,1,1085,1050–1099,5,272,91.1,92.7,7.3
+1206,-36.3714,148.8272,true,Primary,Inner Regional,2,982,950–999,3,69,88.2,92.7,7.3
+1207,-35.6597,145.8157,true,Primary,Outer Regional,3,984,950–999,3,66,89.8,88.6,11.4
+1209,-34.4859,150.3408,true,Primary,Inner Regional,2,1029,1000–1049,4,158,88.4,92,8
+1211,-34.7783,150.6897,true,Primary,Inner Regional,2,1067,1050–1099,5,268,87.6,90.5,9.5
+1215,-33.9534,151.0852,true,Primary,Major Cities,1,1051,1050–1099,5,320,88.7,90.3,9.7
+1217,-28.766,153.3458,true,Primary,Inner Regional,2,995,950–999,3,113,87.8,87.9,12.1
+1223,-34.0847,149.1446,true,Primary,Outer Regional,3,988,950–999,3,15,80.7,93.9,6.1
+1224,-28.2237,153.4684,true,Primary,Major Cities,1,997,950–999,3,314,85.9,88.7,11.3
+1227,-28.4912,153.5403,true,Primary,Inner Regional,2,1051,1050–1099,5,294,85.2,88.7,11.3
+1228,-33.4973,150.5168,true,Primary,Inner Regional,2,1033,1000–1049,4,37,85.6,91.7,8.3
+1230,-34.6701,148.6257,true,Primary,Inner Regional,2,1005,1000–1049,4,38,86.9,91.3,8.7
+1231,-34.3315,149.3681,true,Primary,Outer Regional,3,788,Under 900,1,11,88.4,89.1,10.9
+1234,-29.8667,150.5673,true,Central/Community,Outer Regional,3,916,900–949,2,175,86.7,87.6,12.4
+1237,-31.5528,149.375,true,Central/Community,Outer Regional,3,815,Under 900,1,44,84.7,83.5,16.5
+1238,-34.2287,146.353,true,Primary,Outer Regional,3,1008,1000–1049,4,19,90.9,93.3,6.7
+1240,-33.853,151.177,true,Primary,Major Cities,1,1132,1100 and over,6,214,89.8,92,8
+1246,-33.6393,150.2858,true,Primary,Inner Regional,2,1050,1050–1099,5,254,87.1,87.2,12.8
+1247,-32.8385,151.6171,true,Primary,Major Cities,1,982,950–999,3,67,84.4,87.9,12.1
+1249,-30.3085,151.6577,true,Primary,Inner Regional,2,807,Under 900,1,20,80.7,85,15
+1252,-31.6404,150.2375,true,Primary,Outer Regional,3,914,900–949,2,9,82.4,93.9,6.1
+1254,-28.7634,153.23,true,Primary,Inner Regional,2,942,900–949,2,36,82.9,89.9,10.1
+1255,-33.983,151.1158,true,Primary,Major Cities,1,1049,1000–1049,4,256,88,90.3,9.7
+1256,-31.7786,150.8927,true,Primary,Outer Regional,3,978,950–999,3,10,88.4,89.3,10.7
+1257,-33.8581,151.0061,true,Primary,Major Cities,1,957,950–999,3,948,84.2,85.7,14.3
+1258,-33.7371,150.6035,true,Primary,Major Cities,1,1068,1050–1099,5,137,87.3,90.9,9.1
+1260,-33.529,149.2516,true,Primary,Inner Regional,2,928,900–949,2,248,86.4,90.9,9.1
+1261,-35.5801,145.3493,true,Primary,Outer Regional,3,1012,1000–1049,4,19,90.7,88.3,11.7
+1266,-30.3341,153.077,true,Primary,Inner Regional,2,996,950–999,3,383,88.6,90.1,9.9
+1269,-31.7127,152.2839,true,Primary,Outer Regional,3,938,900–949,2,13,81.6,83.4,16.6
+1271,-32.7668,152.0109,true,Primary,Inner Regional,2,979,950–999,3,30,83.3,85.3,14.7
+1272,-36.0994,150.0539,true,Primary,Outer Regional,3,890,Under 900,1,65,83.5,82.8,17.2
+1274,-33.105,147.7979,true,Primary,Outer Regional,3,828,Under 900,1,11,81.9,85.9,14.1
+1275,-28.6166,150.3616,true,Central/Community,Outer Regional,3,670,Under 900,1,79,59.2,69.4,30.6
+1276,-30.7057,150.0431,true,Primary,Outer Regional,3,908,900–949,2,96,84.8,88.7,11.3
+1286,-32.707,151.573,true,Primary,Major Cities,1,1032,1000–1049,4,390,89.8,89.5,10.5
+1287,-34.8474,150.6083,true,Primary,Inner Regional,2,908,900–949,2,406,84.2,86.2,13.8
+1288,-36.919,149.2338,true,Primary,Outer Regional,3,899,Under 900,1,104,84.2,87.6,12.4
+1290,-28.7355,152.624,true,Central/Community,Outer Regional,3,791,Under 900,1,84,71.2,68,32
+1292,-33.8883,151.2768,true,Primary,Major Cities,1,1120,1100 and over,6,348,88.9,89.4,10.6
+1293,-35.0846,148.3995,true,Primary,Outer Regional,3,1062,1050–1099,5,9,87.2,92.2,7.8
+1297,-30.3798,153.0323,true,Primary,Inner Regional,2,979,950–999,3,121,88.1,87.9,12.1
+1302,-32.9512,151.6228,true,Primary,Major Cities,1,981,950–999,3,99,83.4,89.2,10.8
+1307,-28.7241,149.5773,true,Primary,Remote,4,770,Under 900,1,7,86.3,84.1,15.9
+1311,-32.4714,151.9607,true,Primary,Inner Regional,2,938,900–949,2,84,84.7,88.8,11.2
+1313,-34.4367,148.7261,true,Central/Community,Inner Regional,2,934,900–949,2,240,83.9,85.1,14.9
+1318,-35.1059,146.6063,true,Primary,Outer Regional,3,927,900–949,2,19,82.4,89.5,10.5
+1320,-33.8214,151.1356,true,Primary,Major Cities,1,1145,1100 and over,6,409,90.6,92.7,7.3
+1321,-33.8585,150.8831,true,Primary,Major Cities,1,934,900–949,2,265,85.4,89.5,10.5
+1323,-33.9432,151.1947,true,Primary,Major Cities,1,1062,1050–1099,5,232,88.9,92.5,7.5
+1326,-30.0935,145.9497,true,Primary,Very Remote,5,702,Under 900,1,145,72.8,74,26
+1334,-34.7694,148.8115,true,Primary,Inner Regional,2,994,950–999,3,26,81.7,87.8,12.2
+1335,-34.4812,150.4192,true,Primary,Inner Regional,2,1090,1050–1099,5,484,87.7,90.9,9.1
+1336,-30.6453,152.8539,true,Central/Community,Inner Regional,2,861,Under 900,1,206,79.2,78.8,21.2
+1340,-35.4406,149.7989,true,Central/Community,Inner Regional,2,1005,1000–1049,4,306,81.3,84.2,15.8
+1341,-32.6594,151.3507,true,Primary,Inner Regional,2,949,900–949,2,540,88.1,89.4,10.6
+1345,-34.7905,149.4876,true,Primary,Inner Regional,2,1005,1000–1049,4,9,92.1,,
+1346,-33.373,150.7398,true,Primary,Outer Regional,3,949,900–949,2,29,85.4,83.1,16.9
+1347,-35.954,149.148,true,Primary,Inner Regional,2,1045,1000–1049,4,15,76,89.8,10.2
+1350,-29.9637,146.8591,true,Central/Community,Very Remote,5,652,Under 900,1,122,61.6,71.1,28.9
+1354,-34.1204,147.8747,true,Primary,Outer Regional,3,903,900–949,2,8,85.4,85.3,14.7
+1358,-33.9624,151.1489,true,Primary,Major Cities,1,1064,1050–1099,5,433,87.3,91.3,8.7
+1360,-33.9379,150.7303,true,Primary,Inner Regional,2,929,900–949,2,114,81.8,87.8,12.2
+1361,-29.0028,153.4373,true,Primary,Inner Regional,2,979,950–999,3,47,83.3,88.9,11.1
+1363,-35.8239,146.678,true,Primary,Inner Regional,2,968,950–999,3,21,78.4,88,12
+1367,-32.745,151.1043,true,Primary,Inner Regional,2,861,Under 900,1,30,85.6,84.3,15.7
+1369,-31.9561,141.4565,true,Primary,Outer Regional,3,881,Under 900,1,162,83.8,85.8,14.2
+1371,-31.9445,141.4715,true,Primary,Outer Regional,3,864,Under 900,1,206,79.2,83.4,16.6
+1372,-33.9006,151.262,true,Primary,Major Cities,1,1176,1100 and over,6,257,90.6,92.9,7.1
+1377,-33.5484,151.215,true,Primary,Inner Regional,2,1064,1050–1099,5,79,85.9,89.3,10.7
+1379,-33.7617,151.2708,true,Primary,Major Cities,1,1075,1050–1099,5,306,90.2,92.6,7.4
+1387,-35.1568,148.2336,true,Primary,Inner Regional,2,646,Under 900,1,16,73.1,75.6,24.4
+1389,-28.5413,153.5508,true,Primary,Inner Regional,2,1025,1000–1049,4,222,83.7,88.8,11.2
+1402,-32.4134,152.2118,true,Central/Community,Inner Regional,2,902,900–949,2,289,73.3,77.5,22.5
+1411,-34.327,150.9127,true,Primary,Major Cities,1,1069,1050–1099,5,318,88.2,89.5,10.5
+1414,-34.6579,150.3004,true,Primary,Inner Regional,2,1036,1000–1049,4,125,88.4,90.8,9.2
+1415,-30.1684,151.0776,true,Central/Community,Outer Regional,3,874,Under 900,1,99,80.4,77.2,22.8
+1421,-35.2556,149.4446,true,Primary,Inner Regional,2,1047,1000–1049,4,444,86,88.1,11.9
+1424,-32.3891,152.4486,true,Primary,Inner Regional,2,1037,1000–1049,4,36,88.4,88.3,11.7
+1425,-35.7864,144.5979,true,Primary,Outer Regional,3,990,950–999,3,31,91.5,90,10
+1432,-31.9604,141.4411,true,Primary,Outer Regional,3,858,Under 900,1,200,78.9,84.9,15.1
+1433,-33.7926,151.0183,true,Primary,Major Cities,1,1124,1100 and over,6,218,88.8,93.3,6.7
+1445,-34.5922,150.5173,true,Primary,Inner Regional,2,1076,1050–1099,5,30,86.6,91.3,8.7
+1447,-30.1027,148.9647,true,Primary,Remote,4,969,950–999,3,36,83.4,83.8,16.2
+1449,-28.4366,153.4667,true,Primary,Inner Regional,2,992,950–999,3,93,85.1,86.7,13.3
+1453,-35.8375,146.8,true,Primary,Inner Regional,2,964,950–999,3,33,90.6,89.6,10.4
+1455,-33.8768,151.099,true,Primary,Major Cities,1,1092,1050–1099,5,476,93.3,92.6,7.4
+1460,-34.247,150.5448,true,Primary,Inner Regional,2,949,900–949,2,163,88.5,89.9,10.1
+1470,-28.6474,153.6148,true,Primary,Inner Regional,2,1067,1050–1099,5,461,85.1,88.6,11.4
+1471,-28.9477,153.4585,true,Primary,Inner Regional,2,694,Under 900,1,21,75.3,79.8,20.2
+1472,-33.8958,150.9426,true,Primary,Major Cities,1,950,950–999,3,435,88.6,90.7,9.3
+1481,-34.8215,150.556,true,Primary,Inner Regional,2,1029,1000–1049,4,216,85.9,89.5,10.5
+1482,-34.052,150.6932,true,Primary,Major Cities,1,1041,1000–1049,4,313,88.2,91.8,8.2
+1483,-33.9061,151.1757,true,Primary,Major Cities,1,1132,1100 and over,6,310,89.5,90.4,9.6
+1485,-33.8204,151.2115,true,Primary,Major Cities,1,1168,1100 and over,6,622,93.1,93.2,6.8
+1486,-34.0701,150.8156,true,Primary,Major Cities,1,946,900–949,2,284,83.2,84.9,15.1
+1488,-33.9119,151.1048,true,Primary,Major Cities,1,1016,1000–1049,4,515,90.1,92.4,7.6
+1490,-36.7684,149.6957,true,Primary,Outer Regional,3,982,950–999,3,84,91.6,88.8,11.2
+1492,-28.8308,153.2313,true,Primary,Inner Regional,2,955,950–999,3,29,83.7,86.2,13.8
+1494,-33.8868,150.9376,true,Primary,Major Cities,1,973,950–999,3,752,92,92.9,7.1
+1495,-33.3059,149.0462,true,Primary,Inner Regional,2,1098,1050–1099,5,136,90.9,93.9,6.1
+1497,-33.9088,151.1223,true,Primary,Major Cities,1,1082,1050–1099,5,346,89.4,91.3,8.7
+1498,-33.4788,151.3573,true,Primary,Major Cities,1,1014,1000–1049,4,358,86.3,88.1,11.9
+1499,-35.1888,147.2495,true,Primary,Inner Regional,2,940,900–949,2,27,89,83.9,16.1
+1502,-35.5872,149.4501,true,Primary,Inner Regional,2,903,900–949,2,26,85,83.7,16.3
+1503,-33.8453,147.7445,true,Primary,Outer Regional,3,986,950–999,3,15,83.4,92.6,7.4
+1504,-33.6123,149.1424,true,Primary,Inner Regional,2,941,900–949,2,31,87.2,91.9,8.1
+1505,-32.9458,151.6578,true,Primary,Major Cities,1,1000,1000–1049,4,283,89.7,91.3,8.7
+1506,-33.4276,148.8077,true,Primary,Outer Regional,3,764,Under 900,1,12,84.2,92.1,7.9
+1507,-30.4619,147.6876,true,Primary,Remote,4,1017,1000–1049,4,18,84.5,92.2,7.8
+1508,-34.0534,151.123,true,Primary,Major Cities,1,1088,1050–1099,5,394,88.7,92.5,7.5
+1512,-33.9635,151.1225,true,Primary,Major Cities,1,1041,1000–1049,4,599,88.7,90.8,9.2
+1513,-33.973,151.1283,true,Primary,Major Cities,1,1064,1050–1099,5,514,87.8,91.4,8.6
+1518,-32.9124,151.7653,true,Primary,Major Cities,1,996,950–999,3,110,87.3,88.1,11.9
+1520,-30.9861,150.4471,true,Primary,Outer Regional,3,987,950–999,3,46,86.4,87.1,12.9
+1526,-28.8674,153.0481,true,Primary,Inner Regional,2,860,Under 900,1,428,85.6,89.4,10.6
+1527,-32.0046,149.9781,true,Primary,Outer Regional,3,959,950–999,3,11,79.2,84.7,15.3
+1529,-33.7279,151.0047,true,Primary,Major Cities,1,1128,1100 and over,6,970,89.7,92.8,7.2
+1535,-33.5588,150.9069,true,Primary,Inner Regional,2,990,950–999,3,57,85.9,91.2,8.8
+1537,-34.1097,150.6737,true,Primary,Major Cities,1,982,950–999,3,76,88.4,89.4,10.6
+1542,-32.8404,151.3638,true,Primary,Major Cities,1,876,Under 900,1,276,82.4,83.6,16.4
+1543,-32.8276,151.3697,true,Primary,Major Cities,1,835,Under 900,1,215,84.2,85,15
+1545,-32.8384,151.3449,true,Primary,Major Cities,1,884,Under 900,1,399,83,85.2,14.8
+1547,-30.5186,152.0536,true,Primary,Outer Regional,3,,,,4,95.8,92.4,7.6
+1548,-28.6751,153.2803,true,Primary,Inner Regional,2,1019,1000–1049,4,25,79.8,85.9,14.1
+1550,-32.9655,151.6975,true,Primary,Major Cities,1,1037,1000–1049,4,234,88.2,90.3,9.7
+1551,-32.341,152.5393,true,Primary,Inner Regional,2,1007,1000–1049,4,247,85.9,87.8,12.2
+1553,-29.388,153.2316,true,Primary,Inner Regional,2,977,950–999,3,83,88.4,91.5,8.5
+1558,-28.3119,153.2756,true,Primary,Inner Regional,2,1005,1000–1049,4,35,85.8,86.2,13.8
+1560,-33.9091,150.9609,true,Primary,Major Cities,1,1018,1000–1049,4,333,86.6,90.1,9.9
+1564,-32.5887,151.7772,true,Primary,Inner Regional,2,980,950–999,3,158,87.3,89.4,10.6
+1566,-33.9297,151.1084,true,Primary,Major Cities,1,1038,1000–1049,4,500,88.6,90.5,9.5
+1573,-33.9074,151.2603,true,Primary,Major Cities,1,1161,1100 and over,6,513,88.7,92.3,7.7
+1574,-28.7248,153.4089,true,Primary,Inner Regional,2,1056,1050–1099,5,86,88.7,89.1,10.9
+1578,-31.5022,145.8366,true,Primary,Remote,4,849,Under 900,1,228,81.1,82.9,17.1
+1579,-36.3869,149.8828,true,Primary,Outer Regional,3,941,900–949,2,77,80.3,86.4,13.6
+1580,-34.0159,150.6859,true,Primary,Major Cities,1,1021,1000–1049,4,360,87.4,89.8,10.2
+1583,-28.6627,153.2206,true,Primary,Inner Regional,2,964,950–999,3,25,77.8,83,17
+1584,-30.302,153.1204,true,Primary,Inner Regional,2,897,Under 900,1,474,87.4,89.6,10.4
+1587,-34.2895,150.9474,true,Primary,Major Cities,1,1118,1100 and over,6,135,85,91,9
+1589,-29.5438,148.5781,true,Central/Community,Remote,4,625,Under 900,1,67,68.1,61.4,38.6
+1590,-34.9142,149.4331,true,Primary,Inner Regional,2,1038,1000–1049,4,25,88.1,88.9,11.1
+1593,-28.4893,153.0225,true,Primary,Inner Regional,2,996,950–999,3,15,89.2,84,16
+1596,-33.7772,150.8132,true,Primary,Major Cities,1,1007,1000–1049,4,714,86.2,89.8,10.2
+1601,-31.6053,152.4727,true,Primary,Outer Regional,3,926,900–949,2,36,88.4,95,5
+1604,-33.5065,150.6976,true,Primary,Inner Regional,2,987,950–999,3,144,87.3,92.4,7.6
+1605,-34.0018,151.0691,true,Primary,Major Cities,1,1071,1050–1099,5,103,90.6,89.6,10.4
+1606,-35.3053,145.1789,true,Primary,Outer Regional,3,874,Under 900,1,12,88.9,90.1,9.9
+1607,-33.8632,151.1069,true,Primary,Major Cities,1,1071,1050–1099,5,276,87,91.9,8.1
+1608,-33.8396,151.0873,true,Primary,Major Cities,1,1093,1050–1099,5,414,89.5,92.9,7.1
+1609,-33.0855,147.1491,true,Primary,Outer Regional,3,848,Under 900,1,256,85,86.6,13.4
+1611,-28.3095,153.4345,true,Primary,Inner Regional,2,948,900–949,2,49,85.4,86.9,13.1
+1612,-34.439,150.8874,true,Primary,Major Cities,1,990,950–999,3,181,85.6,88.2,11.8
+1613,-33.9847,151.1003,true,Primary,Major Cities,1,1088,1050–1099,5,429,89.2,91.8,8.2
+1615,-33.4841,150.1421,true,Primary,Inner Regional,2,906,900–949,2,258,87.9,88,12
+1616,-33.9208,151.2498,true,Primary,Major Cities,1,1154,1100 and over,6,361,92.3,92.9,7.1
+1621,-31.821,149.7236,true,Central/Community,Outer Regional,3,896,Under 900,1,148,82.1,83.1,16.9
+1624,-34.8119,147.2014,true,Central/Community,Inner Regional,2,974,950–999,3,383,82.6,86.9,13.1
+1625,-34.8532,150.7401,true,Primary,Inner Regional,2,1021,1000–1049,4,180,88.3,91.2,8.8
+1627,-32.2228,152.3188,true,Primary,Inner Regional,2,950,950–999,3,31,76.6,86.1,13.9
+1628,-36.2375,149.125,true,Primary,Inner Regional,2,971,950–999,3,238,87.2,89.4,10.6
+1630,-31.28,149.2821,true,Primary,Outer Regional,3,856,Under 900,1,200,81.8,83.8,16.2
+1631,-30.9584,148.387,true,Primary,Remote,4,701,Under 900,1,186,78.1,76.9,23.1
+1632,-31.8275,152.6079,true,Primary,Inner Regional,2,925,900–949,2,60,91,91.5,8.5
+1634,-28.6257,153.4875,true,Primary,Inner Regional,2,1066,1050–1099,5,92,84.7,83.3,16.7
+1635,-33.0805,151.4418,true,Primary,Major Cities,1,948,900–949,2,330,84.8,86.2,13.8
+1636,-34.6389,148.0268,true,Primary,Inner Regional,2,943,900–949,2,214,87.2,89.7,10.3
+1642,-29.5847,152.7755,true,Primary,Outer Regional,3,904,900–949,2,66,85.2,89.5,10.5
+1644,-28.9926,153.2826,true,Primary,Inner Regional,2,823,Under 900,1,26,68.3,72.4,27.6
+1647,-30.2216,153.0115,true,Primary,Inner Regional,2,912,900–949,2,30,88.2,90.7,9.3
+1654,-30.0215,153.1942,true,Primary,Inner Regional,2,938,900–949,2,183,82.7,89.3,10.7
+1656,-28.7131,153.3625,true,Primary,Inner Regional,2,998,950–999,3,23,89.3,92.3,7.7
+1658,-35.9925,146.3949,true,Primary,Inner Regional,2,957,950–999,3,162,86.5,89.6,10.4
+1659,-36.021,146.3762,true,Primary,Inner Regional,2,946,900–949,2,40,90.9,89.2,10.8
+1661,-34.3674,150.899,true,Primary,Major Cities,1,1013,1000–1049,4,227,86,90.9,9.1
+1666,-29.8321,152.8895,true,Primary,Inner Regional,2,903,900–949,2,66,82.6,86.2,13.8
+1668,-33.5888,151.1688,true,Primary,Inner Regional,2,1063,1050–1099,5,24,85.3,91.4,8.6
+1670,-29.5696,153.0777,true,Primary,Inner Regional,2,774,Under 900,1,17,83,90.3,9.7
+1671,-33.836,148.6899,true,Primary,Inner Regional,2,895,Under 900,1,338,84.4,88.7,11.3
+1674,-28.456,153.4966,true,Primary,Inner Regional,2,985,950–999,3,37,75,89.4,10.6
+1681,-31.1881,152.9703,true,Primary,Inner Regional,2,987,950–999,3,167,77,87,13
+1682,-34.0541,151.1477,true,Primary,Major Cities,1,1064,1050–1099,5,516,87.4,90.7,9.3
+1684,-34.4599,149.4698,true,Primary,Inner Regional,2,963,950–999,3,220,84.7,88.5,11.5
+1685,-30.3659,152.9816,true,Primary,Inner Regional,2,988,950–999,3,45,88.5,92.7,7.3
+1688,-34.1695,142.1813,true,Primary,Outer Regional,3,870,Under 900,1,80,84.8,86,14
+1690,-28.3121,153.326,true,Primary,Inner Regional,2,939,900–949,2,80,80.5,88.1,11.9
+1695,-33.2871,148.7403,true,Primary,Outer Regional,3,979,950–999,3,48,86.8,87.9,12.1
+1696,-28.2626,153.5554,true,Primary,Major Cities,1,984,950–999,3,161,88.8,90.3,9.7
+1698,-35.6683,147.04,true,Primary,Inner Regional,2,969,950–999,3,94,88.4,91.1,8.9
+1700,-33.2999,150.0323,true,Primary,Inner Regional,2,790,Under 900,1,8,86.8,83.8,16.2
+1707,-32.9313,148.7495,true,Primary,Outer Regional,3,954,950–999,3,47,87.2,90.3,9.7
+1708,-31.8997,152.522,true,Primary,Inner Regional,2,923,900–949,2,265,83.2,88.2,11.8
+1712,-31.1171,150.2633,true,Primary,Outer Regional,3,833,Under 900,1,77,86.4,89.9,10.1
+1714,-31.2628,150.7357,true,Primary,Outer Regional,3,953,950–999,3,24,88.2,90.2,9.8
+1723,-34.7204,149.1788,true,Primary,Inner Regional,2,936,900–949,2,6,,85.5,14.5
+1727,-34.4947,150.7768,true,Primary,Major Cities,1,1006,1000–1049,4,790,85.7,90.1,9.9
+1732,-34.0911,142.0404,true,Primary,Outer Regional,3,668,Under 900,1,54,75.6,72.9,27.1
+1735,-33.8926,151.1894,true,Primary,Major Cities,1,1030,1000–1049,4,147,85.3,88.9,11.1
+1736,-34.5728,145.9939,true,Primary,Outer Regional,3,870,Under 900,1,88,87.1,92.4,7.6
+1740,-28.9308,153.0035,true,Primary,Inner Regional,2,953,950–999,3,48,81.9,91.6,8.4
+1742,-29.4429,151.8481,true,Primary,Outer Regional,3,960,950–999,3,17,77.5,81.1,18.9
+1744,-33.749,151.2852,true,Primary,Major Cities,1,1028,1000–1049,4,478,88.2,91,9
+1745,-37.0417,148.9372,true,Primary,Outer Regional,3,982,950–999,3,22,86.2,92.5,7.5
+1747,-29.6509,150.831,true,Primary,Outer Regional,3,827,Under 900,1,18,87.1,86,14
+1749,-32.3857,150.686,true,Primary,Inner Regional,2,949,900–949,2,147,87.4,87.4,12.6
+1760,-33.7646,150.8705,true,Primary,Major Cities,1,900,900–949,2,258,84.3,85.1,14.9
+1762,-33.079,151.4992,true,Primary,Major Cities,1,939,900–949,2,139,86,86.8,13.2
+1768,-33.8749,151.2409,true,Primary,Major Cities,1,1135,1100 and over,6,237,88.5,93.6,6.4
+1770,-34.1795,150.713,true,Primary,Inner Regional,2,1031,1000–1049,4,145,85.9,89.7,10.3
+1771,-28.9288,152.3741,true,Primary,Outer Regional,3,928,900–949,2,14,75.8,82.9,17.1
+1774,-33.8561,151.153,true,Primary,Major Cities,1,1137,1100 and over,6,427,90.8,92.5,7.5
+1775,-32.2487,148.6054,true,Primary,Inner Regional,2,972,950–999,3,520,88.9,89.7,10.3
+1776,-32.2417,148.6158,true,Primary,Inner Regional,2,850,Under 900,1,276,83.9,86.8,13.2
+1778,-32.9894,151.7168,true,Primary,Major Cities,1,1095,1050–1099,5,245,89.9,92.4,7.6
+1780,-28.8143,153.2909,true,Primary,Inner Regional,2,871,Under 900,1,179,82.7,84.7,15.3
+1788,-30.1895,152.5426,true,Primary,Outer Regional,3,879,Under 900,1,12,82.5,89.9,10.1
+1789,-32.0183,149.3922,true,Central/Community,Outer Regional,3,893,Under 900,1,152,79.2,83,17
+1791,-28.2897,153.3824,true,Primary,Inner Regional,2,980,950–999,3,74,86.7,90,10
+1792,-32.4052,151.7577,true,Primary,Inner Regional,2,914,900–949,2,191,85.9,89.8,10.2
+1793,-31.2201,151.1327,true,Primary,Outer Regional,3,1004,1000–1049,4,26,88.5,89.6,10.4
+1797,-28.6867,153.3155,true,Primary,Inner Regional,2,1037,1000–1049,4,72,89.3,91,9
+1799,-33.6861,151.0264,true,Primary,Major Cities,1,1102,1100 and over,6,350,89.4,93.3,6.7
+1801,-28.2891,153.5169,true,Primary,Inner Regional,2,1058,1050–1099,5,56,88.6,90.9,9.1
+1802,-31.2214,150.8299,true,Primary,Inner Regional,2,842,Under 900,1,42,85.5,84.4,15.6
+1807,-33.929,151.1224,true,Primary,Major Cities,1,1107,1100 and over,6,600,90.2,92.1,7.9
+1808,-33.787,150.8526,true,Primary,Major Cities,1,976,950–999,3,246,84.9,87.8,12.2
+1809,-33.966,150.9995,true,Primary,Major Cities,1,1057,1050–1099,5,368,89.5,92,8
+1811,-32.2631,148.6097,true,Primary,Inner Regional,2,911,900–949,2,570,85,88,12
+1813,-33.5309,150.8768,true,Primary,Inner Regional,2,995,950–999,3,85,87.4,87.7,12.3
+1814,-30.4033,152.3499,true,Primary,Outer Regional,3,826,Under 900,1,7,83.1,88.2,11.8
+1816,-37.0633,149.9067,true,Primary,Outer Regional,3,906,900–949,2,256,84.2,87.5,12.5
+1822,-32.9587,151.2739,true,Primary,Inner Regional,2,888,Under 900,1,11,87.9,85.7,14.3
+1823,-33.3775,149.5393,true,Primary,Inner Regional,2,986,950–999,3,406,86.2,90.8,9.2
+1824,-31.6194,152.2923,true,Primary,Outer Regional,3,976,950–999,3,15,85.9,88.7,11.3
+1826,-32.9147,151.312,true,Primary,Inner Regional,2,903,900–949,2,114,88.3,89.3,10.7
+1830,-31.8177,151.3044,true,Primary,Outer Regional,3,935,900–949,2,11,89,88.2,11.8
+1835,-28.7637,153.4085,true,Primary,Inner Regional,2,1075,1050–1099,5,59,83.9,89.5,10.5
+1838,-29.4462,151.6017,true,Central/Community,Outer Regional,3,886,Under 900,1,94,78.7,78.4,21.6
+1839,-33.5043,151.3629,true,Primary,Major Cities,1,1039,1000–1049,4,426,89,90.5,9.5
+1840,-28.9151,153.5061,true,Primary,Inner Regional,2,941,900–949,2,18,80.7,87.2,12.8
+1841,-33.7556,150.6577,true,Primary,Major Cities,1,993,950–999,3,406,86.9,90.7,9.3
+1844,-33.8886,151.0945,true,Primary,Major Cities,1,1062,1050–1099,5,199,89.3,91.2,8.8
+1845,-34.0633,151.0124,true,Primary,Major Cities,1,1059,1050–1099,5,411,90.8,92.2,7.8
+1849,-33.3467,151.493,true,Primary,Major Cities,1,923,900–949,2,422,80.6,87.2,12.8
+1850,-33.7707,151.0879,true,Primary,Major Cities,1,1147,1100 and over,6,790,91.2,94,6
+1851,-33.7728,151.068,true,Primary,Major Cities,1,1131,1100 and over,6,994,91.6,94,6
+1856,-33.428,151.4136,true,Primary,Major Cities,1,1094,1050–1099,5,254,87.3,91.3,8.7
+1857,-33.4393,151.3785,true,Primary,Major Cities,1,1041,1000–1049,4,429,89,92,8
+1860,-33.8047,151.0716,true,Primary,Major Cities,1,1117,1100 and over,6,472,88.4,93.5,6.5
+1864,-33.5135,151.3327,true,Primary,Major Cities,1,975,950–999,3,490,85.4,86.9,13.1
+1867,-33.0558,146.3971,true,Primary,Remote,4,759,Under 900,1,15,80.3,88.5,11.5
+1870,-33.4231,148.3693,true,Primary,Outer Regional,3,938,900–949,2,32,85.1,88.5,11.5
+1873,-31.9512,148.6211,true,Primary,Outer Regional,3,879,Under 900,1,11,81.6,87.8,12.2
+1874,-30.8321,152.8743,true,Primary,Inner Regional,2,926,900–949,2,57,82.3,89.2,10.8
+1879,-28.6877,153.4392,true,Primary,Inner Regional,2,1084,1050–1099,5,32,86.1,90,10
+1883,-34.9102,147.781,true,Primary,Outer Regional,3,1017,1000–1049,4,17,87.1,84.2,15.8
+1885,-34.5756,142.7442,true,Primary,Outer Regional,3,929,900–949,2,105,85,85.1,14.9
+1886,-29.1135,153.4247,true,Central/Community,Inner Regional,2,955,950–999,3,530,73.9,82.9,17.1
+1890,-33.7404,150.9904,true,Primary,Major Cities,1,1150,1100 and over,6,561,92.2,92.2,7.8
+1891,-34.6161,150.3218,true,Primary,Inner Regional,2,1030,1000–1049,4,123,90.6,90.2,9.8
+1895,-33.8668,150.9554,true,Primary,Major Cities,1,901,900–949,2,386,86.1,89.9,10.1
+1896,-33.868,150.9248,true,Primary,Major Cities,1,914,900–949,2,545,87.4,91,9
+1898,-34.3905,150.8923,true,Primary,Major Cities,1,1002,1000–1049,4,342,84.2,90.5,9.5
+1901,-34.9654,150.5934,true,Primary,Inner Regional,2,921,900–949,2,59,81.9,86.4,13.6
+1904,-32.9834,151.5828,true,Primary,Major Cities,1,947,900–949,2,59,90.4,92,8
+1915,-28.1968,153.5651,true,Primary,Major Cities,1,934,900–949,2,33,86.8,87.1,12.9
+1920,-33.8669,151.1273,true,Primary,Major Cities,1,1082,1050–1099,5,314,88.7,92.2,7.8
+1921,-31.5301,159.069,false,Central/Community,Very Remote,5,1009,1000–1049,4,35,89.1,89.1,10.9
+1926,-33.3879,148.0064,true,Primary,Outer Regional,3,940,900–949,2,356,87,89.8,10.2
+1930,-35.1479,147.467,true,Primary,Inner Regional,2,941,900–949,2,159,87.9,87.4,12.6
+1932,-33.8822,151.1816,true,Primary,Major Cities,1,1161,1100 and over,6,307,88.7,91.4,8.6
+1936,-32.1825,152.5242,true,Primary,Inner Regional,2,934,900–949,2,573,86.1,86.7,13.3
+1937,-33.8604,151.2049,true,Primary,Major Cities,1,1094,1050–1099,5,284,89.1,93.3,6.7
+1943,-31.0336,152.8794,true,Primary,Inner Regional,2,890,Under 900,1,130,85.7,87.6,12.4
+1944,-33.5587,150.7993,true,Primary,Major Cities,1,957,950–999,3,194,86.2,91.7,8.3
+1946,-33.7515,151.2247,true,Primary,Major Cities,1,1123,1100 and over,6,218,90.8,91.4,8.6
+1952,-33.6482,151.0452,true,Primary,Major Cities,1,1042,1000–1049,4,147,90.5,92.3,7.7
+1954,-34.7969,147.04,true,Primary,Outer Regional,3,917,900–949,2,25,87.6,88.7,11.3
+1956,-29.0772,149.6349,true,Primary,Remote,4,933,900–949,2,14,88,94.8,5.2
+1969,-35.8321,146.9981,true,Primary,Inner Regional,2,942,900–949,2,13,88.6,95.9,4.1
+1971,-34.7494,150.8215,true,Primary,Inner Regional,2,1091,1050–1099,5,378,89,90.4,9.6
+1972,-32.3961,148.8295,true,Primary,Outer Regional,3,860,Under 900,1,33,89.1,90.6,9.4
+1974,-32.3365,150.569,true,Primary,Inner Regional,2,814,Under 900,1,23,82.8,89.1,10.9
+1978,-29.8527,151.1156,true,Primary,Outer Regional,3,843,Under 900,1,42,85.1,85.5,14.5
+1979,-31.708,148.6646,true,Primary,Outer Regional,3,815,Under 900,1,198,81.9,85.4,14.6
+1982,-32.7523,151.5307,true,Primary,Major Cities,1,922,900–949,2,404,87.4,88,12
+1986,-31.2497,146.9089,true,Primary,Remote,4,915,900–949,2,14,92.4,89.9,10.1
+1988,-33.7997,150.9504,true,Primary,Major Cities,1,1132,1100 and over,6,1072,89.5,92.8,7.2
+1990,-33.833,151.1257,true,Primary,Major Cities,1,1129,1100 and over,6,305,90.5,93.3,6.7
+1991,-31.0265,152.9465,true,Primary,Inner Regional,2,1004,1000–1049,4,19,83.6,80.7,19.3
+1992,-34.5315,150.866,true,Primary,Major Cities,1,988,950–999,3,203,85,89.7,10.3
+1994,-33.7657,150.6177,true,Primary,Major Cities,1,1120,1100 and over,6,338,89.6,91.9,8.1
+2001,-33.971,150.8966,true,Primary,Major Cities,1,1070,1050–1099,5,470,87.7,90.1,9.9
+2003,-33.7008,151.0029,true,Primary,Major Cities,1,1108,1100 and over,6,240,88.1,92.2,7.8
+2005,-29.7351,151.741,true,Primary,Inner Regional,2,903,900–949,2,339,82.8,85.4,14.6
+2009,-33.8814,151.2302,true,Primary,Major Cities,1,1176,1100 and over,6,263,92,92.8,7.2
+2012,-33.5994,151.0081,true,Primary,Inner Regional,2,1055,1050–1099,5,283,90.6,92.3,7.7
+2015,-34.5223,150.4835,true,Primary,Inner Regional,2,1045,1000–1049,4,23,85,91.4,8.6
+2016,-30.0536,152.9763,true,Primary,Inner Regional,2,938,900–949,2,72,88.3,88.7,11.3
+2020,-32.5254,151.7979,true,Primary,Inner Regional,2,945,900–949,2,27,90.3,88.5,11.5
+2021,-33.5305,150.7655,true,Primary,Inner Regional,2,954,950–999,3,184,88.4,92,8
+2027,-34.1796,142.2227,true,Primary,Outer Regional,3,1010,1000–1049,4,201,86.4,88.1,11.9
+2033,-29.1159,147.4555,true,Central/Community,Very Remote,5,629,Under 900,1,28,73,71.8,28.2
+2035,-33.9757,145.7092,true,Primary,Outer Regional,3,935,900–949,2,38,93.4,91.3,8.7
+2038,-33.6171,148.4364,true,Primary,Outer Regional,3,919,900–949,2,26,87.8,92.2,7.8
+2041,-28.8183,153.3223,true,Primary,Inner Regional,2,847,Under 900,1,226,79.8,82.4,17.6
+2042,-28.6095,153.4398,true,Primary,Inner Regional,2,1048,1000–1049,4,57,79,86.4,13.6
+2049,-33.4207,151.3345,true,Primary,Major Cities,1,1049,1000–1049,4,545,87.6,88.6,11.4
+2053,-34.7506,149.7178,true,Primary,Inner Regional,2,896,Under 900,1,181,83.2,88.8,11.2
+2054,-34.7626,149.7304,true,Primary,Inner Regional,2,966,950–999,3,148,89.7,89,11
+2055,-34.7446,149.735,true,Primary,Inner Regional,2,919,900–949,2,188,83.5,85.9,14.1
+2056,-34.76,149.7123,true,Primary,Inner Regional,2,905,900–949,2,160,86.2,87.3,12.7
+2060,-29.685,152.9333,true,Primary,Inner Regional,2,907,900–949,2,476,84.9,86.9,13.1
+2061,-29.7099,152.9371,true,Primary,Inner Regional,2,905,900–949,2,564,84.6,89.1,10.9
+2064,-33.8343,151.0047,true,Primary,Major Cities,1,973,950–999,3,590,85.2,87.5,12.5
+2066,-33.8483,150.9959,true,Primary,Major Cities,1,933,900–949,2,323,82.2,85.7,14.3
+2068,-29.5854,150.3324,true,Primary,Outer Regional,3,918,900–949,2,23,94.1,82.1,17.9
+2070,-33.9977,148.4001,true,Primary,Outer Regional,3,893,Under 900,1,5,84.4,81.8,18.2
+2071,-31.0596,152.8028,true,Primary,Inner Regional,2,712,Under 900,1,19,65.1,70,30
+2075,-33.9007,150.869,true,Primary,Major Cities,1,973,950–999,3,365,87.3,90.3,9.7
+2076,-33.8259,151.1833,true,Primary,Major Cities,1,1175,1100 and over,6,367,91.4,93.1,6.9
+2082,-33.8923,148.1675,true,Primary,Outer Regional,3,965,950–999,3,173,90.1,89.9,10.1
+2083,-32.4276,151.5383,true,Primary,Inner Regional,2,936,900–949,2,53,86.7,87.3,12.7
+2084,-32.6801,151.3872,true,Primary,Inner Regional,2,935,900–949,2,186,85.7,89.4,10.6
+2086,-33.828,150.9411,true,Primary,Major Cities,1,1081,1050–1099,5,540,88.6,92.2,7.8
+2087,-34.2914,146.0363,true,Primary,Outer Regional,3,881,Under 900,1,433,84.9,87.2,12.8
+2093,-33.8558,150.982,true,Primary,Major Cities,1,943,900–949,2,623,84.3,87.1,12.9
+2094,-31.3322,148.4758,true,Central/Community,Outer Regional,3,693,Under 900,1,104,80.9,82.8,17.2
+2097,-32.3597,149.5377,true,Primary,Outer Regional,3,913,900–949,2,283,83.3,86.9,13.1
+2099,-29.4892,153.2336,true,Primary,Inner Regional,2,977,950–999,3,213,82.3,88,12
+2100,-29.7796,150.9792,true,Primary,Outer Regional,3,997,950–999,3,29,88.2,91.7,8.3
+2102,-35.0521,148.1092,true,Primary,Inner Regional,2,946,900–949,2,164,87.5,85.8,14.2
+2103,-35.0808,148.1031,true,Primary,Inner Regional,2,916,900–949,2,47,90.7,92.6,7.4
+2104,-35.0299,149.2671,true,Primary,Inner Regional,2,1101,1100 and over,6,140,86.9,92.3,7.7
+2109,-30.9775,150.2563,true,Primary,Outer Regional,3,785,Under 900,1,175,82.6,86.5,13.5
+2111,-34.7835,149.2656,true,Primary,Inner Regional,2,1024,1000–1049,4,125,89.6,91.6,8.4
+2114,-30.2226,151.6774,true,Central/Community,Inner Regional,2,889,Under 900,1,288,81.6,79.1,20.9
+2115,-30.6115,148.975,true,Primary,Remote,4,694,Under 900,1,21,88.1,90.3,9.7
+2116,-34.0469,151.0828,true,Primary,Major Cities,1,1091,1050–1099,5,763,89,92.7,7.3
+2117,-33.8795,151.134,true,Primary,Major Cities,1,1125,1100 and over,6,542,91,92.1,7.9
+2128,-33.9473,150.9545,true,Primary,Major Cities,1,1030,1000–1049,4,445,89,91.5,8.5
+2129,-33.6485,150.0489,true,Primary,Inner Regional,2,1068,1050–1099,5,14,89.1,91.6,8.4
+2131,-31.7129,152.594,true,Primary,Inner Regional,2,1033,1000–1049,4,36,86.5,91.7,8.3
+2132,-34.3297,146.0424,true,Primary,Outer Regional,3,982,950–999,3,154,89.6,89.7,10.3
+2133,-33.7722,151.2865,true,Primary,Major Cities,1,1137,1100 and over,6,881,89.9,92.2,7.8
+2136,-32.7833,149.4619,true,Primary,Outer Regional,3,840,Under 900,1,12,86.9,95.4,4.6
+2139,-31.8702,152.6888,true,Primary,Inner Regional,2,949,900–949,2,83,87.7,88,12
+2142,-29.4256,153.2403,true,Primary,Inner Regional,2,943,900–949,2,34,85.3,89.3,10.7
+2145,-34.506,144.8454,true,Primary,Outer Regional,3,934,900–949,2,216,87.1,88.7,11.3
+2149,-34.0867,151.0073,true,Primary,Major Cities,1,1056,1050–1099,5,273,88.6,90.7,9.3
+2153,-34.1842,150.9884,true,Primary,Major Cities,1,1057,1050–1099,5,460,88.1,91.4,8.6
+2154,-35.5175,147.0312,true,Primary,Inner Regional,2,961,950–999,3,70,85.3,91,9
+2155,-31.5512,146.7234,true,Primary,Remote,4,874,Under 900,1,13,89.7,79.7,20.3
+2156,-30.2945,152.4227,true,Primary,Outer Regional,3,1049,1000–1049,4,14,,93.7,6.3
+2157,-31.5804,152.73,true,Primary,Inner Regional,2,919,900–949,2,25,85.7,86.6,13.4
+2161,-33.0346,149.4159,true,Primary,Outer Regional,3,972,950–999,3,14,94,92.4,7.6
+2164,-33.6018,150.9762,true,Primary,Inner Regional,2,1041,1000–1049,4,25,86.8,94.2,5.8
+2165,-33.4799,145.5403,true,Central/Community,Remote,4,911,900–949,2,211,83.7,85.7,14.3
+2166,-34.3548,150.4914,true,Primary,Inner Regional,2,935,900–949,2,120,85.1,90.8,9.2
+2167,-32.7167,151.6507,true,Primary,Major Cities,1,1009,1000–1049,4,99,88.3,90.2,9.8
+2170,-35.7179,147.319,true,Primary,Inner Regional,2,1003,1000–1049,4,121,90.1,90.9,9.1
+2171,-33.4051,151.4077,true,Primary,Major Cities,1,1047,1000–1049,4,95,89.6,89.4,10.6
+2172,-33.8106,148.7568,true,Primary,Inner Regional,2,920,900–949,2,26,78.5,86.5,13.5
+2173,-33.8673,151.0852,true,Primary,Major Cities,1,1094,1050–1099,5,368,87.8,92.2,7.8
+2177,-32.7252,151.5324,true,Primary,Major Cities,1,879,Under 900,1,519,83.1,86.2,13.8
+2182,-33.8404,150.8527,true,Primary,Major Cities,1,932,900–949,2,84,85.2,89.8,10.2
+2186,-35.9799,146.6368,true,Primary,Inner Regional,2,982,950–999,3,151,88.1,90,10
+2187,-33.9319,150.8496,true,Primary,Major Cities,1,985,950–999,3,531,88,89.3,10.7
+2188,-35.4833,147.7606,true,Primary,Outer Regional,3,1004,1000–1049,4,8,76.2,94.4,5.6
+2189,-33.8351,151.1513,true,Primary,Major Cities,1,1149,1100 and over,6,228,90.4,92.7,7.3
+2190,-31.4782,152.6606,true,Primary,Inner Regional,2,838,Under 900,1,22,86.5,90.2,9.8
+2193,-33.0426,151.5899,true,Primary,Major Cities,1,996,950–999,3,311,87.1,88.6,11.4
+2197,-33.9647,151.1107,true,Primary,Major Cities,1,1102,1100 and over,6,1048,90.7,91.7,8.3
+2198,-33.9725,151.0993,true,Primary,Major Cities,1,1077,1050–1099,5,453,90.7,92.7,7.3
+2199,-35.0368,150.6681,true,Primary,Inner Regional,2,1004,1000–1049,4,163,86.3,85,15
+2201,-32.9667,149.8555,true,Primary,Outer Regional,3,964,950–999,3,18,85.2,92.4,7.6
+2203,-34.814,147.7412,true,Primary,Outer Regional,3,995,950–999,3,12,89.9,89.9,10.1
+2204,-29.4047,153.3489,true,Primary,Inner Regional,2,996,950–999,3,96,89.4,87.9,12.1
+2206,-34.0003,150.8666,true,Primary,Major Cities,1,985,950–999,3,424,85.7,89.8,10.2
+2209,-29.7731,151.123,true,Primary,Outer Regional,3,899,Under 900,1,498,82.4,85.8,14.2
+2211,-32.6651,151.6042,true,Primary,Inner Regional,2,992,950–999,3,47,86.8,88.1,11.9
+2212,-32.9114,151.7441,true,Primary,Major Cities,1,1090,1050–1099,5,159,88.2,90.4,9.6
+2213,-32.8985,144.301,true,Central/Community,Very Remote,5,747,Under 900,1,29,66.6,76.8,23.2
+2214,-28.7676,153.4984,true,Primary,Inner Regional,2,1032,1000–1049,4,33,80.2,87.6,12.4
+2218,-34.6446,150.773,true,Primary,Inner Regional,2,1045,1000–1049,4,131,88.4,90.2,9.8
+2223,-28.9272,151.9344,true,Primary,Outer Regional,3,795,Under 900,1,10,94.1,90.4,9.6
+2226,-35.3546,145.7289,true,Primary,Outer Regional,3,954,950–999,3,14,83.8,90.4,9.6
+2231,-32.4972,150.9059,true,Primary,Outer Regional,3,877,Under 900,1,15,86.9,94,6
+2234,-32.9038,151.6954,true,Primary,Major Cities,1,923,900–949,2,216,85.8,85.8,14.2
+2235,-28.678,153.1814,true,Primary,Inner Regional,2,1010,1000–1049,4,25,87.6,85.1,14.9
+2236,-33.2399,151.3801,true,Primary,Inner Regional,2,989,950–999,3,60,86.7,90,10
+2239,-35.959,146.8867,true,Primary,Inner Regional,2,969,950–999,3,164,86.8,90.1,9.9
+2245,-34.8202,148.3354,true,Primary,Outer Regional,3,994,950–999,3,22,86.2,90.2,9.8
+2246,-32.94,151.7586,true,Primary,Major Cities,1,1115,1100 and over,6,450,88.5,89.8,10.2
+2247,-34.8735,147.5849,true,Primary,Inner Regional,2,906,900–949,2,118,87.5,89.2,10.8
+2248,-34.855,147.5854,true,Primary,Inner Regional,2,915,900–949,2,111,88.1,87.1,12.9
+2254,-32.8562,149.9748,true,Primary,Inner Regional,2,837,Under 900,1,95,83.4,84.8,15.2
+2255,-34.5526,150.5296,true,Primary,Inner Regional,2,1074,1050–1099,5,20,91.3,88.4,11.6
+2256,-34.7365,150.532,true,Primary,Inner Regional,2,1073,1050–1099,5,83,89.1,89.1,10.9
+2259,-33.2625,151.4849,true,Primary,Major Cities,1,942,900–949,2,500,83.9,87.5,12.5
+2260,-30.2524,153.0478,true,Primary,Inner Regional,2,957,950–999,3,29,85.8,88.8,11.2
+2263,-32.6543,151.9666,true,Primary,Inner Regional,2,875,Under 900,1,157,85.6,88.5,11.5
+2267,-32.8572,151.3959,true,Primary,Major Cities,1,897,Under 900,1,114,89.1,89.7,10.3
+2270,-33.8865,151.1469,true,Primary,Major Cities,1,1117,1100 and over,6,252,90.6,93,7
+2271,-34.4141,150.8734,true,Primary,Major Cities,1,1103,1100 and over,6,297,88.1,90.9,9.1
+2273,-30.5719,151.6365,true,Primary,Inner Regional,2,1054,1050–1099,5,27,88,90.3,9.7
+2274,-33.7111,150.9579,true,Primary,Major Cities,1,1136,1100 and over,6,855,89,92.9,7.1
+2275,-33.417,149.6052,true,Primary,Inner Regional,2,859,Under 900,1,374,86.7,85,15
+2278,-31.0837,152.8469,true,Primary,Inner Regional,2,875,Under 900,1,180,88,90.5,9.5
+2279,-31.0784,152.8301,true,Primary,Inner Regional,2,794,Under 900,1,422,76.8,82.4,17.6
+2280,-31.6274,152.7028,true,Primary,Inner Regional,2,936,900–949,2,206,85.7,87.9,12.1
+2283,-33.9096,151.225,true,Primary,Major Cities,1,1120,1100 and over,6,381,91,92.6,7.4
+2284,-33.6656,151.0046,true,Primary,Major Cities,1,1040,1000–1049,4,187,88.1,90.8,9.2
+2285,-34.0731,150.8586,true,Primary,Major Cities,1,990,950–999,3,120,86.1,90,10
+2286,-30.7596,151.4492,true,Primary,Outer Regional,3,1002,1000–1049,4,28,86.9,84.2,15.8
+2293,-34.6697,150.8506,true,Primary,Major Cities,1,1064,1050–1099,5,347,89.2,92.1,7.9
+2303,-30.9911,152.9951,true,Primary,Inner Regional,2,951,950–999,3,27,80.3,77.1,22.9
+2304,-33.4682,151.3944,true,Primary,Major Cities,1,1004,1000–1049,4,364,86.6,89.1,10.9
+2307,-33.9478,151.1016,true,Primary,Major Cities,1,1010,1000–1049,4,268,87.2,90.1,9.9
+2308,-33.9408,151.1204,true,Primary,Major Cities,1,1071,1050–1099,5,340,88.2,91.8,8.2
+2310,-30.5067,151.1164,true,Primary,Outer Regional,3,955,950–999,3,10,83.4,,
+2312,-33.7659,150.7265,true,Primary,Major Cities,1,1048,1000–1049,4,499,88.1,89.7,10.3
+2314,-32.6098,151.2901,true,Primary,Inner Regional,2,926,900–949,2,45,86.7,83.4,16.6
+2315,-32.8778,151.37,true,Primary,Inner Regional,2,930,900–949,2,113,86.9,85.8,14.2
+2319,-33.962,151.1366,true,Primary,Major Cities,1,1087,1050–1099,5,456,88.7,93,7
+2327,-31.0535,151.0537,true,Primary,Inner Regional,2,928,900–949,2,168,90.5,89.3,10.7
+2330,-30.2546,153.1319,true,Primary,Inner Regional,2,1019,1000–1049,4,441,87.7,90.3,9.7
+2333,-32.0461,152.2723,true,Primary,Inner Regional,2,908,900–949,2,40,87.5,90.5,9.5
+2334,-33.2326,151.216,true,Primary,Inner Regional,2,975,950–999,3,37,80,86.8,13.2
+2340,-33.5497,150.6923,true,Primary,Inner Regional,2,982,950–999,3,125,86.8,92.4,7.6
+2341,-34.0102,151.2038,true,Primary,Major Cities,1,1030,1000–1049,4,211,88.8,90.6,9.4
+2342,-33.5552,150.6627,true,Primary,Inner Regional,2,1051,1050–1099,5,139,88.7,91.1,8.9
+2343,-33.5112,150.7773,true,Primary,Inner Regional,2,974,950–999,3,81,87.8,90.2,9.8
+2344,-33.5418,150.6394,true,Primary,Inner Regional,2,1018,1000–1049,4,67,91.5,92.7,7.3
+2349,-28.6252,153.0039,true,Primary,Inner Regional,2,938,900–949,2,260,83.4,86.8,13.2
+2353,-35.2085,147.511,true,Primary,Inner Regional,2,987,950–999,3,33,90.4,92.7,7.3
+2354,-34.4062,149.5277,true,Primary,Inner Regional,2,1006,1000–1049,4,14,84.6,89.8,10.2
+2356,-32.9921,151.1305,true,Primary,Inner Regional,2,969,950–999,3,52,83.5,83.5,16.5
+2357,-35.1736,147.3792,true,Primary,Inner Regional,2,963,950–999,3,434,88.9,90.7,9.3
+2359,-33.2948,146.374,true,Central/Community,Remote,4,858,Under 900,1,227,72.2,82.3,17.7
+2360,-33.9236,151.07,true,Primary,Major Cities,1,999,950–999,3,428,83.4,86.5,13.5
+2362,-33.1882,151.5756,true,Primary,Major Cities,1,950,950–999,3,384,86.3,88.7,11.3
+2363,-34.2482,146.0342,true,Primary,Outer Regional,3,926,900–949,2,43,86.1,87.7,12.3
+2366,-32.9117,151.7041,true,Primary,Major Cities,1,1065,1050–1099,5,339,89.2,90.6,9.4
+2368,-33.8165,151.1691,true,Primary,Major Cities,1,1178,1100 and over,6,688,91.3,93.1,6.9
+2370,-31.7839,152.5321,true,Primary,Inner Regional,2,907,900–949,2,38,82.2,87.6,12.4
+2372,-31.7052,152.4674,true,Primary,Inner Regional,2,979,950–999,3,13,86.3,88.2,11.8
+2373,-33.9784,151.2354,true,Primary,Major Cities,1,920,900–949,2,111,81.2,90.3,9.7
+2374,-32.7005,151.6056,true,Primary,Major Cities,1,991,950–999,3,155,88.4,89.2,10.8
+2375,-28.6486,153.1148,true,Primary,Inner Regional,2,886,Under 900,1,11,81,84.6,15.4
+2377,-31.6518,152.7975,true,Primary,Inner Regional,2,991,950–999,3,151,86.8,90.8,9.2
+2378,-36.0374,146.9283,true,Primary,Inner Regional,2,944,900–949,2,409,84.9,88.4,11.6
+2379,-29.4916,153.1004,true,Primary,Inner Regional,2,947,900–949,2,52,80.8,90.5,9.5
+2381,-33.7212,150.4282,true,Primary,Major Cities,1,1000,1000–1049,4,196,85.3,88.1,11.9
+2386,-34.5461,146.4072,true,Primary,Outer Regional,3,976,950–999,3,258,88.9,90.9,9.1
+2391,-33.7112,150.3367,true,Primary,Major Cities,1,1055,1050–1099,5,199,87.1,89.5,10.5
+2394,-33.861,151.0469,true,Primary,Major Cities,1,1019,1000–1049,4,762,91.9,93.2,6.8
+2395,-29.4252,147.9786,true,Central/Community,Remote,4,790,Under 900,1,311,71.1,73.3,26.7
+2403,-33.7807,151.1689,true,Primary,Major Cities,1,1162,1100 and over,6,584,92.3,94.2,5.8
+2404,-33.7675,151.1843,true,Primary,Major Cities,1,1167,1100 and over,6,531,92.3,94.4,5.6
+2407,-33.3813,151.3763,true,Primary,Major Cities,1,1035,1000–1049,4,192,88.7,90.3,9.7
+2409,-28.8095,153.2621,true,Primary,Inner Regional,2,898,Under 900,1,106,80.4,89,11
+2410,-33.4821,150.1602,true,Primary,Inner Regional,2,919,900–949,2,324,85.5,87.8,12.2
+2413,-33.7072,150.7518,true,Primary,Major Cities,1,941,900–949,2,155,86.3,90,10
+2417,-32.7003,151.452,true,Primary,Inner Regional,2,965,950–999,3,194,86.5,88.8,11.2
+2418,-35.2228,146.7147,true,Central/Community,Outer Regional,3,874,Under 900,1,87,77.3,75.4,24.6
+2421,-33.6475,150.7369,true,Primary,Major Cities,1,939,900–949,2,235,81.2,88.6,11.4
+2423,-31.4378,152.4861,true,Primary,Inner Regional,2,887,Under 900,1,36,89.9,91.3,8.7
+2428,-30.2072,152.8999,true,Primary,Inner Regional,2,793,Under 900,1,20,83.5,89.2,10.8
+2429,-35.8562,146.3687,true,Primary,Inner Regional,2,1010,1000–1049,4,11,92.1,90.3,9.7
+2431,-33.8813,150.6915,true,Primary,Inner Regional,2,911,900–949,2,35,86.6,88.2,11.8
+2432,-32.6563,149.8446,true,Primary,Outer Regional,3,886,Under 900,1,26,92.3,92.1,7.9
+2436,-33.6733,149.0449,true,Primary,Outer Regional,3,856,Under 900,1,7,92.6,89,11
+2439,-33.3213,150.972,true,Primary,Inner Regional,2,1020,1000–1049,4,13,83.2,86.9,13.1
+2444,-30.7078,152.9171,true,Primary,Inner Regional,2,925,900–949,2,284,81.3,86.2,13.8
+2448,-34.2431,148.2143,true,Primary,Outer Regional,3,966,950–999,3,13,85.6,92.5,7.5
+2451,-32.749,151.5853,true,Primary,Major Cities,1,975,950–999,3,559,87.2,87.3,12.7
+2454,-33.9622,151.2486,true,Primary,Major Cities,1,1068,1050–1099,5,244,86.5,92,8
+2464,-28.7491,153.0771,true,Primary,Inner Regional,2,911,900–949,2,17,82.5,84.5,15.5
+2465,-33.1842,148.7001,true,Primary,Outer Regional,3,947,900–949,2,39,88.8,93.5,6.5
+2469,-33.7919,151.2688,true,Primary,Major Cities,1,1147,1100 and over,6,761,89.8,92.9,7.1
+2472,-33.5927,150.9163,true,Primary,Inner Regional,2,1018,1000–1049,4,106,88,93.2,6.8
+2476,-33.0743,151.6482,true,Primary,Major Cities,1,981,950–999,3,94,85.2,88.1,11.9
+2480,-33.4553,150.9937,true,Primary,Inner Regional,2,950,950–999,3,31,84.6,83.1,16.9
+2482,-33.9442,151.253,true,Primary,Major Cities,1,1055,1050–1099,5,269,88,89.6,10.4
+2485,-34.8283,147.3552,true,Primary,Inner Regional,2,1008,1000–1049,4,27,86,92.1,7.9
+2489,-33.6964,150.8336,true,Primary,Major Cities,1,1060,1050–1099,5,242,87.5,88.6,11.4
+2492,-32.4588,150.6657,true,Primary,Outer Regional,3,992,950–999,3,7,93.7,99.1,0.9
+2494,-30.5239,151.6373,true,Primary,Inner Regional,2,1050,1050–1099,5,164,90.5,91.9,8.1
+2496,-34.7134,150.0066,true,Primary,Inner Regional,2,968,950–999,3,140,85.4,90.4,9.6
+2499,-33.9286,151.1925,true,Primary,Major Cities,1,1035,1000–1049,4,397,90.1,90.8,9.2
+2500,-35.8161,144.9021,true,Primary,Outer Regional,3,943,900–949,2,52,90.6,92.6,7.4
+2501,-34.7701,146.9273,true,Primary,Outer Regional,3,961,950–999,3,32,89.7,90.4,9.6
+2502,-33.9551,151.2291,true,Primary,Major Cities,1,1046,1000–1049,4,222,87.1,90,10
+2506,-32.8954,151.7487,true,Primary,Major Cities,1,1044,1000–1049,4,343,90.8,92,8
+2507,-32.8887,151.7301,true,Primary,Major Cities,1,1033,1000–1049,4,342,86.1,91.2,8.8
+2508,-35.4643,145.3088,true,Primary,Outer Regional,3,875,Under 900,1,27,85.6,88.8,11.2
+2509,-33.4337,149.9205,true,Primary,Inner Regional,2,1000,1000–1049,4,30,81.9,91.3,8.7
+2510,-33.7814,150.9426,true,Primary,Major Cities,1,984,950–999,3,335,86.5,90.2,9.8
+2511,-30.7791,152.6902,true,Primary,Outer Regional,3,978,950–999,3,33,89.1,89.4,10.6
+2512,-32.7382,151.8541,true,Primary,Inner Regional,2,994,950–999,3,382,87.4,90.9,9.1
+2515,-33.7153,150.2326,true,Primary,Inner Regional,2,1046,1000–1049,4,3,,92.8,7.2
+2520,-34.0121,151.0066,true,Primary,Major Cities,1,1036,1000–1049,4,154,88,90.9,9.1
+2522,-31.8187,149.1224,true,Central/Community,Outer Regional,3,889,Under 900,1,90,77.9,77.2,22.8
+2523,-32.3934,142.4133,true,Central/Community,Very Remote,5,760,Under 900,1,74,75.7,72.6,27.4
+2525,-32.9375,151.7422,true,Primary,Major Cities,1,950,950–999,3,139,83.2,83.9,16.1
+2526,-36.8865,149.917,true,Primary,Outer Regional,3,1001,1000–1049,4,428,85.2,89.1,10.9
+2528,-32.1451,150.3529,true,Central/Community,Outer Regional,3,879,Under 900,1,221,80.5,80.8,19.2
+2531,-33.8405,150.976,true,Primary,Major Cities,1,936,900–949,2,620,85.4,87.3,12.7
+2532,-33.1145,151.5168,true,Primary,Major Cities,1,925,900–949,2,376,82.2,87.8,12.2
+2540,-35.706,149.1617,true,Primary,Inner Regional,2,990,950–999,3,45,87.8,90.5,9.5
+2542,-33.645,151.0232,true,Primary,Major Cities,1,1007,1000–1049,4,31,88.4,90.1,9.9
+2543,-33.8228,151.2327,true,Primary,Major Cities,1,1162,1100 and over,6,423,90.5,92.6,7.4
+2550,-32.6968,151.0058,true,Primary,Outer Regional,3,800,Under 900,1,19,84.1,87.1,12.9
+2554,-32.7521,151.7037,true,Primary,Major Cities,1,920,900–949,2,60,80.2,84.6,15.4
+2555,-32.8898,151.2508,true,Primary,Inner Regional,2,932,900–949,2,101,84.7,87.8,12.2
+2558,-33.4451,149.1859,true,Primary,Inner Regional,2,1053,1050–1099,5,235,91.3,91.6,8.4
+2560,-33.9421,150.9798,true,Primary,Major Cities,1,1027,1000–1049,4,317,90.1,91.4,8.6
+2565,-35.3141,150.4358,true,Primary,Inner Regional,2,1024,1000–1049,4,823,84.7,89.6,10.4
+2571,-32.8761,151.6175,true,Primary,Major Cities,1,1018,1000–1049,4,133,86.1,90.2,9.8
+2572,-34.03,150.8473,true,Primary,Major Cities,1,1010,1000–1049,4,220,87.1,91.1,8.9
+2574,-34.0346,151.0974,true,Primary,Major Cities,1,1024,1000–1049,4,300,88.5,92,8
+2580,-31.8968,152.6141,true,Primary,Inner Regional,2,917,900–949,2,37,83,90,10
+2581,-34.448,150.4444,true,Primary,Inner Regional,2,992,950–999,3,536,86.7,90.4,9.6
+2584,-36.1153,144.7628,true,Primary,Inner Regional,2,889,Under 900,1,113,86.9,83.7,16.3
+2585,-28.7302,153.2972,true,Primary,Inner Regional,2,1014,1000–1049,4,58,85.3,88.7,11.3
+2586,-35.7861,150.1406,true,Primary,Inner Regional,2,818,Under 900,1,27,74.6,83.4,16.6
+2590,-33.098,148.8639,true,Central/Community,Inner Regional,2,917,900–949,2,393,82,84.9,15.1
+2593,-33.677,151.3004,true,Primary,Major Cities,1,1096,1050–1099,5,671,87,91.4,8.6
+2599,-34.193,148.3473,true,Primary,Outer Regional,3,969,950–999,3,24,93.3,92.1,7.9
+2608,-31.0198,151.0736,true,Primary,Outer Regional,3,850,Under 900,1,31,90.6,87.5,12.5
+2616,-31.7696,152.6512,true,Primary,Inner Regional,2,825,Under 900,1,31,83.7,87.9,12.1
+2618,-29.4662,149.8376,true,Primary,Outer Regional,3,862,Under 900,1,432,80.8,83.8,16.2
+2621,-33.1035,151.4896,true,Primary,Major Cities,1,919,900–949,2,156,83,85.7,14.3
+2623,-32.7257,151.6321,true,Primary,Major Cities,1,1023,1000–1049,4,262,84.3,89.9,10.1
+2624,-33.9729,151.081,true,Primary,Major Cities,1,1096,1050–1099,5,350,88.6,92.4,7.6
+2625,-33.8498,151.1039,true,Primary,Major Cities,1,1081,1050–1099,5,261,89,91.6,8.4
+2628,-35.9126,150.0765,true,Primary,Inner Regional,2,943,900–949,2,326,82.3,86.8,13.2
+2631,-34.5506,150.3664,true,Primary,Inner Regional,2,985,950–999,3,442,84.8,90,10
+2632,-35.0893,144.0328,true,Primary,Outer Regional,3,965,950–999,3,61,93.1,93.3,6.7
+2637,-31.881,152.1796,true,Primary,Inner Regional,2,932,900–949,2,23,89.3,87.6,12.4
+2640,-34.0718,150.6364,true,Primary,Inner Regional,2,1054,1050–1099,5,32,85.5,90.5,9.5
+2641,-32.7242,151.6991,true,Primary,Inner Regional,2,888,Under 900,1,38,83.5,82.9,17.1
+2642,-34.4114,150.8562,true,Primary,Major Cities,1,1072,1050–1099,5,91,86.9,91.5,8.5
+2643,-34.4324,150.8171,true,Primary,Major Cities,1,1050,1050–1099,5,159,86.4,90.4,9.6
+2647,-32.4085,151.1888,true,Primary,Inner Regional,2,910,900–949,2,56,86.1,87.6,12.4
+2648,-33.8998,150.9,true,Primary,Major Cities,1,951,950–999,3,368,87.7,90.3,9.7
+2652,-33.5913,150.2539,true,Primary,Inner Regional,2,1039,1000–1049,4,56,88.5,89.7,10.3
+2656,-32.5959,149.584,true,Primary,Inner Regional,2,925,900–949,2,539,86,87,13
+2658,-32.9013,151.4786,true,Primary,Inner Regional,2,954,950–999,3,56,87.9,88.8,11.2
+2659,-33.8365,150.6503,true,Primary,Inner Regional,2,980,950–999,3,103,90.5,90.1,9.9
+2660,-31.0987,149.9067,true,Primary,Outer Regional,3,922,900–949,2,28,88.3,91.3,8.7
+2664,-33.139,149.1205,true,Primary,Inner Regional,2,1009,1000–1049,4,67,90.4,89.8,10.2
+2665,-28.552,153.5059,true,Primary,Inner Regional,2,1026,1000–1049,4,217,81.5,87.3,12.7
+2667,-35.9871,146.0066,true,Primary,Inner Regional,2,967,950–999,3,48,89.7,92.4,7.6
+2668,-33.1921,149.1123,true,Primary,Inner Regional,2,961,950–999,3,74,91.4,90.2,9.8
+2669,-32.7224,149.0527,true,Primary,Outer Regional,3,807,Under 900,1,10,85.3,88.5,11.5
+2671,-28.848,152.8016,true,Primary,Inner Regional,2,881,Under 900,1,21,78.5,83.4,16.6
+2675,-28.9802,148.9909,true,Central/Community,Remote,4,795,Under 900,1,62,68.3,77.1,22.9
+2681,-34.2972,148.5155,true,Primary,Outer Regional,3,941,900–949,2,43,89.1,92,8
+2685,-34.5508,148.3599,true,Primary,Inner Regional,2,961,950–999,3,210,88.2,90.5,9.5
+2686,-31.7628,150.8322,true,Primary,Outer Regional,3,893,Under 900,1,36,85,88,12
+2687,-28.3299,153.3911,true,Primary,Inner Regional,2,959,950–999,3,149,87.1,89.6,10.4
+2688,-32.2584,150.8964,true,Primary,Inner Regional,2,913,900–949,2,422,86.1,86.9,13.1
+2695,-32.0975,152.3819,true,Primary,Inner Regional,2,938,900–949,2,165,86.1,86.8,13.2
+2696,-30.6417,153.0063,true,Primary,Inner Regional,2,904,900–949,2,156,83.7,87.1,12.9
+2698,-30.1356,153.0062,true,Primary,Inner Regional,2,921,900–949,2,100,90.9,89.4,10.6
+2699,-35.0539,147.9091,true,Primary,Outer Regional,3,934,900–949,2,10,82.6,83.9,16.1
+2701,-33.6156,146.3274,true,Primary,Remote,4,922,900–949,2,9,92.1,92.9,7.1
+2703,-33.3879,151.3626,true,Primary,Major Cities,1,1008,1000–1049,4,377,86.3,89.8,10.2
+2704,-34.0428,150.7338,true,Primary,Major Cities,1,969,950–999,3,291,88.5,90.6,9.4
+2706,-33.7203,151.2974,true,Primary,Major Cities,1,1091,1050–1099,5,364,89,91.5,8.5
+2708,-30.3249,149.7853,true,Primary,Outer Regional,3,823,Under 900,1,267,87.1,87.2,12.8
+2709,-30.3445,149.7639,true,Primary,Outer Regional,3,889,Under 900,1,232,86.5,88.5,11.5
+2710,-34.7445,146.5479,true,Primary,Outer Regional,3,853,Under 900,1,267,84,82.8,17.2
+2713,-32.2299,148.2444,true,Primary,Outer Regional,3,832,Under 900,1,237,82.5,82.9,17.1
+2714,-33.2938,149.0135,true,Primary,Inner Regional,2,1063,1050–1099,5,137,90.1,91.6,8.4
+2723,-32.7377,152.1131,true,Primary,Inner Regional,2,981,950–999,3,310,86.4,87.8,12.2
+2725,-31.1265,151.0042,true,Primary,Inner Regional,2,996,950–999,3,193,89.2,91.2,8.8
+2730,-33.8326,151.2196,true,Primary,Major Cities,1,1169,1100 and over,6,641,92.8,92.9,7.1
+2732,-33.7087,149.2168,true,Primary,Outer Regional,3,974,950–999,3,9,96.5,91.5,8.5
+2736,-32.9303,151.7769,true,Primary,Major Cities,1,1112,1100 and over,6,260,89,90,10
+2738,-32.9226,151.7128,true,Primary,Major Cities,1,1108,1100 and over,6,538,89.6,90.9,9.1
+2740,-33.6606,151.3122,true,Primary,Major Cities,1,1093,1050–1099,5,556,90.5,91,9
+2741,-28.7171,153.5331,true,Primary,Inner Regional,2,1082,1050–1099,5,61,88,87.9,12.1
+2744,-33.8918,151.1854,true,Primary,Major Cities,1,1132,1100 and over,6,221,89,91.3,8.7
+2748,-31.298,151.4086,true,Primary,Outer Regional,3,995,950–999,3,11,91.1,88,12
+2749,-33.8557,151.1932,true,Primary,Major Cities,1,1151,1100 and over,6,95,90,91.5,8.5
+2751,-28.5959,153.2209,true,Central/Community,Inner Regional,2,956,950–999,3,243,74.7,76.9,23.1
+2752,-36.5109,149.2896,true,Primary,Outer Regional,3,920,900–949,2,11,81.5,87.9,12.1
+2758,-36.2186,150.1373,true,Primary,Outer Regional,3,956,950–999,3,384,86.5,89.7,10.3
+2759,-33.1358,151.6051,true,Primary,Inner Regional,2,1023,1000–1049,4,180,87.5,90.5,9.5
+2760,-33.7233,151.098,true,Primary,Major Cities,1,1139,1100 and over,6,372,90.1,93.1,6.9
+2761,-33.813,151.2186,true,Primary,Major Cities,1,1181,1100 and over,6,364,91.4,93.5,6.5
+2763,-33.7865,150.9908,true,Primary,Major Cities,1,1082,1050–1099,5,614,86.8,91,9
+2764,-33.7684,151.0251,true,Primary,Major Cities,1,1137,1100 and over,6,861,91.3,93,7
+2765,-28.9267,150.3929,true,Primary,Outer Regional,3,973,950–999,3,22,90.3,90.4,9.6
+2766,-33.8348,151.2037,true,Primary,Major Cities,1,1144,1100 and over,6,756,91.1,92.9,7.1
+2769,-34.8794,150.6005,true,Primary,Inner Regional,2,904,900–949,2,517,85.3,87.6,12.4
+2771,-32.8107,151.3478,true,Primary,Major Cities,1,931,900–949,2,389,87.9,88.9,11.1
+2781,-31.4597,151.1274,true,Primary,Outer Regional,3,955,950–999,3,27,83.5,91.7,8.3
+2784,-29.9475,152.728,true,Primary,Outer Regional,3,908,900–949,2,19,84.3,81,19
+2785,-31.5684,147.1953,true,Primary,Remote,4,765,Under 900,1,131,82.8,85.6,14.4
+2789,-34.0789,150.5082,true,Primary,Inner Regional,2,945,900–949,2,141,87.6,90.4,9.6
+2791,-35.5527,146.1718,true,Central/Community,Outer Regional,3,962,950–999,3,36,86.1,88.4,11.6
+2793,-34.0784,150.5717,true,Primary,Inner Regional,2,977,950–999,3,308,85.6,89.4,10.6
+2794,-33.6205,150.8705,true,Primary,Major Cities,1,1032,1000–1049,4,612,87.3,91.4,8.6
+2796,-33.9837,151.0803,true,Primary,Major Cities,1,1126,1100 and over,6,365,91.3,92.7,7.3
+2797,-33.7033,149.8645,true,Primary,Inner Regional,2,920,900–949,2,218,87.6,89.2,10.8
+2798,-33.5245,149.7201,true,Primary,Inner Regional,2,1056,1050–1099,5,68,89.6,91,9
+2799,-31.9723,152.5885,true,Primary,Inner Regional,2,994,950–999,3,480,88.3,89.1,10.9
+2800,-28.6546,152.5974,true,Primary,Outer Regional,3,776,Under 900,1,13,79.6,70.8,29.2
+2801,-33.8675,150.9865,true,Primary,Major Cities,1,903,900–949,2,411,82.2,86.4,13.6
+2811,-33.2821,149.1137,true,Primary,Inner Regional,2,951,950–999,3,270,88.3,91.1,8.9
+2812,-33.8723,151.1587,true,Primary,Major Cities,1,1132,1100 and over,6,519,90.4,91.8,8.2
+2814,-30.289,153.0132,true,Primary,Inner Regional,2,940,900–949,2,33,84.9,90.3,9.7
+2815,-33.783,150.7214,true,Primary,Major Cities,1,995,950–999,3,242,85.9,90.1,9.9
+2818,-34.2122,151.0015,true,Primary,Inner Regional,2,1104,1100 and over,6,48,91.9,92.6,7.4
+2820,-33.3549,151.3682,true,Primary,Major Cities,1,1018,1000–1049,4,332,85.4,90,10
+2826,-33.955,151.0309,true,Primary,Major Cities,1,1019,1000–1049,4,334,87.8,90.3,9.7
+2827,-29.4739,150.1415,true,Primary,Outer Regional,3,857,Under 900,1,21,91.1,92.1,7.9
+2829,-29.4196,153.2882,true,Primary,Inner Regional,2,944,900–949,2,56,89.8,88.7,11.3
+2831,-36.9255,149.8718,true,Primary,Outer Regional,3,994,950–999,3,257,86.4,90.3,9.7
+2835,-33.1323,148.1763,true,Primary,Outer Regional,3,896,Under 900,1,363,85.3,87.2,12.8
+2838,-33.7259,150.9348,true,Primary,Major Cities,1,1083,1050–1099,5,566,87.2,91.3,8.7
+2840,-33.8168,151.0084,true,Primary,Major Cities,1,1134,1100 and over,6,671,87.4,90.8,9.2
+2841,-29.8709,153.2658,true,Primary,Inner Regional,2,1021,1000–1049,4,29,79.3,85.2,14.8
+2842,-33.804,151.0047,true,Primary,Major Cities,1,1077,1050–1099,5,253,86.8,90.2,9.8
+2843,-33.8245,150.991,true,Primary,Major Cities,1,1029,1000–1049,4,949,86.1,89.1,10.9
+2844,-32.6023,151.6123,true,Primary,Inner Regional,2,1027,1000–1049,4,104,90.4,90.9,9.1
+2846,-32.901,151.2846,true,Primary,Inner Regional,2,926,900–949,2,80,87,89,11
+2848,-32.7289,148.1921,true,Central/Community,Outer Regional,3,815,Under 900,1,126,77.2,80.6,19.4
+2849,-33.9554,151.0623,true,Primary,Major Cities,1,1043,1000–1049,4,412,89.1,90.9,9.1
+2852,-33.3258,151.2328,true,Primary,Inner Regional,2,947,900–949,2,19,80.1,88.9,11.1
+2855,-32.8319,151.4847,true,Primary,Major Cities,1,901,900–949,2,115,85.1,88.9,11.1
+2857,-33.7358,151.0681,true,Primary,Major Cities,1,1143,1100 and over,6,490,90.6,93,7
+2858,-33.7461,151.0505,true,Primary,Major Cities,1,1134,1100 and over,6,510,88.4,92.9,7.1
+2859,-33.7559,150.7044,true,Primary,Major Cities,1,986,950–999,3,524,84.5,87.7,12.3
+2861,-33.9626,151.0877,true,Primary,Major Cities,1,1061,1050–1099,5,458,89.4,91,9
+2862,-33.4911,149.5501,true,Primary,Inner Regional,2,1013,1000–1049,4,126,88.6,90.4,9.6
+2867,-34.1762,150.6093,true,Primary,Inner Regional,2,991,950–999,3,307,85.8,88.8,11.2
+2870,-30.3522,148.8892,true,Primary,Remote,4,747,Under 900,1,18,83.2,85.3,14.7
+2884,-33.5839,150.8596,true,Primary,Major Cities,1,987,950–999,3,290,86.4,91.7,8.3
+2886,-35.4665,146.7985,true,Primary,Outer Regional,3,920,900–949,2,13,86.4,90.1,9.9
+2887,-33.7492,150.8386,true,Primary,Major Cities,1,981,950–999,3,504,84.5,87.9,12.1
+2890,-28.5054,153.4791,true,Primary,Inner Regional,2,1068,1050–1099,5,111,75.3,79.9,20.1
+2893,-34.0257,141.8949,true,Primary,Remote,4,929,900–949,2,19,86.3,90.1,9.9
+2896,-34.4861,150.9147,true,Primary,Major Cities,1,1014,1000–1049,4,278,86.6,89.8,10.2
+2897,-33.3548,149.9797,true,Central/Community,Inner Regional,2,845,Under 900,1,203,80,75.5,24.5
+2899,-31.4299,152.9139,true,Primary,Inner Regional,2,932,900–949,2,451,84.5,86.7,13.3
+2900,-31.4536,149.9005,true,Primary,Outer Regional,3,822,Under 900,1,12,74.7,87.4,12.6
+2901,-33.9464,150.89,true,Primary,Major Cities,1,962,950–999,3,586,81.3,87.4,12.6
+2902,-33.528,151.35,true,Primary,Major Cities,1,1102,1100 and over,6,154,85.8,90.4,9.6
+2904,-34.5014,150.8823,true,Primary,Major Cities,1,943,900–949,2,88,86.4,88,12
+2910,-33.9306,151.0559,true,Primary,Major Cities,1,976,950–999,3,528,85.5,86.7,13.3
+2913,-33.8246,151.111,true,Primary,Major Cities,1,1114,1100 and over,6,357,91.3,92.7,7.3
+2917,-36.4642,149.8671,true,Primary,Outer Regional,3,987,950–999,3,53,82.7,88.2,11.8
+2918,-33.7375,150.8853,true,Primary,Major Cities,1,1097,1050–1099,5,962,87.5,90.9,9.1
+2919,-30.9307,147.872,true,Primary,Remote,4,826,Under 900,1,8,79.9,89.8,10.2
+2920,-34.0104,147.7905,true,Primary,Outer Regional,3,942,900–949,2,10,84,82.8,17.2
+2922,-35.3575,149.2362,true,Primary,Major Cities,1,997,950–999,3,361,85.6,89.7,10.3
+2926,-33.9593,150.8109,true,Primary,Major Cities,1,1032,1000–1049,4,507,85.9,87.7,12.3
+2927,-33.428,149.6481,true,Primary,Inner Regional,2,978,950–999,3,191,88.5,90.9,9.1
+2930,-33.9246,151.2372,true,Primary,Major Cities,1,1122,1100 and over,6,454,91,92.3,7.7
+2931,-30.4501,153.0126,true,Primary,Inner Regional,2,1097,1050–1099,5,24,90.1,88.9,11.1
+2933,-35.5961,146.5804,true,Primary,Outer Regional,3,979,950–999,3,30,84.4,87.2,12.8
+2935,-33.84,146.2582,true,Primary,Outer Regional,3,988,950–999,3,18,86.7,86.2,13.8
+2937,-29.0858,152.9553,true,Primary,Outer Regional,3,896,Under 900,1,17,85.8,92.1,7.9
+2943,-32.767,151.74,true,Primary,Major Cities,1,864,Under 900,1,322,83.1,86.2,13.8
+2946,-33.0116,151.7114,true,Primary,Major Cities,1,1089,1050–1099,5,240,89.5,90.4,9.6
+2948,-29.7761,151.8974,true,Primary,Outer Regional,3,858,Under 900,1,28,87.5,86.6,13.4
+2950,-33.8855,151.0247,true,Primary,Major Cities,1,968,950–999,3,268,83.7,83.1,16.9
+2951,-33.7773,150.6683,true,Primary,Major Cities,1,1003,1000–1049,4,523,87.7,90.5,9.5
+2955,-30.446,153.029,true,Primary,Inner Regional,2,1030,1000–1049,4,63,84.3,88.3,11.7
+2958,-33.9444,151.0171,true,Primary,Major Cities,1,999,950–999,3,303,87.3,90.5,9.5
+2965,-33.5806,150.7169,true,Primary,Major Cities,1,984,950–999,3,309,83.3,88.8,11.2
+2968,-28.4769,152.934,true,Primary,Inner Regional,2,869,Under 900,1,23,78.6,83.6,16.4
+2970,-33.6784,150.871,true,Primary,Major Cities,1,986,950–999,3,599,83.7,85.5,14.5
+2971,-34.5896,150.5925,true,Primary,Inner Regional,2,1025,1000–1049,4,147,84.2,89.9,10.1
+2973,-33.9526,151.1417,true,Primary,Major Cities,1,1053,1050–1099,5,321,87.1,91.3,8.7
+2974,-33.6919,149.5626,true,Primary,Inner Regional,2,941,900–949,2,13,89.8,91.1,8.9
+2976,-35.2663,147.1152,true,Central/Community,Inner Regional,2,953,950–999,3,169,86.9,86.5,13.5
+2980,-28.6382,153.3143,true,Primary,Inner Regional,2,1052,1050–1099,5,8,85,90.7,9.3
+2983,-30.6129,151.4918,true,Primary,Inner Regional,2,963,950–999,3,39,87.4,90.3,9.7
+2985,-31.2393,152.6318,true,Primary,Inner Regional,2,939,900–949,2,24,87.5,89.7,10.3
+2987,-28.6783,153.3883,true,Primary,Inner Regional,2,989,950–999,3,20,92.4,90.6,9.4
+2988,-33.873,151.271,true,Primary,Major Cities,1,1145,1100 and over,6,377,89.5,92.9,7.1
+2994,-33.7819,151.1887,true,Primary,Major Cities,1,1172,1100 and over,6,520,91.7,94.7,5.3
+2996,-35.6702,147.8608,true,Primary,Outer Regional,3,739,Under 900,1,14,85.8,88.5,11.5
+2997,-29.7702,151.1031,true,Primary,Outer Regional,3,871,Under 900,1,475,83.9,86,14
+2999,-33.9465,150.7709,true,Primary,Major Cities,1,937,900–949,2,113,80.9,87.5,12.5
+3006,-28.8707,153.4066,true,Primary,Inner Regional,2,1031,1000–1049,4,85,89,91.5,8.5
+3008,-33.6792,150.921,true,Primary,Major Cities,1,1093,1050–1099,5,1058,87.7,89.8,10.2
+3020,-33.8143,151.0447,true,Primary,Major Cities,1,1018,1000–1049,4,151,88.8,89.3,10.7
+3021,-33.8126,151.108,true,Primary,Major Cities,1,1096,1050–1099,5,497,89.6,91.7,8.3
+3022,-33.7948,151.12,true,Primary,Major Cities,1,1123,1100 and over,6,316,92.3,92.9,7.1
+3023,-33.8084,151.0851,true,Primary,Major Cities,1,1117,1100 and over,6,512,91.7,92.9,7.1
+3025,-32.7956,149.9729,true,Primary,Outer Regional,3,989,950–999,3,99,91.4,88,12
+3029,-33.8872,150.8993,true,Primary,Major Cities,1,1023,1000–1049,4,673,90.7,92.3,7.7
+3031,-33.7684,150.7706,true,Primary,Major Cities,1,954,950–999,3,258,84.4,86.4,13.6
+3032,-33.913,151.1767,true,Primary,Major Cities,1,1099,1050–1099,5,154,89.9,91.2,8.8
+3035,-32.7878,151.9038,true,Primary,Inner Regional,2,904,900–949,2,142,79.7,89.1,10.9
+3038,-33.995,151.1292,true,Primary,Major Cities,1,1060,1050–1099,5,523,88,90.1,9.9
+3042,-30.3633,153.0976,true,Primary,Inner Regional,2,1003,1000–1049,4,293,87.9,90.4,9.6
+3045,-34.2662,150.966,true,Primary,Major Cities,1,1080,1050–1099,5,54,84.8,90.8,9.2
+3046,-33.6931,150.8752,true,Primary,Major Cities,1,1086,1050–1099,5,1119,84.1,90.1,9.9
+3048,-32.6621,151.7294,true,Primary,Inner Regional,2,990,950–999,3,156,89.1,89.9,10.1
+3053,-33.76,150.955,true,Primary,Major Cities,1,1066,1050–1099,5,246,89.3,92.5,7.5
+3060,-34.579,150.8651,true,Primary,Major Cities,1,999,950–999,3,368,85.8,90,10
+3065,-32.8814,151.6951,true,Primary,Major Cities,1,926,900–949,2,271,82,85.9,14.1
+3070,-32.5631,151.1718,true,Primary,Inner Regional,2,950,950–999,3,353,87.1,90.1,9.9
+3073,-33.8536,150.9335,true,Primary,Major Cities,1,948,900–949,2,517,87.8,90.9,9.1
+3075,-31.0182,152.9414,true,Primary,Inner Regional,2,885,Under 900,1,54,83.7,84.8,15.2
+3077,-33.0822,149.6952,true,Primary,Inner Regional,2,946,900–949,2,8,,91.5,8.5
+3078,-33.3584,151.2913,true,Primary,Inner Regional,2,1034,1000–1049,4,56,82.4,90.4,9.6
+3079,-30.9384,150.6416,true,Primary,Outer Regional,3,895,Under 900,1,17,82,88.4,11.6
+3083,-30.8915,153.0399,true,Primary,Inner Regional,2,952,950–999,3,348,82.9,88,12
+3089,-33.3996,149.1513,true,Primary,Inner Regional,2,969,950–999,3,57,91.2,88.7,11.3
+3091,-31.3924,150.2546,true,Primary,Outer Regional,3,1004,1000–1049,4,25,85.1,92.3,7.7
+3093,-33.394,149.0974,true,Primary,Inner Regional,2,927,900–949,2,40,87.8,85.2,14.8
+3095,-33.7046,150.5735,true,Primary,Major Cities,1,1059,1050–1099,5,370,88.8,89.4,10.6
+3103,-34.2287,150.9845,true,Primary,Major Cities,1,1112,1100 and over,6,150,90.1,93.1,6.9
+3104,-34.4814,150.8778,true,Primary,Major Cities,1,891,Under 900,1,276,83.5,86.8,13.2
+3109,-34.4976,147.8831,true,Primary,Outer Regional,3,929,900–949,2,12,91.8,94.6,5.4
+3110,-32.911,151.7811,true,Primary,Major Cities,1,1000,1000–1049,4,254,86.6,88.8,11.2
+3112,-28.3938,153.4044,true,Primary,Inner Regional,2,962,950–999,3,37,82.1,88.7,11.3
+3119,-32.1169,151.9392,true,Primary,Outer Regional,3,904,900–949,2,15,79.7,90.9,9.1
+3122,-28.7557,152.9372,true,Primary,Inner Regional,2,931,900–949,2,18,76,89,11
+3123,-33.8545,151.092,true,Primary,Major Cities,1,1112,1100 and over,6,508,90.9,93.1,6.9
+3124,-33.8908,151.0847,true,Primary,Major Cities,1,1084,1050–1099,5,423,90.2,91.9,8.1
+3125,-32.4025,151.9642,true,Primary,Inner Regional,2,931,900–949,2,71,84.1,83.9,16.1
+3126,-32.348,151.9324,true,Primary,Inner Regional,2,948,900–949,2,9,83.8,85,15
+3127,-32.8026,149.0683,true,Primary,Outer Regional,3,722,Under 900,1,11,86.9,86.1,13.9
+3129,-33.8958,151.1359,true,Primary,Major Cities,1,1167,1100 and over,6,662,90.4,93.3,6.7
+3136,-34.033,151.0591,true,Primary,Major Cities,1,1101,1100 and over,6,344,90.6,92.7,7.3
+3137,-35.1656,149.255,true,Primary,Inner Regional,2,1098,1050–1099,5,152,89.2,91.2,8.8
+3141,-33.0841,151.6363,true,Primary,Major Cities,1,923,900–949,2,199,87.6,90.2,9.8
+3143,-34.0081,151.1121,true,Primary,Major Cities,1,1038,1000–1049,4,167,90.2,91.3,8.7
+3145,-28.8886,152.5687,true,Primary,Outer Regional,3,775,Under 900,1,63,81,79.4,20.6
+3147,-33.283,151.4589,true,Primary,Major Cities,1,938,900–949,2,186,85.8,88.8,11.2
+3148,-34.2277,150.589,true,Primary,Inner Regional,2,927,900–949,2,525,81.5,87.8,12.2
+3153,-33.9936,146.8778,true,Primary,Outer Regional,3,954,950–999,3,6,89.5,91.6,8.4
+3154,-34.7215,150.0833,true,Primary,Inner Regional,2,996,950–999,3,61,90,84.4,15.6
+3157,-31.0847,150.9353,true,Primary,Inner Regional,2,997,950–999,3,891,88.2,89.4,10.6
+3158,-31.0916,150.9206,true,Primary,Inner Regional,2,908,900–949,2,370,87.8,89.4,10.6
+3159,-36.6403,149.9751,true,Primary,Outer Regional,3,1085,1050–1099,5,6,76.6,87.5,12.5
+3162,-35.0677,149.6548,true,Primary,Inner Regional,2,956,950–999,3,52,79,88,12
+3163,-34.398,149.821,true,Primary,Inner Regional,2,965,950–999,3,11,89.4,91.3,8.7
+3165,-35.2793,147.7383,true,Primary,Outer Regional,3,874,Under 900,1,22,91.8,92,8
+3167,-31.9109,152.4622,true,Primary,Inner Regional,2,795,Under 900,1,83,74.1,79.7,20.3
+3168,-34.0181,151.1227,true,Primary,Major Cities,1,1043,1000–1049,4,114,89.1,91.2,8.8
+3173,-36.7328,149.9796,true,Primary,Outer Regional,3,1048,1000–1049,4,171,85.9,89.1,10.9
+3175,-32.6678,152.158,true,Primary,Inner Regional,2,934,900–949,2,130,87.3,87.1,12.9
+3176,-31.3341,152.7931,true,Primary,Inner Regional,2,968,950–999,3,126,87,89.8,10.2
+3178,-34.4448,147.5353,true,Primary,Outer Regional,3,969,950–999,3,213,88,90.4,9.6
+3180,-32.7425,151.6049,true,Primary,Major Cities,1,893,Under 900,1,283,81.4,85.3,14.7
+3182,-29.0561,152.0261,true,Primary,Outer Regional,3,865,Under 900,1,199,85,86,14
+3183,-32.9625,151.606,true,Primary,Major Cities,1,959,950–999,3,111,88.4,89.1,10.9
+3185,-34.8666,150.6304,true,Primary,Inner Regional,2,1009,1000–1049,4,96,87.5,90.6,9.4
+3189,-28.2402,153.4993,true,Primary,Major Cities,1,1023,1000–1049,4,286,85.5,91,9
+3190,-33.6857,151.2226,true,Primary,Major Cities,1,1100,1100 and over,6,183,90,91.8,8.2
+3191,-33.4424,151.4382,true,Primary,Major Cities,1,1078,1050–1099,5,888,88.3,89.9,10.1
+3195,-34.2616,145.9849,true,Primary,Outer Regional,3,855,Under 900,1,11,85.6,82,18
+3200,-34.2048,150.5693,true,Primary,Inner Regional,2,959,950–999,3,401,86.4,90,10
+3201,-34.3152,150.9187,true,Primary,Major Cities,1,1119,1100 and over,6,367,87.1,92.1,7.9
+3204,-32.7794,151.6395,true,Primary,Major Cities,1,974,950–999,3,826,87.6,89.4,10.6
+3208,-36.0473,146.9833,true,Primary,Inner Regional,2,990,950–999,3,573,88.1,90.7,9.3
+3211,-29.4321,142.0102,true,Primary,Very Remote,5,,,,4,76.8,,
+3213,-32.9081,151.7513,true,Primary,Major Cities,1,1104,1100 and over,6,358,89.1,89.4,10.6
+3214,-36.3157,150.0719,true,Primary,Outer Regional,3,1026,1000–1049,4,55,85,89.6,10.4
+3218,-29.9591,151.2136,true,Primary,Outer Regional,3,714,Under 900,1,28,80.3,72.8,27.2
+3219,-31.9329,152.4136,true,Primary,Inner Regional,2,948,900–949,2,158,88.2,90.5,9.5
+3221,-31.0857,151.0084,true,Primary,Inner Regional,2,973,950–999,3,113,89.9,91.3,8.7
+3225,-35.8139,145.5689,true,Primary,Inner Regional,2,1002,1000–1049,4,154,86.8,90.9,9.1
+3226,-35.055,150.5872,true,Primary,Inner Regional,2,973,950–999,3,116,86.8,87.8,12.2
+3235,-35.0266,143.3381,true,Central/Community,Outer Regional,3,902,900–949,2,118,80.9,84,16
+3236,-28.4985,153.4124,true,Primary,Inner Regional,2,1016,1000–1049,4,88,80.3,83.4,16.6
+3239,-28.6709,150.479,true,Primary,Outer Regional,3,625,Under 900,1,41,67.7,73.8,26.2
+3240,-33.7872,150.9667,true,Primary,Major Cities,1,1063,1050–1099,5,381,89.1,91.7,8.3
+3242,-31.4348,148.9122,true,Primary,Outer Regional,3,947,900–949,2,23,79.1,88.6,11.4
+3247,-33.0083,151.5948,true,Primary,Major Cities,1,910,900–949,2,201,84.2,86.6,13.4
+3249,-32.2456,147.3521,true,Central/Community,Remote,4,930,900–949,2,71,82.8,87.8,12.2
+3250,-33.2678,151.5503,true,Primary,Major Cities,1,889,Under 900,1,494,84,86.9,13.1
+3252,-37.0842,149.6952,true,Primary,Outer Regional,3,958,950–999,3,23,85.6,89.6,10.4
+3254,-32.0325,147.9793,true,Central/Community,Outer Regional,3,852,Under 900,1,166,81.6,82.9,17.1
+3255,-28.8541,153.3544,true,Primary,Inner Regional,2,993,950–999,3,103,88.6,89,11
+3259,-32.9254,147.7092,true,Central/Community,Outer Regional,3,919,900–949,2,98,83.6,86.1,13.9
+3260,-33.8165,149.3263,true,Primary,Outer Regional,3,980,950–999,3,14,88,97.4,2.6
+3263,-29.6667,153.1066,true,Primary,Inner Regional,2,869,Under 900,1,32,84.1,86.3,13.7
+3269,-33.313,151.4156,true,Primary,Major Cities,1,993,950–999,3,359,87,90.5,9.5
+3270,-32.6368,147.566,true,Central/Community,Outer Regional,3,915,900–949,2,54,85.6,86.2,13.8
+3272,-33.4229,146.7227,true,Central/Community,Remote,4,958,950–999,3,33,86,91.7,8.3
+3275,-35.7763,148.0138,true,Primary,Outer Regional,3,931,900–949,2,184,87.3,89.3,10.7
+3277,-28.274,153.4634,true,Primary,Major Cities,1,941,900–949,2,19,85.4,87.8,12.2
+3278,-35.3024,148.2186,true,Primary,Inner Regional,2,976,950–999,3,288,86.9,89.1,10.9
+3288,-33.7147,151.1478,true,Primary,Major Cities,1,1170,1100 and over,6,196,91.9,90.8,9.2
+3290,-28.1695,153.5416,true,Primary,Major Cities,1,984,950–999,3,394,84.6,88.3,11.7
+3293,-28.3545,153.205,true,Primary,Inner Regional,2,978,950–999,3,13,82.5,91.4,8.6
+3298,-28.415,153.3343,true,Primary,Inner Regional,2,977,950–999,3,86,81.2,86.1,13.9
+3302,-35.3552,150.4694,true,Primary,Inner Regional,2,978,950–999,3,689,86.6,90.1,9.9
+3303,-29.629,153.0309,true,Primary,Inner Regional,2,971,950–999,3,72,86.2,91,9
+3304,-30.243,152.8849,true,Primary,Inner Regional,2,903,900–949,2,32,87.7,92.4,7.6
+3305,-33.8777,151.1956,true,Primary,Major Cities,1,1088,1050–1099,5,483,90.4,92.4,7.6
+3308,-34.4455,150.8347,true,Primary,Major Cities,1,992,950–999,3,348,85.7,89.7,10.3
+3310,-33.9241,151.1386,true,Primary,Major Cities,1,1092,1050–1099,5,152,88.3,93,7
+3311,-33.6371,146.978,true,Central/Community,Outer Regional,3,915,900–949,2,88,88.5,85.9,14.1
+3314,-35.3275,146.2671,true,Primary,Outer Regional,3,816,Under 900,1,9,94,91.8,8.2
+3316,-28.4735,152.5456,true,Primary,Outer Regional,3,959,950–999,3,8,71.5,65.9,34.1
+3318,-30.4952,153.0204,true,Primary,Inner Regional,2,974,950–999,3,179,85.6,88.3,11.7
+3321,-32.5422,151.5776,true,Primary,Inner Regional,2,946,900–949,2,106,86.9,90.1,9.9
+3325,-33.8505,151.2812,true,Primary,Major Cities,1,1145,1100 and over,6,217,85.9,91.3,8.7
+3328,-33.8855,150.9692,true,Primary,Major Cities,1,931,900–949,2,227,87.5,90.5,9.5
+3329,-33.6474,150.8579,true,Primary,Major Cities,1,955,950–999,3,97,85,82.7,17.3
+3330,-35.1078,147.3658,true,Primary,Inner Regional,2,1008,1000–1049,4,440,89.5,91.8,8.2
+3332,-35.0962,147.3795,true,Primary,Inner Regional,2,999,950–999,3,181,90.6,90.9,9.1
+3333,-35.1193,147.3668,true,Primary,Inner Regional,2,1027,1000–1049,4,266,89.8,91.2,8.8
+3334,-33.7081,151.1116,true,Primary,Major Cities,1,1148,1100 and over,6,972,89.6,92.6,7.4
+3336,-35.4663,144.3931,true,Primary,Outer Regional,3,849,Under 900,1,15,92.9,92.3,7.7
+3338,-35.6874,146.7268,true,Primary,Outer Regional,3,973,950–999,3,19,90.9,94.6,5.4
+3340,-30.9818,151.6042,true,Central/Community,Outer Regional,3,906,900–949,2,230,84.5,83.8,16.2
+3342,-30.0203,148.1157,true,Primary,Remote,4,672,Under 900,1,97,64.3,71,29
+3343,-31.3951,150.4262,true,Primary,Outer Regional,3,692,Under 900,1,10,81.5,85.9,14.1
+3345,-31.541,150.8283,true,Primary,Outer Regional,3,941,900–949,2,37,83.7,90.2,9.8
+3346,-33.8627,150.6416,true,Primary,Inner Regional,2,959,950–999,3,53,88.7,91.4,8.6
+3352,-35.758,146.9006,true,Primary,Inner Regional,2,963,950–999,3,40,91,93.2,6.8
+3354,-33.4177,150.0698,true,Primary,Inner Regional,2,909,900–949,2,186,85.5,89.9,10.1
+3357,-32.9081,151.6716,true,Primary,Major Cities,1,965,950–999,3,252,87,89.9,10.1
+3358,-32.9046,151.5807,true,Primary,Major Cities,1,950,950–999,3,268,89,90.7,9.3
+3364,-34.526,146.3309,true,Primary,Outer Regional,3,826,Under 900,1,16,84.4,87,13
+3365,-29.7053,144.1455,true,Primary,Very Remote,5,851,Under 900,1,7,83.5,77,23
+3373,-33.0723,151.583,true,Primary,Major Cities,1,987,950–999,3,181,88.6,90.8,9.2
+3377,-32.905,151.7226,true,Primary,Major Cities,1,1019,1000–1049,4,351,89.8,90.4,9.6
+3378,-28.9503,153.4688,true,Primary,Inner Regional,2,952,950–999,3,24,82,88.4,11.6
+3382,-29.5418,150.5736,true,Primary,Outer Regional,3,927,900–949,2,192,86.9,88,12
+3384,-32.98,151.6486,true,Primary,Major Cities,1,1027,1000–1049,4,340,88.1,90.2,9.8
+3390,-33.7295,151.1212,true,Primary,Major Cities,1,1170,1100 and over,6,622,91.4,93.3,6.7
+3392,-31.7051,147.8365,true,Central/Community,Outer Regional,3,783,Under 900,1,228,76.3,77.3,22.7
+3396,-34.1376,150.996,true,Primary,Inner Regional,2,1031,1000–1049,4,17,87.9,89.9,10.1
+3402,-33.1415,149.6927,true,Primary,Inner Regional,2,932,900–949,2,9,84.2,90.3,9.7
+3404,-31.4559,152.7295,true,Primary,Inner Regional,2,900,900–949,2,624,82.8,87.6,12.4
+3415,-33.88,146.6193,true,Primary,Outer Regional,3,900,900–949,2,9,84.1,93.4,6.6
+3416,-30.2236,149.4426,true,Primary,Outer Regional,3,720,Under 900,1,79,78.1,73.7,26.3
+3420,-32.5569,148.9434,true,Primary,Outer Regional,3,816,Under 900,1,405,82,86.8,13.2
+3421,-34.1032,141.9188,true,Primary,Outer Regional,3,881,Under 900,1,110,77.6,79.2,20.8
+3422,-33.7141,150.3735,true,Primary,Major Cities,1,1074,1050–1099,5,370,87,89.5,10.5
+3423,-33.814,150.9686,true,Primary,Major Cities,1,1111,1100 and over,6,863,88.1,91.4,8.6
+3425,-31.3489,150.6515,true,Primary,Inner Regional,2,836,Under 900,1,68,82.6,82,18
+3428,-31.0937,150.8739,true,Primary,Inner Regional,2,870,Under 900,1,370,86.8,89.9,10.1
+3431,-32.809,151.461,true,Primary,Major Cities,1,882,Under 900,1,270,85.7,89,11
+3435,-30.8509,143.0903,true,Primary,Very Remote,5,873,Under 900,1,17,87.5,88.2,11.8
+3438,-34.5189,146.1812,true,Primary,Outer Regional,3,795,Under 900,1,33,88.5,90.4,9.6
+3439,-28.5114,152.9655,true,Primary,Inner Regional,2,932,900–949,2,17,75.4,86.5,13.5
+3441,-33.5587,150.8398,true,Primary,Major Cities,1,992,950–999,3,326,85.6,90.9,9.1
+3442,-31.5585,143.3759,true,Central/Community,Very Remote,5,673,Under 900,1,65,50.6,47,53
+3445,-30.9257,152.6255,true,Primary,Outer Regional,3,838,Under 900,1,34,88.2,87.1,12.9
+3449,-33.8022,151.2001,true,Primary,Major Cities,1,1143,1100 and over,6,905,91.6,93.6,6.4
+3451,-31.6568,150.729,true,Primary,Outer Regional,3,982,950–999,3,51,84.9,88.5,11.5
+3453,-33.9374,151.1384,true,Primary,Major Cities,1,1003,1000–1049,4,277,86.2,90.3,9.7
+3454,-28.5708,153.4262,true,Primary,Inner Regional,2,1041,1000–1049,4,23,78,84.7,15.3
+3457,-35.01,149.8335,true,Primary,Outer Regional,3,905,900–949,2,13,87.7,83.6,16.4
+3459,-33.6104,150.8164,true,Primary,Major Cities,1,944,900–949,2,125,80.3,86.8,13.2
+3461,-34.6882,150.1535,true,Primary,Inner Regional,2,1001,1000–1049,4,40,87.6,89.2,10.8
+3470,-33.386,150.9841,true,Primary,Inner Regional,2,946,900–949,2,44,82.5,89.2,10.8
+3475,-28.827,153.4201,true,Primary,Inner Regional,2,1028,1000–1049,4,243,85.8,89.4,10.6
+3477,-34.4246,150.8715,true,Primary,Major Cities,1,991,950–999,3,243,85.1,86.7,13.3
+3479,-36.8327,149.8117,true,Primary,Outer Regional,3,931,900–949,2,109,87.2,91.8,8.2
+3482,-34.4266,148.2452,true,Primary,Inner Regional,2,898,Under 900,1,20,88.7,90.5,9.5
+3487,-32.3336,148.7591,true,Primary,Outer Regional,3,973,950–999,3,42,85.3,87,13
+3490,-29.0754,153.3393,true,Primary,Inner Regional,2,922,900–949,2,97,83.1,87.3,12.7
+3491,-28.3897,152.6101,true,Central/Community,Outer Regional,3,848,Under 900,1,159,63.7,72.9,27.1
+3499,-33.7459,148.849,true,Primary,Outer Regional,3,937,900–949,2,20,82.1,92.7,7.3
+3501,-30.9702,151.3446,true,Primary,Outer Regional,3,900,900–949,2,11,79.8,90.3,9.7
+3503,-30.1127,153.1965,true,Primary,Inner Regional,2,965,950–999,3,349,86.3,88.8,11.2
+3504,-33.251,148.9842,true,Primary,Inner Regional,2,992,950–999,3,22,86.4,90.3,9.7
+3506,-31.3018,151.1481,true,Primary,Outer Regional,3,840,Under 900,1,11,89.8,85.7,14.3
+3510,-34.3456,150.9068,true,Primary,Major Cities,1,1070,1050–1099,5,519,89,92.1,7.9
+3518,-33.9239,147.2421,true,Primary,Outer Regional,3,921,900–949,2,87,85.2,89.2,10.8
+3519,-33.9185,147.2041,true,Primary,Outer Regional,3,952,950–999,3,202,87.6,88.9,11.1
+3522,-33.1748,151.483,true,Primary,Major Cities,1,955,950–999,3,193,87,89.9,10.1
+3525,-36.9296,149.6466,true,Primary,Outer Regional,3,935,900–949,2,27,82.2,91.1,8.9
+3527,-33.2719,151.4262,true,Primary,Major Cities,1,931,900–949,2,433,81.9,85.9,14.1
+3528,-33.2671,151.3481,true,Primary,Major Cities,1,978,950–999,3,94,86.3,89.8,10.2
+3529,-28.8904,153.3057,true,Primary,Inner Regional,2,985,950–999,3,17,82.8,86.7,13.3
+3533,-29.4395,153.3532,true,Primary,Inner Regional,2,978,950–999,3,295,86.9,86.1,13.9
+3534,-35.9676,147.0073,true,Primary,Inner Regional,2,1030,1000–1049,4,140,92.1,92.2,7.8
+3536,-34.5979,146.4112,true,Primary,Outer Regional,3,860,Under 900,1,70,84.7,83.3,16.7
+3537,-34.3205,150.5712,true,Primary,Inner Regional,2,934,900–949,2,35,79.4,86.6,13.4
+3549,-34.8376,148.9069,true,Primary,Inner Regional,2,1012,1000–1049,4,305,85.8,90.2,9.8
+3554,-34.2524,146.1983,true,Primary,Outer Regional,3,933,900–949,2,106,89.2,91.5,8.5
+3555,-32.7544,148.6497,true,Central/Community,Outer Regional,3,858,Under 900,1,75,79.4,83,17
+3556,-35.3868,147.061,true,Primary,Outer Regional,3,947,900–949,2,12,83.8,89.3,10.7
+3559,-28.9022,150.7763,true,Primary,Outer Regional,3,1022,1000–1049,4,7,84.7,80.4,19.6
+3561,-34.2997,146.0862,true,Primary,Outer Regional,3,931,900–949,2,49,86.5,91.1,8.9
+3563,-34.3214,148.2902,true,Primary,Inner Regional,2,969,950–999,3,524,86.9,88.9,11.1
+3564,-32.9229,151.6204,true,Primary,Major Cities,1,967,950–999,3,647,87.4,87.9,12.1
+3566,-33.4661,150.1828,true,Primary,Inner Regional,2,934,900–949,2,120,84,88.3,11.7
+3578,-28.3776,153.5678,true,Primary,Major Cities,1,1036,1000–1049,4,556,89.8,90.6,9.4
+3580,-29.8139,148.9125,true,Primary,Remote,4,944,900–949,2,20,87.7,86.4,13.6
+3591,-32.2519,148.5883,true,Primary,Inner Regional,2,772,Under 900,1,293,77.7,76.9,23.1
+3593,-34.0078,151.0807,true,Primary,Major Cities,1,1098,1050–1099,5,416,91.1,91.7,8.3
+3594,-30.5358,145.1179,true,Primary,Very Remote,5,923,900–949,2,8,,82.1,17.9
+3615,-33.8828,150.7903,true,Primary,Major Cities,1,947,900–949,2,114,86.5,86.8,13.2
+3626,-29.3189,145.8445,true,Primary,Very Remote,5,600,Under 900,1,11,70.6,81.8,18.2
+3632,-33.8661,150.9403,true,Primary,Major Cities,1,893,Under 900,1,642,86.9,90.1,9.9
+3635,-30.7499,152.9952,true,Primary,Inner Regional,2,1014,1000–1049,4,73,80.1,86.3,13.7
+3643,-30.8188,152.9937,true,Primary,Inner Regional,2,848,Under 900,1,53,78.3,84,16
+3659,-35.1673,150.5842,true,Primary,Inner Regional,2,956,950–999,3,255,83.3,87,13
+3668,-34.0661,151.1542,true,Primary,Major Cities,1,1093,1050–1099,5,261,87,92.3,7.7
+3673,-35.0907,150.5639,true,Primary,Inner Regional,2,959,950–999,3,365,86.1,88.6,11.4
+3678,-33.9096,150.9294,true,Primary,Major Cities,1,951,950–999,3,219,84.8,86.8,13.2
+3690,-31.0588,150.895,true,Primary,Inner Regional,2,870,Under 900,1,377,85,89,11
+3696,-32.71,152.0654,true,Primary,Inner Regional,2,992,950–999,3,267,86.8,88.7,11.3
+3698,-33.8856,151.0016,true,Primary,Major Cities,1,958,950–999,3,578,86.1,87.4,12.6
+3702,-33.9124,150.9922,true,Primary,Major Cities,1,1017,1000–1049,4,685,87.9,89,11
+3703,-33.9333,151.2541,true,Primary,Major Cities,1,1095,1050–1099,5,376,88.5,91.3,8.7
+3717,-29.1252,150.3094,true,Primary,Outer Regional,3,979,950–999,3,12,85.3,90.3,9.7
+3719,-33.6674,150.9526,true,Primary,Major Cities,1,1096,1050–1099,5,142,88.6,90.4,9.6
+3735,-34.0266,151.0411,true,Primary,Major Cities,1,1054,1050–1099,5,70,89.9,88.9,11.1
+3736,-33.806,151.2588,true,Primary,Major Cities,1,1177,1100 and over,6,651,90.2,92.5,7.5
+3741,-34.7592,149.7007,true,Primary,Inner Regional,2,978,950–999,3,373,87.8,89.9,10.1
+3743,-33.9472,151.0466,true,Primary,Major Cities,1,958,950–999,3,126,83.9,87.4,12.6
+3744,-33.8909,150.6054,true,Primary,Inner Regional,2,958,950–999,3,434,86.4,89.2,10.8
+3748,-33.7272,151.2166,true,Primary,Major Cities,1,1111,1100 and over,6,186,91.4,93.7,6.3
+3760,-28.6071,153.4019,true,Primary,Inner Regional,2,1003,1000–1049,4,10,78.4,88,12
+3762,-32.9842,151.6914,true,Primary,Major Cities,1,853,Under 900,1,182,89.1,88.3,11.7
+3765,-34.0868,151.1524,true,Primary,Inner Regional,2,1067,1050–1099,5,174,87.5,92,8
+3777,-33.7323,151.1411,true,Primary,Major Cities,1,1176,1100 and over,6,519,92,94,6
+3789,-33.9255,151.0137,true,Primary,Major Cities,1,968,950–999,3,586,84.8,87,13
+3792,-33.6394,151.3267,true,Primary,Major Cities,1,1094,1050–1099,5,666,86.5,89.4,10.6
+3794,-33.9968,151.1069,true,Primary,Major Cities,1,1123,1100 and over,6,246,89.7,92.8,7.2
+3795,-32.9334,151.7535,true,Primary,Major Cities,1,1139,1100 and over,6,362,90.3,92.7,7.3
+3796,-33.985,151.0447,true,Primary,Major Cities,1,1099,1050–1099,5,272,91.5,92.8,7.2
+3797,-33.979,151.0655,true,Primary,Major Cities,1,1132,1100 and over,6,519,89.4,93.7,6.3
+3798,-32.9315,151.7176,true,Primary,Major Cities,1,1095,1050–1099,5,462,88.8,91.9,8.1
+3808,-33.8954,151.0602,true,Primary,Major Cities,1,965,950–999,3,430,80.7,83.6,16.4
+3820,-34.3808,150.8902,true,Primary,Major Cities,1,982,950–999,3,164,83.6,88.3,11.7
+3822,-34.0268,151.0671,true,Primary,Major Cities,1,1073,1050–1099,5,225,90.3,91.5,8.5
+3824,-33.411,149.5597,true,Primary,Inner Regional,2,927,900–949,2,515,86.4,88.6,11.4
+3826,-34.4172,150.8794,true,Primary,Major Cities,1,1065,1050–1099,5,271,84.1,88,12
+3827,-33.7492,151.2736,true,Primary,Major Cities,1,1059,1050–1099,5,511,89.8,91.1,8.9
+3829,-34.0179,151.0609,true,Primary,Major Cities,1,1062,1050–1099,5,139,88.3,92.2,7.8
+3830,-33.9814,151.1435,true,Primary,Major Cities,1,1039,1000–1049,4,447,87.6,90.2,9.8
+3831,-33.8796,151.0816,true,Specific purposes,Major Cities,1,1006,1000–1049,4,79,84,88.1,11.9
+3833,-33.7156,151.1285,true,Primary,Major Cities,1,1156,1100 and over,6,508,91.4,92,8
+3840,-33.8061,151.0178,true,Primary,Major Cities,1,1091,1050–1099,5,465,89.1,91.6,8.4
+3846,-33.8148,151.0719,true,Primary,Major Cities,1,1087,1050–1099,5,163,90.4,91.9,8.1
+3847,-33.433,149.5689,true,Primary,Inner Regional,2,936,900–949,2,184,84.4,87.8,12.2
+3851,-32.9201,151.6752,true,Primary,Major Cities,1,1083,1050–1099,5,583,90,91.5,8.5
+3854,-33.7266,150.4594,true,Primary,Major Cities,1,1044,1000–1049,4,356,87.4,91.2,8.8
+3855,-33.7453,151.1143,true,Primary,Major Cities,1,1181,1100 and over,6,531,93.3,93.9,6.1
+3856,-28.8303,153.2933,true,Primary,Inner Regional,2,947,900–949,2,350,87.7,90,10
+3860,-34.5626,150.8175,true,Primary,Major Cities,1,959,950–999,3,416,84.9,88.5,11.5
+3862,-33.7943,151.0966,true,Primary,Major Cities,1,1127,1100 and over,6,790,91.3,93.1,6.9
+3863,-33.8129,151.0921,true,Primary,Major Cities,1,1095,1050–1099,5,642,90.9,92.3,7.7
+3864,-30.6415,151.4944,true,Central/Community,Inner Regional,2,901,900–949,2,264,77.7,79.3,20.7
+3866,-34.3889,150.9,true,Primary,Major Cities,1,1031,1000–1049,4,134,85.8,89,11
+3867,-34.5395,150.8593,true,Primary,Major Cities,1,954,950–999,3,177,85,88.2,11.8
+3869,-33.9092,151.0267,true,Primary,Major Cities,1,986,950–999,3,556,86,86.9,13.1
+3871,-33.9587,150.9375,true,Primary,Major Cities,1,1035,1000–1049,4,427,89.1,92.9,7.1
+3872,-34.9074,150.7304,true,Primary,Inner Regional,2,943,900–949,2,106,81.5,87.8,12.2
+3873,-33.8744,151.1407,true,Primary,Major Cities,1,1149,1100 and over,6,116,90.3,93.3,6.7
+3874,-32.9649,151.7136,true,Primary,Major Cities,1,1076,1050–1099,5,291,92.2,91.7,8.3
+3875,-33.9482,151.0687,true,Primary,Major Cities,1,1001,1000–1049,4,246,87.3,90.4,9.6
+3876,-32.2742,150.8919,true,Primary,Inner Regional,2,819,Under 900,1,439,81.5,81.3,18.7
+3877,-34.378,150.9065,true,Primary,Major Cities,1,1046,1000–1049,4,297,87.8,90.7,9.3
+3881,-34.4369,150.87,true,Primary,Major Cities,1,1070,1050–1099,5,354,89,92.5,7.5
+3882,-31.1051,150.9117,true,Primary,Inner Regional,2,828,Under 900,1,477,82,84.5,15.5
+3883,-33.8102,150.9853,true,Primary,Major Cities,1,1117,1100 and over,6,717,86.8,91.3,8.7
+3885,-33.6729,151.1157,true,Primary,Major Cities,1,1098,1050–1099,5,442,89.8,92.2,7.8
+3886,-33.9349,151.0848,true,Primary,Major Cities,1,1001,1000–1049,4,330,85.1,86.6,13.4
+3890,-36.2179,149.1306,true,Primary,Inner Regional,2,955,950–999,3,227,89.2,88.4,11.6
+3893,-32.9924,151.6783,true,Primary,Major Cities,1,793,Under 900,1,252,83,87,13
+3895,-32.9531,151.6652,true,Primary,Major Cities,1,1017,1000–1049,4,298,89.4,91.9,8.1
+3896,-34.0047,151.0605,true,Primary,Major Cities,1,1109,1100 and over,6,275,90.3,92.5,7.5
+3897,-32.9174,151.7342,true,Primary,Major Cities,1,1030,1000–1049,4,123,89.6,91.5,8.5
+3898,-33.0575,151.6501,true,Primary,Major Cities,1,935,900–949,2,141,85.5,88.9,11.1
+3903,-33.0406,150.2147,true,Primary,Outer Regional,3,908,900–949,2,6,,93.8,6.2
+3904,-32.9385,151.6295,true,Primary,Major Cities,1,934,900–949,2,46,84.6,90.4,9.6
+3905,-33.9421,151.2142,true,Primary,Major Cities,1,1085,1050–1099,5,207,89.9,92.6,7.4
+3906,-33.6991,151.2981,true,Primary,Major Cities,1,1076,1050–1099,5,580,86.7,91,9
+3908,-33.8099,151.152,true,Primary,Major Cities,1,1163,1100 and over,6,474,90.9,92.1,7.9
+3909,-31.9076,152.4445,true,Primary,Inner Regional,2,910,900–949,2,409,84.8,87.3,12.7
+3912,-33.845,142.0127,true,Primary,Remote,4,967,950–999,3,20,91,91.4,8.6
+3914,-34.0587,151.0723,true,Primary,Major Cities,1,1113,1100 and over,6,353,89.8,92.6,7.4
+3918,-33.7655,151.1484,true,Primary,Major Cities,1,1148,1100 and over,6,273,91.5,93.8,6.2
+3919,-33.7834,151.202,true,Primary,Major Cities,1,1167,1100 and over,6,273,91.9,93.4,6.6
+3922,-36.0642,146.9324,true,Primary,Inner Regional,2,893,Under 900,1,285,83.9,85.4,14.6
+3923,-35.1507,147.3033,true,Primary,Inner Regional,2,1002,1000–1049,4,52,91.4,89.8,10.2
+3924,-33.958,150.992,true,Primary,Major Cities,1,986,950–999,3,130,85.2,87.8,12.2
+3925,-33.7646,151.2893,true,Primary,Major Cities,1,1116,1100 and over,6,699,89.5,92.5,7.5
+3927,-33.02,151.6713,true,Primary,Major Cities,1,946,900–949,2,160,88.8,89.6,10.4
+3931,-33.77,150.9375,true,Primary,Major Cities,1,1033,1000–1049,4,131,89,90.8,9.2
+3932,-32.898,151.7163,true,Primary,Major Cities,1,963,950–999,3,113,82.3,88.4,11.6
+3935,-33.8823,151.2152,true,Primary,Major Cities,1,1114,1100 and over,6,288,88.4,93.1,6.9
+3939,-32.977,151.6686,true,Primary,Major Cities,1,940,900–949,2,166,89,89.3,10.7
+3943,-33.7603,151.1392,true,Primary,Major Cities,1,1150,1100 and over,6,424,91.3,93.4,6.6
+3944,-33.9406,151.0748,true,Primary,Major Cities,1,1030,1000–1049,4,352,87.6,90.2,9.8
+3945,-35.6394,145.575,true,Primary,Inner Regional,2,959,950–999,3,139,87.1,87.8,12.2
+3946,-29.4572,153.2013,true,Primary,Inner Regional,2,908,900–949,2,198,86.3,87.9,12.1
+3947,-31.4976,150.678,true,Primary,Outer Regional,3,904,900–949,2,277,86.3,89.3,10.7
+3948,-33.9209,151.161,true,Primary,Major Cities,1,1096,1050–1099,5,346,91,91.4,8.6
+3949,-32.7355,151.5533,true,Primary,Major Cities,1,936,900–949,2,405,86.1,88.4,11.6
+3950,-33.7994,151.2876,true,Primary,Major Cities,1,1151,1100 and over,6,532,88.7,91.3,8.7
+3951,-33.9145,151.1451,true,Primary,Major Cities,1,1070,1050–1099,5,411,84.7,88.1,11.9
+3952,-33.9067,151.1627,true,Primary,Major Cities,1,1090,1050–1099,5,213,90.2,92.3,7.7
+3953,-33.8982,151.2515,true,Primary,Major Cities,1,1150,1100 and over,6,263,91.7,93.7,6.3
+3954,-34.4229,150.8967,true,Primary,Major Cities,1,1084,1050–1099,5,579,86,89.6,10.4
+3956,-33.7743,151.1463,true,Primary,Major Cities,1,1164,1100 and over,6,310,90.1,93.6,6.4
+3957,-34.0455,151.1462,true,Primary,Major Cities,1,1086,1050–1099,5,462,89.6,91.4,8.6
+3958,-33.9665,151.03,true,Primary,Major Cities,1,1053,1050–1099,5,297,90.6,91.7,8.3
+3960,-34.3368,150.9191,true,Primary,Major Cities,1,1077,1050–1099,5,264,86.3,89.8,10.2
+3964,-34.4408,150.8544,true,Primary,Major Cities,1,1028,1000–1049,4,264,87.4,90.8,9.2
+3966,-32.9984,151.5777,true,Primary,Major Cities,1,966,950–999,3,217,89.2,89.1,10.9
+3968,-32.9589,151.6216,true,Primary,Major Cities,1,1000,1000–1049,4,256,87.2,89.3,10.7
+3970,-33.733,151.2934,true,Primary,Major Cities,1,1109,1100 and over,6,452,89.7,91.7,8.3
+3971,-33.7516,151.2606,true,Primary,Major Cities,1,1099,1050–1099,5,459,89.3,92.9,7.1
+3972,-34.0366,151.1231,true,Primary,Major Cities,1,1086,1050–1099,5,538,90.2,91.9,8.1
+3973,-34.3595,150.9068,true,Primary,Major Cities,1,1040,1000–1049,4,262,88.8,91.4,8.6
+3976,-34.4603,150.8348,true,Primary,Major Cities,1,961,950–999,3,226,82.8,85.4,14.6
+3977,-33.8902,150.986,true,Primary,Major Cities,1,898,Under 900,1,301,80.5,82.6,17.4
+3979,-34.3712,150.9144,true,Primary,Major Cities,1,807,Under 900,1,182,85.2,86.4,13.6
+3980,-33.8975,150.923,true,Primary,Major Cities,1,950,950–999,3,477,87.4,91.9,8.1
+3981,-33.8724,151.001,true,Primary,Major Cities,1,950,950–999,3,400,85.1,86.1,13.9
+3983,-33.8848,150.9226,true,Primary,Major Cities,1,935,900–949,2,529,89,91.6,8.4
+3984,-33.7833,151.2465,true,Primary,Major Cities,1,1169,1100 and over,6,381,90.8,92.9,7.1
+3985,-33.7458,151.1562,true,Primary,Major Cities,1,1163,1100 and over,6,195,91.3,93.6,6.4
+3986,-33.8668,150.971,true,Primary,Major Cities,1,933,900–949,2,244,83,87.2,12.8
+3987,-33.6991,150.3151,true,Primary,Major Cities,1,986,950–999,3,128,82.9,86.3,13.7
+3988,-33.0084,151.5763,true,Primary,Major Cities,1,871,Under 900,1,163,84.7,89.2,10.8
+3993,-33.8103,150.954,true,Primary,Major Cities,1,1032,1000–1049,4,309,86.3,89.3,10.7
+3995,-33.5251,151.3141,true,Primary,Major Cities,1,1010,1000–1049,4,606,84.7,88.1,11.9
+3996,-32.8717,151.7947,true,Primary,Major Cities,1,1002,1000–1049,4,182,88.9,91.5,8.5
+3997,-33.8263,150.9733,true,Primary,Major Cities,1,971,950–999,3,762,86.3,88.5,11.5
+3999,-33.5989,150.7575,true,Primary,Major Cities,1,1047,1000–1049,4,298,80.9,89.2,10.8
+4000,-33.8477,150.9665,true,Primary,Major Cities,1,945,900–949,2,366,82.3,86.5,13.5
+4004,-34.0192,151.0723,true,Primary,Major Cities,1,1081,1050–1099,5,313,89.2,93.2,6.8
+4005,-34.5572,150.8542,true,Primary,Major Cities,1,937,900–949,2,279,84.2,87.8,12.2
+4009,-33.8769,150.9407,true,Primary,Major Cities,1,919,900–949,2,503,85.4,88.4,11.6
+4011,-34.4897,150.868,true,Primary,Major Cities,1,941,900–949,2,147,83,87.8,12.2
+4012,-33.9445,150.9996,true,Primary,Major Cities,1,1026,1000–1049,4,441,89.4,91.5,8.5
+4013,-33.962,151.0494,true,Primary,Major Cities,1,1023,1000–1049,4,291,90.8,90.6,9.4
+4014,-31.8998,152.4822,true,Primary,Inner Regional,2,837,Under 900,1,222,82.1,85.3,14.7
+4015,-33.8039,151.1559,true,Primary,Major Cities,1,1143,1100 and over,6,714,89.6,93.6,6.4
+4016,-33.9605,151.0173,true,Primary,Major Cities,1,1041,1000–1049,4,312,88,91.9,8.1
+4017,-32.9739,151.6115,true,Primary,Major Cities,1,931,900–949,2,206,85.2,88.4,11.6
+4018,-30.992,150.2505,true,Primary,Outer Regional,3,902,900–949,2,533,88.6,89.3,10.7
+4019,-33.7616,151.2128,true,Primary,Major Cities,1,1141,1100 and over,6,462,90.6,94.2,5.8
+4020,-33.2972,149.1123,true,Primary,Inner Regional,2,751,Under 900,1,208,78.9,80.4,19.6
+4021,-33.7835,151.2598,true,Primary,Major Cities,1,1129,1100 and over,6,553,90.3,92.6,7.4
+4022,-33.0408,151.6108,true,Primary,Major Cities,1,1065,1050–1099,5,245,89.3,92.2,7.8
+4024,-34.0127,151.0973,true,Primary,Major Cities,1,1056,1050–1099,5,482,90.3,92,8
+4027,-34.2799,146.0479,true,Primary,Outer Regional,3,960,950–999,3,418,87.7,90.2,9.8
+4029,-33.8044,151.0364,true,Primary,Major Cities,1,1070,1050–1099,5,312,90.3,92.8,7.2
+4034,-32.9905,151.6426,true,Primary,Major Cities,1,1105,1100 and over,6,506,91.3,92.3,7.7
+4037,-34.472,150.8699,true,Primary,Major Cities,1,936,900–949,2,163,87.2,87.1,12.9
+4038,-33.7627,151.0741,true,Primary,Major Cities,1,1152,1100 and over,6,396,91.1,94,6
+4041,-33.7819,151.0955,true,Primary,Major Cities,1,1119,1100 and over,6,416,92.6,92.3,7.7
+4042,-34.43,150.8609,true,Primary,Major Cities,1,1068,1050–1099,5,334,88.9,91.7,8.3
+4049,-33.6575,151.1356,true,Primary,Major Cities,1,1083,1050–1099,5,132,88.2,92.4,7.6
+4050,-33.4435,151.3277,true,Primary,Major Cities,1,1058,1050–1099,5,479,88,90.4,9.6
+4051,-33.9621,151.0722,true,Primary,Major Cities,1,1047,1000–1049,4,220,86.6,91.3,8.7
+4054,-28.2594,153.5795,true,Primary,Major Cities,1,1058,1050–1099,5,455,88.4,89.5,10.5
+4055,-33.7715,150.7889,true,Primary,Major Cities,1,953,950–999,3,601,82.7,87.5,12.5
+4056,-33.7693,150.8404,true,Primary,Major Cities,1,990,950–999,3,645,85.3,87.8,12.2
+4057,-33.8956,151.0201,true,Primary,Major Cities,1,967,950–999,3,451,85.4,87.7,12.3
+4058,-34.0494,150.8404,true,Primary,Major Cities,1,1034,1000–1049,4,516,87.9,90.9,9.1
+4059,-33.9149,151.0121,true,Primary,Major Cities,1,939,900–949,2,196,84.2,86.7,13.3
+4060,-33.747,150.7259,true,Primary,Major Cities,1,926,900–949,2,523,86,87.8,12.2
+4061,-33.7588,150.9131,true,Primary,Major Cities,1,1042,1000–1049,4,354,86.5,89.2,10.8
+4064,-33.9953,150.8825,true,Primary,Major Cities,1,1048,1000–1049,4,828,87,90.6,9.4
+4065,-33.8771,150.9725,true,Primary,Major Cities,1,937,900–949,2,250,84.9,87.4,12.6
+4066,-33.6182,150.804,true,Primary,Major Cities,1,858,Under 900,1,333,83.5,88.9,11.1
+4067,-33.958,151.24,true,Primary,Major Cities,1,934,900–949,2,114,84.1,83.7,16.3
+4071,-33.8001,151.0235,true,Primary,Major Cities,1,1072,1050–1099,5,159,90.9,92,8
+4075,-34.0335,151.0775,true,Primary,Major Cities,1,1050,1050–1099,5,326,88.1,91.4,8.6
+4077,-33.9991,151.0427,true,Primary,Major Cities,1,1069,1050–1099,5,191,89.9,92.7,7.3
+4083,-34.4893,150.8933,true,Primary,Major Cities,1,892,Under 900,1,153,77,83,17
+4084,-34.0666,151.1184,true,Primary,Major Cities,1,1113,1100 and over,6,323,91,92.8,7.2
+4085,-28.807,153.3006,true,Primary,Inner Regional,2,973,950–999,3,203,83.7,86.7,13.3
+4088,-33.9453,151.0314,true,Primary,Major Cities,1,1036,1000–1049,4,305,87.1,91.3,8.7
+4089,-33.1477,148.1731,true,Primary,Outer Regional,3,891,Under 900,1,173,86.4,87.8,12.2
+4092,-33.9453,151.0576,true,Primary,Major Cities,1,987,950–999,3,106,84.7,88.2,11.8
+4095,-34.3989,150.8883,true,Primary,Major Cities,1,1079,1050–1099,5,193,87.6,90.2,9.8
+4097,-33.2798,151.4856,true,Primary,Major Cities,1,953,950–999,3,208,86,88.4,11.6
+4100,-33.3699,148.001,true,Primary,Outer Regional,3,818,Under 900,1,203,83.6,84.8,15.2
+4101,-28.3209,153.4053,true,Primary,Inner Regional,2,935,900–949,2,152,85.2,88.7,11.3
+4103,-33.797,151.0436,true,Primary,Major Cities,1,991,950–999,3,139,83.1,87.7,12.3
+4106,-34.9354,150.5662,true,Primary,Inner Regional,2,986,950–999,3,131,86.1,92,8
+4110,-33.2956,151.2444,true,Primary,Inner Regional,2,886,Under 900,1,23,84.1,82.8,17.2
+4111,-28.1953,153.539,true,Primary,Major Cities,1,882,Under 900,1,142,87.2,87,13
+4112,-35.5376,144.9558,true,Primary,Inner Regional,2,951,950–999,3,264,88,90,10
+4116,-33.7704,150.8931,true,Primary,Major Cities,1,992,950–999,3,443,85.6,87.4,12.6
+4117,-33.2518,151.4692,true,Primary,Major Cities,1,979,950–999,3,442,83.3,90,10
+4118,-29.477,149.8402,true,Primary,Outer Regional,3,689,Under 900,1,230,72.7,73.2,26.8
+4121,-34.5675,150.7987,true,Primary,Major Cities,1,894,Under 900,1,346,82.2,86.7,13.3
+4122,-34.032,151.1127,true,Primary,Major Cities,1,1046,1000–1049,4,291,88.2,91.5,8.5
+4123,-33.8171,151.0582,true,Primary,Major Cities,1,1007,1000–1049,4,104,83.9,88.8,11.2
+4124,-34.0482,151.1028,true,Primary,Major Cities,1,1093,1050–1099,5,329,89.7,92.7,7.3
+4125,-33.8059,151.0584,true,Primary,Major Cities,1,1022,1000–1049,4,104,88.4,89.7,10.3
+4126,-34.0612,150.8266,true,Primary,Major Cities,1,967,950–999,3,358,82.9,85.6,14.4
+4127,-35.3484,149.2157,true,Primary,Major Cities,1,988,950–999,3,387,84.7,88,12
+4129,-32.8998,151.6951,true,Primary,Major Cities,1,955,950–999,3,162,89.9,88.2,11.8
+4131,-34.311,148.3054,true,Primary,Inner Regional,2,915,900–949,2,298,88,89.2,10.8
+4132,-33.0602,151.582,true,Primary,Major Cities,1,971,950–999,3,171,84,90.2,9.8
+4136,-32.9479,151.6823,true,Primary,Major Cities,1,1045,1000–1049,4,227,90,91.4,8.6
+4138,-33.7639,150.7006,true,Primary,Major Cities,1,958,950–999,3,441,85.6,88.1,11.9
+4142,-33.9155,151.0196,true,Primary,Major Cities,1,992,950–999,3,317,89.2,88.7,11.3
+4144,-35.1291,147.3575,true,Primary,Inner Regional,2,944,900–949,2,283,90.4,89.8,10.2
+4147,-33.9009,151.1861,true,Primary,Major Cities,1,1155,1100 and over,6,334,88.2,90.9,9.1
+4148,-33.667,150.676,true,Primary,Major Cities,1,968,950–999,3,126,83.1,88.2,11.8
+4149,-31.6338,152.8198,true,Primary,Inner Regional,2,997,950–999,3,232,88.6,89.7,10.3
+4151,-33.9564,151.0074,true,Primary,Major Cities,1,998,950–999,3,154,89.8,87.6,12.4
+4155,-32.9244,151.6092,true,Primary,Major Cities,1,969,950–999,3,305,86.9,89,11
+4157,-33.7956,151.0584,true,Primary,Major Cities,1,1040,1000–1049,4,155,88.1,90.6,9.4
+4160,-33.7874,151.1089,true,Primary,Major Cities,1,1133,1100 and over,6,1007,91.7,92.8,7.2
+4161,-33.9271,150.9077,true,Primary,Major Cities,1,920,900–949,2,668,83.8,87.1,12.9
+4162,-33.766,150.9216,true,Primary,Major Cities,1,1001,1000–1049,4,324,84.6,90.6,9.4
+4163,-32.9156,151.6668,true,Primary,Major Cities,1,996,950–999,3,290,85.7,88,12
+4164,-33.7941,151.1309,true,Primary,Major Cities,1,1144,1100 and over,6,265,90.6,92,8
+4165,-33.7576,151.0954,true,Primary,Major Cities,1,1174,1100 and over,6,382,90.4,93.3,6.7
+4166,-33.7566,150.8953,true,Primary,Major Cities,1,981,950–999,3,557,85.4,87.7,12.3
+4168,-36.0393,146.9489,true,Primary,Inner Regional,2,924,900–949,2,291,86.4,88.8,11.2
+4173,-35.1488,147.3732,true,Primary,Inner Regional,2,933,900–949,2,390,87.1,89.8,10.2
+4177,-28.8216,153.2725,true,Primary,Inner Regional,2,950,950–999,3,102,81,87,13
+4180,-34.4755,150.841,true,Primary,Major Cities,1,868,Under 900,1,157,83.3,87,13
+4183,-33.2257,151.5493,true,Primary,Major Cities,1,937,900–949,2,555,87.1,89,11
+4184,-28.7944,153.5907,true,Primary,Inner Regional,2,1064,1050–1099,5,424,84.5,88.7,11.3
+4185,-33.0091,151.6425,true,Primary,Major Cities,1,1071,1050–1099,5,510,89.9,92.9,7.1
+4191,-33.7605,150.9313,true,Primary,Major Cities,1,916,900–949,2,187,78,85.8,14.2
+4192,-33.7775,150.9245,true,Primary,Major Cities,1,1015,1000–1049,4,175,88.1,90.3,9.7
+4193,-33.7802,150.9052,true,Primary,Major Cities,1,1042,1000–1049,4,936,87.5,89.6,10.4
+4194,-32.9712,151.7047,true,Primary,Major Cities,1,1036,1000–1049,4,319,88.1,90.5,9.5
+4195,-33.7281,150.6002,true,Primary,Major Cities,1,1052,1050–1099,5,146,88.2,90,10
+4196,-31.095,152.8299,true,Primary,Inner Regional,2,767,Under 900,1,129,73.3,83.1,16.9
+4197,-33.0713,151.654,true,Primary,Major Cities,1,1004,1000–1049,4,103,90.5,91,9
+4198,-33.9442,150.9092,true,Primary,Major Cities,1,980,950–999,3,660,85.3,89.2,10.8
+4199,-33.7037,151.2848,true,Primary,Major Cities,1,1087,1050–1099,5,387,88.7,91.1,8.9
+4200,-33.7662,151.2492,true,Primary,Major Cities,1,1138,1100 and over,6,406,90.2,92.3,7.7
+4203,-32.9465,151.6943,true,Primary,Major Cities,1,1069,1050–1099,5,309,91,92.3,7.7
+4204,-33.1361,148.1902,true,Primary,Outer Regional,3,949,900–949,2,281,87.7,89.4,10.6
+4205,-33.7562,150.7826,true,Primary,Major Cities,1,873,Under 900,1,345,82.4,86.8,13.2
+4206,-32.9661,151.6418,true,Primary,Major Cities,1,1065,1050–1099,5,348,90.5,91.7,8.3
+4207,-32.9276,151.6544,true,Primary,Major Cities,1,956,950–999,3,232,85.5,88.2,11.8
+4208,-32.9917,151.6019,true,Primary,Major Cities,1,889,Under 900,1,159,85.2,86.6,13.4
+4209,-34.4513,147.5235,true,Primary,Outer Regional,3,940,900–949,2,122,87.2,89.4,10.6
+4210,-33.9051,150.912,true,Primary,Major Cities,1,943,900–949,2,214,82.6,85.1,14.9
+4212,-33.7325,150.9144,true,Primary,Major Cities,1,1101,1100 and over,6,655,89.1,91.3,8.7
+4214,-34.7503,146.5658,true,Infants,Outer Regional,3,884,Under 900,1,25,90,91,9
+4215,-35.1356,147.3512,true,Primary,Inner Regional,2,824,Under 900,1,228,84.6,86.3,13.7
+4217,-33.9069,151.0501,true,Primary,Major Cities,1,980,950–999,3,512,83.3,85.4,14.6
+4218,-33.4376,151.3489,true,Primary,Major Cities,1,1017,1000–1049,4,334,85.2,89.4,10.6
+4221,-34.047,151.0489,true,Primary,Major Cities,1,1079,1050–1099,5,337,89.7,91.7,8.3
+4222,-33.802,150.966,true,Primary,Major Cities,1,1122,1100 and over,6,576,87.5,92.5,7.5
+4225,-28.8689,150.1013,true,Primary,Outer Regional,3,,,,1,92.6,,
+4228,-29.4709,149.2289,true,Primary,Remote,4,887,Under 900,1,24,85.1,85,15
+4230,-34.0463,151.1129,true,Primary,Major Cities,1,1084,1050–1099,5,440,90.1,91.7,8.3
+4232,-31.9415,141.4608,true,Primary,Outer Regional,3,960,950–999,3,290,83.8,89.5,10.5
+4233,-31.9706,141.44,true,Primary,Outer Regional,3,868,Under 900,1,124,79.8,85,15
+4241,-33.738,151.2747,true,Primary,Major Cities,1,1091,1050–1099,5,468,90,91.7,8.3
+4246,-34.8591,150.59,true,Primary,Inner Regional,2,992,950–999,3,451,88.8,90.7,9.3
+4248,-33.7571,150.9428,true,Primary,Major Cities,1,1038,1000–1049,4,437,89.1,91.6,8.4
+4249,-33.7278,151.2848,true,Primary,Major Cities,1,1086,1050–1099,5,430,90.3,91.9,8.1
+4250,-33.9106,151.2417,true,Primary,Major Cities,1,1155,1100 and over,6,853,90.7,92.4,7.6
+4256,-34.8824,150.6077,true,Primary,Inner Regional,2,784,Under 900,1,420,77.6,81.9,18.1
+4257,-33.8071,151.1259,true,Primary,Major Cities,1,1115,1100 and over,6,347,91.4,92.7,7.3
+4258,-33.7544,150.9264,true,Primary,Major Cities,1,988,950–999,3,223,89.6,89,11
+4259,-34.051,151.1328,true,Primary,Major Cities,1,1101,1100 and over,6,573,89.8,92.9,7.1
+4262,-29.6455,149.4392,true,Primary,Remote,4,874,Under 900,1,11,90.2,88.1,11.9
+4263,-32.8106,151.6648,true,Primary,Major Cities,1,892,Under 900,1,115,83,86.5,13.5
+4266,-34.505,150.7956,true,Primary,Major Cities,1,952,950–999,3,370,84.7,88,12
+4268,-34.2861,146.0618,true,Primary,Outer Regional,3,966,950–999,3,500,87,90.9,9.1
+4270,-36.214,148.1311,true,Primary,Outer Regional,3,948,900–949,2,19,89.1,90.6,9.4
+4274,-33.6701,151.098,true,Primary,Major Cities,1,1104,1100 and over,6,420,91,92.8,7.2
+4275,-33.7211,151.0884,true,Primary,Major Cities,1,1136,1100 and over,6,363,91.1,93.2,6.8
+4276,-33.7239,151.0722,true,Primary,Major Cities,1,1142,1100 and over,6,477,90.5,93.3,6.7
+4277,-34.0723,150.8318,true,Primary,Major Cities,1,927,900–949,2,380,83.4,86.4,13.6
+4278,-33.9165,150.9128,true,Primary,Major Cities,1,977,950–999,3,726,87.8,90.8,9.2
+4279,-33.7801,150.7764,true,Primary,Major Cities,1,945,900–949,2,319,84.9,86.4,13.6
+4281,-35.5252,144.9817,true,Primary,Inner Regional,2,992,950–999,3,164,87.5,89.1,10.9
+4282,-33.7427,150.8964,true,Primary,Major Cities,1,975,950–999,3,283,87.3,89.9,10.1
+4283,-33.7639,151.1244,true,Primary,Major Cities,1,1173,1100 and over,6,250,91.9,93.5,6.5
+4285,-33.7835,150.7925,true,Primary,Major Cities,1,912,900–949,2,646,83.8,86.9,13.1
+4286,-34.0697,150.6956,true,Primary,Major Cities,1,1021,1000–1049,4,712,89,90.7,9.3
+4288,-33.9563,150.9534,true,Primary,Major Cities,1,1100,1100 and over,6,563,87.6,91.9,8.1
+4289,-33.9321,150.8919,true,Primary,Major Cities,1,906,900–949,2,440,82.4,86.2,13.8
+4290,-33.764,150.8125,true,Primary,Major Cities,1,961,950–999,3,565,85.6,85.5,14.5
+4291,-34.5598,150.8311,true,Primary,Major Cities,1,974,950–999,3,268,89.3,89,11
+4292,-34.0595,151.0026,true,Primary,Major Cities,1,1057,1050–1099,5,541,89.8,92.6,7.4
+4293,-33.7187,151.1636,true,Primary,Major Cities,1,1164,1100 and over,6,846,91.4,93.9,6.1
+4294,-33.7653,151.0525,true,Primary,Major Cities,1,1112,1100 and over,6,306,90.7,92.9,7.1
+4296,-34.3523,150.9155,true,Primary,Major Cities,1,1037,1000–1049,4,200,87.9,90.3,9.7
+4298,-34.0566,151.0261,true,Primary,Major Cities,1,1081,1050–1099,5,249,91.8,94,6
+4299,-33.9658,151.2422,true,Primary,Major Cities,1,954,950–999,3,227,86.5,88.3,11.7
+4305,-29.2388,146.9181,true,Primary,Very Remote,5,,,,5,,79.9,20.1
+4310,-33.7848,150.8921,true,Primary,Major Cities,1,997,950–999,3,523,86.6,88.8,11.2
+4311,-33.9753,150.8579,true,Primary,Major Cities,1,1070,1050–1099,5,953,86,90.3,9.7
+4312,-33.8202,150.9594,true,Primary,Major Cities,1,1002,1000–1049,4,339,83.5,88.7,11.3
+4313,-33.7469,150.6236,true,Primary,Major Cities,1,1068,1050–1099,5,379,88.2,90.7,9.3
+4314,-33.8886,150.9087,true,Primary,Major Cities,1,1000,1000–1049,4,740,89.4,93.5,6.5
+4316,-33.1508,151.5368,true,Primary,Major Cities,1,945,900–949,2,193,85.9,88.5,11.5
+4318,-32.96,151.68,true,Primary,Major Cities,1,1020,1000–1049,4,164,92.1,92.1,7.9
+4319,-33.9158,150.891,true,Primary,Major Cities,1,883,Under 900,1,351,82.9,84.9,15.1
+4320,-33.1355,151.5824,true,Primary,Major Cities,1,953,950–999,3,351,85.3,86.9,13.1
+4323,-33.9729,151.056,true,Primary,Major Cities,1,1061,1050–1099,5,313,88.3,91.3,8.7
+4324,-32.9676,151.6882,true,Primary,Major Cities,1,1075,1050–1099,5,235,91.3,93.7,6.3
+4327,-33.7601,150.8852,true,Primary,Major Cities,1,1010,1000–1049,4,286,82.7,89.3,10.7
+4328,-33.8368,150.9601,true,Primary,Major Cities,1,992,950–999,3,246,86.2,89,11
+4329,-33.5036,151.3214,true,Primary,Major Cities,1,996,950–999,3,648,87.1,89.9,10.1
+4331,-33.7382,151.1665,true,Primary,Major Cities,1,1155,1100 and over,6,465,90.4,92.8,7.2
+4333,-34.5466,150.8528,true,Primary,Major Cities,1,872,Under 900,1,167,82.9,85.6,14.4
+4336,-33.9088,150.8905,true,Primary,Major Cities,1,848,Under 900,1,209,79.1,87.8,12.2
+4337,-33.9116,150.8813,true,Primary,Major Cities,1,892,Under 900,1,243,84.2,84.7,15.3
+4338,-33.9215,150.8769,true,Primary,Major Cities,1,880,Under 900,1,266,81.6,87,13
+4339,-33.7693,150.7118,true,Primary,Major Cities,1,956,950–999,3,304,85.4,88.3,11.7
+4342,-33.9691,151.0102,true,Primary,Major Cities,1,1101,1100 and over,6,360,90.3,91.7,8.3
+4344,-33.9164,150.8984,true,Primary,Major Cities,1,887,Under 900,1,284,82.4,88.7,11.3
+4346,-33.7412,150.7115,true,Primary,Major Cities,1,810,Under 900,1,166,80.6,88.9,11.1
+4348,-34.8042,145.8844,true,Central/Community,Outer Regional,3,931,900–949,2,143,81.6,84.6,15.4
+4354,-33.691,150.5447,true,Primary,Major Cities,1,1063,1050–1099,5,368,88.1,91.1,8.9
+4355,-33.8576,150.9179,true,Primary,Major Cities,1,900,900–949,2,300,88,92.7,7.3
+4357,-34.3962,150.8733,true,Primary,Major Cities,1,1126,1100 and over,6,241,87.4,91.7,8.3
+4359,-33.644,151.3134,true,Primary,Major Cities,1,1121,1100 and over,6,344,88.3,89.4,10.6
+4360,-33.9253,150.8909,true,Primary,Major Cities,1,920,900–949,2,241,83.4,86.6,13.4
+4364,-33.7926,150.9572,true,Primary,Major Cities,1,1046,1000–1049,4,268,85.3,88.8,11.2
+4365,-33.6826,151.0989,true,Primary,Major Cities,1,1148,1100 and over,6,937,91.2,93.2,6.8
+4366,-33.7973,150.9803,true,Primary,Major Cities,1,898,Under 900,1,107,80.2,85.9,14.1
+4367,-33.1032,151.6382,true,Primary,Major Cities,1,1019,1000–1049,4,349,88.3,90,10
+4368,-33.7385,151.2181,true,Primary,Major Cities,1,1126,1100 and over,6,407,90,91.3,8.7
+4369,-33.8977,151.1461,true,Primary,Major Cities,1,1121,1100 and over,6,198,86.2,90.5,9.5
+4370,-32.9462,151.7118,true,Primary,Major Cities,1,1103,1100 and over,6,409,90.9,92.9,7.1
+4371,-35.3454,149.2461,true,Primary,Major Cities,1,1031,1000–1049,4,280,86.6,89.3,10.7
+4372,-32.7586,151.7568,true,Primary,Major Cities,1,863,Under 900,1,304,82.1,85,15
+4374,-35.58,148.3005,true,Primary,Outer Regional,3,,,,5,90.9,,
+4375,-35.1245,147.3328,true,Primary,Inner Regional,2,766,Under 900,1,300,83.1,82.2,17.8
+4377,-33.7519,151,true,Primary,Major Cities,1,1130,1100 and over,6,876,92.1,92.6,7.4
+4378,-33.7529,150.8097,true,Primary,Major Cities,1,870,Under 900,1,340,85.1,86.3,13.7
+4379,-33.0142,151.6638,true,Primary,Major Cities,1,1026,1000–1049,4,488,91.2,90.6,9.4
+4380,-33.2869,149.0794,true,Primary,Inner Regional,2,964,950–999,3,566,85.9,88.3,11.7
+4381,-33.7892,150.9179,true,Primary,Major Cities,1,1001,1000–1049,4,435,85.1,88.8,11.2
+4382,-33.7613,150.9823,true,Primary,Major Cities,1,1132,1100 and over,6,803,90.4,92.7,7.3
+4383,-34.6418,148.0149,true,Primary,Inner Regional,2,840,Under 900,1,74,86.4,87.6,12.4
+4386,-33.7749,151.2162,true,Primary,Major Cities,1,1150,1100 and over,6,661,87.7,93.5,6.5
+4389,-34.0265,151.0883,true,Primary,Major Cities,1,1075,1050–1099,5,362,91,93.5,6.5
+4391,-33.898,150.9641,true,Primary,Major Cities,1,969,950–999,3,117,84.6,90.4,9.6
+4393,-33.7824,151.0372,true,Primary,Major Cities,1,1119,1100 and over,6,1636,91,93.2,6.8
+4394,-35.3655,149.2282,true,Primary,Major Cities,1,939,900–949,2,419,85.4,85.6,14.4
+4395,-34.5538,150.8446,true,Primary,Major Cities,1,885,Under 900,1,185,79.9,86.9,13.1
+4396,-33.9061,150.8745,true,Primary,Major Cities,1,895,Under 900,1,304,83,88.5,11.5
+4397,-33.4082,151.3558,true,Primary,Major Cities,1,940,900–949,2,302,83.2,86.1,13.9
+4398,-33.4299,151.3693,true,Primary,Major Cities,1,935,900–949,2,125,82.7,86.9,13.1
+4399,-34.4916,150.8163,true,Primary,Major Cities,1,972,950–999,3,601,86.5,89.1,10.9
+4400,-33.7241,151.1788,true,Primary,Major Cities,1,1113,1100 and over,6,143,90.4,93.3,6.7
+4401,-33.7661,151.0402,true,Primary,Major Cities,1,1142,1100 and over,6,787,92.4,93.3,6.7
+4402,-33.7459,150.7943,true,Primary,Major Cities,1,817,Under 900,1,325,76.6,80.3,19.7
+4403,-34.086,150.8127,true,Primary,Major Cities,1,987,950–999,3,704,84,89,11
+4404,-30.2922,153.1047,true,Primary,Inner Regional,2,948,900–949,2,669,86.6,89.9,10.1
+4405,-33.8149,150.9429,true,Primary,Major Cities,1,1033,1000–1049,4,580,87.7,91.4,8.6
+4406,-34.723,149.7399,true,Primary,Inner Regional,2,951,950–999,3,312,84.5,89.7,10.3
+4407,-36.0504,146.9473,true,Primary,Inner Regional,2,836,Under 900,1,175,75.4,84.6,15.4
+4408,-33.738,150.8001,true,Primary,Major Cities,1,855,Under 900,1,437,81.7,86.2,13.8
+4409,-34.5012,150.8079,true,Primary,Major Cities,1,838,Under 900,1,192,84.2,82.9,17.1
+4410,-35.1464,147.3476,true,Primary,Inner Regional,2,831,Under 900,1,325,78.1,84.6,15.4
+4411,-31.4373,152.893,true,Primary,Inner Regional,2,888,Under 900,1,365,81.1,84.3,15.7
+4413,-34.5618,146.3958,true,Primary,Outer Regional,3,900,900–949,2,373,83.4,87,13
+4416,-32.9467,151.7375,true,Primary,Major Cities,1,1129,1100 and over,6,269,90.8,93.3,6.7
+4417,-33.7735,150.9811,true,Primary,Major Cities,1,1104,1100 and over,6,636,90.4,92.3,7.7
+4418,-35.5244,144.9506,true,Primary,Inner Regional,2,872,Under 900,1,105,80.8,85.5,14.5
+4420,-33.9332,150.9515,true,Primary,Major Cities,1,997,950–999,3,508,84.5,89,11
+4421,-29.7244,152.9338,true,Primary,Inner Regional,2,774,Under 900,1,129,83.8,83.3,16.7
+4422,-33.7447,150.8055,true,Primary,Major Cities,1,873,Under 900,1,218,81.9,84.6,15.4
+4423,-34.5159,150.7848,true,Primary,Major Cities,1,975,950–999,3,346,84.1,89.4,10.6
+4424,-33.7721,150.6313,true,Primary,Major Cities,1,1113,1100 and over,6,158,91.2,92,8
+4426,-33.3652,151.4561,true,Primary,Major Cities,1,963,950–999,3,477,86.7,89.1,10.9
+4427,-33.3841,151.3511,true,Primary,Major Cities,1,1008,1000–1049,4,412,86.6,91,9
+4428,-28.8511,153.5857,true,Primary,Inner Regional,2,1053,1050–1099,5,388,84.2,90.2,9.8
+4431,-34.0465,151.0242,true,Primary,Major Cities,1,1063,1050–1099,5,318,90.1,92.7,7.3
+4432,-33.7433,151.2059,true,Primary,Major Cities,1,1119,1100 and over,6,562,92.2,93,7
+4433,-33.6085,151.1415,true,Primary,Major Cities,1,1102,1100 and over,6,321,88.5,92,8
+4435,-33.7295,150.6326,true,Primary,Major Cities,1,1050,1050–1099,5,231,89.2,92.3,7.7
+4436,-33.6703,150.6108,true,Primary,Major Cities,1,1043,1000–1049,4,359,88.1,89.8,10.2
+4437,-31.1144,150.9007,true,Primary,Inner Regional,2,761,Under 900,1,449,77.9,82,18
+4438,-34.743,149.7109,true,Primary,Inner Regional,2,975,950–999,3,387,85.5,88.2,11.8
+4440,-33.7313,151.0421,true,Primary,Major Cities,1,1164,1100 and over,6,886,91.4,93.4,6.6
+4441,-33.7491,150.9722,true,Primary,Major Cities,1,1139,1100 and over,6,633,90.9,93.1,6.9
+4442,-33.7367,150.6488,true,Primary,Major Cities,1,1006,1000–1049,4,237,89.6,91.7,8.3
+4444,-33.794,150.9348,true,Primary,Major Cities,1,1072,1050–1099,5,676,89,91.9,8.1
+4446,-33.7454,150.816,true,Primary,Major Cities,1,898,Under 900,1,293,81.3,83.6,16.4
+4447,-33.7481,150.8259,true,Primary,Major Cities,1,904,900–949,2,515,82.2,85.8,14.2
+4449,-33.76,150.8048,true,Primary,Major Cities,1,864,Under 900,1,320,79.1,83.5,16.5
+4450,-34.8491,148.919,true,Primary,Inner Regional,2,960,950–999,3,225,81.8,88,12
+4452,-33.6036,150.7423,true,Primary,Major Cities,1,959,950–999,3,355,82.7,89.2,10.8
+4453,-33.7396,150.8159,true,Primary,Major Cities,1,839,Under 900,1,288,78.5,85.9,14.1
+4454,-30.8789,147.3745,true,Primary,Remote,4,974,950–999,3,8,,92.9,7.1
+4456,-35.3151,148.2305,true,Primary,Inner Regional,2,900,900–949,2,239,82.3,87,13
+4457,-35.1361,147.3774,true,Primary,Inner Regional,2,966,950–999,3,306,89,89.3,10.7
+4458,-34.0891,150.8277,true,Primary,Major Cities,1,835,Under 900,1,263,84.8,88.8,11.2
+4459,-32.7922,151.6705,true,Primary,Major Cities,1,817,Under 900,1,221,84.8,86.2,13.8
+4460,-33.9931,150.8994,true,Primary,Major Cities,1,883,Under 900,1,275,80.9,86,14
+4461,-33.9874,150.8969,true,Primary,Major Cities,1,880,Under 900,1,221,86.6,87.7,12.3
+4462,-34.4315,150.8555,true,Primary,Major Cities,1,1061,1050–1099,5,181,88.8,91.3,8.7
+4463,-34.5822,150.8502,true,Primary,Major Cities,1,1004,1000–1049,4,518,86.8,88.4,11.6
+4464,-35.1048,150.6286,true,Primary,Inner Regional,2,909,900–949,2,408,85.6,88,12
+4466,-34.0612,150.7122,true,Primary,Major Cities,1,1017,1000–1049,4,386,88.8,90.9,9.1
+4467,-33.8791,150.9107,true,Primary,Major Cities,1,985,950–999,3,396,87.9,90.6,9.4
+4468,-36.0546,146.9173,true,Primary,Inner Regional,2,897,Under 900,1,220,81.7,86.4,13.6
+4469,-33.0157,151.6875,true,Primary,Major Cities,1,1026,1000–1049,4,262,88.8,89.6,10.4
+4470,-33.7257,150.7944,true,Primary,Major Cities,1,817,Under 900,1,162,77.8,84.8,15.2
+4471,-33.7748,150.9679,true,Primary,Major Cities,1,1103,1100 and over,6,304,88.4,92.6,7.4
+4473,-33.7551,150.7453,true,Primary,Major Cities,1,963,950–999,3,519,82.6,88.5,11.5
+4474,-33.8342,150.9399,true,Primary,Major Cities,1,1036,1000–1049,4,169,89,92.2,7.8
+4475,-33.7643,150.6505,true,Primary,Major Cities,1,1049,1000–1049,4,191,91,91.3,8.7
+4476,-33.7266,150.8094,true,Primary,Major Cities,1,837,Under 900,1,258,78.9,87.1,12.9
+4478,-30.5229,151.6772,true,Primary,Inner Regional,2,802,Under 900,1,165,77.3,78.5,21.5
+4479,-34.0822,150.8344,true,Primary,Major Cities,1,907,900–949,2,228,77.7,83.8,16.2
+4480,-33.7335,150.8259,true,Primary,Major Cities,1,825,Under 900,1,410,77.7,82.4,17.6
+4481,-34.0225,150.8314,true,Primary,Major Cities,1,995,950–999,3,761,86.4,89.7,10.3
+4482,-33.7771,150.6981,true,Primary,Major Cities,1,973,950–999,3,515,86.7,89.8,10.2
+4483,-33.5945,150.6649,true,Primary,Inner Regional,2,1005,1000–1049,4,265,83.2,91,9
+4484,-33.7372,150.722,true,Primary,Major Cities,1,965,950–999,3,341,85.4,89.6,10.4
+4485,-34.9332,150.7623,true,Primary,Inner Regional,2,952,950–999,3,219,86.4,89.7,10.3
+4486,-32.5492,151.164,true,Primary,Inner Regional,2,920,900–949,2,468,86.8,88.6,11.4
+4488,-34.0129,151.082,true,Primary,Major Cities,1,1102,1100 and over,6,272,92.9,93.4,6.6
+4489,-34.0669,150.8416,true,Primary,Major Cities,1,973,950–999,3,483,87.2,91.1,8.9
+4490,-34.0377,150.8474,true,Primary,Major Cities,1,992,950–999,3,351,83.3,86.7,13.3
+4491,-34.0111,150.8636,true,Primary,Major Cities,1,971,950–999,3,474,84.5,89,11
+4492,-34.0971,150.8151,true,Primary,Major Cities,1,959,950–999,3,275,84,89.8,10.2
+4493,-33.7326,150.8099,true,Primary,Major Cities,1,866,Under 900,1,260,81.8,84.8,15.2
+4494,-33.915,151.074,true,Primary,Major Cities,1,966,950–999,3,859,82.7,85.1,14.9
+4496,-33.9062,151.1403,true,Primary,Major Cities,1,1099,1050–1099,5,358,87.7,91.4,8.6
+4498,-34.6249,150.8528,true,Primary,Major Cities,1,1068,1050–1099,5,464,86.6,90,10
+4499,-33.9261,150.9521,true,Primary,Major Cities,1,1055,1050–1099,5,440,89.1,91.4,8.6
+4500,-34.4258,150.8479,true,Primary,Major Cities,1,1080,1050–1099,5,209,88.7,93.2,6.8
+4501,-34.5591,150.846,true,Primary,Major Cities,1,873,Under 900,1,192,82.7,86.5,13.5
+4502,-33.8956,151.1502,true,Primary,Major Cities,1,1137,1100 and over,6,232,91,92.3,7.7
+4503,-30.2839,153.1124,true,Primary,Inner Regional,2,872,Under 900,1,258,81.7,83.6,16.4
+4504,-33.7548,150.8688,true,Primary,Major Cities,1,914,900–949,2,387,83.3,85,15
+4505,-34.0864,150.7982,true,Primary,Major Cities,1,944,900–949,2,433,82.6,86.4,13.6
+4506,-30.3535,153.0834,true,Primary,Inner Regional,2,922,900–949,2,174,87.1,86.7,13.3
+4507,-34.0126,151.0563,true,Primary,Major Cities,1,1090,1050–1099,5,197,91.1,92.9,7.1
+4508,-33.4002,151.3619,true,Primary,Major Cities,1,987,950–999,3,325,87.3,90.3,9.7
+4509,-34.0276,150.8509,true,Primary,Major Cities,1,991,950–999,3,311,83.3,87.1,12.9
+4510,-34.0431,150.8095,true,Primary,Major Cities,1,903,900–949,2,236,80.1,87.9,12.1
+4514,-32.5695,151.1753,true,Primary,Inner Regional,2,900,900–949,2,433,87,88.3,11.7
+4516,-33.9281,151.2138,true,Primary,Major Cities,1,1046,1000–1049,4,154,84.9,89.7,10.3
+4517,-33.2525,151.5102,true,Primary,Major Cities,1,913,900–949,2,620,83.8,86.6,13.4
+4518,-34.0221,150.8574,true,Primary,Major Cities,1,981,950–999,3,282,85.6,86.6,13.4
+4520,-33.3918,151.4761,true,Primary,Major Cities,1,1029,1000–1049,4,614,84.7,90.1,9.9
+4521,-32.7651,151.6127,true,Primary,Major Cities,1,887,Under 900,1,265,84.8,85.6,14.4
+4522,-33.4122,151.4483,true,Primary,Major Cities,1,1048,1000–1049,4,475,85.8,90,10
+4523,-36.0319,146.9497,true,Primary,Inner Regional,2,926,900–949,2,223,84.8,89.7,10.3
+4524,-31.4531,152.9182,true,Primary,Inner Regional,2,1019,1000–1049,4,526,89.8,88.9,11.1
+4525,-33.7225,150.7084,true,Primary,Major Cities,1,880,Under 900,1,332,80,84.4,15.6
+4526,-33.7582,150.9636,true,Primary,Major Cities,1,1177,1100 and over,6,1270,90.6,92.8,7.2
+4527,-33.7963,150.7992,true,Primary,Major Cities,1,982,950–999,3,409,86.9,87.8,12.2
+4528,-33.7451,150.9244,true,Primary,Major Cities,1,1081,1050–1099,5,567,88.7,91.5,8.5
+4529,-33.9745,150.903,true,Primary,Major Cities,1,988,950–999,3,216,88.9,89.1,10.9
+4531,-33.7963,150.7869,true,Primary,Major Cities,1,975,950–999,3,325,86.4,88.8,11.2
+4533,-32.1716,152.4951,true,Primary,Inner Regional,2,930,900–949,2,366,87.3,87,13
+4534,-30.4325,152.6918,true,Primary,Outer Regional,3,983,950–999,3,32,76.5,81,19
+4535,-34.048,150.8024,true,Primary,Major Cities,1,978,950–999,3,450,84.7,87.3,12.7
+4536,-34.0195,151.0291,true,Primary,Major Cities,1,1077,1050–1099,5,503,89,92.4,7.6
+4537,-34.1046,150.7945,true,Primary,Major Cities,1,945,900–949,2,724,85.9,88.2,11.8
+4538,-33.2808,149.1179,true,Primary,Inner Regional,2,811,Under 900,1,217,85.8,87,13
+4539,-34.0936,150.7892,true,Primary,Major Cities,1,942,900–949,2,495,85,88.9,11.1
+4541,-33.7451,150.7476,true,Primary,Major Cities,1,961,950–999,3,319,83.6,89.3,10.7
+4542,-33.326,151.432,true,Primary,Major Cities,1,992,950–999,3,479,86.4,89.7,10.3
+4543,-33.902,151.1551,true,Primary,Major Cities,1,1135,1100 and over,6,508,89.9,90.4,9.6
+4544,-33.7731,150.6831,true,Primary,Major Cities,1,980,950–999,3,317,86.5,89.4,10.6
+4545,-33.8877,150.889,true,Primary,Major Cities,1,900,900–949,2,238,84.5,88.6,11.4
+4546,-33.7186,150.3137,true,Primary,Major Cities,1,1035,1000–1049,4,210,85,87,13
+4547,-32.7301,152.0058,true,Primary,Inner Regional,2,901,900–949,2,354,83.6,87.2,12.8
+4548,-33.485,151.4368,true,Primary,Major Cities,1,1064,1050–1099,5,259,87.9,91.1,8.9
+4549,-32.2525,148.6271,true,Primary,Inner Regional,2,900,900–949,2,614,85.5,88.2,11.8
+4551,-33.8709,151.2202,true,Primary,Major Cities,1,968,950–999,3,73,83.1,85.1,14.9
+4552,-31.8923,152.4599,true,Primary,Inner Regional,2,724,Under 900,1,207,75.2,79.4,20.6
+4553,-33.9248,151.0688,true,Primary,Major Cities,1,994,950–999,3,550,84.9,87.1,12.9
+4554,-33.8665,150.8909,true,Primary,Major Cities,1,894,Under 900,1,419,87.9,90.9,9.1
+4555,-32.6065,149.5838,true,Primary,Inner Regional,2,951,950–999,3,654,87.8,90.2,9.8
+4556,-29.6916,152.1104,true,Primary,Outer Regional,3,923,900–949,2,13,80.1,78.5,21.5
+4557,-30.1536,153.1865,true,Primary,Inner Regional,2,973,950–999,3,336,88.3,88.8,11.2
+4558,-34.0283,150.8108,true,Primary,Major Cities,1,979,950–999,3,326,87.7,90.9,9.1
+4559,-33.8063,150.7831,true,Primary,Major Cities,1,980,950–999,3,480,88.7,88.8,11.2
+4560,-33.7133,150.7087,true,Primary,Major Cities,1,980,950–999,3,521,85.7,90.2,9.8
+4561,-32.7109,151.5284,true,Primary,Major Cities,1,933,900–949,2,1007,84.6,87.7,12.3
+4562,-35.7407,150.21,true,Primary,Inner Regional,2,903,900–949,2,203,86.1,84,16
+4563,-33.8546,150.9058,true,Primary,Major Cities,1,973,950–999,3,459,87.6,90.6,9.4
+4564,-32.7439,151.8752,true,Primary,Inner Regional,2,988,950–999,3,530,87.7,89.8,10.2
+4565,-33.4014,143.9444,true,Primary,Remote,4,1009,1000–1049,4,9,87.3,92.6,7.4
+4566,-33.3761,151.4661,true,Primary,Major Cities,1,931,900–949,2,420,83.6,87.1,12.9
+4567,-33.8738,150.8791,true,Primary,Major Cities,1,979,950–999,3,568,89.7,91.6,8.4
+4568,-33.6903,150.5853,true,Primary,Major Cities,1,1051,1050–1099,5,283,88.3,90,10
+4569,-34.0162,150.8189,true,Primary,Major Cities,1,988,950–999,3,430,84,89,11
+4571,-33.7937,150.7731,true,Primary,Major Cities,1,971,950–999,3,417,88.9,91.3,8.7
+4572,-33.7188,151.0389,true,Primary,Major Cities,1,1168,1100 and over,6,550,88.1,94.5,5.5
+4573,-34.0033,151.0259,true,Primary,Major Cities,1,1085,1050–1099,5,328,89,91.8,8.2
+4574,-33.7131,150.992,true,Primary,Major Cities,1,1128,1100 and over,6,643,89.9,91.9,8.1
+4575,-31.8702,152.377,true,Primary,Inner Regional,2,895,Under 900,1,203,84.4,88.2,11.8
+4576,-33.7343,150.8587,true,Primary,Major Cities,1,995,950–999,3,382,87.8,88.4,11.6
+4577,-33.7886,150.8324,true,Primary,Major Cities,1,975,950–999,3,439,85.7,89.6,10.4
+4578,-28.7948,153.5007,true,Primary,Inner Regional,2,1057,1050–1099,5,133,90,92,8
+4579,-33.8052,150.8039,true,Primary,Major Cities,1,980,950–999,3,486,87.4,89.5,10.5
+4580,-33.441,151.2896,true,Primary,Major Cities,1,1007,1000–1049,4,502,86.4,90.1,9.9
+4581,-30.6418,152.9863,true,Primary,Inner Regional,2,886,Under 900,1,217,81.2,86.4,13.6
+4583,-33.8821,150.8761,true,Primary,Major Cities,1,963,950–999,3,286,89,90.7,9.3
+4585,-33.6391,150.7946,true,Primary,Major Cities,1,933,900–949,2,283,87.4,90,10
+4588,-33.2145,151.5148,true,Primary,Major Cities,1,905,900–949,2,341,79.4,86.5,13.5
+4589,-32.7291,152.1739,true,Primary,Inner Regional,2,962,950–999,3,237,87.1,89.7,10.3
+4590,-33.7164,150.8872,true,Primary,Major Cities,1,1072,1050–1099,5,633,88.8,91.8,8.2
+4591,-33.7834,150.6811,true,Primary,Major Cities,1,994,950–999,3,455,87.8,90.5,9.5
+4592,-35.0734,150.6695,true,Primary,Inner Regional,2,1012,1000–1049,4,251,88.4,89.9,10.1
+4593,-34.0215,150.8044,true,Primary,Major Cities,1,985,950–999,3,178,87.7,89.4,10.6
+4594,-33.8893,150.8677,true,Primary,Major Cities,1,989,950–999,3,769,86.3,89.8,10.2
+4597,-34.0617,150.7605,true,Primary,Major Cities,1,1005,1000–1049,4,653,86.6,90.5,9.5
+4598,-33.7355,150.8385,true,Primary,Major Cities,1,959,950–999,3,623,84.8,88.3,11.7
+4599,-33.7205,150.9018,true,Primary,Major Cities,1,1078,1050–1099,5,788,87.1,91.6,8.4
+4600,-32.8814,151.6588,true,Primary,Major Cities,1,996,950–999,3,368,88.3,89.2,10.8
+4601,-31.0558,152.787,true,Primary,Inner Regional,2,896,Under 900,1,263,88.4,87.3,12.7
+4602,-30.3637,153.0803,true,Primary,Inner Regional,2,812,Under 900,1,159,86.3,84.8,15.2
+4603,-34.1102,150.804,true,Primary,Major Cities,1,968,950–999,3,363,84.7,89.2,10.8
+4604,-33.7216,151.023,true,Primary,Major Cities,1,1152,1100 and over,6,756,90.6,93.2,6.8
+4605,-33.9924,151.024,true,Primary,Major Cities,1,1037,1000–1049,4,165,89.4,90.5,9.5
+4606,-30.078,153.1902,true,Primary,Inner Regional,2,1033,1000–1049,4,266,86.6,89.5,10.5
+4607,-28.2157,153.5268,true,Primary,Major Cities,1,975,950–999,3,424,81.4,89,11
+4608,-33.7422,150.8526,true,Primary,Major Cities,1,1025,1000–1049,4,440,88.4,89.9,10.1
+4609,-32.7591,151.7745,true,Primary,Major Cities,1,912,900–949,2,253,85.1,86.4,13.6
+4610,-34.5916,150.7799,true,Primary,Major Cities,1,982,950–999,3,635,83.4,88.8,11.2
+4611,-32.0414,152.5376,true,Primary,Inner Regional,2,1021,1000–1049,4,302,87.9,88.3,11.7
+4612,-35.8456,150.1719,true,Primary,Inner Regional,2,996,950–999,3,246,90.6,88.6,11.4
+4613,-33.913,150.8589,true,Primary,Major Cities,1,959,950–999,3,487,86.2,90.5,9.5
+4614,-33.6406,150.8135,true,Primary,Major Cities,1,949,900–949,2,231,85.7,89.1,10.9
+4615,-33.7363,150.9262,true,Primary,Major Cities,1,1120,1100 and over,6,868,88.8,91.2,8.8
+4616,-32.2432,148.6394,true,Primary,Inner Regional,2,787,Under 900,1,436,82.9,86,14
+4617,-31.4721,152.9264,true,Primary,Inner Regional,2,1054,1050–1099,5,594,89.5,90,10
+4618,-34.8556,150.5772,true,Primary,Inner Regional,2,908,900–949,2,223,86,89.9,10.1
+4619,-33.7047,150.7097,true,Primary,Major Cities,1,998,950–999,3,219,86.2,91,9
+4620,-32.8736,151.6497,true,Primary,Major Cities,1,1019,1000–1049,4,609,86,88.7,11.3
+4621,-34.0561,150.7447,true,Primary,Major Cities,1,1006,1000–1049,4,619,88,90.6,9.4
+4622,-33.7742,150.747,true,Primary,Major Cities,1,1012,1000–1049,4,687,85.1,89,11
+4623,-33.2125,151.5028,true,Primary,Major Cities,1,927,900–949,2,637,84.4,88.8,11.2
+4624,-33.938,150.8376,true,Primary,Major Cities,1,1011,1000–1049,4,620,86.9,89.6,10.4
+4625,-34.0478,150.7692,true,Primary,Major Cities,1,981,950–999,3,545,85.3,89.5,10.5
+4626,-34.996,150.7144,true,Primary,Inner Regional,2,971,950–999,3,151,84.4,87.5,12.5
+4627,-33.8412,151.0552,true,Primary,Major Cities,1,1104,1100 and over,6,665,91.3,92.5,7.5
+4628,-34.0271,150.7385,true,Primary,Major Cities,1,1035,1000–1049,4,731,85.8,90.5,9.5
+4630,-33.6978,150.9457,true,Primary,Major Cities,1,1107,1100 and over,6,466,89.5,91.9,8.1
+4631,-33.7873,150.6892,true,Primary,Major Cities,1,1007,1000–1049,4,424,87.9,91,9
+4632,-28.3382,153.5722,true,Primary,Major Cities,1,1040,1000–1049,4,325,88,89.5,10.5
+4633,-35.3861,149.1985,true,Primary,Major Cities,1,1107,1100 and over,6,865,88.5,92.3,7.7
+4634,-33.9473,150.8714,true,Primary,Major Cities,1,1012,1000–1049,4,671,86.3,88.4,11.6
+4635,-33.8886,150.8517,true,Primary,Major Cities,1,1017,1000–1049,4,721,88.9,91.3,8.7
+4637,-33.2424,151.4841,true,Primary,Major Cities,1,984,950–999,3,385,86.4,90.6,9.4
+4638,-33.6874,150.9333,true,Primary,Major Cities,1,1156,1100 and over,6,754,89.4,91.8,8.2
+4639,-33.7054,150.924,true,Primary,Major Cities,1,1107,1100 and over,6,671,86.9,91,9
+4640,-33.7067,150.9756,true,Primary,Major Cities,1,1114,1100 and over,6,584,89.5,91.9,8.1
+4641,-34.5956,150.8542,true,Primary,Major Cities,1,1049,1000–1049,4,463,87.5,90.9,9.1
+4642,-32.7724,151.6008,true,Primary,Major Cities,1,1008,1000–1049,4,514,88.9,90.7,9.3
+4645,-33.7334,150.7831,true,Primary,Major Cities,1,1019,1000–1049,4,789,84.3,88.9,11.1
+4646,-34.0545,150.7218,true,Primary,Major Cities,1,1011,1000–1049,4,539,88.1,89.8,10.2
+4647,-33.9173,150.8482,true,Primary,Major Cities,1,1010,1000–1049,4,465,86.3,90.2,9.8
+4648,-33.7074,150.9115,true,Primary,Major Cities,1,1125,1100 and over,6,950,88.7,92,8
+4649,-34.5786,150.7553,true,Primary,Major Cities,1,1005,1000–1049,4,483,86.4,89.6,10.4
+4650,-34.2287,150.6848,true,Primary,Inner Regional,2,1018,1000–1049,4,666,86.6,91.4,8.6
+4651,-33.9973,150.7349,true,Primary,Major Cities,1,1027,1000–1049,4,1407,87.8,90.2,9.8
+4652,-33.8752,151.0794,true,Primary,Major Cities,1,1104,1100 and over,6,424,90.3,92.4,7.6
+4653,-33.704,150.8995,true,Primary,Major Cities,1,1141,1100 and over,6,2030,89,91.7,8.3
+4654,-31.5682,152.8278,true,Primary,Inner Regional,2,1007,1000–1049,4,395,87.4,89.3,10.7
+4655,-33.8477,151.0834,true,Primary,Major Cities,1,1071,1050–1099,5,340,89.9,91.7,8.3
+4656,-33.8266,151.2107,true,Primary,Major Cities,1,1147,1100 and over,6,720,91.4,92.8,7.2
+4657,-34.0696,150.715,true,Primary,Major Cities,1,1009,1000–1049,4,866,87.3,90.8,9.2
+4658,-33.7901,151.1605,true,Central/Community,Major Cities,1,1152,1100 and over,6,802,87,90.9,9.1
+4660,-33.8099,151.0013,true,Primary,Major Cities,1,1108,1100 and over,6,663,88.6,91.1,8.9
+4662,-33.8237,151.0801,true,Primary,Major Cities,1,1045,1000–1049,4,672,88.5,90.7,9.3
+4663,-33.7266,150.955,true,Primary,Major Cities,1,1147,1100 and over,6,1104,89.6,92.6,7.4
+4664,-33.6913,150.9551,true,Primary,Major Cities,1,1112,1100 and over,6,1068,86.7,90.8,9.2
+4667,-34.0122,150.7766,true,Primary,Major Cities,1,1038,1000–1049,4,976,87.8,90.2,9.8
+4668,-33.7994,151.1095,true,Primary,Major Cities,1,1114,1100 and over,6,494,89.2,94.1,5.9
+4669,-33.7249,150.7259,true,Primary,Major Cities,1,1017,1000–1049,4,1119,86.9,89.7,10.3
+4670,-33.7004,150.8805,true,Primary,Major Cities,1,1106,1100 and over,6,882,89.4,89.5,10.5
+4671,-34.007,150.749,true,Primary,Major Cities,1,1044,1000–1049,4,1182,85.1,88.4,11.6
+4672,-33.9825,150.8154,true,Primary,Major Cities,1,1068,1050–1099,5,826,87,89.9,10.1
+4673,-33.6891,150.8187,true,Primary,Major Cities,1,1095,1050–1099,5,1711,86.2,90.4,9.6
+4674,-35.0674,147.353,true,Primary,Inner Regional,2,1019,1000–1049,4,402,91.9,91.3,8.7
+4675,-33.2498,151.4555,true,Primary,Major Cities,1,988,950–999,3,317,89.4,87.7,12.3
+4677,-33.803,150.6816,true,Primary,Major Cities,1,1050,1050–1099,5,413,,90.7,9.3
+4678,-33.7811,151.0692,true,Primary,Major Cities,1,1118,1100 and over,6,380,,92.9,7.1
+4679,-33.9653,150.8527,true,Primary,Major Cities,1,1077,1050–1099,5,897,,89.9,10.1
+4680,-35.423,149.2382,true,Primary,Major Cities,1,1078,1050–1099,5,782,,91.9,8.1
+4682,-34.025,150.78,true,Primary,Major Cities,1,1028,1000–1049,4,647,,89,11
+4683,-34.9665,149.0303,true,Primary,Inner Regional,2,1056,1050–1099,5,171,,90.6,9.4
+4686,-33.6868,150.8991,true,Primary,Major Cities,1,1083,1050–1099,5,121,,89.2,10.8
+4687,-33.9178,150.9322,true,Primary,Major Cities,1,959,950–999,3,267,,90.2,9.8
+4690,-36.4302,148.6109,true,Primary,Outer Regional,3,1032,1000–1049,4,283,,89.3,10.7
+4691,-33.7146,150.8728,true,Primary,Major Cities,1,1126,1100 and over,6,210,,94.3,5.7
+5103,-33.9318,151.1452,true,Infants,Major Cities,1,1058,1050–1099,5,86,91.1,93.4,6.6
+5104,-33.8958,151.1776,true,Infants,Major Cities,1,1143,1100 and over,6,104,89.2,93.7,6.3
+5109,-33.9178,151.116,true,Primary,Major Cities,1,1038,1000–1049,4,269,87.1,90.6,9.4
+5112,-33.889,151.1572,true,Infants,Major Cities,1,1129,1100 and over,6,20,86.4,93.8,6.2
+5114,-33.9214,151.1515,true,Primary,Major Cities,1,1125,1100 and over,6,285,90.2,92,8
+5116,-29.7387,151.7239,true,Infants,Inner Regional,2,898,Under 900,1,19,79.5,87.2,12.8
+5118,-33.909,151.0958,true,Primary,Major Cities,1,1033,1000–1049,4,373,89.2,91,9
+5120,-33.9027,151.1301,true,Infants,Major Cities,1,1144,1100 and over,6,48,91.9,91.5,8.5
+5126,-33.842,150.9893,true,Primary,Major Cities,1,955,950–999,3,347,87,89.1,10.9
+5128,-32.7275,151.5596,true,Infants,Major Cities,1,1076,1050–1099,5,52,90.9,94.1,5.9
+5132,-33.8614,151.1426,true,Primary,Major Cities,1,1140,1100 and over,6,428,91.7,94,6
+5133,-32.8234,151.4954,true,Infants,Major Cities,1,950,950–999,3,54,87.2,89.9,10.1
+5141,-33.949,151.1623,true,Primary,Major Cities,1,1057,1050–1099,5,204,87.6,89.8,10.2
+5148,-33.9334,151.1256,true,Infants,Major Cities,1,1088,1050–1099,5,33,92.1,93.5,6.5
+5166,-28.8548,153.0368,true,Primary,Inner Regional,2,756,Under 900,1,157,78.9,77.6,22.4
+5188,-33.8892,151.0096,true,Infants,Major Cities,1,1027,1000–1049,4,93,89.1,91,9
+5191,-33.7135,151.0951,true,Primary,Major Cities,1,1110,1100 and over,6,534,91,93.7,6.3
+5195,-33.9731,151.0905,true,Infants,Major Cities,1,1097,1050–1099,5,59,92.4,91.9,8.1
+5212,-33.812,151.2419,true,Primary,Major Cities,1,1154,1100 and over,6,205,90.3,92.2,7.8
+5220,-33.891,150.9536,true,Primary,Major Cities,1,934,900–949,2,524,91.1,91.6,8.4
+5236,-33.8483,151.01,true,Primary,Major Cities,1,923,900–949,2,259,82.1,83.5,16.5
+5238,-29.6707,152.9299,true,Primary,Inner Regional,2,940,900–949,2,467,88.7,89,11
+5241,-33.9161,151.0498,true,Infants,Major Cities,1,1047,1000–1049,4,173,85.1,88,12
+5242,-33.8224,148.6873,true,Primary,Inner Regional,2,896,Under 900,1,336,82.5,86.8,13.2
+5246,-33.9312,151.0384,true,Infants,Major Cities,1,999,950–999,3,141,89.7,89.6,10.4
+5247,-32.9349,151.688,true,Infants,Major Cities,1,1100,1100 and over,6,55,88.4,93.3,6.7
+5251,-33.8665,151.0667,true,Primary,Major Cities,1,1069,1050–1099,5,424,88.9,91.7,8.3
+5260,-32.9378,151.6657,true,Primary,Major Cities,1,1014,1000–1049,4,149,87.2,90.6,9.4
+5265,-33.2685,149.1036,true,Primary,Inner Regional,2,938,900–949,2,503,85.1,90.1,9.9
+5272,-34.0821,151.0203,true,Primary,Major Cities,1,1072,1050–1099,5,106,90.9,93.3,6.7
+5401,-33.9679,150.8786,true,Specific purposes,Major Cities,1,896,Under 900,1,63,64.8,72.8,27.2
+5405,-33.7461,151.2875,true,Specific purposes,Major Cities,1,1050,1050–1099,5,62,76.1,89.4,10.6
+5407,-33.774,151.1722,true,Specific purposes,Major Cities,1,1098,1050–1099,5,60,81.5,84.4,15.6
+5411,-33.8677,150.989,true,Specific purposes,Major Cities,1,889,Under 900,1,63,50.6,61.6,38.4
+5459,-33.7071,150.9522,true,Specific purposes,Major Cities,1,1034,1000–1049,4,98,70.4,80.1,19.9
+5460,-33.904,151.2031,true,Specific purposes,Major Cities,1,890,Under 900,1,29,29.4,33.5,66.5
+5508,-34.0622,150.8242,true,Specific purposes,Major Cities,1,967,950–999,3,59,76.1,79.5,20.5
+5511,-32.9092,151.7234,true,Specific purposes,Major Cities,1,960,950–999,3,37,84,85.3,14.7
+5516,-33.9106,151.2432,true,Specific purposes,Major Cities,1,1055,1050–1099,5,53,54.5,76.8,23.2
+5527,-33.9691,151.1375,true,Specific purposes,Major Cities,1,1055,1050–1099,5,64,78.6,81.6,18.4
+5529,-33.9425,151.0159,true,Specific purposes,Major Cities,1,1005,1000–1049,4,100,85.6,81.9,18.1
+5538,-33.8032,151.1255,true,Specific purposes,Major Cities,1,1011,1000–1049,4,17,88,88.2,11.8
+5540,-33.8874,151.1753,true,Specific purposes,Major Cities,1,977,950–999,3,37,80.8,76.2,23.8
+5550,-35.1263,147.3694,true,Specific purposes,Inner Regional,2,929,900–949,2,71,76.1,79.7,20.3
+5559,-33.8008,150.9877,true,Specific purposes,Major Cities,1,1001,1000–1049,4,46,58.4,51.2,48.8
+5562,-33.8415,150.9755,true,Specific purposes,Major Cities,1,895,Under 900,1,55,73.3,71.3,28.7
+5563,-34.0239,150.8509,true,Specific purposes,Major Cities,1,1019,1000–1049,4,98,76.2,82.2,17.8
+5568,-33.9082,151.0959,true,Specific purposes,Major Cities,1,1011,1000–1049,4,51,70.3,74.4,25.6
+5569,-31.1065,150.9197,true,Specific purposes,Inner Regional,2,870,Under 900,1,70,74.4,83.8,16.2
+5573,-28.2077,153.5388,true,Specific purposes,Major Cities,1,936,900–949,2,24,35.9,50.6,49.4
+5574,-33.6775,150.8663,true,Specific purposes,Major Cities,1,912,900–949,2,40,47.2,58.4,41.6
+5575,-34.0417,151.0525,true,Specific purposes,Major Cities,1,956,950–999,3,66,76.9,55.9,44.1
+5576,-34.455,150.4771,true,Specific purposes,Inner Regional,2,860,Under 900,1,37,68.1,57.4,42.6
+5577,-32.2514,148.6066,true,Specific purposes,Inner Regional,2,706,Under 900,1,24,42.6,42.9,57.1
+5578,-33.8194,151.2003,true,Specific purposes,Major Cities,1,1075,1050–1099,5,30,36.6,65.7,34.3
+5579,-33.772,151.2625,true,Specific purposes,Major Cities,1,1039,1000–1049,4,35,58.4,76.3,23.7
+5580,-31.1065,150.9211,true,Specific purposes,Inner Regional,2,753,Under 900,1,20,50.6,56.5,43.5
+5581,-33.885,151.0238,true,Specific purposes,Major Cities,1,919,900–949,2,20,64.6,62.9,37.1
+5582,-32.9567,151.5644,true,Specific purposes,Major Cities,1,869,Under 900,1,31,52.2,45.6,54.4
+5583,-33.8682,150.9709,true,Specific purposes,Major Cities,1,889,Under 900,1,89,56.8,58.8,41.2
+5606,-33.9546,151.1522,true,Specific purposes,Major Cities,1,1036,1000–1049,4,99,81.5,86.6,13.4
+5609,-33.971,151.1032,true,Specific purposes,Major Cities,1,999,950–999,3,46,52.3,42.2,57.8
+5610,-33.426,149.5658,true,Specific purposes,Inner Regional,2,908,900–949,2,97,78.2,83.2,16.8
+5614,-33.7691,150.9375,true,Specific purposes,Major Cities,1,1009,1000–1049,4,86,82.9,76.5,23.5
+5616,-34.035,151.0587,true,Specific purposes,Major Cities,1,1039,1000–1049,4,47,82.6,87.9,12.1
+5621,-33.7664,150.7571,true,Specific purposes,Major Cities,1,946,900–949,2,104,80,81,19
+5625,-33.2965,149.0975,true,Specific purposes,Inner Regional,2,882,Under 900,1,134,78.9,81,19
+5627,-33.4066,151.3357,true,Specific purposes,Major Cities,1,963,950–999,3,159,75.9,82.6,17.4
+5630,-33.9096,150.9282,true,Specific purposes,Major Cities,1,949,900–949,2,125,74.8,78,22
+5631,-33.8866,151.2785,true,Specific purposes,Major Cities,1,1025,1000–1049,4,75,83.3,85.3,14.7
+5632,-33.9082,150.9354,true,Specific purposes,Major Cities,1,862,Under 900,1,59,68.3,67.5,32.5
+5633,-33.8289,150.9817,true,Specific purposes,Major Cities,1,983,950–999,3,189,78.8,80.2,19.8
+5634,-34.7446,149.7105,true,Specific purposes,Inner Regional,2,911,900–949,2,77,82.3,78.6,21.4
+5637,-33.7731,150.911,true,Specific purposes,Major Cities,1,845,Under 900,1,56,46.3,47.7,52.3
+5642,-33.759,150.8071,true,Specific purposes,Major Cities,1,955,950–999,3,114,80,83.1,16.9
+5643,-33.7368,150.8134,true,Specific purposes,Major Cities,1,801,Under 900,1,34,44.8,66.1,33.9
+5644,-34.4112,150.8886,true,Specific purposes,Major Cities,1,945,900–949,2,113,75.8,81.8,18.2
+5647,-34.0222,151.0853,true,Specific purposes,Major Cities,1,1018,1000–1049,4,62,89.1,87.1,12.9
+5652,-33.9361,151.0252,true,Specific purposes,Major Cities,1,1004,1000–1049,4,104,76.1,79.8,20.2
+5653,-36.0585,146.9296,true,Specific purposes,Inner Regional,2,930,900–949,2,67,79,81.5,18.5
+5654,-33.8329,151.0985,true,Specific purposes,Major Cities,1,1095,1050–1099,5,65,65.6,76.8,23.2
+5655,-33.7121,151.0956,true,Specific purposes,Major Cities,1,1063,1050–1099,5,61,90.1,83.5,16.5
+5656,-33.7568,151.2413,true,Specific purposes,Major Cities,1,1073,1050–1099,5,34,84.6,86.6,13.4
+5666,-34.556,150.855,true,Specific purposes,Major Cities,1,938,900–949,2,115,78,83.3,16.7
+5670,-33.7708,151.0606,true,Specific purposes,Major Cities,1,1030,1000–1049,4,89,77.1,81.9,18.1
+5674,-35.3033,148.221,true,Specific purposes,Inner Regional,2,869,Under 900,1,30,78.4,77.6,22.4
+5675,-33.7196,151.1798,true,Specific purposes,Major Cities,1,983,950–999,3,75,90.1,88.8,11.2
+5684,-34.4519,150.4694,true,Specific purposes,Inner Regional,2,971,950–999,3,48,71.1,73.7,26.3
+5685,-30.9961,150.2386,true,Specific purposes,Outer Regional,3,881,Under 900,1,35,83.4,84.7,15.3
+5686,-32.9753,151.6824,true,Specific purposes,Major Cities,1,910,900–949,2,58,81.9,83.9,16.1
+5687,-32.765,151.6125,true,Specific purposes,Major Cities,1,958,950–999,3,70,85.1,83.8,16.2
+5688,-33.7797,151.004,true,Specific purposes,Major Cities,1,1046,1000–1049,4,112,81.3,85.5,14.5
+5689,-28.8319,153.2933,true,Specific purposes,Inner Regional,2,902,900–949,2,83,82.2,85.3,14.7
+5696,-30.4971,151.656,true,Primary,Inner Regional,2,923,900–949,2,179,86.7,89.1,10.9
+5698,-34.8552,150.5763,true,Specific purposes,Inner Regional,2,849,Under 900,1,67,80.3,80.1,19.9
+5699,-34.2931,146.0354,true,Specific purposes,Outer Regional,3,835,Under 900,1,38,84.3,77.8,22.2
+5701,-32.9094,151.7204,true,Specific purposes,Major Cities,1,967,950–999,3,45,83.3,81.7,18.3
+5703,-33.9738,151.0822,true,Specific purposes,Major Cities,1,975,950–999,3,55,75.1,74.8,25.2
+5704,-32.9588,151.6802,true,Specific purposes,Major Cities,1,940,900–949,2,63,81.3,79.5,20.5
+5712,-33.9043,150.9124,true,Specific purposes,Major Cities,1,956,950–999,3,76,74.6,77,23
+5713,-33.8684,151.1137,true,Specific purposes,Major Cities,1,1057,1050–1099,5,78,82.1,82.2,17.8
+5721,-34.0978,150.7927,true,Specific purposes,Major Cities,1,1000,1000–1049,4,123,77.8,80.9,19.1
+5723,-32.9741,151.6117,true,Specific purposes,Major Cities,1,890,Under 900,1,51,75.3,76.8,23.2
+5730,-34.5635,146.4122,true,Specific purposes,Outer Regional,3,874,Under 900,1,28,83.2,84.3,15.7
+5735,-33.9682,150.882,true,Specific purposes,Major Cities,1,890,Under 900,1,60,47.6,42.9,57.1
+5736,-33.8243,148.694,true,Specific purposes,Inner Regional,2,822,Under 900,1,30,78.5,76.6,23.4
+5737,-33.9136,151.1313,true,Specific purposes,Major Cities,1,851,Under 900,1,31,37,26.9,73.1
+5738,-32.9428,151.7004,true,Specific purposes,Major Cities,1,816,Under 900,1,25,70.5,75,25
+5744,-36.0623,146.9279,true,Specific purposes,Inner Regional,2,811,Under 900,1,18,52.9,42.4,57.6
+5748,-33.9695,150.878,true,Specific purposes,Major Cities,1,900,900–949,2,53,74.8,69.1,30.9
+5749,-35.3223,150.4422,true,Specific purposes,Inner Regional,2,909,900–949,2,44,79,82.1,17.9
+5753,-34.0617,150.8243,true,Specific purposes,Major Cities,1,864,Under 900,1,75,51.1,55.1,44.9
+5754,-33.7503,150.8407,true,Specific purposes,Major Cities,1,827,Under 900,1,30,54.1,58.3,41.7
+5755,-33.281,151.4486,true,Specific purposes,Major Cities,1,797,Under 900,1,43,65.5,69.1,30.9
+5758,-35.1246,147.3642,true,Specific purposes,Inner Regional,2,896,Under 900,1,48,73,65.4,34.6
+5759,-33.9157,151.0745,true,Specific purposes,Major Cities,1,921,900–949,2,36,52.9,53.7,46.3
+5760,-33.4169,151.3504,true,Specific purposes,Major Cities,1,905,900–949,2,38,63.6,54.4,45.6
+5761,-33.7666,150.7588,true,Specific purposes,Major Cities,1,873,Under 900,1,39,50.9,50.7,49.3
+5762,-29.4821,149.8422,true,Specific purposes,Outer Regional,3,,,,7,49.1,,
+5763,-30.3476,153.0718,true,Specific purposes,Inner Regional,2,841,Under 900,1,23,62.7,65.9,34.1
+5764,-32.7916,151.6712,true,Specific purposes,Major Cities,1,844,Under 900,1,26,62.9,75.2,24.8
+5765,-33.698,150.9116,true,Specific purposes,Major Cities,1,1038,1000–1049,4,120,77.8,83,17
+5766,-34.0431,150.7322,true,Specific purposes,Major Cities,1,1017,1000–1049,4,118,79.3,81.3,18.7
+5767,-33.8979,150.9882,true,Specific purposes,Major Cities,1,979,950–999,3,102,75.4,81.2,18.8
+5768,-33.7963,150.677,true,Specific purposes,Major Cities,1,956,950–999,3,129,79.9,84.6,15.4
+5769,-32.2497,148.5836,true,Specific purposes,Inner Regional,2,867,Under 900,1,50,80,83.2,16.8
+5770,-35.3662,149.2265,true,Specific purposes,Major Cities,1,944,900–949,2,34,81.7,86.6,13.4
+5771,-33.6779,150.8756,true,Specific purposes,Major Cities,1,982,950–999,3,82,77.2,82,18
+7301,-33.5662,148.6649,true,Primary,Inner Regional,2,953,950–999,3,181,87.9,91.4,8.6
+7302,-33.7801,151.0552,true,Primary,Major Cities,1,1109,1100 and over,6,644,90,91.8,8.2
+7303,-32.0102,151.9611,true,Primary,Inner Regional,2,955,950–999,3,275,85.3,89.1,10.9
+7305,-30.7509,150.7284,true,Central/Community,Outer Regional,3,855,Under 900,1,243,80.7,83.1,16.9
+7307,-33.2863,149.0966,true,Primary,Inner Regional,2,1046,1000–1049,4,761,91.5,91.2,8.8
+7308,-32.8964,151.6692,true,Primary,Major Cities,1,910,900–949,2,195,83.3,88.2,11.8
+7311,-32.0494,150.8639,true,Primary,Inner Regional,2,943,900–949,2,400,88,89,11
+7314,-31.8634,152.3502,true,Primary,Inner Regional,2,934,900–949,2,240,87.1,89.7,10.3
+7316,-30.3431,152.7103,true,Primary,Inner Regional,2,948,900–949,2,72,83.7,87.9,12.1
+7401,-33.9405,151.1476,true,Primary,Major Cities,1,1028,1000–1049,4,373,87.2,90.7,9.3
+7403,-33.854,151.033,true,Primary,Major Cities,1,983,950–999,3,486,84.1,84.7,15.3
+7404,-33.8592,151.1834,true,Primary,Major Cities,1,1172,1100 and over,6,321,91.4,92.3,7.7
+7405,-33.9211,151.0342,true,Primary,Major Cities,1,965,950–999,3,736,86.8,89.8,10.2
+7406,-33.9477,151.1289,true,Primary,Major Cities,1,1005,1000–1049,4,249,84.3,87.4,12.6
+7407,-33.8926,151.2648,true,Primary,Major Cities,1,1139,1100 and over,6,464,87.6,92.1,7.9
+7408,-33.8905,151.2157,true,Primary,Major Cities,1,1135,1100 and over,6,381,91.2,91.8,8.2
+7409,-33.7982,151.1776,true,Primary,Major Cities,1,1143,1100 and over,6,1083,91.8,94.5,5.5
+7411,-33.8798,151.1149,true,Primary,Major Cities,1,1119,1100 and over,6,576,91.4,92.7,7.3
+7412,-33.8947,151.1084,true,Primary,Major Cities,1,1077,1050–1099,5,325,88.4,91.7,8.3
+7413,-33.9295,151.228,true,Primary,Major Cities,1,1029,1000–1049,4,126,86.4,90.5,9.5
+7414,-33.8786,151.2234,true,Primary,Major Cities,1,1156,1100 and over,6,210,89.7,92.9,7.1
+7416,-33.7927,151.0785,true,Primary,Major Cities,1,1108,1100 and over,6,701,91.3,93.3,6.7
+7418,-33.9206,151.198,true,Primary,Major Cities,1,1058,1050–1099,5,393,86.6,89.7,10.3
+7419,-33.8837,151.191,true,Primary,Major Cities,1,982,950–999,3,193,87.4,85.6,14.4
+7420,-32.9241,151.7433,true,Primary,Major Cities,1,1106,1100 and over,6,306,89.2,90.5,9.5
+7422,-32.8211,151.4782,true,Primary,Major Cities,1,891,Under 900,1,574,83.7,85.9,14.1
+7423,-33.8843,151.1581,true,Primary,Major Cities,1,1122,1100 and over,6,532,89.3,92.5,7.5
+7424,-33.9236,150.9259,true,Primary,Major Cities,1,960,950–999,3,562,85.3,90,10
+7427,-33.937,151.2397,true,Primary,Major Cities,1,1128,1100 and over,6,484,88.5,92.2,7.8
+7430,-33.8281,151.2412,true,Primary,Major Cities,1,1157,1100 and over,6,458,91.3,92.3,7.7
+7431,-33.9,151.1794,true,Primary,Major Cities,1,1140,1100 and over,6,272,88.8,91.3,8.7
+7432,-33.8876,151.2302,true,Primary,Major Cities,1,1155,1100 and over,6,147,90.7,92.9,7.1
+7435,-33.8626,151.1697,true,Primary,Major Cities,1,1162,1100 and over,6,507,90,93.1,6.9
+7436,-33.8955,151.1653,true,Primary,Major Cities,1,1138,1100 and over,6,560,89.6,92.8,7.2
+7442,-33.8864,151.2412,true,Primary,Major Cities,1,1193,1100 and over,6,667,90.4,93.6,6.4
+7444,-33.8242,151.0184,true,Primary,Major Cities,1,1067,1050–1099,5,550,86.9,91.4,8.6
+7445,-33.4917,151.3282,true,Primary,Major Cities,1,970,950–999,3,365,85.3,89.5,10.5
+8101,-36.0728,146.9154,true,Secondary,Inner Regional,2,1016,1000–1049,4,910,79.2,81.3,18.7
+8103,-33.4134,149.5697,true,Secondary,Inner Regional,2,963,950–999,3,916,82.2,80.9,19.1
+8104,-34.4888,150.4234,true,Secondary,Inner Regional,2,956,950–999,3,564,80.9,79.3,20.7
+8105,-31.9601,141.457,true,Secondary,Outer Regional,3,892,Under 900,1,411,69.6,74.3,25.7
+8107,-33.9042,151.1239,true,Secondary,Major Cities,1,1018,1000–1049,4,422,80.5,85,15
+8108,-32.843,151.3685,true,Secondary,Major Cities,1,892,Under 900,1,615,71.5,75.8,24.2
+8109,-30.3053,153.1358,true,Secondary,Inner Regional,2,957,950–999,3,782,82.1,82.2,17.8
+8111,-31.1385,150.98,true,Secondary,Inner Regional,2,1025,1000–1049,4,606,85.3,88.8,11.2
+8114,-29.7443,151.7425,true,Secondary,Inner Regional,2,926,900–949,2,434,78.4,74.5,25.5
+8115,-33.4172,151.3414,true,Secondary,Major Cities,1,1157,1100 and over,6,1058,90,93.4,6.6
+8116,-34.7469,149.7112,true,Secondary,Inner Regional,2,943,900–949,2,648,74.5,76.8,23.2
+8117,-29.6821,152.9325,true,Secondary,Inner Regional,2,941,900–949,2,768,77.9,78.4,21.6
+8118,-34.2922,146.0396,true,Secondary,Outer Regional,3,899,Under 900,1,606,,82.6,17.4
+8119,-34.5047,144.8393,true,Secondary,Outer Regional,3,916,900–949,2,154,87.7,77,23
+8120,-33.7066,151.1011,true,Secondary,Major Cities,1,1209,1100 and over,6,720,93.5,94.7,5.3
+8121,-33.9704,150.8936,true,Secondary,Major Cities,1,1147,1100 and over,6,934,92.8,93.5,6.5
+8122,-29.7657,151.1108,true,Secondary,Outer Regional,3,888,Under 900,1,483,75.7,77.4,22.6
+8123,-31.0681,152.8242,true,Secondary,Inner Regional,2,848,Under 900,1,579,70.6,69.8,30.2
+8124,-28.8208,153.2973,true,Secondary,Inner Regional,2,934,900–949,2,438,78.6,81.7,18.3
+8125,-33.4857,150.1663,true,Secondary,Inner Regional,2,918,900–949,2,654,78.7,79.7,20.3
+8126,-32.7474,151.5973,true,Secondary,Major Cities,1,947,900–949,2,956,75,76.6,23.4
+8127,-32.7435,151.5915,true,Secondary,Major Cities,1,960,950–999,3,898,79.2,79.8,20.2
+8128,-32.5978,149.5836,true,Secondary,Inner Regional,2,928,900–949,2,787,80.2,82.2,17.8
+8129,-28.3345,153.3906,true,Secondary,Inner Regional,2,950,950–999,3,340,77.4,75.3,24.7
+8132,-33.8293,151.2077,true,Secondary,Major Cities,1,1195,1100 and over,6,933,92.3,93.9,6.1
+8133,-33.8302,151.2034,true,Secondary,Major Cities,1,1203,1100 and over,6,911,95,95.2,4.8
+8134,-33.2804,149.0844,true,Secondary,Inner Regional,2,979,950–999,3,914,79.5,83.1,16.9
+8135,-33.8179,150.9961,true,Secondary,Major Cities,1,1132,1100 and over,6,1128,90.8,92.6,7.4
+8136,-33.9591,151.136,true,Secondary,Major Cities,1,1148,1100 and over,6,908,93.4,93.5,6.5
+8137,-33.8922,151.2189,true,Secondary,Major Cities,1,1189,1100 and over,6,1202,91.8,94.5,5.5
+8138,-33.8942,151.2204,true,Secondary,Major Cities,1,1193,1100 and over,6,929,93.4,94.1,5.9
+8139,-31.1058,150.9169,true,Secondary,Inner Regional,2,860,Under 900,1,658,69.3,69.6,30.4
+8140,-31.9099,152.4639,true,Secondary,Inner Regional,2,918,900–949,2,621,75.2,76.2,23.8
+8141,-33.9631,151.1143,true,Secondary,Major Cities,1,1136,1100 and over,6,906,89.3,94.1,5.9
+8142,-35.1244,147.3644,true,Secondary,Inner Regional,2,960,950–999,3,816,77.9,81.3,18.7
+8143,-34.4064,150.8892,true,Secondary,Major Cities,1,1075,1050–1099,5,1168,84.7,85.1,14.9
+8144,-34.6322,146.3837,true,Secondary,Outer Regional,3,1009,1000–1049,4,319,88.9,90.8,9.2
+8146,-33.1388,148.1803,true,Secondary,Outer Regional,3,894,Under 900,1,467,72.2,75,25
+8147,-33.8634,151.2141,true,Secondary,Major Cities,1,1194,1100 and over,6,153,94.1,95.6,4.4
+8148,-33.8141,148.6883,true,Secondary,Inner Regional,2,884,Under 900,1,439,75.9,73.4,26.6
+8150,-33.7274,150.3144,true,Secondary,Major Cities,1,1034,1000–1049,4,862,80.1,81.3,18.7
+8151,-33.8661,151.0771,true,Secondary,Major Cities,1,1043,1000–1049,4,891,86,88.9,11.1
+8152,-33.8753,151.113,true,Secondary,Major Cities,1,1086,1050–1099,5,1080,89.2,89.9,10.1
+8154,-28.8452,153.0437,true,Secondary,Inner Regional,2,866,Under 900,1,567,76.8,76.3,23.7
+8155,-34.3171,148.2917,true,Secondary,Inner Regional,2,920,900–949,2,495,79.7,80.2,19.8
+8156,-34.5468,146.406,true,Secondary,Outer Regional,3,908,900–949,2,457,73.6,77.7,22.3
+8157,-34.7442,146.5672,true,Secondary,Outer Regional,3,889,Under 900,1,298,81.2,77.4,22.6
+8159,-33.8031,151.2,true,Secondary,Major Cities,1,1152,1100 and over,6,1035,92,93,7
+8162,-30.7149,152.917,true,Secondary,Inner Regional,2,916,900–949,2,365,76.9,75.6,24.4
+8163,-33.7567,150.7065,true,Secondary,Major Cities,1,1186,1100 and over,6,928,94.6,95.2,4.8
+8164,-32.2687,150.8976,true,Secondary,Inner Regional,2,869,Under 900,1,648,74.5,73.3,26.7
+8165,-36.6785,149.8388,true,Secondary,Outer Regional,3,973,950–999,3,702,76.6,78.5,21.5
+8166,-33.2813,151.4179,true,Secondary,Major Cities,1,946,900–949,2,672,77.4,75.5,24.5
+8168,-34.4419,147.5395,true,Secondary,Outer Regional,3,964,950–999,3,274,80.9,81.9,18.1
+8169,-33.8739,151.0846,true,Secondary,Major Cities,1,1077,1050–1099,5,1061,91.4,92.2,7.8
+8170,-30.3355,149.7827,true,Secondary,Outer Regional,3,864,Under 900,1,420,73.6,71.6,28.4
+8171,-34.6807,150.8472,true,Secondary,Major Cities,1,1036,1000–1049,4,761,83.4,84.8,15.2
+8173,-31.4509,152.7312,true,Secondary,Inner Regional,2,894,Under 900,1,458,75.4,75.6,24.4
+8174,-31.5016,150.6801,true,Secondary,Outer Regional,3,891,Under 900,1,351,75.5,79.1,20.9
+8176,-33.918,150.9315,true,Secondary,Major Cities,1,941,900–949,2,704,79.6,83.5,16.5
+8177,-32.8101,151.4863,true,Secondary,Major Cities,1,894,Under 900,1,915,74.1,72.1,27.9
+8178,-33.6005,150.7467,true,Secondary,Major Cities,1,987,950–999,3,750,80.1,84.6,15.4
+8179,-34.8691,147.5928,true,Secondary,Inner Regional,2,922,900–949,2,237,76.5,78.8,21.2
+8180,-34.0601,150.823,true,Secondary,Major Cities,1,950,950–999,3,893,77.3,82.1,17.9
+8184,-33.924,151.053,true,Secondary,Major Cities,1,923,900–949,2,472,75.6,79.3,20.7
+8186,-33.9172,150.9315,true,Secondary,Major Cities,1,925,900–949,2,549,78.6,82.3,17.7
+8187,-33.9569,150.992,true,Secondary,Major Cities,1,1031,1000–1049,4,759,84,85.2,14.8
+8188,-30.9826,150.2488,true,Secondary,Outer Regional,3,820,Under 900,1,438,71.1,72.9,27.1
+8189,-28.6258,153.0015,true,Secondary,Inner Regional,2,912,900–949,2,307,80.9,73.3,26.7
+8190,-34.6354,148.0172,true,Secondary,Inner Regional,2,902,900–949,2,202,76.7,81.7,18.3
+8191,-34.3742,150.9107,true,Secondary,Major Cities,1,940,900–949,2,569,78.3,79.1,20.9
+8193,-28.5586,153.4946,true,Secondary,Inner Regional,2,1019,1000–1049,4,620,77.9,78.7,21.3
+8194,-33.3646,148.0114,true,Secondary,Outer Regional,3,848,Under 900,1,287,73.8,72.8,27.2
+8195,-28.8666,153.5651,true,Secondary,Inner Regional,2,952,950–999,3,718,77.3,77,23
+8196,-36.2167,149.134,true,Secondary,Inner Regional,2,977,950–999,3,372,79.9,78.7,21.3
+8197,-32.5467,148.9478,true,Secondary,Outer Regional,3,792,Under 900,1,284,70.8,71.4,28.6
+8201,-34.873,150.6094,true,Secondary,Inner Regional,2,944,900–949,2,777,78.7,80,20
+8202,-32.5697,151.1776,true,Secondary,Inner Regional,2,901,900–949,2,874,77.4,78.1,21.9
+8203,-33.0271,151.6601,true,Secondary,Major Cities,1,973,950–999,3,807,78,78.1,21.9
+8204,-34.4991,150.7859,true,Secondary,Major Cities,1,968,950–999,3,987,82.6,83.9,16.1
+8205,-34.4808,150.8533,true,Secondary,Major Cities,1,937,900–949,2,926,73.9,77.6,22.4
+8206,-33.9572,150.9941,true,Secondary,Major Cities,1,1013,1000–1049,4,843,84.4,86.5,13.5
+8207,-33.8327,151.1485,true,Secondary,Major Cities,1,1104,1100 and over,6,789,88.9,87.6,12.4
+8208,-33.7563,151.0741,true,Secondary,Major Cities,1,1142,1100 and over,6,1432,92,93,7
+8209,-33.9014,150.9289,true,Secondary,Major Cities,1,934,900–949,2,1622,88.6,89.5,10.5
+8210,-32.9756,151.6139,true,Secondary,Major Cities,1,925,900–949,2,434,76.7,76.5,23.5
+8211,-33.7215,151.1015,true,Secondary,Major Cities,1,1207,1100 and over,6,752,90.9,93.9,6.1
+8213,-33.894,151.025,true,Secondary,Major Cities,1,937,900–949,2,366,76.9,79.2,20.8
+8214,-28.8208,153.297,true,Secondary,Inner Regional,2,950,950–999,3,494,75.8,76.3,23.7
+8215,-34.1945,150.6084,true,Secondary,Inner Regional,2,950,950–999,3,1182,77.2,79.3,20.7
+8216,-35.3532,149.2205,true,Secondary,Major Cities,1,967,950–999,3,447,75,78,22
+8217,-34.0794,150.6777,true,Secondary,Major Cities,1,976,950–999,3,912,82.8,83.7,16.3
+8218,-35.5363,144.9613,true,Secondary,Inner Regional,2,948,900–949,2,432,78.7,78.4,21.6
+8219,-32.7818,151.7328,true,Secondary,Major Cities,1,899,Under 900,1,760,76.2,73.9,26.1
+8221,-33.934,151.0976,true,Secondary,Major Cities,1,1002,1000–1049,4,1020,83.7,85.6,14.4
+8222,-33.6897,151.1128,true,Secondary,Major Cities,1,1082,1050–1099,5,668,86.2,88.5,11.5
+8223,-33.8979,150.9894,true,Secondary,Major Cities,1,927,900–949,2,871,77.6,77.8,22.2
+8224,-33.762,150.9108,true,Secondary,Major Cities,1,1046,1000–1049,4,1079,86.2,88.1,11.9
+8225,-33.813,151.0922,true,Secondary,Major Cities,1,1050,1050–1099,5,1295,87.6,89.9,10.1
+8227,-33.8408,150.9696,true,Secondary,Major Cities,1,915,900–949,2,852,80.3,81.1,18.9
+8229,-33.7881,150.9997,true,Secondary,Major Cities,1,1069,1050–1099,5,1239,86.4,89.1,10.9
+8230,-34.0324,151.0973,true,Secondary,Major Cities,1,1050,1050–1099,5,950,85.3,88,12
+8231,-33.7627,150.9449,true,Secondary,Major Cities,1,969,950–999,3,480,78.5,80.3,19.7
+8232,-33.8,151.1753,true,Secondary,Major Cities,1,1137,1100 and over,6,2146,89.6,92.3,7.7
+8233,-32.9855,151.6911,true,Secondary,Major Cities,1,955,950–999,3,922,79,80.6,19.4
+8235,-33.7806,151.0432,true,Secondary,Major Cities,1,1222,1100 and over,6,857,95,96.3,3.7
+8236,-33.9804,151.1132,true,Secondary,Major Cities,1,1043,1000–1049,4,1013,85.5,88.2,11.8
+8240,-34.0349,151.1204,true,Secondary,Major Cities,1,1172,1100 and over,6,900,90.7,93.6,6.4
+8243,-33.8401,151.1415,true,Secondary,Major Cities,1,1114,1100 and over,6,660,88.6,89.2,10.8
+8244,-33.7621,150.9125,true,Secondary,Major Cities,1,1053,1050–1099,5,898,87.2,88.4,11.6
+8245,-33.6923,151.103,true,Secondary,Major Cities,1,1045,1000–1049,4,542,84.1,88.7,11.3
+8246,-34.0823,151.0144,true,Secondary,Major Cities,1,1028,1000–1049,4,633,82.6,86.1,13.9
+8247,-33.9485,151.1017,true,Secondary,Major Cities,1,986,950–999,3,672,82.7,85,15
+8249,-33.9647,151.2445,true,Secondary,Major Cities,1,930,900–949,2,486,75.1,75.6,24.4
+8250,-33.9397,151.0209,true,Secondary,Major Cities,1,949,900–949,2,945,81.2,82.6,17.4
+8252,-33.8854,151.0712,true,Secondary,Major Cities,1,961,950–999,3,549,79.6,79,21
+8253,-33.8429,151.0337,true,Secondary,Major Cities,1,966,950–999,3,853,83.4,82,18
+8254,-33.9208,151.0321,true,Secondary,Major Cities,1,964,950–999,3,551,78.4,83.9,16.1
+8255,-33.9485,151.0786,true,Secondary,Major Cities,1,1003,1000–1049,4,1003,83.1,87.2,12.8
+8258,-30.4551,152.9084,true,Secondary,Inner Regional,2,1006,1000–1049,4,582,82.3,79.6,20.4
+8259,-32.8929,151.6693,true,Secondary,Major Cities,1,952,950–999,3,890,79.1,80.4,19.6
+8260,-33.895,150.8932,true,Secondary,Major Cities,1,962,950–999,3,1641,86,87.6,12.4
+8261,-34.0384,151.1591,true,Secondary,Major Cities,1,1050,1050–1099,5,1205,84.1,87.7,12.3
+8262,-34.0051,150.8715,true,Secondary,Major Cities,1,957,950–999,3,782,81.7,85.3,14.7
+8263,-33.9274,151.2018,true,Secondary,Major Cities,1,987,950–999,3,298,79.8,83.7,16.3
+8265,-33.8795,151.0088,true,Secondary,Major Cities,1,1033,1000–1049,4,1121,90.1,89.7,10.3
+8266,-36.0602,146.929,true,Secondary,Inner Regional,2,905,900–949,2,660,73.7,73.1,26.9
+8268,-33.733,150.9374,true,Secondary,Major Cities,1,1090,1050–1099,5,1506,87.9,89.5,10.5
+8269,-33.874,150.9954,true,Secondary,Major Cities,1,912,900–949,2,1056,81.8,82.7,17.3
+8270,-30.2227,149.4423,true,Secondary,Outer Regional,3,853,Under 900,1,181,72.3,72.6,27.4
+8271,-34.0358,151.0048,true,Central/Community,Major Cities,1,1038,1000–1049,4,795,86.9,89.1,10.9
+8273,-33.8957,150.852,true,Secondary,Major Cities,1,986,950–999,3,1340,85.1,86.4,13.6
+8274,-33.3956,151.4541,true,Secondary,Major Cities,1,972,950–999,3,802,77.8,79.8,20.2
+8276,-33.791,150.6726,true,Secondary,Major Cities,1,976,950–999,3,956,81.4,81.9,18.1
+8278,-33.2648,151.4674,true,Central/Community,Major Cities,1,941,900–949,2,1412,78.6,79.2,20.8
+8279,-33.1897,151.5737,true,Secondary,Major Cities,1,925,900–949,2,610,75.6,77,23
+8280,-31.6394,152.7361,true,Secondary,Inner Regional,2,962,950–999,3,890,79.2,80.7,19.3
+8282,-28.2155,153.5253,true,Secondary,Major Cities,1,965,950–999,3,502,80.1,83.1,16.9
+8286,-34.0574,150.7607,true,Secondary,Major Cities,1,980,950–999,3,876,84,83.3,16.7
+8288,-33.9,151.1931,true,Secondary,Major Cities,1,1037,1000–1049,4,142,93.6,94.5,5.5
+8289,-32.1612,152.4953,true,Secondary,Inner Regional,2,949,900–949,2,466,77.7,79.3,20.7
+8290,-33.946,150.8432,true,Secondary,Major Cities,1,982,950–999,3,1084,85.2,83,17
+8291,-33.6864,150.9317,true,Secondary,Major Cities,1,1067,1050–1099,5,1314,83.8,86.7,13.3
+8292,-33.4304,151.2961,true,Secondary,Major Cities,1,968,950–999,3,419,77.3,83.4,16.6
+8308,-35.993,146.3816,true,Secondary,Inner Regional,2,975,950–999,3,291,81.6,84,16
+8314,-33.9027,148.1634,true,Secondary,Outer Regional,3,946,900–949,2,178,79.8,79.1,20.9
+8318,-32.8557,149.9746,true,Secondary,Inner Regional,2,902,900–949,2,163,82.8,79.5,20.5
+8320,-33.9612,151.1342,true,Secondary,Major Cities,1,993,950–999,3,787,81.4,85.5,14.5
+8325,-29.4664,149.8423,true,Secondary,Outer Regional,3,771,Under 900,1,359,51.7,64,36
+8326,-33.8297,151.2434,true,Secondary,Major Cities,1,1126,1100 and over,6,1086,86.7,90.4,9.6
+8328,-34.5592,148.3698,true,Secondary,Inner Regional,2,915,900–949,2,148,80.9,81.4,18.6
+8334,-34.8355,148.9111,true,Secondary,Inner Regional,2,990,950–999,3,557,80.9,82.4,17.6
+8343,-35.3122,148.2193,true,Secondary,Inner Regional,2,919,900–949,2,383,81.2,78,22
+8346,-33.0918,147.1432,true,Secondary,Outer Regional,3,834,Under 900,1,205,74.6,75.7,24.3
+8347,-31.2831,149.2851,true,Secondary,Outer Regional,3,898,Under 900,1,298,78.1,76.2,23.8
+8349,-31.7034,148.6665,true,Secondary,Outer Regional,3,849,Under 900,1,184,73.8,73.7,26.3
+8353,-31.5614,147.1889,true,Secondary,Remote,4,845,Under 900,1,141,80.2,78.1,21.9
+8355,-30.0915,145.9488,true,Secondary,Very Remote,5,714,Under 900,1,134,54,55.4,44.6
+8356,-31.5016,145.8279,true,Secondary,Remote,4,865,Under 900,1,213,82.3,78.1,21.9
+8357,-33.531,149.2511,true,Secondary,Inner Regional,2,917,900–949,2,296,78,79.9,20.1
+8358,-29.0537,152.0168,true,Secondary,Outer Regional,3,914,900–949,2,267,80.9,78.2,21.8
+8360,-35.6404,145.5713,true,Secondary,Inner Regional,2,965,950–999,3,303,77.3,77.5,22.5
+8362,-29.4664,153.2015,true,Secondary,Inner Regional,2,959,950–999,3,689,74.1,76,24
+8364,-31.4333,152.9207,true,Secondary,Inner Regional,2,971,950–999,3,716,81.5,79.6,20.4
+8368,-35.9202,150.0802,true,Secondary,Inner Regional,2,922,900–949,2,356,76.2,75,25
+8370,-28.1957,153.541,true,Secondary,Major Cities,1,940,900–949,2,590,80.1,80.1,19.9
+8371,-32.0167,151.9596,true,Secondary,Inner Regional,2,950,950–999,3,309,81.2,82.9,17.1
+8372,-33.7565,151.2444,true,Secondary,Major Cities,1,1062,1050–1099,5,768,85.9,87.2,12.8
+8373,-34.4893,150.9135,true,Secondary,Major Cities,1,983,950–999,3,272,74.6,75.7,24.3
+8374,-33.4927,151.3236,true,Secondary,Major Cities,1,974,950–999,3,639,82,77,23
+8377,-33.9643,151.0115,true,Secondary,Major Cities,1,1018,1000–1049,4,865,83.4,86.7,13.3
+8379,-33.6683,151.3027,true,Secondary,Major Cities,1,1071,1050–1099,5,876,84,86.7,13.3
+8381,-33.9291,151.0226,true,Secondary,Major Cities,1,847,Under 900,1,544,82.4,82,18
+8382,-33.7266,150.9995,true,Secondary,Major Cities,1,1121,1100 and over,6,1842,89.2,89.4,10.6
+8383,-33.7477,150.6689,true,Secondary,Major Cities,1,994,950–999,3,802,82.8,85.2,14.8
+8384,-33.8669,150.9204,true,Secondary,Major Cities,1,967,950–999,3,1538,81.5,86.1,13.9
+8385,-33.8125,150.9404,true,Secondary,Major Cities,1,1003,1000–1049,4,1090,82.9,86.3,13.7
+8386,-34.03,151.0834,true,Secondary,Major Cities,1,1048,1000–1049,4,553,87.7,89.3,10.7
+8388,-34.5515,150.3853,true,Secondary,Inner Regional,2,1015,1000–1049,4,790,82.8,85.5,14.5
+8389,-33.1042,151.6398,true,Secondary,Major Cities,1,972,950–999,3,710,78.9,81.4,18.6
+8390,-32.972,151.7122,true,Secondary,Major Cities,1,1022,1000–1049,4,908,82.2,84.6,15.4
+8391,-31.8674,152.3823,true,Secondary,Inner Regional,2,932,900–949,2,519,79.3,76.7,23.3
+8392,-33.9158,147.202,true,Secondary,Outer Regional,3,926,900–949,2,263,79.7,81.9,18.1
+8393,-33.8846,150.9517,true,Secondary,Major Cities,1,954,950–999,3,1651,91.1,91.7,8.3
+8394,-33.9236,150.8811,true,Secondary,Major Cities,1,878,Under 900,1,816,79,79,21
+8395,-33.7939,150.9622,true,Secondary,Major Cities,1,1001,1000–1049,4,692,81.3,84.8,15.2
+8396,-33.6187,150.8336,true,Secondary,Major Cities,1,923,900–949,2,641,76.6,79.2,20.8
+8397,-33.9204,150.8973,true,Secondary,Major Cities,1,877,Under 900,1,701,74.3,76.9,23.1
+8398,-33.9236,151.0018,true,Secondary,Major Cities,1,936,900–949,2,876,76.4,78.4,21.6
+8399,-33.7547,150.8742,true,Secondary,Major Cities,1,917,900–949,2,715,76.2,76.8,23.2
+8400,-33.7401,151.1671,true,Secondary,Major Cities,1,1125,1100 and over,6,1750,88.1,90.8,9.2
+8401,-33.9417,150.896,true,Secondary,Major Cities,1,902,900–949,2,695,77.5,79.1,20.9
+8403,-33.7848,150.916,true,Secondary,Major Cities,1,978,950–999,3,875,83,87.1,12.9
+8404,-34.0301,151.1173,true,Secondary,Major Cities,1,1040,1000–1049,4,1378,85.1,87.7,12.3
+8405,-33.4403,151.3815,true,Secondary,Major Cities,1,996,950–999,3,781,80.6,81.3,18.7
+8406,-29.7142,152.9294,true,Secondary,Inner Regional,2,875,Under 900,1,639,71.6,73.1,26.9
+8407,-35.1419,147.3539,true,Secondary,Inner Regional,2,822,Under 900,1,522,71.4,71.8,28.2
+8408,-33.9669,151.056,true,Secondary,Major Cities,1,1008,1000–1049,4,758,83.4,85.2,14.8
+8409,-32.0581,150.8731,true,Secondary,Inner Regional,2,894,Under 900,1,315,80.3,81.4,18.6
+8410,-34.345,150.9101,true,Secondary,Major Cities,1,1030,1000–1049,4,766,83.1,85.1,14.9
+8411,-32.9106,151.5811,true,Secondary,Major Cities,1,940,900–949,2,631,79.8,82.5,17.5
+8412,-33.7822,150.9388,true,Secondary,Major Cities,1,967,950–999,3,913,77.1,81.8,18.2
+8413,-33.1047,151.4866,true,Secondary,Major Cities,1,929,900–949,2,687,74.4,73,27
+8414,-31.8958,152.4809,true,Secondary,Inner Regional,2,814,Under 900,1,492,64.6,68.2,31.8
+8415,-33.8133,151.1192,true,Secondary,Major Cities,1,1102,1100 and over,6,1486,88.8,89.3,10.7
+8416,-33.691,151.1538,true,Secondary,Major Cities,1,1088,1050–1099,5,536,83.7,86,14
+8417,-32.2708,148.6107,true,Secondary,Inner Regional,2,864,Under 900,1,687,79.4,78,22
+8418,-34.5638,150.858,true,Secondary,Major Cities,1,968,950–999,3,1020,78.4,80.5,19.5
+8420,-33.7865,150.8897,true,Secondary,Major Cities,1,935,900–949,2,815,80.1,84.5,15.5
+8422,-33.7719,151.2152,true,Secondary,Major Cities,1,1132,1100 and over,6,969,86.7,90.9,9.1
+8423,-32.9471,151.7069,true,Secondary,Major Cities,1,1066,1050–1099,5,1126,83,86.3,13.7
+8424,-33.8329,150.9511,true,Secondary,Major Cities,1,919,900–949,2,547,87.3,84.3,15.7
+8432,-34.0621,151.0193,true,Secondary,Major Cities,1,1051,1050–1099,5,1063,86.3,88.5,11.5
+8433,-34.0398,151.1456,true,Secondary,Major Cities,1,1063,1050–1099,5,788,85.4,87,13
+8435,-33.7573,151.1148,true,Secondary,Major Cities,1,1118,1100 and over,6,986,87.2,89.5,10.5
+8436,-33.8606,150.9976,true,Secondary,Major Cities,1,855,Under 900,1,733,71.2,69.5,30.5
+8437,-34.0435,151.0735,true,Secondary,Major Cities,1,1092,1050–1099,5,1185,89.7,90.2,9.8
+8438,-33.7337,151.0611,true,Secondary,Major Cities,1,1109,1100 and over,6,1130,88,90.2,9.8
+8439,-32.797,151.6608,true,Secondary,Major Cities,1,912,900–949,2,742,72.1,75.7,24.3
+8440,-32.9677,151.6537,true,Secondary,Major Cities,1,1056,1050–1099,5,1159,84.3,85.8,14.2
+8442,-35.0571,148.0994,true,Secondary,Inner Regional,2,923,900–949,2,154,75.2,78.7,21.3
+8443,-33.7776,150.7973,true,Secondary,Major Cities,1,922,900–949,2,765,73.8,73.6,26.4
+8444,-33.2918,149.1217,true,Secondary,Inner Regional,2,838,Under 900,1,546,67.4,65.6,34.4
+8446,-33.6851,150.5506,true,Secondary,Major Cities,1,1027,1000–1049,4,565,81.8,82,18
+8447,-33.7654,151.0508,true,Secondary,Major Cities,1,1111,1100 and over,6,1772,90.8,92.8,7.2
+8448,-34.844,150.6027,true,Secondary,Inner Regional,2,955,950–999,3,707,77,78.7,21.3
+8449,-34.4384,150.8552,true,Secondary,Major Cities,1,1013,1000–1049,4,880,79.7,82.6,17.4
+8450,-35.7831,148.0182,true,Secondary,Outer Regional,3,910,900–949,2,148,82.3,78.4,21.6
+8451,-30.9558,148.3914,true,Secondary,Remote,4,733,Under 900,1,161,65,70.4,29.6
+8452,-34.4528,149.467,true,Secondary,Inner Regional,2,940,900–949,2,182,77.7,80.8,19.2
+8453,-30.3392,152.7055,true,Secondary,Inner Regional,2,951,950–999,3,118,82.3,82.7,17.3
+8454,-33.6312,151.3339,true,Secondary,Major Cities,1,1081,1050–1099,5,860,82.2,84.9,15.1
+8455,-31.0779,150.9391,true,Secondary,Inner Regional,2,936,900–949,2,1005,77.8,80.5,19.5
+8456,-33.8736,150.9295,true,Secondary,Major Cities,1,912,900–949,2,1320,85.8,88.7,11.3
+8457,-33.7566,151.1741,true,Secondary,Major Cities,1,1147,1100 and over,6,1800,89.5,91.7,8.3
+8458,-33.7704,150.7153,true,Secondary,Major Cities,1,955,950–999,3,1005,83.1,82.5,17.5
+8459,-33.7447,150.8129,true,Secondary,Major Cities,1,864,Under 900,1,648,74.4,76.9,23.1
+8460,-33.909,150.874,true,Secondary,Major Cities,1,902,900–949,2,544,77.7,80,20
+8461,-35.623,144.1321,true,Secondary,Outer Regional,3,951,950–999,3,183,81.4,80.1,19.9
+8462,-32.2297,148.2426,true,Secondary,Outer Regional,3,787,Under 900,1,223,75.7,77.8,22.2
+8463,-34.0174,151.1035,true,Secondary,Major Cities,1,1039,1000–1049,4,750,86.3,86.8,13.2
+8464,-33.7502,150.9915,true,Secondary,Major Cities,1,1203,1100 and over,6,1222,92.3,93.9,6.1
+8465,-33.3713,151.4766,true,Secondary,Major Cities,1,987,950–999,3,754,63.1,61.6,38.4
+8466,-32.9259,151.6429,true,Secondary,Major Cities,1,946,900–949,2,800,79,79.4,20.6
+8467,-33.4208,151.3345,true,Secondary,Major Cities,1,1030,1000–1049,4,789,82.3,84.2,15.8
+8468,-34.7282,149.7302,true,Secondary,Inner Regional,2,951,950–999,3,817,80,77.5,22.5
+8469,-30.2828,153.1129,true,Secondary,Inner Regional,2,896,Under 900,1,856,79.3,76.7,23.3
+8470,-34.2823,146.0707,true,Secondary,Outer Regional,3,918,900–949,2,461,,81.7,18.3
+8472,-32.3968,151.7504,true,Secondary,Inner Regional,2,937,900–949,2,565,81.4,81.6,18.4
+8474,-34.5418,150.8504,true,Secondary,Major Cities,1,894,Under 900,1,542,72.1,78.5,21.5
+8475,-30.0271,148.119,true,Secondary,Remote,4,677,Under 900,1,83,41.6,45,55
+8476,-33.9512,150.8937,true,Secondary,Major Cities,1,957,950–999,3,1280,78.8,82.7,17.3
+8477,-33.7078,150.9699,true,Secondary,Major Cities,1,1086,1050–1099,5,869,87.9,89.1,10.9
+8479,-33.7447,151.2055,true,Secondary,Major Cities,1,1089,1050–1099,5,789,84.9,88.7,11.3
+8480,-34.4802,150.8752,true,Secondary,Major Cities,1,905,900–949,2,591,76.3,78.5,21.5
+8481,-33.6609,151.0423,true,Secondary,Major Cities,1,1044,1000–1049,4,570,85.2,88.5,11.5
+8482,-32.9179,151.722,true,Secondary,Major Cities,1,1057,1050–1099,5,1172,85.7,85.8,14.2
+8483,-35.1429,147.3815,true,Secondary,Inner Regional,2,959,950–999,3,839,79.7,82.4,17.6
+8484,-33.8585,151.1701,true,Secondary,Major Cities,1,1112,1100 and over,6,854,84.9,86.7,13.3
+8485,-33.92,150.8616,true,Secondary,Major Cities,1,940,900–949,2,895,84.7,85.2,14.8
+8486,-36.9176,149.2319,true,Secondary,Outer Regional,3,946,900–949,2,148,83,85,15
+8487,-37.055,149.9073,true,Secondary,Outer Regional,3,956,950–999,3,536,77.6,81.2,18.8
+8488,-33.7496,150.7831,true,Secondary,Major Cities,1,870,Under 900,1,586,71.9,74.9,25.1
+8489,-34.4947,150.8054,true,Secondary,Major Cities,1,912,900–949,2,579,73.9,74.8,25.2
+8490,-29.7675,151.1292,true,Secondary,Outer Regional,3,919,900–949,2,486,78.9,73.7,26.3
+8491,-31.9366,141.473,true,Secondary,Outer Regional,3,903,900–949,2,570,70.5,72.7,27.3
+8493,-34.0869,150.8271,true,Secondary,Major Cities,1,875,Under 900,1,542,72.5,79,21
+8494,-34.096,142.0603,true,Secondary,Outer Regional,3,826,Under 900,1,190,73.5,66.6,33.4
+8495,-35.3582,150.4702,true,Secondary,Inner Regional,2,993,950–999,3,1150,81.9,83.3,16.7
+8496,-33.7308,150.8057,true,Secondary,Major Cities,1,828,Under 900,1,391,71.5,75.5,24.5
+8497,-33.9884,150.8923,true,Secondary,Major Cities,1,884,Under 900,1,395,68.1,72.1,27.9
+8498,-33.7647,151.0223,true,Secondary,Major Cities,1,1082,1050–1099,5,836,86.3,89.4,10.6
+8499,-33.7694,150.9714,true,Secondary,Major Cities,1,1073,1050–1099,5,1021,86.7,88.6,11.4
+8500,-33.7999,150.9446,true,Secondary,Major Cities,1,1199,1100 and over,6,782,93.8,94.8,5.2
+8501,-33.9258,150.9587,true,Secondary,Major Cities,1,1022,1000–1049,4,992,85,86.6,13.4
+8502,-32.7359,152.1122,true,Secondary,Inner Regional,2,970,950–999,3,979,76.3,78.9,21.1
+8503,-35.6609,147.0439,true,Secondary,Inner Regional,2,946,900–949,2,312,81.8,82.7,17.3
+8504,-33.8902,151.1529,true,Secondary,Major Cities,1,1176,1100 and over,6,916,93.8,94.3,5.7
+8505,-36.0352,146.9464,true,Secondary,Inner Regional,2,934,900–949,2,575,75.3,79.6,20.4
+8506,-33.9197,151.1609,true,Secondary,Major Cities,1,1096,1050–1099,5,984,87.6,89.9,10.1
+8507,-33.8795,151.159,true,Secondary,Major Cities,1,1104,1100 and over,6,784,86.6,87.3,12.7
+8508,-32.9047,151.7292,true,Secondary,Major Cities,1,957,950–999,3,848,78.1,80.4,19.6
+8509,-32.9317,151.7584,true,Secondary,Major Cities,1,1027,1000–1049,4,1072,78.8,78.7,21.3
+8510,-32.9297,151.7347,true,Secondary,Major Cities,1,1206,1100 and over,6,1071,90.5,92.8,7.2
+8511,-33.7378,151.2845,true,Secondary,Major Cities,1,1056,1050–1099,5,1156,83,86.4,13.6
+8512,-33.7009,151.2984,true,Secondary,Major Cities,1,1042,1000–1049,4,794,82.9,85.5,14.5
+8513,-33.5074,151.3081,true,Secondary,Major Cities,1,966,950–999,3,787,77.8,79.2,20.8
+8514,-33.7481,150.8355,true,Secondary,Major Cities,1,966,950–999,3,1182,82.4,84.6,15.4
+8515,-33.2422,151.5082,true,Secondary,Major Cities,1,923,900–949,2,979,74,77.8,22.2
+8516,-33.7522,150.7329,true,Secondary,Major Cities,1,916,900–949,2,633,77.5,75.9,24.1
+8517,-33.4105,149.6144,true,Secondary,Inner Regional,2,936,900–949,2,812,79.3,80,20
+8518,-33.5589,148.671,true,Secondary,Inner Regional,2,945,900–949,2,237,81.8,80,20
+8519,-29.5479,150.5748,true,Secondary,Outer Regional,3,900,900–949,2,197,81.7,81.9,18.1
+8520,-28.8179,153.3386,true,Secondary,Inner Regional,2,884,Under 900,1,262,71.8,72.7,27.3
+8521,-34.0526,150.7153,true,Secondary,Major Cities,1,988,950–999,3,857,81,82,18
+8522,-33.7542,150.6086,true,Secondary,Major Cities,1,1065,1050–1099,5,997,85.3,86.1,13.9
+8524,-35.3653,149.2248,true,Secondary,Major Cities,1,982,950–999,3,723,81,78.4,21.6
+8525,-31.0998,150.893,true,Secondary,Inner Regional,2,831,Under 900,1,629,72.4,69.9,30.1
+8526,-33.5694,150.7082,true,Secondary,Major Cities,1,1001,1000–1049,4,807,83.9,84.6,15.4
+8527,-30.351,153.0844,true,Secondary,Inner Regional,2,941,900–949,2,738,78.8,79.3,20.7
+8528,-33.7339,150.8273,true,Secondary,Major Cities,1,849,Under 900,1,720,73.7,73.8,26.2
+8530,-33.8995,151.1783,true,Secondary,Major Cities,1,1127,1100 and over,6,1144,86.9,88.7,11.3
+8531,-33.8731,150.892,true,Secondary,Major Cities,1,927,900–949,2,921,86.8,85.1,14.9
+8532,-34.0543,150.8474,true,Secondary,Major Cities,1,972,950–999,3,691,80.9,83.7,16.3
+8533,-33.4422,151.4293,true,Secondary,Major Cities,1,1044,1000–1049,4,847,80.8,83.5,16.5
+8534,-32.2157,152.5279,true,Secondary,Inner Regional,2,936,900–949,2,478,76.5,77.9,22.1
+8535,-33.8641,151.1093,true,Secondary,Major Cities,1,1068,1050–1099,5,1205,85.9,88.5,11.5
+8536,-36.2355,150.1286,true,Secondary,Outer Regional,3,936,900–949,2,463,77.2,80.8,19.2
+8540,-33.9058,151.156,true,Secondary,Major Cities,1,1052,1050–1099,5,624,87.4,87.8,12.2
+8541,-34.406,150.8879,true,Secondary,Major Cities,1,984,950–999,3,723,78.9,80.1,19.9
+8542,-34.4189,150.8956,true,Secondary,Major Cities,1,1186,1100 and over,6,735,89.5,91,9
+8543,-32.2516,148.5827,true,Secondary,Inner Regional,2,804,Under 900,1,468,69.1,70,30
+8544,-33.3853,151.3704,true,Secondary,Major Cities,1,1014,1000–1049,4,728,80.7,83.3,16.7
+8545,-33.9442,151.2344,true,Secondary,Major Cities,1,1037,1000–1049,4,794,83.9,86.2,13.8
+8546,-32.3602,149.54,true,Secondary,Outer Regional,3,868,Under 900,1,213,77.6,76.8,23.2
+8547,-33.2168,151.5134,true,Secondary,Major Cities,1,917,900–949,2,789,72.1,75.4,24.6
+8548,-30.1004,153.1902,true,Secondary,Inner Regional,2,969,950–999,3,867,79.3,80.8,19.2
+8550,-33.8652,150.9586,true,Secondary,Major Cities,1,878,Under 900,1,1123,83.4,85.8,14.2
+8551,-34.0268,150.8509,true,Secondary,Major Cities,1,967,950–999,3,652,81.1,79.7,20.3
+8552,-33.7436,150.9757,true,Secondary,Major Cities,1,1103,1100 and over,6,1021,88.2,89.8,10.2
+8553,-33.9968,150.8849,true,Secondary,Major Cities,1,1081,1050–1099,5,1089,88.1,88.2,11.8
+8554,-31.4353,152.8954,true,Secondary,Inner Regional,2,919,900–949,2,611,75.3,78.4,21.6
+8555,-33.8783,151.2761,true,Secondary,Major Cities,1,1107,1100 and over,6,1125,84.2,86.4,13.6
+8556,-33.9012,151.1965,true,Central/Community,Major Cities,1,1052,1050–1099,5,1312,84.8,87.1,12.9
+8559,-33.7753,150.6981,true,Secondary,Major Cities,1,964,950–999,3,834,79.8,82.1,17.9
+8560,-33.8595,150.9017,true,Secondary,Major Cities,1,978,950–999,3,1284,84.3,87.7,12.3
+8561,-34.8973,150.6101,true,Secondary,Inner Regional,2,862,Under 900,1,609,70.3,70.6,29.4
+8562,-32.7615,151.7669,true,Secondary,Major Cities,1,916,900–949,2,810,75.1,74.2,25.8
+8563,-33.3417,151.4248,true,Secondary,Major Cities,1,959,950–999,3,851,79.1,81.8,18.2
+8564,-33.9555,150.9523,true,Secondary,Major Cities,1,1000,1000–1049,4,693,82.7,87,13
+8565,-33.5595,150.798,true,Secondary,Major Cities,1,946,900–949,2,417,81.5,83.8,16.2
+8566,-31.09,152.8251,true,Secondary,Inner Regional,2,849,Under 900,1,355,69.2,69.7,30.3
+8567,-33.7624,151.2814,true,Secondary,Major Cities,1,1217,1100 and over,6,765,90.4,91.3,8.7
+8569,-34.0399,150.8035,true,Secondary,Major Cities,1,932,900–949,2,662,75,81.5,18.5
+8570,-34.1,150.8019,true,Secondary,Major Cities,1,925,900–949,2,807,76.5,78.8,21.2
+8571,-33.7942,150.7868,true,Secondary,Major Cities,1,956,950–999,3,717,83.2,83.8,16.2
+8572,-32.7112,151.5314,true,Secondary,Major Cities,1,922,900–949,2,1405,74.7,74.2,25.8
+8573,-33.676,150.6151,true,Secondary,Major Cities,1,1040,1000–1049,4,698,83.7,86.5,13.5
+8574,-32.828,151.3332,true,Secondary,Major Cities,1,911,900–949,2,929,75.5,77.1,22.9
+8575,-34.0153,150.818,true,Secondary,Major Cities,1,963,950–999,3,742,79.9,79.6,20.4
+8577,-28.6676,153.6161,true,Secondary,Inner Regional,2,1050,1050–1099,5,818,79,81.2,18.8
+8578,-28.8388,153.4338,true,Secondary,Inner Regional,2,990,950–999,3,521,80.7,76.7,23.3
+8579,-28.2666,153.5705,true,Secondary,Major Cities,1,991,950–999,3,903,81.2,79.6,20.4
+8580,-33.7217,150.7098,true,Secondary,Major Cities,1,916,900–949,2,871,74.2,78.5,21.5
+8581,-35.7292,150.1944,true,Secondary,Inner Regional,2,902,900–949,2,534,74,75,25
+8582,-33.871,150.8754,true,Secondary,Major Cities,1,961,950–999,3,1105,86.8,86.9,13.1
+8583,-34.0029,151.0239,true,Secondary,Major Cities,1,1046,1000–1049,4,1062,86.5,88,12
+8584,-34.0571,150.7401,true,Secondary,Major Cities,1,1014,1000–1049,4,1399,86.1,85.9,14.1
+8585,-33.4649,151.3825,true,Secondary,Major Cities,1,1045,1000–1049,4,1002,81.2,84.3,15.7
+8586,-34.5767,150.7734,true,Secondary,Major Cities,1,964,950–999,3,900,79.6,79.2,20.8
+8589,-34.082,150.8015,true,Secondary,Major Cities,1,908,900–949,2,488,74.1,77.8,22.2
+8590,-33.8079,150.803,true,Secondary,Major Cities,1,962,950–999,3,834,82.3,83.1,16.9
+8591,-33.3984,151.3341,true,Secondary,Major Cities,1,974,950–999,3,629,76.5,81.5,18.5
+8592,-33.7199,151.0376,true,Secondary,Major Cities,1,1146,1100 and over,6,2097,89.7,92.6,7.4
+8593,-35.0777,150.6628,true,Secondary,Inner Regional,2,933,900–949,2,927,73.1,73.5,26.5
+8594,-33.7298,150.8964,true,Secondary,Major Cities,1,1025,1000–1049,4,925,83,87.4,12.6
+8595,-30.6408,152.9846,true,Secondary,Inner Regional,2,890,Under 900,1,314,68.7,72.9,27.1
+8596,-28.3337,153.3625,true,Secondary,Inner Regional,2,938,900–949,2,161,79.1,,
+8598,-33.7017,149.8611,true,Secondary,Inner Regional,2,934,900–949,2,204,81.7,81.6,18.4
+8804,-33.9108,151.0856,true,Secondary,Major Cities,1,953,950–999,3,614,80,79.2,20.8
+8806,-33.9073,151.1226,true,Secondary,Major Cities,1,1059,1050–1099,5,720,85.6,88.5,11.5
+8811,-33.8346,151.0088,true,Secondary,Major Cities,1,961,950–999,3,833,79.7,81.2,18.8
+8813,-33.9628,151.1098,true,Secondary,Major Cities,1,1017,1000–1049,4,267,84,86.2,13.8
+8819,-32.9248,151.7276,true,Central/Community,Major Cities,1,1085,1050–1099,5,1090,88.4,87.7,12.3
+8822,-33.8131,151.0125,true,Secondary,Major Cities,1,1071,1050–1099,5,997,87.3,88.4,11.6
+8831,-33.7821,151.2724,true,Secondary,Major Cities,1,1115,1100 and over,6,1021,84.4,87.8,12.2
+8832,-33.8895,151.1292,true,Secondary,Major Cities,1,1074,1050–1099,5,751,86.6,88,12
+8833,-33.904,151.1449,true,Secondary,Major Cities,1,1092,1050–1099,5,804,83.9,87,13
+8851,-33.7964,151.2546,true,Secondary,Major Cities,1,1115,1100 and over,6,1099,85.9,88.2,11.8
+8852,-34.0216,151.0619,true,Secondary,Major Cities,1,1051,1050–1099,5,925,83.3,84.5,15.5
+8854,-33.8895,151.0257,true,Secondary,Major Cities,1,956,950–999,3,726,82.6,81.9,18.1
+8857,-33.9641,151.086,true,Secondary,Major Cities,1,1038,1000–1049,4,488,86.8,89.1,10.9
+8878,-34.3372,150.9211,true,Secondary,Major Cities,1,1058,1050–1099,5,979,82.9,85.2,14.8
+8884,-33.7695,151.0996,true,Secondary,Major Cities,1,1117,1100 and over,6,1491,87.8,91.6,8.4
+8888,-33.9244,151.0665,true,Secondary,Major Cities,1,954,950–999,3,588,77.7,78,22
+8892,-33.8157,151.0075,true,Secondary,Major Cities,1,994,950–999,3,1636,85.4,87.1,12.9
+8903,-32.9514,151.6703,true,Secondary,Major Cities,1,986,950–999,3,776,79.6,82.1,17.9
+8905,-33.7852,151.0369,true,Secondary,Major Cities,1,1060,1050–1099,5,1172,87.2,87.8,12.2
+8906,-34.5597,150.8341,true,Secondary,Major Cities,1,932,900–949,2,648,75.7,79.1,20.9
+8907,-33.6789,150.8757,true,Secondary,Major Cities,1,979,950–999,3,861,76.1,78.9,21.1
+8908,-33.7708,150.8381,true,Secondary,Major Cities,1,958,950–999,3,1109,87.3,87.7,12.3
+8909,-33.0088,151.582,true,Secondary,Major Cities,1,961,950–999,3,949,77.2,77.5,22.5
+8910,-33.8322,151.203,true,Secondary,Major Cities,1,1135,1100 and over,6,905,87.6,90.3,9.7
+8911,-33.7033,150.8976,true,Secondary,Major Cities,1,1118,1100 and over,6,2318,86.9,89.2,10.8
+8913,-33.8894,151.206,true,Secondary,Major Cities,1,1104,1100 and over,6,1160,86.1,89,11
+8915,-30.5194,151.6503,true,Secondary,Inner Regional,2,928,900–949,2,1026,80.8,78.1,21.9
+8916,-33.999,150.7363,true,Secondary,Major Cities,1,1002,1000–1049,4,1579,83.4,84.4,15.6
+8919,-35.2536,149.4457,true,Secondary,Inner Regional,2,1026,1000–1049,4,197,,80.5,19.5
+8921,-33.6974,150.8028,true,Secondary,Major Cities,1,1073,1050–1099,5,704,,91.5,8.5
+8922,-35.3883,149.1936,true,Secondary,Major Cities,1,1068,1050–1099,5,333,,88.2,11.8
+8924,-36.4167,148.6193,true,Secondary,Outer Regional,3,1009,1000–1049,4,277,,82.6,17.4

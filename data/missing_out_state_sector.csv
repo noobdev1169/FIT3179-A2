@@ -1,0 +1,49 @@
+year,state,state_abbr,sector,ft_students_y1_10,attendance_level,est_missing_out
+2019,New South Wales,NSW,Government,653100,73.1,175684
+2019,New South Wales,NSW,Catholic,200310,77.1,45871
+2019,New South Wales,NSW,Independent,133403,79.7,27081
+2019,Victoria,Vic,Government,506552,72.6,138795
+2019,Victoria,Vic,Catholic,164458,76.4,38812
+2019,Victoria,Vic,Independent,111292,80.3,21925
+2019,Queensland,Qld,Government,456338,69.4,139639
+2019,Queensland,Qld,Catholic,118544,73.1,31888
+2019,Queensland,Qld,Independent,97027,78.7,20667
+2019,South Australia,SA,Government,138472,70.1,41403
+2019,South Australia,SA,Catholic,34423,76.7,8021
+2019,South Australia,SA,Independent,37654,77.9,8322
+2019,Western Australia,WA,Government,227404,69.5,69358
+2019,Western Australia,WA,Catholic,56545,76.9,13062
+2019,Western Australia,WA,Independent,50787,78.8,10767
+2019,Tasmania,Tas,Government,44708,69.5,13636
+2019,Tasmania,Tas,Catholic,12271,73,3313
+2019,Tasmania,Tas,Independent,7738,79.8,1563
+2019,Northern Territory,NT,Government,23981,47.6,12566
+2019,Northern Territory,NT,Catholic,3913,48.3,2023
+2019,Northern Territory,NT,Independent,4723,64.4,1681
+2019,Australian Capital Territory,ACT,Government,33940,67.1,11166
+2019,Australian Capital Territory,ACT,Catholic,14407,72.5,3962
+2019,Australian Capital Territory,ACT,Independent,8150,79.3,1687
+2025,New South Wales,NSW,Government,622823,60.3,247261
+2025,New South Wales,NSW,Catholic,216103,69.8,65263
+2025,New South Wales,NSW,Independent,163705,71.4,46820
+2025,Victoria,Vic,Government,530764,55.9,234067
+2025,Victoria,Vic,Catholic,170571,63.6,62088
+2025,Victoria,Vic,Independent,135442,72.8,36840
+2025,Queensland,Qld,Government,449579,57.8,189722
+2025,Queensland,Qld,Catholic,128660,66.9,42586
+2025,Queensland,Qld,Independent,121659,69.5,37106
+2025,South Australia,SA,Government,132216,61.5,50903
+2025,South Australia,SA,Catholic,42718,65.2,14866
+2025,South Australia,SA,Independent,42838,69.2,13194
+2025,Western Australia,WA,Government,242938,59.6,98147
+2025,Western Australia,WA,Catholic,61339,69,19015
+2025,Western Australia,WA,Independent,63466,71.9,17834
+2025,Tasmania,Tas,Government,41019,54.7,18582
+2025,Tasmania,Tas,Catholic,12960,61.8,4951
+2025,Tasmania,Tas,Independent,9268,69.8,2799
+2025,Northern Territory,NT,Government,23136,41.8,13465
+2025,Northern Territory,NT,Catholic,4354,46.8,2316
+2025,Northern Territory,NT,Independent,4783,58.6,1980
+2025,Australian Capital Territory,ACT,Government,35366,61.6,13581
+2025,Australian Capital Territory,ACT,Catholic,15740,61.4,6076
+2025,Australian Capital Territory,ACT,Independent,9527,68.6,2991

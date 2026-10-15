@@ -1,0 +1,21 @@
+group,group_order,sector,attendance_rate,attendance_level,missing_out
+All schools,0,Government,87.6,58.3,41.7
+All schools,0,Catholic,90.5,66.6,33.4
+All schools,0,Independent,91.5,71.1,28.9
+All schools,0,All sectors,88.8,62.1,37.9
+Lowest quarter,1,Government,82.2,45.7,54.3
+Lowest quarter,1,Catholic,76.7,42.2,57.8
+Lowest quarter,1,Independent,75.4,35.5,64.5
+Lowest quarter,1,All sectors,81.9,45.4,54.6
+Second quarter,2,Government,86.6,53.8,46.2
+Second quarter,2,Catholic,89.5,62,38
+Second quarter,2,Independent,87.9,58.7,41.3
+Second quarter,2,All sectors,87,54.9,45.1
+Third quarter,3,Government,89,60.4,39.6
+Third quarter,3,Catholic,90.3,64.3,35.7
+Third quarter,3,Independent,90.7,66,34
+Third quarter,3,All sectors,89.6,62.4,37.6
+Highest quarter,4,Government,91.8,71.9,28.1
+Highest quarter,4,Catholic,91.8,71.5,28.5
+Highest quarter,4,Independent,92.5,74.9,25.1
+Highest quarter,4,All sectors,92,72.8,27.2
