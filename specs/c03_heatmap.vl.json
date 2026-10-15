@@ -1,0 +1,115 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "C3 heatmap. Share of students missing out (attended fewer than 90% of school days in Semester 1) by year level (rows, Year 1 at the top) and year (columns), Australia, all school sectors, 2015-2025. Colour is continuous from light (20% or less) to dark red (60%). ACARA did not publish 2020 figures. A black line marks the step from Year 7 to Year 8, the largest step between neighbouring year levels in every year. The 2022 column is outlined: it was the worst year for every year level. Source: ACARA National Report on Schooling in Australia data portal, student attendance.",
+  "width": "container",
+  "height": 230,
+  "data": {
+    "url": "data/attendance_yearlevel.csv",
+    "format": {
+      "type": "csv",
+      "parse": {"year": "number", "year_level": "number", "attendance_rate": "number", "attendance_level": "number", "missing_out": "number"}
+    }
+  },
+  "transform": [
+    {"calculate": "'Year ' + datum.year_level + ', ' + datum.year", "as": "cell"},
+    {"calculate": "isValid(datum.missing_out) ? format(datum.missing_out, '.1f') + '%' : 'Not published (COVID-19)'", "as": "missing_out_text"},
+    {"calculate": "format(datum.attendance_rate, '.1f') + '%'", "as": "rate_text"},
+    {"calculate": "format(datum.attendance_level, '.1f') + '%'", "as": "level_text"}
+  ],
+  "layer": [
+    {
+      "description": "One cell per year and year level",
+      "transform": [{"filter": "isValid(datum.missing_out)"}],
+      "mark": {"type": "rect", "stroke": "#fbfaf7", "strokeWidth": 2},
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "title": null,
+          "scale": {"domain": [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], "paddingInner": 0, "paddingOuter": 0},
+          "axis": {
+            "domain": false,
+            "ticks": false,
+            "labelAngle": 0,
+            "labelPadding": 8,
+            "labelOverlap": "parity",
+            "labelFontWeight": {"condition": {"test": "datum.value === 2022", "value": "bold"}, "value": "normal"},
+            "labelColor": {"condition": {"test": "datum.value === 2022", "value": "#1f1f1f"}, "value": "#5a5a5a"}
+          }
+        },
+        "y": {
+          "field": "year_level",
+          "type": "ordinal",
+          "title": null,
+          "scale": {"domain": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "paddingInner": 0, "paddingOuter": 0},
+          "axis": {"domain": false, "ticks": false, "labelPadding": 8, "labelExpr": "'Year ' + datum.value"}
+        },
+        "color": {
+          "field": "missing_out",
+          "type": "quantitative",
+          "scale": {
+            "type": "linear",
+            "domain": [20, 30, 40, 50, 60],
+            "range": ["#fef0d9", "#fdcc8a", "#fc8d59", "#e34a33", "#b30000"],
+            "interpolate": "lab",
+            "clamp": true
+          },
+          "legend": {
+            "title": "Share of students missing out",
+            "orient": "bottom",
+            "direction": "horizontal",
+            "gradientLength": 280,
+            "gradientThickness": 10,
+            "values": [20, 30, 40, 50, 60],
+            "labelExpr": "datum.value <= 20 ? '≤ 20%' : datum.value + '%'",
+            "titleLimit": 400
+          }
+        },
+        "tooltip": [
+          {"field": "cell", "title": "title"},
+          {"field": "missing_out_text", "title": "Students missing out"},
+          {"field": "rate_text", "title": "Attendance rate (ACARA)"},
+          {"field": "level_text", "title": "Attendance level (ACARA)"}
+        ]
+      }
+    },
+    {
+      "description": "2020: not published",
+      "transform": [{"filter": "!isValid(datum.missing_out)"}],
+      "mark": {"type": "rect", "fill": "#eceae4", "stroke": "#fbfaf7", "strokeWidth": 2},
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal", "title": null},
+        "y": {"field": "year_level", "type": "ordinal", "title": null},
+        "tooltip": [
+          {"field": "cell", "title": "title"},
+          {"field": "missing_out_text", "title": "Attendance"}
+        ]
+      }
+    },
+    {
+      "description": "Vertical label in the empty 2020 column",
+      "data": {"values": [{"year": 2020, "label": "Not published"}]},
+      "mark": {"type": "text", "angle": 270, "align": "center", "baseline": "middle", "fontSize": 12, "fill": "#5a5a5a", "y": 115},
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal", "title": null},
+        "text": {"field": "label"}
+      }
+    },
+    {
+      "description": "Outline around 2022, the worst year for every year level",
+      "data": {"values": [{"year": 2022}]},
+      "mark": {"type": "rect", "fill": null, "stroke": "#1f1f1f", "strokeWidth": 1.5, "y": 0, "y2": 230},
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal", "title": null}
+      }
+    },
+    {
+      "description": "Line between Year 7 and Year 8",
+      "data": {"values": [{"year_level": 8}]},
+      "mark": {"type": "rule", "stroke": "#1f1f1f", "strokeWidth": 2},
+      "encoding": {
+        "y": {"field": "year_level", "type": "ordinal", "title": null, "bandPosition": 0}
+      }
+    }
+  ]
+}

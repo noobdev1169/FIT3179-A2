@@ -1,0 +1,383 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "C13 treemap. The estimated 1.24 million full-time students in Years 1-10 who attended fewer than 90% of school days in Semester 1 2025, split by school sector (government, Catholic, independent) and then by state. Tile area is proportional to the estimate (ABS full-time students x ACARA share missing out, for each state and sector). Sources: ABS Schools 2025, Table 42b; ACARA National Report on Schooling data portal.",
+  "width": 534,
+  "height": 330,
+  "padding": 0,
+  "autosize": "none",
+  "signals": [
+    {
+      "name": "headerHeight",
+      "value": 38
+    }
+  ],
+  "data": [
+    {
+      "name": "rows",
+      "url": "data/missing_out_state_sector.csv",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "year": "number",
+          "ft_students_y1_10": "number",
+          "attendance_level": "number",
+          "est_missing_out": "number"
+        }
+      },
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.year === 2025"
+        },
+        {
+          "type": "formula",
+          "as": "sector_order",
+          "expr": "indexof(['Government', 'Catholic', 'Independent'], datum.sector)"
+        }
+      ]
+    },
+    {
+      "name": "sectorTotals",
+      "source": "rows",
+      "transform": [
+        {
+          "type": "aggregate",
+          "groupby": [
+            "sector"
+          ],
+          "fields": [
+            "est_missing_out",
+            "ft_students_y1_10"
+          ],
+          "ops": [
+            "sum",
+            "sum"
+          ],
+          "as": [
+            "est",
+            "students"
+          ]
+        },
+        {
+          "type": "joinaggregate",
+          "fields": [
+            "est",
+            "students"
+          ],
+          "ops": [
+            "sum",
+            "sum"
+          ],
+          "as": [
+            "est_all",
+            "students_all"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tree",
+      "source": "rows",
+      "transform": [
+        {
+          "type": "collect",
+          "sort": {
+            "field": [
+              "sector_order",
+              "est_missing_out"
+            ],
+            "order": [
+              "ascending",
+              "descending"
+            ]
+          }
+        },
+        {
+          "type": "nest",
+          "keys": [
+            "sector"
+          ],
+          "generate": true
+        },
+        {
+          "type": "treemap",
+          "field": "est_missing_out",
+          "sort": {
+            "field": "value",
+            "order": "descending"
+          },
+          "method": "squarify",
+          "ratio": 1.4,
+          "size": [
+            {
+              "signal": "width"
+            },
+            {
+              "signal": "height + headerHeight"
+            }
+          ],
+          "paddingInner": 3,
+          "paddingTop": {
+            "signal": "headerHeight"
+          }
+        }
+      ]
+    },
+    {
+      "name": "sectors",
+      "source": "tree",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.depth === 1"
+        },
+        {
+          "type": "formula",
+          "as": "sector",
+          "expr": "datum.key"
+        },
+        {
+          "type": "lookup",
+          "from": "sectorTotals",
+          "key": "sector",
+          "fields": [
+            "sector"
+          ],
+          "values": [
+            "est",
+            "est_all",
+            "students",
+            "students_all"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tiles",
+      "source": "tree",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.depth === 2"
+        },
+        {
+          "type": "lookup",
+          "from": "sectorTotals",
+          "key": "sector",
+          "fields": [
+            "sector"
+          ],
+          "values": [
+            "est"
+          ],
+          "as": [
+            "sector_est"
+          ]
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "sectorColour",
+      "type": "ordinal",
+      "domain": [
+        "Government",
+        "Catholic",
+        "Independent"
+      ],
+      "range": [
+        "#2a78d6",
+        "#008300",
+        "#e87ba4"
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "type": "group",
+      "description": "The treemap also leaves a header band above the whole tree; shifting everything up by that band hides it.",
+      "encode": {
+        "update": {
+          "y": {
+            "signal": "-headerHeight"
+          },
+          "width": {
+            "signal": "width"
+          },
+          "height": {
+            "signal": "height + headerHeight"
+          }
+        }
+      },
+      "marks": [
+        {
+          "type": "rect",
+          "name": "tileRects",
+          "from": {
+            "data": "tiles"
+          },
+          "encode": {
+            "enter": {
+              "stroke": {
+                "value": "#fbfaf7"
+              },
+              "strokeWidth": {
+                "value": 1
+              }
+            },
+            "update": {
+              "x": {
+                "field": "x0"
+              },
+              "x2": {
+                "field": "x1"
+              },
+              "y": {
+                "field": "y0"
+              },
+              "y2": {
+                "field": "y1"
+              },
+              "fill": {
+                "scale": "sectorColour",
+                "field": "sector"
+              },
+              "fillOpacity": {
+                "value": 1
+              },
+              "tooltip": {
+                "signal": "{title: datum.state + ', ' + lower(datum.sector) + ' schools', 'Students missing out (estimate)': '≈ ' + format(round(datum.est_missing_out / 1000) * 1000, ','), 'Share of the sector’s 1.24 million': format(datum.est_missing_out / datum.sector_est, '.0%') + ' of ' + datum.sector, 'Share of these students missing out': format(100 - datum.attendance_level, '.1f') + '%'}"
+              }
+            },
+            "hover": {
+              "fillOpacity": {
+                "value": 0.82
+              }
+            }
+          }
+        },
+        {
+          "type": "text",
+          "name": "tileState",
+          "from": {
+            "data": "tiles"
+          },
+          "interactive": false,
+          "encode": {
+            "update": {
+              "x": {
+                "signal": "datum.x0 + 7"
+              },
+              "y": {
+                "signal": "datum.y0 + 16"
+              },
+              "text": {
+                "signal": "datum.x1 - datum.x0 >= 38 && datum.y1 - datum.y0 >= 24 ? datum.state_abbr : ''"
+              },
+              "fontSize": {
+                "value": 13
+              },
+              "fontWeight": {
+                "value": "bold"
+              },
+              "fill": {
+                "signal": "datum.sector === 'Independent' ? '#1f1f1f' : '#ffffff'"
+              }
+            }
+          }
+        },
+        {
+          "type": "text",
+          "name": "tileValue",
+          "from": {
+            "data": "tiles"
+          },
+          "interactive": false,
+          "encode": {
+            "update": {
+              "x": {
+                "signal": "datum.x0 + 7"
+              },
+              "y": {
+                "signal": "datum.y0 + 32"
+              },
+              "text": {
+                "signal": "datum.x1 - datum.x0 >= 70 && datum.y1 - datum.y0 >= 42 ? '≈ ' + format(round(datum.est_missing_out / 1000) * 1000, ',') : ''"
+              },
+              "fontSize": {
+                "value": 12
+              },
+              "fill": {
+                "signal": "datum.sector === 'Independent' ? '#1f1f1f' : '#ffffff'"
+              }
+            }
+          }
+        },
+        {
+          "type": "text",
+          "name": "sectorName",
+          "from": {
+            "data": "sectors"
+          },
+          "interactive": false,
+          "encode": {
+            "update": {
+              "x": {
+                "field": "x0"
+              },
+              "y": {
+                "signal": "datum.y0 + 14"
+              },
+              "text": {
+                "signal": "datum.sector + ' schools'"
+              },
+              "fontSize": {
+                "value": 13.5
+              },
+              "fontWeight": {
+                "value": "bold"
+              },
+              "fill": {
+                "value": "#1f1f1f"
+              },
+              "limit": {
+                "signal": "datum.x1 - datum.x0"
+              }
+            }
+          }
+        },
+        {
+          "type": "text",
+          "name": "sectorValue",
+          "from": {
+            "data": "sectors"
+          },
+          "interactive": false,
+          "encode": {
+            "update": {
+              "x": {
+                "field": "x0"
+              },
+              "y": {
+                "signal": "datum.y0 + 30"
+              },
+              "text": {
+                "signal": "format(datum.est / datum.est_all, '.0%') + ' of those missing out' + (datum.x1 - datum.x0 > 260 ? ' · ' + format(datum.students / datum.students_all, '.0%') + ' of students' : '')"
+              },
+              "fontSize": {
+                "value": 12
+              },
+              "fill": {
+                "value": "#5a5a5a"
+              },
+              "limit": {
+                "signal": "datum.x1 - datum.x0"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

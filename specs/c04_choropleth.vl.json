@@ -1,0 +1,506 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "C4 choropleth map. Share of students in Years 1-10 who attended fewer than 90% of school days in Semester 1 ('missing out'), for the 33 state x remoteness areas (ABS ASGS 2021), in 2019 or 2025. Five classes from ColorBrewer OrRd. Albers equal-area conic projection. ACT inner regional has no published value. Sources: ACARA National Report on Schooling data portal; ABS ASGS Edition 3 Remoteness Areas.",
+  "width": "container",
+  "height": 400,
+  "params": [
+    {
+      "name": "year",
+      "value": 2025,
+      "bind": {
+        "input": "radio",
+        "options": [
+          2019,
+          2025
+        ],
+        "name": "Year"
+      }
+    },
+    {
+      "name": "linked",
+      "value": ""
+    }
+  ],
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -132,
+      0,
+      0
+    ]
+  },
+  "layer": [
+    {
+      "description": "Remoteness areas coloured by the share missing out",
+      "data": {
+        "url": "data/australia_2021.topojson",
+        "format": {
+          "type": "topojson",
+          "feature": "remoteness"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "datum.properties.key",
+          "as": "key"
+        },
+        {
+          "lookup": "key",
+          "from": {
+            "data": {
+              "url": "data/attendance_regions.csv",
+              "format": {
+                "type": "csv",
+                "parse": {
+                  "missing_out_2019": "number",
+                  "missing_out_2025": "number",
+                  "attendance_rate_2019": "number",
+                  "attendance_rate_2025": "number",
+                  "attendance_level_2019": "number",
+                  "attendance_level_2025": "number",
+                  "students_fte_2025": "number"
+                }
+              }
+            },
+            "key": "key",
+            "fields": [
+              "state",
+              "remoteness",
+              "missing_out_2019",
+              "missing_out_2025",
+              "attendance_rate_2019",
+              "attendance_rate_2025",
+              "attendance_level_2019",
+              "attendance_level_2025",
+              "students_fte_2025"
+            ]
+          }
+        },
+        {
+          "calculate": "year === 2019 ? datum.missing_out_2019 : datum.missing_out_2025",
+          "as": "missing_out"
+        },
+        {
+          "calculate": "!isValid(datum.missing_out) ? 'No data' : datum.missing_out < 30 ? 'Under 30%' : datum.missing_out < 40 ? '30–40%' : datum.missing_out < 50 ? '40–50%' : datum.missing_out < 60 ? '50–60%' : '60% or more'",
+          "as": "class"
+        },
+        {
+          "calculate": "datum.state + ', ' + datum.remoteness + ' (' + year + ')'",
+          "as": "region"
+        },
+        {
+          "calculate": "isValid(datum.missing_out) ? format(datum.missing_out, '.1f') + '%' : 'No published figure'",
+          "as": "missing_out_text"
+        },
+        {
+          "calculate": "isValid(datum.missing_out) ? format(year === 2019 ? datum.attendance_rate_2019 : datum.attendance_rate_2025, '.1f') + '%' : '–'",
+          "as": "rate_text"
+        },
+        {
+          "calculate": "isValid(datum.missing_out) ? format(year === 2019 ? datum.attendance_level_2019 : datum.attendance_level_2025, '.1f') + '%' : '–'",
+          "as": "level_text"
+        },
+        {
+          "calculate": "'≈ ' + format(round(datum.students_fte_2025 / 100) * 100, ',')",
+          "as": "students_text"
+        }
+      ],
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": [
+              "key"
+            ],
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "geoshape"
+      },
+      "encoding": {
+        "color": {
+          "field": "class",
+          "type": "ordinal",
+          "scale": {
+            "domain": [
+              "Under 30%",
+              "30–40%",
+              "40–50%",
+              "50–60%",
+              "60% or more",
+              "No data"
+            ],
+            "range": [
+              "#fef0d9",
+              "#fdcc8a",
+              "#fc8d59",
+              "#e34a33",
+              "#b30000",
+              "#d9d5cc"
+            ]
+          },
+          "legend": {
+            "title": "Share of students missing out",
+            "orient": "bottom",
+            "direction": "horizontal",
+            "columns": 3,
+            "columnPadding": 16,
+            "rowPadding": 6,
+            "symbolType": "square",
+            "symbolSize": 150,
+            "symbolStrokeColor": "#c3c2b7",
+            "symbolStrokeWidth": 0.5,
+            "titleLimit": 400
+          }
+        },
+        "stroke": {
+          "condition": [
+            {
+              "param": "hover",
+              "empty": false,
+              "value": "#1f1f1f"
+            },
+            {
+              "test": "datum.key === linked",
+              "value": "#1f1f1f"
+            }
+          ],
+          "value": "#ffffff"
+        },
+        "strokeWidth": {
+          "condition": [
+            {
+              "param": "hover",
+              "empty": false,
+              "value": 2
+            },
+            {
+              "test": "datum.key === linked",
+              "value": 2
+            }
+          ],
+          "value": 0.6
+        },
+        "order": {
+          "condition": [
+            {
+              "param": "hover",
+              "empty": false,
+              "value": 1
+            },
+            {
+              "test": "datum.key === linked",
+              "value": 1
+            }
+          ],
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "region",
+            "title": "title"
+          },
+          {
+            "field": "missing_out_text",
+            "title": "Students missing out"
+          },
+          {
+            "field": "rate_text",
+            "title": "Attendance rate (ACARA)"
+          },
+          {
+            "field": "level_text",
+            "title": "Attendance level (ACARA)"
+          },
+          {
+            "field": "students_text",
+            "title": "Students, 2025 (ABS)"
+          }
+        ]
+      }
+    },
+    {
+      "description": "State borders",
+      "data": {
+        "url": "data/australia_2021.topojson",
+        "format": {
+          "type": "topojson",
+          "feature": "states"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": null,
+        "stroke": "#8a8579",
+        "strokeWidth": 0.8
+      }
+    },
+    {
+      "description": "Capital cities, for orientation",
+      "data": {
+        "values": [
+          {
+            "city": "Darwin",
+            "lon": 130.84,
+            "lat": -12.46,
+            "align": "left"
+          },
+          {
+            "city": "Brisbane",
+            "lon": 153.03,
+            "lat": -27.47,
+            "align": "left"
+          },
+          {
+            "city": "Sydney",
+            "lon": 151.21,
+            "lat": -33.87,
+            "align": "left"
+          },
+          {
+            "city": "Canberra",
+            "lon": 149.13,
+            "lat": -35.28,
+            "align": "left"
+          },
+          {
+            "city": "Melbourne",
+            "lon": 144.96,
+            "lat": -37.81,
+            "align": "right"
+          },
+          {
+            "city": "Hobart",
+            "lon": 147.33,
+            "lat": -42.88,
+            "align": "left"
+          },
+          {
+            "city": "Adelaide",
+            "lon": 138.6,
+            "lat": -34.93,
+            "align": "right"
+          },
+          {
+            "city": "Perth",
+            "lon": 115.86,
+            "lat": -31.95,
+            "align": "right"
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "circle",
+            "size": 14,
+            "fill": "#1f1f1f",
+            "stroke": "#ffffff",
+            "strokeWidth": 0.8,
+            "opacity": 1
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.align === 'left'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 6,
+            "fontSize": 11,
+            "fill": "#3d3d3d",
+            "stroke": "#ffffff",
+            "strokeWidth": 3,
+            "strokeJoin": "round",
+            "strokeOpacity": 0.85
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "city"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.align === 'left'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 6,
+            "fontSize": 11,
+            "fill": "#3d3d3d"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "city"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.align === 'right'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "dx": -6,
+            "fontSize": 11,
+            "fill": "#3d3d3d",
+            "stroke": "#ffffff",
+            "strokeWidth": 3,
+            "strokeJoin": "round",
+            "strokeOpacity": 0.85
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "city"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.align === 'right'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "dx": -6,
+            "fontSize": 11,
+            "fill": "#3d3d3d"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "city"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "description": "Callout on the NT's very remote areas, the highest value in both years",
+      "data": {
+        "url": "data/attendance_regions.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "missing_out_2019": "number",
+            "missing_out_2025": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.key === 'NT|Very Remote'"
+        },
+        {
+          "calculate": "['Very remote NT:', format(year === 2019 ? datum.missing_out_2019 : datum.missing_out_2025, '.0f') + '% missing out']",
+          "as": "label"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "rule",
+            "stroke": "#1f1f1f",
+            "strokeWidth": 0.8
+          },
+          "encoding": {
+            "longitude": {
+              "datum": 125.6
+            },
+            "latitude": {
+              "datum": -12.9
+            },
+            "longitude2": {
+              "datum": 132.4
+            },
+            "latitude2": {
+              "datum": -18.6
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "fontSize": 12.5,
+            "lineHeight": 15,
+            "fill": "#1f1f1f"
+          },
+          "encoding": {
+            "longitude": {
+              "datum": 113.4
+            },
+            "latitude": {
+              "datum": -12.2
+            },
+            "text": {
+              "field": "label"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

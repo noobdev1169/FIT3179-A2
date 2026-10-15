@@ -1,0 +1,316 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "C9 dot plot. Share of students missing out (attended fewer than 90% of school days in Semester 1) in 2025 by school sector: government (blue circle), Catholic (green square), independent (pink diamond), with a black tick for all sectors. The top row compares all schools; the rows below compare schools in the same ICSEA quarter, from least to most advantaged. Source: ACARA National Report on Schooling in Australia data portal.",
+  "width": "container",
+  "height": 250,
+  "data": {
+    "url": "data/attendance_icsea_sector.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "group_order": "number",
+        "attendance_rate": "number",
+        "attendance_level": "number",
+        "missing_out": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "calculate": "['All schools', 'Least advantaged quarter', 'Second quarter', 'Third quarter', 'Most advantaged quarter'][datum.group_order]",
+      "as": "row"
+    },
+    {
+      "calculate": "datum.row + ', 2025'",
+      "as": "tooltip_title"
+    },
+    {
+      "calculate": "datum.sector === 'All sectors' ? 'All sectors' : datum.sector + ' schools'",
+      "as": "sector_label"
+    },
+    {
+      "calculate": "format(datum.missing_out, '.1f') + '%'",
+      "as": "missing_out_text"
+    },
+    {
+      "calculate": "format(datum.attendance_rate, '.1f') + '%'",
+      "as": "rate_text"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "row",
+      "type": "ordinal",
+      "title": null,
+      "sort": [
+        "All schools",
+        "Least advantaged quarter",
+        "Second quarter",
+        "Third quarter",
+        "Most advantaged quarter"
+      ],
+      "scale": {
+        "paddingOuter": 0.5
+      },
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelPadding": 12,
+        "labelFontSize": 13,
+        "labelColor": "#1f1f1f",
+        "labelFontWeight": {
+          "condition": {
+            "test": "datum.value === 'All schools'",
+            "value": "bold"
+          },
+          "value": "normal"
+        }
+      }
+    }
+  },
+  "layer": [
+    {
+      "description": "Divider between the all-schools row and the like-with-like rows",
+      "data": {
+        "values": [
+          {
+            "row": "Least advantaged quarter"
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "stroke": "#c3c2b7",
+        "strokeWidth": 1,
+        "strokeDash": [
+          4,
+          3
+        ]
+      },
+      "encoding": {
+        "y": {
+          "field": "row",
+          "type": "ordinal",
+          "title": null,
+          "bandPosition": 0
+        }
+      }
+    },
+    {
+      "description": "Range across the three sectors in each row",
+      "transform": [
+        {
+          "filter": "datum.sector !== 'All sectors'"
+        }
+      ],
+      "mark": {
+        "type": "rule",
+        "stroke": "#d9d5cc",
+        "strokeWidth": 3
+      },
+      "encoding": {
+        "x": {
+          "aggregate": "min",
+          "field": "missing_out",
+          "type": "quantitative",
+          "title": null,
+          "scale": {
+            "domain": [
+              20,
+              70
+            ]
+          },
+          "axis": {
+            "values": [
+              20,
+              30,
+              40,
+              50,
+              60,
+              70
+            ],
+            "labelExpr": "datum.value + '%'",
+            "domain": false,
+            "ticks": false,
+            "gridColor": "#e1e0d9",
+            "labelPadding": 6,
+            "title": "Share of students missing out",
+            "titleFontWeight": "normal",
+            "titleColor": "#5a5a5a",
+            "titlePadding": 8
+          }
+        },
+        "x2": {
+          "aggregate": "max",
+          "field": "missing_out"
+        }
+      }
+    },
+    {
+      "description": "All sectors combined: a black tick",
+      "transform": [
+        {
+          "filter": "datum.sector === 'All sectors'"
+        }
+      ],
+      "mark": {
+        "type": "tick",
+        "color": "#1f1f1f",
+        "thickness": 2.5,
+        "size": 22
+      },
+      "encoding": {
+        "x": {
+          "field": "missing_out",
+          "type": "quantitative",
+          "title": null
+        },
+        "tooltip": [
+          {
+            "field": "tooltip_title",
+            "title": "title"
+          },
+          {
+            "field": "sector_label",
+            "title": "Schools"
+          },
+          {
+            "field": "missing_out_text",
+            "title": "Students missing out"
+          },
+          {
+            "field": "rate_text",
+            "title": "Attendance rate (ACARA)"
+          }
+        ]
+      }
+    },
+    {
+      "description": "One mark per sector; shape repeats the colour so sectors don't rely on hue alone",
+      "transform": [
+        {
+          "filter": "datum.sector !== 'All sectors'"
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 160,
+        "opacity": 1,
+        "stroke": "#fbfaf7",
+        "strokeWidth": 1.2
+      },
+      "encoding": {
+        "x": {
+          "field": "missing_out",
+          "type": "quantitative",
+          "title": null
+        },
+        "color": {
+          "field": "sector",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Government",
+              "Catholic",
+              "Independent"
+            ],
+            "range": [
+              "#2a78d6",
+              "#008300",
+              "#e87ba4"
+            ]
+          },
+          "legend": {
+            "title": null,
+            "orient": "top",
+            "direction": "horizontal",
+            "symbolSize": 120,
+            "columnPadding": 18,
+            "labelFontSize": 13,
+            "labelColor": "#1f1f1f",
+            "labelExpr": "datum.label + ' schools'"
+          }
+        },
+        "shape": {
+          "field": "sector",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Government",
+              "Catholic",
+              "Independent"
+            ],
+            "range": [
+              "circle",
+              "square",
+              "diamond"
+            ]
+          },
+          "legend": {
+            "title": null,
+            "orient": "top",
+            "direction": "horizontal",
+            "symbolSize": 120,
+            "columnPadding": 18,
+            "labelFontSize": 13,
+            "labelColor": "#1f1f1f",
+            "labelExpr": "datum.label + ' schools'"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "tooltip_title",
+            "title": "title"
+          },
+          {
+            "field": "sector_label",
+            "title": "Schools"
+          },
+          {
+            "field": "missing_out_text",
+            "title": "Students missing out"
+          },
+          {
+            "field": "rate_text",
+            "title": "Attendance rate (ACARA)"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Callout on the least advantaged quarter, where the order of the sectors flips",
+      "data": {
+        "values": [
+          {
+            "row": "Least advantaged quarter",
+            "x": 52.6,
+            "text": "Here, government schools do best"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "fontSize": 12.5,
+        "fill": "#1f1f1f"
+      },
+      "encoding": {
+        "y": {
+          "field": "row",
+          "type": "ordinal",
+          "title": null
+        },
+        "x": {
+          "field": "x",
+          "type": "quantitative",
+          "title": null
+        },
+        "text": {
+          "field": "text"
+        }
+      }
+    }
+  ]
+}

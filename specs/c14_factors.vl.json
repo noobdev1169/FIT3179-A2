@@ -1,0 +1,218 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "C14 factor ladder (dumbbell chart). For seven factors, the share of students missing out in 2025 for the group with more absence (dark dot) and the group with less absence (light dot), sorted by the difference in percentage points. The factors overlap, so the differences cannot be added or read as causes. Source: ACARA National Report on Schooling in Australia data portal.",
+  "width": "container",
+  "height": 390,
+  "data": {
+    "url": "data/factors_2025.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "higher_missing_out": "number",
+        "lower_missing_out": "number",
+        "higher_attendance_rate": "number",
+        "lower_attendance_rate": "number",
+        "difference": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "calculate": "{'Where you live': 'Where students live|very remote vs major cities', 'School community\\'s advantage': 'School community’s advantage|least vs most advantaged quarter', 'Aboriginal and Torres Strait Islander status': 'Indigenous status|Aboriginal and Torres Strait Islander|vs non-Indigenous students', 'School sector': 'School sector|government vs independent schools', 'Stage of school': 'Stage of school|Years 7–10 vs Years 1–6', 'Since COVID-19': 'Since COVID-19|2025 vs 2019', 'Sex': 'Boy or girl|boys vs girls'}[datum.factor]",
+      "as": "row"
+    },
+    {
+      "calculate": "replace(replace(datum.higher_group, 'Years 7-10', 'Years 7–10'), 'Lowest ICSEA quarter', 'Least advantaged quarter')",
+      "as": "higher_label"
+    },
+    {
+      "calculate": "replace(replace(datum.lower_group, 'Years 1-6', 'Years 1–6'), 'Highest ICSEA quarter', 'Most advantaged quarter')",
+      "as": "lower_label"
+    },
+    {
+      "calculate": "datum.higher_label + ': ' + format(datum.higher_missing_out, '.1f') + '%'",
+      "as": "higher_text"
+    },
+    {
+      "calculate": "datum.lower_label + ': ' + format(datum.lower_missing_out, '.1f') + '%'",
+      "as": "lower_text"
+    },
+    {
+      "calculate": "'+' + format(datum.difference, '.1f')",
+      "as": "difference_text"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "row",
+      "type": "nominal",
+      "title": null,
+      "sort": {
+        "field": "difference",
+        "order": "descending"
+      },
+      "scale": {
+        "paddingOuter": 0.4
+      },
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelPadding": 12,
+        "labelLimit": 300,
+        "labelExpr": "split(datum.value, '|')",
+        "labelFontSize": 13,
+        "labelColor": "#1f1f1f",
+        "labelLineHeight": 16,
+        "labelOffset": {
+          "condition": {
+            "test": "indexof(datum.value, 'Indigenous status') === 0",
+            "value": -16
+          },
+          "value": -8
+        }
+      }
+    },
+    "tooltip": [
+      {
+        "field": "factor",
+        "title": "title"
+      },
+      {
+        "field": "higher_text",
+        "title": "More absence"
+      },
+      {
+        "field": "lower_text",
+        "title": "Less absence"
+      },
+      {
+        "field": "difference_text",
+        "title": "Difference (points)"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "stroke": "#c3c2b7",
+        "strokeWidth": 2.5
+      },
+      "encoding": {
+        "x": {
+          "field": "lower_missing_out",
+          "type": "quantitative",
+          "title": "Share of students missing out, 2025",
+          "scale": {
+            "domain": [
+              20,
+              80
+            ]
+          },
+          "axis": {
+            "values": [
+              20,
+              30,
+              40,
+              50,
+              60,
+              70,
+              80
+            ],
+            "labelExpr": "datum.value + '%'",
+            "domain": false,
+            "ticks": false,
+            "gridColor": "#e1e0d9",
+            "titleFontWeight": "normal",
+            "titleColor": "#5a5a5a",
+            "labelPadding": 6,
+            "titlePadding": 8
+          }
+        },
+        "x2": {
+          "field": "higher_missing_out"
+        }
+      }
+    },
+    {
+      "description": "One dot per group: dark = more absence, light = less absence",
+      "transform": [
+        {
+          "fold": [
+            "higher_missing_out",
+            "lower_missing_out"
+          ],
+          "as": [
+            "which",
+            "missing_out"
+          ]
+        },
+        {
+          "calculate": "datum.which === 'higher_missing_out' ? 'Group with more absence' : 'Group with less absence'",
+          "as": "group_type"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "size": 140,
+        "opacity": 1,
+        "stroke": "#827d73",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "missing_out",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "group_type",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Group with more absence",
+              "Group with less absence"
+            ],
+            "range": [
+              "#b30000",
+              "#fdcc8a"
+            ]
+          },
+          "legend": {
+            "title": null,
+            "orient": "top",
+            "direction": "horizontal",
+            "symbolType": "circle",
+            "symbolSize": 120,
+            "symbolStrokeColor": "#827d73",
+            "symbolStrokeWidth": 1,
+            "labelFontSize": 13,
+            "labelColor": "#1f1f1f",
+            "columnPadding": 20,
+            "labelLimit": 300
+          }
+        }
+      }
+    },
+    {
+      "description": "Difference label",
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 11,
+        "fontSize": 13,
+        "fontWeight": "bold",
+        "fill": "#1f1f1f"
+      },
+      "encoding": {
+        "x": {
+          "field": "higher_missing_out",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "difference_text"
+        }
+      }
+    }
+  ]
+}

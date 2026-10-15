@@ -1,0 +1,201 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "C16 Dorling cartogram. Estimated number of full-time students in Years 1-10 who attended fewer than 90% of school days in Semester 1 (2019 or 2025), by state and territory. Circle area is proportional to the number of students; fill shows the share of the state's students missing out (ACARA). Circles start at each state's position on an Albers equal-area map and are pushed apart so they do not overlap. Sources: ACARA National Report on Schooling data portal; ABS Schools, 2025, Table 42b.",
+  "width": 620,
+  "height": 480,
+  "padding": 0,
+  "autosize": "none",
+
+  "signals": [
+    {
+      "name": "year",
+      "value": 2025,
+      "bind": {"input": "radio", "options": [2019, 2025], "name": "Year"}
+    },
+    {"name": "k", "update": "min(width, height * 1.25) / 5600"},
+    {"name": "insideMin", "value": 27},
+    {
+      "name": "labelBelow",
+      "description": "Small circles are labelled to the right (open sea), except the NT, whose right side faces Queensland.",
+      "value": ["NT"]
+    }
+  ],
+
+  "projections": [
+    {
+      "name": "albers",
+      "type": "conicEqualArea",
+      "parallels": [-18, -36],
+      "rotate": [-132, 0, 0],
+      "fit": {"signal": "data('outline')"},
+      "extent": {"signal": "[[40, 16], [width - 110, height - 96]]"}
+    }
+  ],
+
+  "data": [
+    {
+      "name": "outline",
+      "url": "data/australia_2021.topojson",
+      "format": {"type": "topojson", "feature": "states"}
+    },
+    {
+      "name": "official",
+      "url": "data/attendance_states.csv",
+      "format": {"type": "csv", "parse": "auto"},
+      "transform": [{"type": "filter", "expr": "datum.year === year"}]
+    },
+    {
+      "name": "states",
+      "url": "data/states_summary.csv",
+      "format": {"type": "csv", "parse": "auto"},
+      "transform": [
+        {"type": "geopoint", "projection": "albers", "fields": ["lon", "lat"], "as": ["x0", "y0"]},
+        {"type": "formula", "as": "est", "expr": "year === 2019 ? datum.est_missing_out_2019 : datum.est_missing_out_2025"},
+        {"type": "formula", "as": "share", "expr": "year === 2019 ? datum.missing_out_2019 : datum.missing_out_2025"},
+        {"type": "formula", "as": "r", "expr": "sqrt(datum.est) * k"},
+        {
+          "type": "lookup",
+          "from": "official",
+          "key": "state_abbr",
+          "fields": ["state_abbr"],
+          "values": ["attendance_rate", "attendance_level"]
+        },
+        {"type": "formula", "as": "x", "expr": "datum.x0"},
+        {"type": "formula", "as": "y", "expr": "datum.y0"},
+        {
+          "type": "force",
+          "static": true,
+          "restart": true,
+          "iterations": 400,
+          "forces": [
+            {"force": "collide", "radius": {"expr": "datum.r + 3"}, "iterations": 4},
+            {"force": "x", "x": "x0", "strength": 0.2},
+            {"force": "y", "y": "y0", "strength": 0.2}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "callout",
+      "source": "states",
+      "transform": [{"type": "filter", "expr": "datum.state_abbr === 'NT'"}]
+    }
+  ],
+
+  "scales": [
+    {
+      "name": "colour",
+      "type": "threshold",
+      "domain": [30, 40, 50, 60],
+      "range": ["#fef0d9", "#fdcc8a", "#fc8d59", "#e34a33", "#b30000"]
+    }
+  ],
+
+  "legends": [
+    {
+      "type": "symbol",
+      "fill": "colour",
+      "title": "Share of the state's students missing out",
+      "titleLimit": 400,
+      "orient": "bottom-left",
+      "direction": "horizontal",
+      "columns": 5,
+      "columnPadding": 14,
+      "symbolType": "square",
+      "symbolSize": 150,
+      "symbolStrokeColor": "#c3c2b7",
+      "symbolStrokeWidth": 0.5,
+      "encode": {"labels": {"update": {"text": {"signal": "datum.label + '%'"}}}}
+    }
+  ],
+
+  "marks": [
+    {
+      "type": "shape",
+      "from": {"data": "outline"},
+      "interactive": false,
+      "encode": {
+        "update": {
+          "fill": {"value": "#eceae4"},
+          "stroke": {"value": "#fbfaf7"},
+          "strokeWidth": {"value": 1}
+        }
+      },
+      "transform": [{"type": "geoshape", "projection": "albers"}]
+    },
+    {
+      "type": "symbol",
+      "name": "circles",
+      "from": {"data": "states"},
+      "encode": {
+        "enter": {
+          "shape": {"value": "circle"},
+          "stroke": {"value": "#827d73"},
+          "strokeWidth": {"value": 1},
+          "cursor": {"value": "default"}
+        },
+        "update": {
+          "x": {"field": "x"},
+          "y": {"field": "y"},
+          "size": {"signal": "4 * datum.r * datum.r"},
+          "fill": {"scale": "colour", "field": "share"},
+          "tooltip": {
+            "signal": "{title: datum.state + ', ' + year, 'Students missing out (estimate)': '≈ ' + format(round(datum.est / 1000) * 1000, ','), 'Share of students missing out': format(datum.share, '.1f') + '%', 'Attendance rate (ACARA)': format(datum.attendance_rate, '.1f') + '%', 'Attendance level (ACARA)': format(datum.attendance_level, '.1f') + '%'}"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "name": "stateLabel",
+      "from": {"data": "circles"},
+      "interactive": false,
+      "encode": {
+        "update": {
+          "x": {"signal": "datum.datum.r >= insideMin || indexof(labelBelow, datum.datum.state_abbr) >= 0 ? datum.x : datum.x + datum.datum.r + 6"},
+          "y": {"signal": "datum.datum.r >= insideMin ? datum.y - 8 : indexof(labelBelow, datum.datum.state_abbr) >= 0 ? datum.y + datum.datum.r + 12 : datum.y - 8"},
+          "align": {"signal": "datum.datum.r >= insideMin || indexof(labelBelow, datum.datum.state_abbr) >= 0 ? 'center' : 'left'"},
+          "baseline": {"value": "middle"},
+          "text": {"field": "datum.state_abbr"},
+          "fontSize": {"value": 14},
+          "fontWeight": {"value": "bold"},
+          "fill": {"signal": "datum.datum.r >= insideMin && datum.datum.share >= 50 ? '#ffffff' : '#1f1f1f'"}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "name": "valueLabel",
+      "from": {"data": "circles"},
+      "interactive": false,
+      "encode": {
+        "update": {
+          "x": {"signal": "datum.datum.r >= insideMin || indexof(labelBelow, datum.datum.state_abbr) >= 0 ? datum.x : datum.x + datum.datum.r + 6"},
+          "y": {"signal": "datum.datum.r >= insideMin ? datum.y + 9 : indexof(labelBelow, datum.datum.state_abbr) >= 0 ? datum.y + datum.datum.r + 27 : datum.y + 8"},
+          "align": {"signal": "datum.datum.r >= insideMin || indexof(labelBelow, datum.datum.state_abbr) >= 0 ? 'center' : 'left'"},
+          "baseline": {"value": "middle"},
+          "text": {"signal": "'≈ ' + format(round(datum.datum.est / 1000) * 1000, ',')"},
+          "fontSize": {"signal": "datum.datum.r >= insideMin && datum.datum.r < 33 ? 11 : 12.5"},
+          "fill": {"signal": "datum.datum.r >= insideMin && datum.datum.share >= 50 ? '#ffffff' : '#1f1f1f'"}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "callout"},
+      "interactive": false,
+      "encode": {
+        "update": {
+          "x": {"signal": "datum.x - datum.r - 8"},
+          "y": {"signal": "datum.y - 6"},
+          "align": {"value": "right"},
+          "baseline": {"value": "middle"},
+          "text": {"signal": "['Highest share (' + format(datum.share, '.0f') + '%)', 'but fewest students']"},
+          "fontSize": {"value": 12.5},
+          "lineHeight": {"value": 15},
+          "fill": {"value": "#5a5a5a"}
+        }
+      }
+    }
+  ]
+}

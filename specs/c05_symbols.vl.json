@@ -1,0 +1,294 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "C5 proportional symbol map. One circle per state x remoteness area (ABS ASGS 2021). Circle area is proportional to the number of full-time-equivalent school students in 2025 (ABS Schools, Table 46a); fill shows the share of students missing out in 2019 or 2025 (ACARA), in the same five classes as the choropleth. Larger circles are drawn first. Albers equal-area conic projection.",
+  "width": "container",
+  "height": 400,
+  "params": [
+    {
+      "name": "year",
+      "value": 2025,
+      "bind": {
+        "input": "radio",
+        "options": [
+          2019,
+          2025
+        ],
+        "name": "Year"
+      }
+    },
+    {
+      "name": "linked",
+      "value": ""
+    }
+  ],
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -132,
+      0,
+      0
+    ]
+  },
+  "layer": [
+    {
+      "description": "Faint basemap of the states",
+      "data": {
+        "url": "data/australia_2021.topojson",
+        "format": {
+          "type": "topojson",
+          "feature": "states"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#eceae4",
+        "stroke": "#ffffff",
+        "strokeWidth": 1
+      }
+    },
+    {
+      "description": "Invisible point in the Tasman Sea so the projection leaves room for the label east of Sydney",
+      "data": {
+        "values": [
+          {
+            "lon": 162.5,
+            "lat": -34
+          }
+        ]
+      },
+      "mark": {
+        "type": "point",
+        "opacity": 0
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "description": "Circles sized by students",
+      "data": {
+        "url": "data/attendance_regions.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "missing_out_2019": "number",
+            "missing_out_2025": "number",
+            "attendance_rate_2019": "number",
+            "attendance_rate_2025": "number",
+            "attendance_level_2019": "number",
+            "attendance_level_2025": "number",
+            "students_fte_2025": "number",
+            "lon": "number",
+            "lat": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "calculate": "year === 2019 ? datum.missing_out_2019 : datum.missing_out_2025",
+          "as": "missing_out"
+        },
+        {
+          "calculate": "!isValid(datum.missing_out) ? 'No data' : datum.missing_out < 30 ? 'Under 30%' : datum.missing_out < 40 ? '30–40%' : datum.missing_out < 50 ? '40–50%' : datum.missing_out < 60 ? '50–60%' : '60% or more'",
+          "as": "class"
+        },
+        {
+          "calculate": "datum.state + ', ' + datum.remoteness + ' (' + year + ')'",
+          "as": "region"
+        },
+        {
+          "calculate": "isValid(datum.missing_out) ? format(datum.missing_out, '.1f') + '%' : 'No published figure'",
+          "as": "missing_out_text"
+        },
+        {
+          "calculate": "isValid(datum.missing_out) ? format(year === 2019 ? datum.attendance_rate_2019 : datum.attendance_rate_2025, '.1f') + '%' : '–'",
+          "as": "rate_text"
+        },
+        {
+          "calculate": "'≈ ' + format(round(datum.students_fte_2025 / 100) * 100, ',')",
+          "as": "students_text"
+        }
+      ],
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": [
+              "key"
+            ],
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "opacity": 1
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "students_fte_2025",
+          "type": "quantitative",
+          "scale": {
+            "type": "linear",
+            "domain": [
+              0,
+              1000000
+            ],
+            "range": [
+              0,
+              2900
+            ],
+            "zero": true
+          },
+          "legend": {
+            "title": "Students (2025)",
+            "orient": "bottom",
+            "direction": "horizontal",
+            "values": [
+              10000,
+              100000,
+              500000,
+              1000000
+            ],
+            "labelExpr": "datum.value >= 1000000 ? '1 million' : format(datum.value, ',')",
+            "symbolFillColor": "#ffffff",
+            "symbolStrokeColor": "#827d73",
+            "symbolStrokeWidth": 1
+          }
+        },
+        "color": {
+          "field": "class",
+          "type": "ordinal",
+          "scale": {
+            "domain": [
+              "Under 30%",
+              "30–40%",
+              "40–50%",
+              "50–60%",
+              "60% or more",
+              "No data"
+            ],
+            "range": [
+              "#fef0d9",
+              "#fdcc8a",
+              "#fc8d59",
+              "#e34a33",
+              "#b30000",
+              "#d9d5cc"
+            ]
+          },
+          "legend": null
+        },
+        "stroke": {
+          "condition": [
+            {
+              "param": "hover",
+              "empty": false,
+              "value": "#1f1f1f"
+            },
+            {
+              "test": "datum.key === linked",
+              "value": "#1f1f1f"
+            }
+          ],
+          "value": "#827d73"
+        },
+        "strokeWidth": {
+          "condition": [
+            {
+              "param": "hover",
+              "empty": false,
+              "value": 2.5
+            },
+            {
+              "test": "datum.key === linked",
+              "value": 2.5
+            }
+          ],
+          "value": 1
+        },
+        "order": {
+          "field": "students_fte_2025",
+          "sort": "descending"
+        },
+        "tooltip": [
+          {
+            "field": "region",
+            "title": "title"
+          },
+          {
+            "field": "students_text",
+            "title": "Students, 2025 (ABS)"
+          },
+          {
+            "field": "missing_out_text",
+            "title": "Students missing out"
+          },
+          {
+            "field": "rate_text",
+            "title": "Attendance rate (ACARA)"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Label for the largest circle",
+      "data": {
+        "values": [
+          {
+            "lon": 150.91,
+            "lat": -33.82,
+            "label": [
+              "NSW major cities:",
+              "≈ 970,000 students"
+            ]
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 34,
+        "dy": -4,
+        "fontSize": 12.5,
+        "lineHeight": 15,
+        "fill": "#1f1f1f"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    }
+  ]
+}

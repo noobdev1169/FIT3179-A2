@@ -1,0 +1,219 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "C7 dumbbell chart. Share of students missing out (attended fewer than 90% of school days in Semester 1) in 2025, for Aboriginal and Torres Strait Islander students (near-black dots) and non-Indigenous students (grey dots), by remoteness area from major cities to very remote. A line joins each pair; the label gives ACARA's published gap in percentage points. Source: ACARA National Report on Schooling in Australia data portal.",
+  "width": "container",
+  "height": 250,
+  "data": {
+    "url": "data/attendance_indigenous_remoteness.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "ra_order": "number",
+        "attendance_rate": "number",
+        "attendance_level": "number",
+        "missing_out": "number",
+        "gap_attendance_level": "number",
+        "gap_attendance_rate": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "calculate": "datum.remoteness === 'Major Cities' ? 'Major cities' : datum.remoteness === 'Inner Regional' ? 'Inner regional' : datum.remoteness === 'Outer Regional' ? 'Outer regional' : datum.remoteness === 'Very Remote' ? 'Very remote' : datum.remoteness",
+      "as": "area"
+    },
+    {
+      "calculate": "datum.status === 'Non-Indigenous students' ? 'Non-Indigenous students' : 'Aboriginal and Torres Strait Islander students'",
+      "as": "group"
+    },
+    {
+      "calculate": "datum.area + ', 2025'",
+      "as": "tooltip_title"
+    },
+    {
+      "calculate": "format(datum.missing_out, '.1f') + '%'",
+      "as": "missing_out_text"
+    },
+    {
+      "calculate": "format(datum.attendance_rate, '.1f') + '%'",
+      "as": "rate_text"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "area",
+      "type": "ordinal",
+      "title": null,
+      "sort": [
+        "Major cities",
+        "Inner regional",
+        "Outer regional",
+        "Remote",
+        "Very remote"
+      ],
+      "scale": {
+        "paddingOuter": 0.6
+      },
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelPadding": 10,
+        "labelFontSize": 13,
+        "labelColor": "#1f1f1f"
+      }
+    }
+  },
+  "layer": [
+    {
+      "description": "Line joining the two groups",
+      "mark": {
+        "type": "rule",
+        "stroke": "#c3c2b7",
+        "strokeWidth": 2.5
+      },
+      "encoding": {
+        "x": {
+          "aggregate": "min",
+          "field": "missing_out",
+          "type": "quantitative",
+          "title": null,
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "axis": {
+            "values": [
+              0,
+              25,
+              50,
+              75,
+              100
+            ],
+            "labelExpr": "datum.value + '%'",
+            "domain": false,
+            "ticks": false,
+            "gridColor": "#e1e0d9",
+            "labelPadding": 6
+          }
+        },
+        "x2": {
+          "aggregate": "max",
+          "field": "missing_out"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 150,
+        "opacity": 1,
+        "stroke": "#fbfaf7",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "missing_out",
+          "type": "quantitative",
+          "title": null
+        },
+        "color": {
+          "field": "group",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Aboriginal and Torres Strait Islander students",
+              "Non-Indigenous students"
+            ],
+            "range": [
+              "#262626",
+              "#8a8a8a"
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "vertical",
+            "title": null,
+            "symbolType": "circle",
+            "symbolSize": 120,
+            "labelLimit": 400,
+            "rowPadding": 4
+          }
+        },
+        "tooltip": [
+          {
+            "field": "tooltip_title",
+            "title": "title"
+          },
+          {
+            "field": "group",
+            "title": "Group"
+          },
+          {
+            "field": "missing_out_text",
+            "title": "Students missing out"
+          },
+          {
+            "field": "rate_text",
+            "title": "Attendance rate (ACARA)"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Gap labels to the right of each pair (ACARA's published gap)",
+      "transform": [
+        {
+          "filter": "datum.group !== 'Non-Indigenous students'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 12,
+        "fontSize": 12.5,
+        "fill": "#5a5a5a"
+      },
+      "encoding": {
+        "x": {
+          "field": "missing_out",
+          "type": "quantitative",
+          "title": null
+        },
+        "text": {
+          "field": "gap_attendance_level",
+          "type": "quantitative",
+          "format": ".1f"
+        }
+      }
+    },
+    {
+      "description": "Gap labels: the word 'points' once, on the top row",
+      "transform": [
+        {
+          "filter": "datum.group !== 'Non-Indigenous students' && datum.ra_order === 1"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 44,
+        "fontSize": 12.5,
+        "fill": "#5a5a5a"
+      },
+      "encoding": {
+        "x": {
+          "field": "missing_out",
+          "type": "quantitative",
+          "title": null
+        },
+        "text": {
+          "value": "point gap"
+        }
+      }
+    }
+  ]
+}

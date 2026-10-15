@@ -1,0 +1,281 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "C12 box plot. 2024 attendance of NSW public schools in six ICSEA bands, least advantaged at the top. Line = 10th to 90th percentile of schools ('most schools'); box = 25th to 75th percentile ('middle half'); thick black tick = median ('typical school'). Box colour shows the days missed by the median school, in the same classes as the maps. Clicking a band selects it (param 'pick'); the page passes the choice to the dot map and bin map. Percentiles from Vega-Lite's quantile transform. Source: NSW Department of Education (attendance; ICSEA from ACARA).",
+  "width": "container",
+  "height": 270,
+  "data": {
+    "url": "data/nsw_schools.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "icsea": "number",
+        "icsea_band_order": "number",
+        "attendance_2024": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "isValid(datum.attendance_2024) && isValid(datum.icsea)"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "count",
+          "as": "schools"
+        }
+      ],
+      "groupby": [
+        "icsea_band"
+      ]
+    },
+    {
+      "quantile": "attendance_2024",
+      "probs": [
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        0.9
+      ],
+      "groupby": [
+        "icsea_band",
+        "icsea_band_order",
+        "schools"
+      ]
+    },
+    {
+      "calculate": "'p' + round(datum.prob * 100)",
+      "as": "p"
+    },
+    {
+      "pivot": "p",
+      "value": "value",
+      "groupby": [
+        "icsea_band",
+        "icsea_band_order",
+        "schools"
+      ]
+    },
+    {
+      "calculate": "datum.icsea_band === 'Under 900' ? 'ICSEA under 900' : datum.icsea_band === '1100 and over' ? '1100 and over' : datum.icsea_band",
+      "as": "row"
+    },
+    {
+      "calculate": "100 - datum.p50",
+      "as": "median_days_missed"
+    },
+    {
+      "calculate": "datum.median_days_missed < 10 ? 'Under 10%' : datum.median_days_missed < 12 ? '10–12%' : datum.median_days_missed < 15 ? '12–15%' : datum.median_days_missed < 20 ? '15–20%' : '20% or more'",
+      "as": "class"
+    },
+    {
+      "calculate": "'ICSEA ' + datum.icsea_band + ' (' + datum.schools + ' schools)'",
+      "as": "tooltip_title"
+    },
+    {
+      "calculate": "format(datum.p50, '.1f') + '%'",
+      "as": "median_text"
+    },
+    {
+      "calculate": "format(datum.p25, '.1f') + '% to ' + format(datum.p75, '.1f') + '%'",
+      "as": "middle_text"
+    },
+    {
+      "calculate": "format(datum.p10, '.1f') + '% to ' + format(datum.p90, '.1f') + '%'",
+      "as": "most_text"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "row",
+      "type": "ordinal",
+      "title": "School’s ICSEA (community advantage)",
+      "sort": {
+        "field": "icsea_band_order",
+        "order": "ascending"
+      },
+      "scale": {
+        "paddingInner": 0.45,
+        "paddingOuter": 0.3
+      },
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelPadding": 10,
+        "labelFontSize": 13,
+        "labelColor": "#1f1f1f",
+        "titleFontWeight": "normal",
+        "titleColor": "#5a5a5a",
+        "titlePadding": 12
+      }
+    },
+    "opacity": {
+      "condition": {
+        "param": "pick",
+        "empty": true,
+        "value": 1
+      },
+      "value": 0.3
+    }
+  },
+  "layer": [
+    {
+      "description": "Most schools: 10th to 90th percentile",
+      "mark": {
+        "type": "rule",
+        "stroke": "#5a5a5a",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "p10",
+          "type": "quantitative",
+          "title": "School attendance rate, 2024",
+          "scale": {
+            "domain": [
+              65,
+              100
+            ]
+          },
+          "axis": {
+            "values": [
+              65,
+              70,
+              75,
+              80,
+              85,
+              90,
+              95,
+              100
+            ],
+            "labelExpr": "datum.value + '%'",
+            "domain": false,
+            "ticks": false,
+            "gridColor": "#e1e0d9",
+            "titleFontWeight": "normal",
+            "titleColor": "#5a5a5a",
+            "labelPadding": 6,
+            "titlePadding": 8
+          }
+        },
+        "x2": {
+          "field": "p90"
+        }
+      }
+    },
+    {
+      "description": "Middle half: 25th to 75th percentile, coloured by the median school's days missed",
+      "mark": {
+        "type": "bar",
+        "height": {
+          "band": 1
+        },
+        "stroke": "#5a5a5a",
+        "strokeWidth": 0.8,
+        "cursor": "pointer",
+        "cornerRadius": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "p25",
+          "type": "quantitative"
+        },
+        "x2": {
+          "field": "p75"
+        },
+        "fill": {
+          "field": "class",
+          "type": "ordinal",
+          "scale": {
+            "domain": [
+              "Under 10%",
+              "10–12%",
+              "12–15%",
+              "15–20%",
+              "20% or more"
+            ],
+            "range": [
+              "#fef0d9",
+              "#fdcc8a",
+              "#fc8d59",
+              "#e34a33",
+              "#b30000"
+            ]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {
+            "field": "tooltip_title",
+            "title": "title"
+          },
+          {
+            "field": "median_text",
+            "title": "Typical school (median)"
+          },
+          {
+            "field": "middle_text",
+            "title": "Middle half of schools"
+          },
+          {
+            "field": "most_text",
+            "title": "Most schools (8 in 10)"
+          }
+        ]
+      },
+      "params": [
+        {
+          "name": "pick",
+          "select": {
+            "type": "point",
+            "fields": [
+              "icsea_band"
+            ],
+            "on": "click",
+            "clear": "dblclick",
+            "toggle": false
+          }
+        }
+      ]
+    },
+    {
+      "description": "Middle school: median",
+      "mark": {
+        "type": "tick",
+        "color": "#1f1f1f",
+        "thickness": 3,
+        "bandSize": 30
+      },
+      "encoding": {
+        "x": {
+          "field": "p50",
+          "type": "quantitative"
+        },
+        "size": {
+          "value": 30
+        }
+      }
+    },
+    {
+      "description": "Median value labels to the right of each line",
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 8,
+        "fontSize": 12.5,
+        "fill": "#1f1f1f"
+      },
+      "encoding": {
+        "x": {
+          "field": "p90",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "median_text"
+        }
+      }
+    }
+  ]
+}

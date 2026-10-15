@@ -1,0 +1,468 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "C10 dot map. One dot per NSW public school with a 2024 attendance figure (2,122 schools; Lord Howe Island is left off the map). Dot colour shows the share of school days missed in 2024 in five classes; the darkest class (20% or more) means attendance below 80%. A Sydney inset in the bottom-left corner (south of the border, so it covers no NSW schools) shows the city's 896 schools at a larger scale. When an ICSEA band is chosen in the box plot (signal 'band'), schools outside it turn grey. NSW conic equal-area projection (parallels -30.75 and -35.75, central meridian 147). Sources: NSW Department of Education; ABS ASGS 2021.",
+  "width": 534,
+  "height": 510,
+  "padding": 0,
+  "autosize": "none",
+  "signals": [
+    {
+      "name": "band",
+      "value": "",
+      "description": "ICSEA band chosen in the box plot (empty = all schools)."
+    },
+    {
+      "name": "insetBox",
+      "value": [
+        150.5,
+        -34.2,
+        151.4,
+        -33.5
+      ],
+      "description": "Sydney inset extent: west, south, east, north (degrees)."
+    },
+    {
+      "name": "insetW",
+      "update": "round(width * 0.38)"
+    },
+    {
+      "name": "insetH",
+      "update": "150"
+    },
+    {
+      "name": "insetX",
+      "value": 0
+    },
+    {
+      "name": "insetY",
+      "update": "height - insetH - 2"
+    }
+  ],
+  "projections": [
+    {
+      "name": "nsw",
+      "type": "conicEqualArea",
+      "parallels": [
+        -30.75,
+        -35.75
+      ],
+      "rotate": [
+        -147,
+        0,
+        0
+      ],
+      "fit": {
+        "signal": "data('outline')"
+      },
+      "extent": {
+        "signal": "[[4, 4], [width - 4, height - 82]]"
+      }
+    },
+    {
+      "name": "sydney",
+      "type": "conicEqualArea",
+      "parallels": [
+        -30.75,
+        -35.75
+      ],
+      "rotate": [
+        -147,
+        0,
+        0
+      ],
+      "fit": {
+        "signal": "{type: 'Feature', geometry: {type: 'MultiPoint', coordinates: [[insetBox[0], insetBox[1]], [insetBox[2], insetBox[3]]]}}"
+      },
+      "extent": {
+        "signal": "[[insetX + 6, insetY + 22], [insetX + insetW - 6, insetY + insetH - 6]]"
+      }
+    }
+  ],
+  "data": [
+    {
+      "name": "outline",
+      "url": "data/nsw_2021.topojson",
+      "format": {
+        "type": "topojson",
+        "feature": "outline"
+      }
+    },
+    {
+      "name": "regions",
+      "url": "data/nsw_2021.topojson",
+      "format": {
+        "type": "topojson",
+        "feature": "remoteness"
+      }
+    },
+    {
+      "name": "schools",
+      "url": "data/nsw_schools.csv",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "lat": "number",
+          "lon": "number",
+          "icsea": "number",
+          "icsea_band_order": "number",
+          "fte": "number",
+          "attendance_2022": "number",
+          "attendance_2024": "number",
+          "days_missed_2024": "number"
+        }
+      },
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.in_map_extent === 'true' && isValid(datum.days_missed_2024)"
+        },
+        {
+          "type": "formula",
+          "as": "inBand",
+          "expr": "band === '' || datum.icsea_band === band"
+        },
+        {
+          "type": "collect",
+          "sort": {
+            "field": [
+              "inBand",
+              "days_missed_2024"
+            ],
+            "order": [
+              "ascending",
+              "ascending"
+            ]
+          }
+        },
+        {
+          "type": "geopoint",
+          "projection": "nsw",
+          "fields": [
+            "lon",
+            "lat"
+          ],
+          "as": [
+            "x",
+            "y"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sydneySchools",
+      "source": "schools",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.lon >= insetBox[0] && datum.lon <= insetBox[2] && datum.lat >= insetBox[1] && datum.lat <= insetBox[3]"
+        },
+        {
+          "type": "geopoint",
+          "projection": "sydney",
+          "fields": [
+            "lon",
+            "lat"
+          ],
+          "as": [
+            "sx",
+            "sy"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sydneyArea",
+      "description": "The area shown in the inset (same corners as insetBox), outlined on the main map",
+      "values": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  150.5,
+                  -34.2
+                ],
+                [
+                  150.5,
+                  -33.5
+                ],
+                [
+                  151.4,
+                  -33.5
+                ],
+                [
+                  151.4,
+                  -34.2
+                ],
+                [
+                  150.5,
+                  -34.2
+                ]
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "colour",
+      "type": "threshold",
+      "domain": [
+        10,
+        12,
+        15,
+        20
+      ],
+      "range": [
+        "#fef0d9",
+        "#fdcc8a",
+        "#fc8d59",
+        "#e34a33",
+        "#b30000"
+      ]
+    }
+  ],
+  "legends": [
+    {
+      "type": "symbol",
+      "fill": "colour",
+      "title": [
+        "School days missed,",
+        "2024"
+      ],
+      "orient": "none",
+      "legendX": {
+        "signal": "width - 150"
+      },
+      "legendY": {
+        "signal": "height - 112"
+      },
+      "direction": "vertical",
+      "columns": 1,
+      "columnPadding": 14,
+      "rowPadding": 3,
+      "symbolType": "circle",
+      "symbolSize": 70,
+      "symbolStrokeColor": "#827d73",
+      "symbolStrokeWidth": 0.5,
+      "titleLimit": 300,
+      "encode": {
+        "labels": {
+          "update": {
+            "text": {
+              "signal": "datum.index === 0 ? 'Under 10%' : datum.index === 4 ? '20% or more' : datum.index === 1 ? '10–12%' : datum.index === 2 ? '12–15%' : '15–20%'"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "marks": [
+    {
+      "type": "shape",
+      "from": {
+        "data": "regions"
+      },
+      "interactive": false,
+      "encode": {
+        "update": {
+          "fill": {
+            "value": "#eceae4"
+          },
+          "stroke": {
+            "value": "#d9d5cc"
+          },
+          "strokeWidth": {
+            "value": 0.8
+          }
+        }
+      },
+      "transform": [
+        {
+          "type": "geoshape",
+          "projection": "nsw"
+        }
+      ]
+    },
+    {
+      "type": "shape",
+      "from": {
+        "data": "outline"
+      },
+      "interactive": false,
+      "encode": {
+        "update": {
+          "fill": {
+            "value": null
+          },
+          "stroke": {
+            "value": "#a8a49b"
+          },
+          "strokeWidth": {
+            "value": 1
+          }
+        }
+      },
+      "transform": [
+        {
+          "type": "geoshape",
+          "projection": "nsw"
+        }
+      ]
+    },
+    {
+      "type": "symbol",
+      "name": "dots",
+      "from": {
+        "data": "schools"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "size": {
+            "signal": "datum.inBand ? 16 : 9"
+          },
+          "fill": {
+            "signal": "datum.inBand ? scale('colour', datum.days_missed_2024) : '#d9d5cc'"
+          },
+          "stroke": {
+            "signal": "datum.inBand ? '#6f6a61' : null"
+          },
+          "strokeWidth": {
+            "value": 0.4
+          },
+          "tooltip": {
+            "signal": "{title: datum.level_of_schooling + ' school', 'Remoteness': datum.remoteness, 'ICSEA': datum.icsea ? datum.icsea : 'not published', 'Attendance 2022 → 2024': (isValid(datum.attendance_2022) ? format(datum.attendance_2022, '.1f') + '%' : '–') + ' → ' + format(datum.attendance_2024, '.1f') + '%', 'Days missed, 2024': format(datum.days_missed_2024, '.1f') + '%'}"
+          }
+        }
+      }
+    },
+    {
+      "type": "shape",
+      "description": "Outline of the area shown in the inset",
+      "from": {
+        "data": "sydneyArea"
+      },
+      "interactive": false,
+      "encode": {
+        "update": {
+          "fill": {
+            "value": null
+          },
+          "stroke": {
+            "value": "#1f1f1f"
+          },
+          "strokeWidth": {
+            "value": 1
+          }
+        }
+      },
+      "transform": [
+        {
+          "type": "geoshape",
+          "projection": "nsw"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "inset",
+      "encode": {
+        "update": {
+          "x": {
+            "signal": "insetX"
+          },
+          "y": {
+            "signal": "insetY"
+          },
+          "width": {
+            "signal": "insetW"
+          },
+          "height": {
+            "signal": "insetH"
+          },
+          "fill": {
+            "value": "#fbfaf7"
+          },
+          "stroke": {
+            "value": "#a8a49b"
+          },
+          "strokeWidth": {
+            "value": 1
+          },
+          "clip": {
+            "value": true
+          }
+        }
+      },
+      "marks": [
+        {
+          "type": "text",
+          "interactive": false,
+          "encode": {
+            "update": {
+              "x": {
+                "value": 8
+              },
+              "y": {
+                "value": 15
+              },
+              "text": {
+                "value": "Sydney"
+              },
+              "fontSize": {
+                "value": 12
+              },
+              "fontWeight": {
+                "value": "bold"
+              },
+              "fill": {
+                "value": "#1f1f1f"
+              }
+            }
+          }
+        },
+        {
+          "type": "symbol",
+          "from": {
+            "data": "sydneySchools"
+          },
+          "encode": {
+            "update": {
+              "x": {
+                "signal": "datum.sx - insetX"
+              },
+              "y": {
+                "signal": "datum.sy - insetY"
+              },
+              "size": {
+                "signal": "datum.inBand ? 18 : 10"
+              },
+              "fill": {
+                "signal": "datum.inBand ? scale('colour', datum.days_missed_2024) : '#d9d5cc'"
+              },
+              "stroke": {
+                "signal": "datum.inBand ? '#6f6a61' : null"
+              },
+              "strokeWidth": {
+                "value": 0.4
+              },
+              "tooltip": {
+                "signal": "{title: datum.level_of_schooling + ' school', 'Remoteness': datum.remoteness, 'ICSEA': datum.icsea ? datum.icsea : 'not published', 'Attendance 2022 → 2024': (isValid(datum.attendance_2022) ? format(datum.attendance_2022, '.1f') + '%' : '–') + ' → ' + format(datum.attendance_2024, '.1f') + '%', 'Days missed, 2024': format(datum.days_missed_2024, '.1f') + '%'}"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
