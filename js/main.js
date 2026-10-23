@@ -33,6 +33,8 @@
 
   // One entry per chart, in page order.
   const CHARTS = [
+    // C1 sits in the header as the opening picture, so it has no "..." menu (its JSON is linked in its caption).
+    { id: 'c1', spec: 'specs/c01_pictogram.vl.json', mode: 'vega-lite', actions: false },
     { id: 'c16', spec: 'specs/c16_dorling.vg.json', mode: 'vega', bind: 'c16-controls' },
     { id: 'c2', spec: 'specs/c02_trend.vl.json', mode: 'vega-lite' },
     { id: 'c3', spec: 'specs/c03_heatmap.vl.json', mode: 'vega-lite' },
@@ -57,11 +59,12 @@
         mode: chart.mode,
         renderer: 'svg',
         // The "..." menu: save as SVG/PNG, view the JSON, open it in the Vega Editor.
-        actions: { export: true, source: true, compiled: chart.mode === 'vega-lite', editor: true },
+        actions: chart.actions === false ? false : { export: true, source: true, compiled: chart.mode === 'vega-lite', editor: true },
         config: chart.mode === 'vega' ? VG_CONFIG : VL_CONFIG,
         bind: chart.bind ? document.getElementById(chart.bind) : undefined,
         tooltip: { theme: 'custom' },
       });
+      if (chart.bind) uniqueRadioNames(chart, result.view);
       if (chart.mode === 'vega') fitWidth(result.view, el);
       return result.view;
     } catch (err) {
@@ -69,6 +72,17 @@
       console.error(`Chart ${chart.id} failed`, err);
       return null;
     }
+  }
+
+  // Vega names every radio input after its parameter ("year"), so three Year controls on one
+  // page would form a single browser radio group and only one could ever look selected.
+  // Give each chart's radios their own group name and tick the current value.
+  function uniqueRadioNames(chart, view) {
+    document.getElementById(chart.bind).querySelectorAll('input[type="radio"]').forEach(r => {
+      const param = r.name;
+      r.name = `${chart.id}-${param}`;
+      r.checked = String(view.signal(param)) === r.value;
+    });
   }
 
   // Load a spec and make its data URLs absolute, so "Open in Vega Editor" and

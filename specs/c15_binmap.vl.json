@@ -183,20 +183,7 @@
             "field": "median_text",
             "title": "Typical school (median): days missed"
           }
-        ],
-        "strokeDash": {
-          "condition": {
-            "test": "datum.schools < minSchools",
-            "value": [
-              2,
-              2
-            ]
-          },
-          "value": [
-            1,
-            0
-          ]
-        }
+        ]
       }
     },
     {

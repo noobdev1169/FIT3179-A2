@@ -186,16 +186,20 @@
       }
     },
     {
-      "description": "One mark per sector; shape repeats the colour so sectors don't rely on hue alone",
+      "description": "One mark per sector; shape repeats the colour so sectors don't rely on hue alone. Government is drawn last (order = z), so its circle stays visible where it almost coincides with Catholic (most advantaged quarter).",
       "transform": [
         {
           "filter": "datum.sector !== 'All sectors'"
+        },
+        {
+          "calculate": "datum.sector === 'Government' ? 2 : datum.sector === 'Independent' ? 1 : 0",
+          "as": "z"
         }
       ],
       "mark": {
         "type": "point",
         "filled": true,
-        "size": 160,
+        "size": 140,
         "opacity": 1,
         "stroke": "#fbfaf7",
         "strokeWidth": 1.2
@@ -205,6 +209,10 @@
           "field": "missing_out",
           "type": "quantitative",
           "title": null
+        },
+        "order": {
+          "field": "z",
+          "type": "quantitative"
         },
         "color": {
           "field": "sector",

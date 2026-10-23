@@ -1,0 +1,129 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "C1 pictogram (isotype). Out of every 100 students in Years 1-10, how many missed more than a day of school a fortnight (attended fewer than 90% of Semester 1 days), in 2019 and 2025. Each figure is one student in 100; shaded figures are students missing out. Values come from attendance_trend.csv and are rounded to whole figures (26.9 -> 27, 37.9 -> 38). Source: ACARA National Report on Schooling in Australia data portal.",
+  "data": {
+    "url": "data/attendance_trend.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "missing_out": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.year === 2019 || datum.year === 2025"
+    },
+    {
+      "calculate": "round(datum.missing_out)",
+      "as": "shaded"
+    },
+    {
+      "calculate": "datum.year + ': ' + datum.shaded + ' in 100'",
+      "as": "panel"
+    },
+    {
+      "calculate": "sequence(0, 100)",
+      "as": "i"
+    },
+    {
+      "flatten": [
+        "i"
+      ]
+    },
+    {
+      "calculate": "datum.i % 10",
+      "as": "col"
+    },
+    {
+      "calculate": "floor(datum.i / 10)",
+      "as": "row"
+    },
+    {
+      "calculate": "datum.i < datum.shaded ? 'Missed more than a day a fortnight' : 'Attended at least 9 days in 10'",
+      "as": "status"
+    }
+  ],
+  "facet": {
+    "column": {
+      "field": "panel",
+      "type": "nominal",
+      "sort": {
+        "field": "year"
+      },
+      "title": null,
+      "header": {
+        "labelFontSize": 15,
+        "labelFontWeight": "bold",
+        "labelColor": "#1f1f1f",
+        "labelAnchor": "start",
+        "labelPadding": 8
+      }
+    }
+  },
+  "spacing": 24,
+  "spec": {
+    "width": 150,
+    "height": 186,
+    "mark": {
+      "type": "point",
+      "filled": true,
+      "size": 160,
+      "strokeWidth": 0,
+      "opacity": 1,
+      "shape": "M0,-1A0.3,0.3 0 1,1 0,-0.4A0.3,0.3 0 1,1 0,-1Z M-0.55,1 L-0.55,0 Q-0.55,-0.3 -0.25,-0.3 L0.25,-0.3 Q0.55,-0.3 0.55,0 L0.55,1Z"
+    },
+    "encoding": {
+      "x": {
+        "field": "col",
+        "type": "ordinal",
+        "axis": null,
+        "scale": {
+          "paddingOuter": 0.3
+        }
+      },
+      "y": {
+        "field": "row",
+        "type": "ordinal",
+        "axis": null,
+        "scale": {
+          "paddingOuter": 0.3
+        }
+      },
+      "color": {
+        "field": "status",
+        "type": "nominal",
+        "scale": {
+          "domain": [
+            "Missed more than a day a fortnight",
+            "Attended at least 9 days in 10"
+          ],
+          "range": [
+            "#e34a33",
+            "#d6d3c9"
+          ]
+        },
+        "legend": null
+      },
+      "tooltip": [
+        {
+          "field": "year",
+          "type": "ordinal",
+          "title": "Year"
+        },
+        {
+          "field": "missing_out",
+          "type": "quantitative",
+          "format": ".1f",
+          "title": "Students missing out (%)"
+        }
+      ]
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

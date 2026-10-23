@@ -101,6 +101,70 @@ a:hover { color: #104281; }
 }
 .byline strong { color: var(--ink); font-weight: 600; }
 
+/* Hero: title block on the left, opening pictogram on the right */
+.hero-grid { align-items: start; }
+.hero-figure { margin: 6px 0 0; }
+.hero-figure-title {
+  margin: 0 0 10px;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: var(--ink);
+}
+.hero-key {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 18px;
+  margin: 6px 0 0;
+  font-size: 13.5px;
+  color: var(--ink-2);
+}
+.key-swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--abs-4);
+}
+.key-swatch-off { background: #d6d3c9; }
+.key-item { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.hero-figure .source { margin-top: 6px; }
+
+/* Chapter strip: the story's six questions, in reading order */
+.chapters { margin-top: 48px; }
+.chapters ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 28px;
+  margin: 0;
+  padding: 16px 0 0;
+  list-style: none;
+  border-top: 1px solid var(--hairline);
+}
+.chapters a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink-2);
+  text-decoration: none;
+}
+.chapters a:hover { color: var(--ink); }
+.chapters a:hover .chapter-no { border-color: var(--ink); }
+.chapter-no {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 1.5px solid var(--ink-2);
+  border-radius: 50%;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
 /* Sections */
 .section { padding: 96px 0 0; }
 .section-head {
@@ -165,6 +229,31 @@ a:hover { color: #104281; }
 
 /* Section intro above a row of charts */
 .section-intro { margin-bottom: 32px; }
+
+/* Key figure beside a section intro: balances the empty right-hand column and
+   gives each section one number to remember. Its top rule lines up with the section heading. */
+.key-figure {
+  margin: 0;
+  padding: 14px 0 0;
+  border-top: 3px solid var(--abs-4);
+}
+.key-number {
+  margin: 0 0 8px;
+  font-size: 44px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.key-unit { font-size: 22px; font-weight: 600; letter-spacing: 0; }
+.key-text {
+  margin: 0;
+  max-width: 26em;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
 .pair + .chart-row { margin-top: 64px; }
 
 /* Side panel that explains a term next to a chart */
