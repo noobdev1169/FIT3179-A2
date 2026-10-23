@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "C1 pictogram (isotype). Out of every 100 students in Years 1-10, how many missed more than a day of school a fortnight (attended fewer than 90% of Semester 1 days), in 2019 and 2025. Each figure is one student in 100; shaded figures are students missing out. Values come from attendance_trend.csv and are rounded to whole figures (26.9 -> 27, 37.9 -> 38). Source: ACARA National Report on Schooling in Australia data portal.",
+  "description": "C1 pictogram (isotype). Out of every 100 students in Years 1-10, how many missed more than a day of school a fortnight (attended fewer than 90% of Semester 1 days), in 2019 and 2025. Each figure is one student in 100; shaded figures are students missing out. Values come from attendance_trend.csv and are rounded to whole figures (26.9 -> 27, 37.9 -> 38). Figures are grouped in four blocks of 25, filled one block at a time, so the shaded count can be read at a glance (27 = one full block + 2). Source: ACARA National Report on Schooling in Australia data portal.",
   "data": {
     "url": "data/attendance_trend.csv",
     "format": {
@@ -33,16 +33,28 @@
       ]
     },
     {
-      "calculate": "datum.i % 10",
+      "calculate": "floor(datum.i / 25)",
+      "as": "block"
+    },
+    {
+      "calculate": "(datum.block % 2) * 5 + (datum.i % 25) % 5",
       "as": "col"
     },
     {
-      "calculate": "floor(datum.i / 10)",
+      "calculate": "floor(datum.block / 2) * 5 + floor((datum.i % 25) / 5)",
       "as": "row"
     },
     {
       "calculate": "datum.i < datum.shaded ? 'Missed more than a day a fortnight' : 'Attended at least 9 days in 10'",
       "as": "status"
+    },
+    {
+      "calculate": "datum.col + (datum.col >= 5 ? 0.8 : 0)",
+      "as": "xpos"
+    },
+    {
+      "calculate": "datum.row + (datum.row >= 5 ? 0.8 : 0)",
+      "as": "ypos"
     }
   ],
   "facet": {
@@ -76,19 +88,30 @@
     },
     "encoding": {
       "x": {
-        "field": "col",
-        "type": "ordinal",
+        "field": "xpos",
+        "type": "quantitative",
         "axis": null,
         "scale": {
-          "paddingOuter": 0.3
+          "domain": [
+            -0.6,
+            10.4
+          ],
+          "nice": false,
+          "zero": false
         }
       },
       "y": {
-        "field": "row",
-        "type": "ordinal",
+        "field": "ypos",
+        "type": "quantitative",
         "axis": null,
         "scale": {
-          "paddingOuter": 0.3
+          "domain": [
+            -0.6,
+            10.4
+          ],
+          "nice": false,
+          "zero": false,
+          "reverse": true
         }
       },
       "color": {
