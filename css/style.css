@@ -192,8 +192,10 @@ a:hover { color: #104281; }
   line-height: 1.2;
   font-weight: 700;
 }
+/* Line length: about 60 characters (10–11 words) per line, following the unit's typography notes.
+   Lexend's characters are narrower than its "0", so these ch values are tuned by measurement. */
 .prose p {
-  max-width: 65ch;
+  max-width: 51ch;
   margin: 0 0 16px;
 }
 .prose p:last-child { margin-bottom: 0; }
@@ -339,6 +341,7 @@ a:hover { color: #104281; }
   font-weight: 700;
 }
 .chart-sub {
+  max-width: 52ch;
   margin: 0 0 12px;
   font-size: 15px;
   line-height: 1.45;
@@ -347,13 +350,15 @@ a:hover { color: #104281; }
 .chart-controls { min-height: 34px; margin: 0 0 4px; }
 .vis { width: 100%; }
 .chart-note {
+  max-width: 52ch;
   margin: 10px 0 0;
   font-size: 15px;
   line-height: 1.45;
 }
 .source {
+  max-width: 51ch;
   margin: 10px 0 0;
-  font-size: 12.5px;
+  font-size: 13.5px;
   line-height: 1.45;
   color: var(--ink-2);
 }
@@ -423,6 +428,8 @@ a:hover { color: #104281; }
 }
 .site-footer p,
 .site-footer ul { margin: 0 0 12px; }
+.site-footer p,
+.site-footer li { max-width: 51ch; }
 .site-footer ul { padding-left: 18px; }
 /* APA 7 reference list: hanging indent; long URLs may wrap */
 .references { list-style: none; padding-left: 0 !important; }
