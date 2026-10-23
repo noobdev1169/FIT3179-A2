@@ -19,12 +19,32 @@
 <body>
 
 <header class="hero">
-  <div class="wrap">
-    <p class="kicker">A data story · School attendance in Australia</p>
-    <h1 class="title">The Missing Days</h1>
-    <p class="subtitle">How often Australian students go to school, who misses out, and what makes the difference (2015–2025)</p>
-    <p class="byline">By <strong>Lai Yi Hung</strong> · October 2026 · Data: ACARA, Australian Bureau of Statistics, NSW Department of Education</p>
+  <div class="wrap grid hero-grid">
+    <div class="col-7 hero-text">
+      <p class="kicker">A data story · School attendance in Australia</p>
+      <h1 class="title">The Missing Days</h1>
+      <p class="subtitle">How often Australian students go to school, who misses out, and what makes the difference (2015–2025)</p>
+      <p class="byline">By <strong>Lai Yi Hung</strong> · October 2026 · Data: ACARA, Australian Bureau of Statistics, NSW Department of Education</p>
+    </div>
+
+    <figure class="col-5 hero-figure" id="c1" aria-labelledby="c1-title">
+      <h2 class="hero-figure-title" id="c1-title">Out of every 100 students, how many missed more than a day of school a fortnight?</h2>
+      <div class="vis" id="c1-vis" role="img" aria-label="Pictogram: 27 in 100 students missed out in 2019, 38 in 100 in 2025"></div>
+      <p class="hero-key"><span class="key-item"><span class="key-swatch" aria-hidden="true"></span>Missed more than 1 day in 10</span><span class="key-item"><span class="key-swatch key-swatch-off" aria-hidden="true"></span>Attended at least 9 in 10</span></p>
+      <p class="source">Years 1–10, Semester 1. Source: ACARA (2025). Chart specification: <a href="specs/c01_pictogram.vl.json">c01_pictogram.vl.json</a></p>
+    </figure>
   </div>
+
+  <nav class="wrap chapters" aria-label="Chapters">
+    <ol>
+      <li><a href="#how-many"><span class="chapter-no">1</span>How many?</a></li>
+      <li><a href="#when"><span class="chapter-no">2</span>When?</a></li>
+      <li><a href="#where"><span class="chapter-no">3</span>Where?</a></li>
+      <li><a href="#who"><span class="chapter-no">4</span>Who?</a></li>
+      <li><a href="#nsw"><span class="chapter-no">5</span>Up close: NSW</a></li>
+      <li><a href="#difference"><span class="chapter-no">6</span>What makes the difference?</a></li>
+    </ol>
+  </nav>
 </header>
 
 <main>
@@ -34,9 +54,9 @@
     <div class="wrap grid">
       <div class="col-5 prose">
         <div class="section-head"><span class="section-no" aria-hidden="true">1</span><h2 id="h-how-many">How many?</h2></div>
-        <p class="big-number">Almost 4 in 10</p>
-        <p class="big-number-note">students in Years 1–10 missed more than a day of school a fortnight in the first half of 2025.</p>
-        <p>That is about <strong>1.24 million students</strong>, around 400,000 more than in 2019, before COVID-19. In 2022 it was half of all students.</p>
+        <p class="big-number">1.24 million</p>
+        <p class="big-number-note">students in Years 1–10 missed more than a day of school a fortnight in the first half of 2025: almost 4 in 10.</p>
+        <p>That is around <strong>400,000 more</strong> than in 2019, before COVID-19. In 2022 it was half of all students.</p>
         <p>The national attendance rate still looks high, at 88.8%. But that average hides how many students regularly miss school, and who they are.</p>
 
         <aside class="measure-box" aria-labelledby="h-measure">
@@ -48,12 +68,14 @@
             <dd>The share of students who attended at least 90% of days. In 2025 it was 62.1%.</dd>
             <dt>Missing out (this page)</dt>
             <dd>Everyone else: students who missed more than 1 day in 10, about a day a fortnight. In 2025, 37.9% (100&nbsp;−&nbsp;62.1).</dd>
+            <dt>Percentage points</dt>
+            <dd>The plain difference between two percentages. From 26.9% in 2019 to 37.9% in 2025 is a rise of 11.0 points.</dd>
           </dl>
         </aside>
       </div>
 
       <figure class="col-7 chart" id="c16" aria-labelledby="c16-title">
-        <h3 class="chart-title" id="c16-title">About 1.24 million students missed more than a day a fortnight in 2025, more than three-quarters of them in NSW, Victoria or Queensland</h3>
+        <h3 class="chart-title" id="c16-title">More than 3 in 4 of the students missing out are in NSW, Victoria or Queensland</h3>
         <p class="chart-sub">Estimated full-time students in Years 1–10 who attended fewer than 90% of school days in Semester 1. <strong>Circle area</strong> = number of students; <strong>colour</strong> = share of each state's students.</p>
         <div class="chart-controls" id="c16-controls"></div>
         <div class="vis" id="c16-vis" role="img" aria-label="Dorling cartogram of students missing out by state"></div>
@@ -75,6 +97,10 @@
         <p>Absence was already creeping up before COVID-19. In 2022, the worst year in a decade of national records, half of all students missed more than a day a fortnight. Attendance has improved since, but in 2025 every year level was still missing more school than in 2019.</p>
         <p>The pattern by age barely changes: every year, absence jumps in Year 8 and keeps rising to Year 10.</p>
       </div>
+      <aside class="col-4 key-figure" aria-label="Key figure">
+        <p class="key-number">50.1%</p>
+        <p class="key-text">of students missed more than a day a fortnight in 2022, the worst year since national records of this measure began in 2015.</p>
+      </aside>
     </div>
     <div class="wrap grid pair">
       <figure class="col-6 chart" id="c2" aria-labelledby="c2-title">
@@ -119,6 +145,10 @@
         <p>The further students live from a major city, the more school they miss. In 2025, just over a third of students in major cities missed more than a day a fortnight (35.2%), compared with three in four in very remote areas (74.7%).</p>
         <p>But a map coloured by area exaggerates the outback, where few people live. Sizing each area by its students tells the other half of the story: most students who miss out live in cities.</p>
       </div>
+      <aside class="col-4 key-figure" aria-label="Key figure">
+        <p class="key-number">1.7%</p>
+        <p class="key-text">of students live in remote and very remote Australia, which covers 86% of the land. That is why this section uses two maps.</p>
+      </aside>
       <div class="col-12 shared-controls">
         <span class="controls-label">Both maps:</span>
         <div class="chart-controls" id="where-controls"></div>
@@ -128,7 +158,7 @@
     <div class="wrap grid pair">
       <figure class="col-6 chart" id="c4" aria-labelledby="c4-title">
         <div class="chart-head">
-          <h3 class="chart-title" id="c4-title">The further from a city, the more students miss school: in the NT’s very remote areas, 87% missed more than 1 day in 10</h3>
+          <h3 class="chart-title" id="c4-title">The further from a city, the more students miss school</h3>
           <p class="chart-sub">Share of students missing out in each state’s remoteness areas. Hover over an area to find it in the other map.</p>
         </div>
         <div class="vis" id="c4-vis" role="img" aria-label="Choropleth map of the share of students missing out by state and remoteness area"></div>
@@ -144,7 +174,7 @@
 
       <figure class="col-6 chart" id="c5" aria-labelledby="c5-title">
         <div class="chart-head">
-          <h3 class="chart-title" id="c5-title">But most students who miss out live in cities: remote and very remote Australia is 86% of the land and just 1.7% of students</h3>
+          <h3 class="chart-title" id="c5-title">But most students who miss out live in cities</h3>
           <p class="chart-sub"><strong>Circle area</strong> = number of students in 2025; <strong>colour</strong> = share missing out, in the same classes as the first map.</p>
         </div>
         <div class="vis" id="c5-vis" role="img" aria-label="Proportional symbol map of students by state and remoteness area"></div>
@@ -167,11 +197,15 @@
         <div class="section-head"><span class="section-no" aria-hidden="true">4</span><h2 id="h-who">Who?</h2></div>
         <p>The widest gaps are between Aboriginal and Torres Strait Islander students and other students, and they are widest in remote and very remote areas. Most students who miss out go to government (public) schools. But that is largely about <em>who</em> those schools teach: compare schools serving similar communities, and the gaps between sectors shrink.</p>
       </div>
+      <aside class="col-4 key-figure" aria-label="Key figure">
+        <p class="key-number">88%</p>
+        <p class="key-text">of Aboriginal and Torres Strait Islander students in very remote areas missed out in 2025, against 48% of non-Indigenous students there.</p>
+      </aside>
     </div>
     <div class="wrap grid pair">
       <figure class="col-6 chart" id="c7" aria-labelledby="c7-title">
         <div class="chart-head">
-          <h3 class="chart-title" id="c7-title">Gaps are widest in remote Australia: in very remote areas, 88% of Aboriginal and Torres Strait Islander students missed out, against 48% of non-Indigenous students</h3>
+          <h3 class="chart-title" id="c7-title">Gaps for Aboriginal and Torres Strait Islander students are widest in remote areas</h3>
           <p class="chart-sub">Share of students missing out by remoteness, 2025. The number is ACARA’s published gap in percentage points.</p>
         </div>
         <div class="vis" id="c7-vis" role="img" aria-label="Dumbbell chart comparing Aboriginal and Torres Strait Islander students with non-Indigenous students by remoteness"></div>
@@ -187,8 +221,8 @@
 
       <figure class="col-6 chart" id="c13" aria-labelledby="c13-title">
         <div class="chart-head">
-          <h3 class="chart-title" id="c13-title">7 in 10 of the students missing out are in government schools, which teach 63% of students</h3>
-          <p class="chart-sub">Estimated students in Years 1–10 who missed more than a day a fortnight in 2025, by school sector and state. <strong>Tile area</strong> = number of students.</p>
+          <h3 class="chart-title" id="c13-title">7 in 10 students who miss out go to government schools</h3>
+          <p class="chart-sub">Estimated students in Years 1–10 who missed more than a day a fortnight in 2025, by school sector and state. Government schools teach 63% of students. <strong>Tile area</strong> = number of students.</p>
         </div>
         <div class="vis" id="c13-vis" role="img" aria-label="Treemap of students missing out by school sector and state"></div>
         <div class="chart-foot">
@@ -228,17 +262,21 @@
     <div class="wrap grid section-intro">
       <div class="col-8 prose">
         <div class="section-head"><span class="section-no" aria-hidden="true">5</span><h2 id="h-nsw">Up close: NSW public schools</h2></div>
-        <p>New South Wales publishes attendance for each of its public schools, so here the story can be followed school by school. Attendance is recovering: <strong>1,810 of 2,099 schools</strong> improved between 2022 and 2024, and the typical (median) school rose from 86.0% to 88.8%.</p>
+        <p>New South Wales publishes attendance for each of its public schools, so here the story can be followed school by school. Attendance is recovering: most schools improved between 2022 and 2024, and the typical (median) school rose from 86.0% to 88.8%.</p>
         <p>But schools serving less advantaged communities still have lower attendance, and they differ far more from one another. Click a group in the chart below to see where its schools are on the maps.</p>
       </div>
+      <aside class="col-4 key-figure" aria-label="Key figure">
+        <p class="key-number">86%</p>
+        <p class="key-text">of NSW public schools improved their attendance between 2022 and 2024: 1,810 of 2,099 schools.</p>
+      </aside>
     </div>
 
     <div class="wrap grid">
       <figure class="col-8 chart" id="c12" aria-labelledby="c12-title">
-        <h3 class="chart-title" id="c12-title">The more advantaged a school’s community, the higher and more predictable its attendance: the typical school goes from 83.7% below ICSEA 900 to 92.7% at 1100 and over</h3>
+        <h3 class="chart-title" id="c12-title">The more advantaged a school’s community, the higher and steadier its attendance</h3>
         <p class="chart-sub">Attendance rate of NSW public schools in 2024, grouped by ICSEA. <strong>Click a group</strong> to show its schools on the maps below; click the background to show all schools.</p>
         <div class="vis" id="c12-vis" role="img" aria-label="Box plot of NSW public school attendance by ICSEA group"></div>
-        <p class="chart-note">Below ICSEA 900, 35% of schools had attendance under 80%. The middle half of those schools spans 10 points (76.8% to 86.8%); at 1100 and over it spans just 1.5 points (91.8% to 93.3%).</p>
+        <p class="chart-note">The typical school rises from 83.7% below ICSEA 900 to 92.7% at 1100 and over. Below ICSEA 900, 35% of schools had attendance under 80%. The middle half of those schools spans 10 points (76.8% to 86.8%); at 1100 and over it spans just 1.5 points (91.8% to 93.3%).</p>
         <p class="source">Sources: NSW Department of Education (2025, 2026); the ICSEA values in the school locations dataset come from ACARA. 2,121 schools with both values. NSW changed its calculation in 2018 and 2021. Chart specification: <a href="specs/c12_boxplot.vl.json">c12_boxplot.vl.json</a></p>
         <details class="data-table" data-src="data/nsw_schools.csv"
                  data-cols="icsea_band:ICSEA group|level_of_schooling:School type|remoteness:Remoteness|icsea:ICSEA|attendance_2022:Attendance 2022 (%):1|attendance_2024:Attendance 2024 (%):1">
@@ -269,20 +307,20 @@
     <div class="wrap grid pair pair-after-controls">
       <figure class="col-6 chart" id="c10" aria-labelledby="c10-title">
         <div class="chart-head">
-          <h3 class="chart-title" id="c10-title">Low-attendance schools aren’t only in the bush: 103 of the 254 NSW public schools below 80% attendance are in major cities</h3>
+          <h3 class="chart-title" id="c10-title">Low-attendance schools aren’t only in the bush</h3>
           <p class="chart-sub">Every NSW public school, coloured by the share of school days its students missed in 2024. The darkest dots are schools below 80% attendance.</p>
         </div>
         <div class="vis" id="c10-vis" role="img" aria-label="Dot map of NSW public schools by days missed, with a Sydney inset"></div>
         <div class="chart-foot">
-          <p class="chart-note">Of the 254 schools below 80%, 103 are in major cities, 86 inner regional, 45 outer regional, 11 remote and 9 very remote. Their median ICSEA is 902, against 976 for all schools.</p>
+          <p class="chart-note">Of the 254 schools below 80% attendance, <strong>103 are in major cities</strong>, 86 inner regional, 45 outer regional, 11 remote and 9 very remote. Their median ICSEA is 902, against 976 for all schools.</p>
           <p class="source">Sources: NSW Department of Education (2025, 2026), with remoteness as supplied (ASGS 2016); ABS (n.d.) for the map. Lord Howe Island Central School is left off the map. Every school is listed in the data table under the box plot. Chart specification: <a href="specs/c10_dotmap.vg.json">c10_dotmap.vg.json</a></p>
         </div>
       </figure>
 
       <figure class="col-6 chart" id="c15" aria-labelledby="c15-title">
         <div class="chart-head">
-          <h3 class="chart-title" id="c15-title">Averaged over squares about 50 km wide, the worst areas are scattered across regional NSW, and Sydney’s squares are among the lowest</h3>
-          <p class="chart-sub">Days missed by the typical (median) school in each square, 2024. Squares with only 1 or 2 schools are dashed and left grey.</p>
+          <h3 class="chart-title" id="c15-title">Averaged by area, the worst spots are scattered across regional NSW</h3>
+          <p class="chart-sub">Days missed by the typical (median) school in each square about 50 km wide, 2024. Sydney’s squares are among the lowest. Squares with only 1 or 2 schools are left grey.</p>
         </div>
         <div class="vis" id="c15-vis" role="img" aria-label="Bin map of NSW in half-degree squares coloured by median days missed"></div>
         <div class="chart-foot">
@@ -300,6 +338,10 @@
         <div class="section-head"><span class="section-no" aria-hidden="true">6</span><h2 id="h-difference">What makes the difference?</h2></div>
         <p>Put the comparisons from this page side by side, and a clear order appears. Where students live and how advantaged their school’s community is make the biggest differences. Whether a student is a boy or a girl makes almost none.</p>
       </div>
+      <aside class="col-4 key-figure" aria-label="Key figure">
+        <p class="key-number">39.5 <span class="key-unit">points</span></p>
+        <p class="key-text">is the gap between very remote areas and major cities, the largest on this page. Between boys and girls it is 1.0 point.</p>
+      </aside>
     </div>
     <div class="wrap grid">
       <figure class="col-8 chart" id="c14" aria-labelledby="c14-title">
@@ -335,6 +377,7 @@
       <h2>About this page</h2>
       <p>A data story for FIT3179 Data Visualisation 2, Monash University, Semester 2 2026, written for general Australian readers.</p>
       <p>Author: Lai Yi Hung · Published October 2026.</p>
+      <p>Use of AI: generative AI (Claude, Anthropic) was used for feedback on layout and design, help with code and proofreading. The topic, data choices and story are the author’s own, and every figure was checked against the source data.</p>
       <h2>References</h2>
       <ul class="references">
         <li>Australian Bureau of Statistics. (n.d.). <em>Australian Statistical Geography Standard (ASGS) Edition 3: Remoteness Areas 2021</em> [Data set]. Retrieved October 15, 2026, from <a href="https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files">https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files</a></li>
