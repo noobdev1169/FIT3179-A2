@@ -195,10 +195,11 @@ a:hover { color: #104281; }
 /* Line length: about 60 characters (10–11 words) per line, following the unit's typography notes.
    Lexend's characters are narrower than its "0", so these ch values are tuned by measurement. */
 .prose p {
-  max-width: 51ch;
+  max-width: 46ch;
   margin: 0 0 16px;
 }
 .prose p:last-child { margin-bottom: 0; }
+.prose .big-number-note { max-width: 40ch; }
 
 .big-number {
   margin: 8px 0 4px;
@@ -341,7 +342,7 @@ a:hover { color: #104281; }
   font-weight: 700;
 }
 .chart-sub {
-  max-width: 52ch;
+  max-width: 46ch;
   margin: 0 0 12px;
   font-size: 15px;
   line-height: 1.45;
@@ -350,7 +351,7 @@ a:hover { color: #104281; }
 .chart-controls { min-height: 34px; margin: 0 0 4px; }
 .vis { width: 100%; }
 .chart-note {
-  max-width: 52ch;
+  max-width: 46ch;
   margin: 10px 0 0;
   font-size: 15px;
   line-height: 1.45;
