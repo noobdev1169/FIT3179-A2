@@ -198,7 +198,19 @@
               "#d9d5cc"
             ]
           },
-          "legend": null
+          "legend": {
+            "title": "Share of students missing out",
+            "orient": "bottom",
+            "direction": "horizontal",
+            "columns": 3,
+            "columnPadding": 16,
+            "rowPadding": 6,
+            "symbolType": "circle",
+            "symbolSize": 150,
+            "symbolStrokeColor": "#827d73",
+            "symbolStrokeWidth": 0.5,
+            "titleLimit": 400
+          }
         },
         "stroke": {
           "condition": [
@@ -291,5 +303,16 @@
         }
       }
     }
-  ]
+  ],
+  "config": {
+    "legend": {
+      "layout": {
+        "bottom": {
+          "anchor": "start",
+          "direction": "vertical",
+          "margin": 12
+        }
+      }
+    }
+  }
 }
