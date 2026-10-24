@@ -467,3 +467,22 @@ a:hover { color: #104281; }
 @media (min-width: 901px) {
   .section-intro > .key-figure { margin-top: 56px; }
 }
+
+/* Chart cards: every chart (including the opening pictogram) sits on a white card, so charts
+   read as figures against the warm page (figure–ground) and each title, chart, note and source
+   stays grouped. Grey panels stay reserved for explanations; key figures stay unboxed. */
+.chart,
+.hero-figure {
+  background: #ffffff;
+  border: 1px solid var(--hairline);
+  border-radius: 10px;
+  padding: 20px 22px 18px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+.hero-figure { margin-top: 0; }
+@media (max-width: 900px) {
+  .chart, .hero-figure { padding: 16px 14px 14px; }
+}
+@media print {
+  .chart, .hero-figure { box-shadow: none; }
+}
