@@ -28,6 +28,7 @@
   /* Type */
   --font-body: "Lexend", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-hand: "Edu NSW ACT Foundation", "Lexend", cursive;
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
 
   --gutter: 24px;
 }
@@ -103,11 +104,28 @@ a:hover { color: #104281; }
 .byline strong { color: var(--ink); font-weight: 600; }
 
 /* Hero: title block on the left, opening pictogram on the right */
+.hero-lede {
+  max-width: 40ch;
+  margin: 24px 0 0;
+  font-size: 19px;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.hero-hint {
+  max-width: 46ch;
+  margin: 16px 0 0;
+  padding: 2px 0 2px 14px;
+  border-left: 3px solid var(--abs-4);
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+.hero-hint strong { color: var(--ink); font-weight: 600; }
 .hero-grid { align-items: start; }
 .hero-figure { margin: 6px 0 0; }
 .hero-figure-title {
   margin: 0 0 10px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.4;
   font-weight: 700;
   color: var(--ink);
@@ -337,10 +355,17 @@ a:hover { color: #104281; }
 @media (max-width: 900px) {
   .pair > .chart + .chart { margin-top: 48px; }
 }
+/* Chart titles: a serif, so the headline finding of each chart stands apart from the
+   sans-serif labels, notes and body text. */
+.chart-title,
+.hero-figure-title {
+  font-family: var(--font-serif);
+  letter-spacing: 0;
+}
 .chart-title {
   margin: 0 0 6px;
-  font-size: 20px;
-  line-height: 1.3;
+  font-size: 22px;
+  line-height: 1.25;
   font-weight: 700;
 }
 .chart-sub {
