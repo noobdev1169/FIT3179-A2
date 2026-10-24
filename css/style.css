@@ -46,6 +46,7 @@ body {
 }
 
 a { color: #1c5cab; text-underline-offset: 2px; }
+.nowrap { white-space: nowrap; }
 a:hover { color: #104281; }
 
 .wrap {
@@ -195,7 +196,7 @@ a:hover { color: #104281; }
 /* Line length: about 60 characters (10–11 words) per line, following the unit's typography notes.
    Lexend's characters are narrower than its "0", so these ch values are tuned by measurement. */
 .prose p {
-  max-width: 46ch;
+  max-width: 41ch;
   margin: 0 0 16px;
 }
 .prose p:last-child { margin-bottom: 0; }
@@ -236,6 +237,7 @@ a:hover { color: #104281; }
 /* Key figure beside a section intro: balances the empty right-hand column and
    gives each section one number to remember. Its top rule lines up with the section heading. */
 .key-figure {
+  max-width: 26rem;
   margin: 0;
   padding: 14px 0 0;
   border-top: 3px solid var(--abs-4);
@@ -457,4 +459,11 @@ a:hover { color: #104281; }
   p, li { orphans: 3; widows: 3; }
   .data-table, .chart-controls, .shared-controls { display: none !important; }
   .section { padding-top: 48px; }
+}
+
+/* Two-column intros: the key figure starts on the right-hand chart column and its rule
+   lines up with the first line of the paragraph (below the section heading), so long
+   headings have room and both columns share one top sight line. */
+@media (min-width: 901px) {
+  .section-intro > .key-figure { margin-top: 56px; }
 }
