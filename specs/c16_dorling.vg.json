@@ -12,12 +12,18 @@
       "value": 2025,
       "bind": {"input": "radio", "options": [2019, 2025], "name": "Year"}
     },
+    {"name": "height", "description": "Height follows the width the page gives the chart, so a narrower column does not leave empty space above the map.", "update": "clamp(round(width * 0.8), 380, 480)"},
     {"name": "k", "update": "min(width, height * 1.25) / 5600"},
-    {"name": "insideMin", "value": 27},
+    {"name": "insideMin", "value": 24},
     {
       "name": "labelBelow",
       "description": "Small circles are labelled to the right (open sea), except the NT, whose right side faces Queensland.",
       "value": ["NT"]
+    },
+    {
+      "name": "labelLeft",
+      "description": "When SA's circle is too small for an inside label (2019), its right side faces NSW, so it is labelled to the left instead.",
+      "value": ["SA"]
     }
   ],
 
@@ -152,9 +158,9 @@
       "interactive": false,
       "encode": {
         "update": {
-          "x": {"signal": "datum.datum.r >= insideMin || indexof(labelBelow, datum.datum.state_abbr) >= 0 ? datum.x : datum.x + datum.datum.r + 6"},
+          "x": {"signal": "datum.datum.r >= insideMin || indexof(labelBelow, datum.datum.state_abbr) >= 0 ? datum.x : indexof(labelLeft, datum.datum.state_abbr) >= 0 ? datum.x - datum.datum.r - 6 : datum.x + datum.datum.r + 6"},
           "y": {"signal": "datum.datum.r >= insideMin ? datum.y - 8 : indexof(labelBelow, datum.datum.state_abbr) >= 0 ? datum.y + datum.datum.r + 12 : datum.y - 8"},
-          "align": {"signal": "datum.datum.r >= insideMin || indexof(labelBelow, datum.datum.state_abbr) >= 0 ? 'center' : 'left'"},
+          "align": {"signal": "datum.datum.r >= insideMin || indexof(labelBelow, datum.datum.state_abbr) >= 0 ? 'center' : indexof(labelLeft, datum.datum.state_abbr) >= 0 ? 'right' : 'left'"},
           "baseline": {"value": "middle"},
           "text": {"field": "datum.state_abbr"},
           "fontSize": {"value": 14},
@@ -170,9 +176,9 @@
       "interactive": false,
       "encode": {
         "update": {
-          "x": {"signal": "datum.datum.r >= insideMin || indexof(labelBelow, datum.datum.state_abbr) >= 0 ? datum.x : datum.x + datum.datum.r + 6"},
+          "x": {"signal": "datum.datum.r >= insideMin || indexof(labelBelow, datum.datum.state_abbr) >= 0 ? datum.x : indexof(labelLeft, datum.datum.state_abbr) >= 0 ? datum.x - datum.datum.r - 6 : datum.x + datum.datum.r + 6"},
           "y": {"signal": "datum.datum.r >= insideMin ? datum.y + 9 : indexof(labelBelow, datum.datum.state_abbr) >= 0 ? datum.y + datum.datum.r + 27 : datum.y + 8"},
-          "align": {"signal": "datum.datum.r >= insideMin || indexof(labelBelow, datum.datum.state_abbr) >= 0 ? 'center' : 'left'"},
+          "align": {"signal": "datum.datum.r >= insideMin || indexof(labelBelow, datum.datum.state_abbr) >= 0 ? 'center' : indexof(labelLeft, datum.datum.state_abbr) >= 0 ? 'right' : 'left'"},
           "baseline": {"value": "middle"},
           "text": {"signal": "'≈ ' + format(round(datum.datum.est / 1000) * 1000, ',')"},
           "fontSize": {"signal": "datum.datum.r >= insideMin && datum.datum.r < 33 ? 11 : 12.5"},
