@@ -436,3 +436,25 @@ a:hover { color: #104281; }
 .references { list-style: none; padding-left: 0 !important; }
 .references li { padding-left: 2em; text-indent: -2em; margin-bottom: 8px; overflow-wrap: anywhere; }
 .placeholder { background: #fff2b3; padding: 0 4px; border-radius: 3px; }
+
+/* One-column layout (tablets, narrow windows): keep each block as wide as its text,
+   and show the term explainers before the chart that uses them. */
+@media (max-width: 900px) {
+  .key-figure { max-width: 26rem; margin-top: 8px; }
+  .chart-row > .explainer,
+  .grid > .how-to-read { order: -1; }
+}
+
+/* Print / Save as PDF: the page prints in one column, so stretch each chart's SVG
+   (it has a viewBox) to the column, hide the chart menus, and avoid awkward page breaks. */
+@media print {
+  .vega-embed { padding-right: 0 !important; width: 100%; }
+  .vega-embed details, .vega-embed .vega-actions { display: none !important; }
+  .chart .vis svg { width: 100% !important; height: auto !important; }
+  .section-head, .chart-title, .chart-head, h2, h3 { break-after: avoid; page-break-after: avoid; }
+  .vis, .key-figure, .explainer, .measure-box, .conclusion, .hero-figure,
+  .section-head, .chart-title, .chart-sub, .chart-head { break-inside: avoid; page-break-inside: avoid; }
+  p, li { orphans: 3; widows: 3; }
+  .data-table, .chart-controls, .shared-controls { display: none !important; }
+  .section { padding-top: 48px; }
+}
