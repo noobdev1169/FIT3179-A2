@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Edu+NSW+ACT+Foundation:wght@500;700&display=swap">
-  <link rel="stylesheet" href="css/style.css?v=20261024c">
+  <link rel="stylesheet" href="css/style.css?v=20261024d">
 
   <script src="https://cdn.jsdelivr.net/npm/vega@5.33.1"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.23.0"></script>
@@ -345,7 +345,7 @@
     </div>
     <div class="wrap grid">
       <figure class="col-8 chart" id="c14" aria-labelledby="c14-title">
-        <h3 class="chart-title" id="c14-title">Where students live and their school community’s advantage make the biggest difference; being a boy or a girl makes almost none</h3>
+        <h3 class="chart-title" id="c14-title">Remoteness and community advantage matter most; being a boy or a girl barely matters</h3>
         <p class="chart-sub">Share of students missing out in 2025 for two groups in each comparison, sorted by the gap between them (percentage points). Australia, Years 1–10.</p>
         <div class="vis" id="c14-vis" role="img" aria-label="Dumbbell chart comparing the share of students missing out across seven factors"></div>
         <p class="chart-note"><strong>These factors overlap.</strong> Very remote schools also tend to serve less advantaged communities and more Aboriginal and Torres Strait Islander students, and the sector gap mostly reflects advantage (section 4). So the gaps can’t be added up, and none of them on its own shows a cause.</p>
@@ -374,40 +374,26 @@
 <footer class="site-footer">
   <div class="wrap grid">
     <div class="col-6">
-      <h2>About this page</h2>
-      <p>A data story for FIT3179 Data Visualisation 2, Monash University, Semester 2 2026, written for general Australian readers.</p>
-      <p>Author: Lai Yi Hung · Published October 2026.</p>
-      <p>Use of AI: generative AI (Claude, Anthropic) was used for feedback on layout and design, help with code and proofreading. The topic, data choices and story are the author’s own, and every figure was checked against the source data.</p>
-      <h2>References</h2>
+      <h2>Data sources</h2>
       <ul class="references">
-        <li>Australian Bureau of Statistics. (n.d.). <em>Australian Statistical Geography Standard (ASGS) Edition 3: Remoteness Areas 2021</em> [Data set]. Retrieved October 15, 2026, from <a href="https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files">https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files</a></li>
-        <li>Australian Bureau of Statistics. (2026, March 5). <em>Schools, 2025</em> [Data set]. <a href="https://www.abs.gov.au/statistics/people/education/schools/2025">https://www.abs.gov.au/statistics/people/education/schools/2025</a></li>
-        <li>Australian Curriculum, Assessment and Reporting Authority. (n.d.). <em>National report on schooling in Australia 2025</em> (Chapter 4). <a href="https://dataandreporting.blob.core.windows.net/anrdataportal/ANR-Documents/ANR2025/nationalreportonschoolinginaustralia_2025_Chapter4.pdf">https://dataandreporting.blob.core.windows.net/anrdataportal/ANR-Documents/ANR2025/nationalreportonschoolinginaustralia_2025_Chapter4.pdf</a></li>
-        <li>Australian Curriculum, Assessment and Reporting Authority. (2025). <em>Student attendance</em> [Data set]. National Report on Schooling in Australia data portal. Retrieved October 15, 2026, from <a href="https://www.acara.edu.au/reporting/national-report-on-schooling-in-australia/student-attendance">https://www.acara.edu.au/reporting/national-report-on-schooling-in-australia/student-attendance</a></li>
-        <li>Harrower, M., &amp; Brewer, C. A. (2003). ColorBrewer.org: An online tool for selecting colour schemes for maps. <em>The Cartographic Journal, 40</em>(1), 27–37. <a href="https://doi.org/10.1179/000870403235002042">https://doi.org/10.1179/000870403235002042</a></li>
-        <li>NSW Department of Education. (2025). <em>Student attendance rate by individual government school</em> [Data set]. Data.NSW. Retrieved October 15, 2026, from <a href="https://data.nsw.gov.au/data/dataset/b558a070-09f5-4941-a140-e60a744327bf">https://data.nsw.gov.au/data/dataset/b558a070-09f5-4941-a140-e60a744327bf</a></li>
-        <li>NSW Department of Education. (2026). <em>Master dataset: NSW government school locations and student enrolment numbers</em> [Data set]. Data.NSW. Retrieved October 15, 2026, from <a href="https://data.nsw.gov.au/data/dataset/78c10ea3-8d04-4c9c-b255-bbf8547e37e7">https://data.nsw.gov.au/data/dataset/78c10ea3-8d04-4c9c-b255-bbf8547e37e7</a></li>
-        <li>Satyanarayan, A., Moritz, D., Wongsuphasawat, K., &amp; Heer, J. (2017). Vega-Lite: A grammar of interactive graphics. <em>IEEE Transactions on Visualization and Computer Graphics, 23</em>(1), 341–350. <a href="https://doi.org/10.1109/TVCG.2016.2599030">https://doi.org/10.1109/TVCG.2016.2599030</a></li>
+        <li>Australian Curriculum, Assessment and Reporting Authority (ACARA). (2025). <a href="https://www.acara.edu.au/reporting/national-report-on-schooling-in-australia/student-attendance"><em>Student attendance</em></a> [Data set]. National Report on Schooling in Australia data portal.</li>
+        <li>ACARA. (n.d.). <a href="https://dataandreporting.blob.core.windows.net/anrdataportal/ANR-Documents/ANR2025/nationalreportonschoolinginaustralia_2025_Chapter4.pdf"><em>National report on schooling in Australia 2025</em>, Chapter 4</a>.</li>
+        <li>Australian Bureau of Statistics (ABS). (2026). <a href="https://www.abs.gov.au/statistics/people/education/schools/2025"><em>Schools, 2025</em></a> [Data set].</li>
+        <li>ABS. (n.d.). <a href="https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files"><em>ASGS Edition 3: Remoteness Areas 2021</em></a> [Boundaries].</li>
+        <li>NSW Department of Education. (2025). <a href="https://data.nsw.gov.au/data/dataset/b558a070-09f5-4941-a140-e60a744327bf"><em>Student attendance rate by individual government school</em></a> [Data set]. Data.NSW.</li>
+        <li>NSW Department of Education. (2026). <a href="https://data.nsw.gov.au/data/dataset/78c10ea3-8d04-4c9c-b255-bbf8547e37e7"><em>NSW government school locations and student enrolment numbers</em></a> [Data set]. Data.NSW.</li>
       </ul>
-      <p>Licences: ACARA and ABS data are CC BY 4.0; NSW Department of Education data are CC BY.</p>
-      <p>All data retrieved 15 October 2026. Processing steps, definitions and caveats: <a href="data/README.md">data/README.md</a>.</p>
+      <p>All retrieved 15 October 2026. ACARA and ABS data: CC BY 4.0; NSW data: CC BY. Processing steps and caveats: <a href="data/README.md">data/README.md</a>.</p>
     </div>
     <div class="col-6">
-      <h2>Notes and caveats</h2>
-      <ul>
-        <li>Attendance covers full-time students in Years 1–10 in Semester 1. ACARA did not publish 2020 data because of <span class="nowrap">COVID-19</span>.</li>
-        <li>NSW changed how it calculates government school attendance in 2018 and 2021, so comparisons with earlier years need care.</li>
-        <li>Student numbers that combine ABS counts with ACARA attendance shares are estimates.</li>
-        <li>ACARA classified 2019 remoteness with the 2016 boundaries; the maps use the 2021 boundaries. Small groups swing more from year to year.</li>
-        <li>ICSEA includes remoteness and the share of Aboriginal and Torres Strait Islander students, so these factors overlap and are not separate causes.</li>
-        <li>NSW school-level data covers public (government) schools only, up to 2024. Schools that have closed or merged have no location and are left out. No school names are shown.</li>
-      </ul>
-      <h2>Design</h2>
-      <p>Typefaces: Edu NSW ACT Foundation and Lexend (Google Fonts, SIL Open Font License). Charts built with Vega 5.33.1, Vega-Lite 5.23.0 (Satyanarayan et al., 2017) and Vega-Embed 6.29.0. Colour scheme: ColorBrewer OrRd (Harrower &amp; Brewer, 2003).</p>
+      <h2>About this page</h2>
+      <p><strong>Lai Yi Hung</strong> · Published October 2026 · FIT3179 Data Visualisation 2, Monash University.</p>
+      <p><strong>Use of AI:</strong> generative AI (Claude, Anthropic) was used for feedback on layout and design, help with code and proofreading. The topic, data choices and story are the author’s own, and every figure was checked against the source data.</p>
+      <p><strong>Built with</strong> Vega-Lite 5.23 and Vega 5.33. Typefaces: Lexend and Edu NSW ACT Foundation (Google Fonts, SIL Open Font License). Colours: <a href="https://colorbrewer2.org">ColorBrewer</a> OrRd.</p>
     </div>
   </div>
 </footer>
 
-<script src="js/main.js?v=20261024c"></script>
+<script src="js/main.js?v=20261024d"></script>
 </body>
 </html>
